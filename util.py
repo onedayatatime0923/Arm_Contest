@@ -12,7 +12,7 @@ import random
 import time
 import math
 import matplotlib.pyplot as plt
-assert os and np and F and math
+assert os and np and F
 
 
 class Datamanager:
