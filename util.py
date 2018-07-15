@@ -203,13 +203,13 @@ class Datamanager:
         result = torch.cat(result, 0)
         return result
     # for rnn
-    def get_data_movie(self,file_path,tag_path,batch_size,shuffle=True, downsample_factor=12, image_size=(224,224),save_path=None):
+    def get_data_movie(self,file_path,tag_path,batch_size,step_n, downsample_factor=12, image_size=(224,224),save_path=None):
         if save_path is not None:
             if os.path.isfile(save_path[0]) and os.path.isfile(save_path[1]):
                 x = np.load(save_path[0])
                 y = np.load(save_path[1])
                 self.voc.load(self.vocabulary_file)
-                return MovieDataLoader(image = x,label = y, batch_size = batch_size, shuffle = shuffle)
+                return MovieDataLoader(image = x,label = y, step_n = step_n, batch_size = batch_size)
 
         label = {}
         x = []
@@ -251,12 +251,12 @@ class Datamanager:
         #print(y.shape)
         #print(y)
         #input()
-        return MovieDataLoader(image = x,label = y, batch_size = batch_size, shuffle = shuffle)
-    def get_test_data_movie(self,file_path,batch_size,shuffle=True, downsample_factor=12, image_size=(224,224),save_path=None):
+        return MovieDataLoader(image = x,label = y, step_n = step_n, batch_size = batch_size)
+    def get_test_data_movie(self,file_path,batch_size,step_n, downsample_factor=12, image_size=(224,224),save_path=None):
         if save_path is not None:
             if os.path.isfile(save_path):
                 x = np.load(save_path)
-                return MovieDataLoader(image = x,label = None, batch_size = batch_size, shuffle = shuffle)
+                return MovieDataLoader(image = x,label = None, step_n = step_n, batch_size = batch_size)
 
         x = []
 
@@ -282,7 +282,7 @@ class Datamanager:
         #print(y.shape)
         #print(y)
         #input()
-        return MovieDataLoader(image = x,label = None, batch_size = batch_size, shuffle = shuffle)
+        return MovieDataLoader(image = x,label = None, step_n = step_n, batch_size = batch_size)
     def train_movie(self, model, dataloader, epoch, optimizer, print_every= 2):
         start= time.time()
         model.train()
@@ -391,7 +391,7 @@ class Datamanager:
                 x, i= Variable(x).cuda(), Variable(i).cuda()
                 output= model(x, i)
                 pred = output.data.argmax(2) # get the index of the max log-probability
-                print(pred)
+                #print(pred)
                 result.append(pred)
                 if batch_index% print_every== 0:
                     print('\rTest | [{}/{} ({:.0f}%)] | Time: {}  '.format(
@@ -399,7 +399,7 @@ class Datamanager:
                             self.timeSince(start, batch_index*len(x)/ data_size)),end='')
         print('\rTest | [{}/{} ({:.0f}%)] | Time: {}  '.format(
                     data_size, data_size, 100., self.timeSince(start, 1)))
-        result = torch.cat(result, 0)
+        #result = torch.cat(result, 0)
         return result
     def timeSince(self,since, percent):
         now = time.time()
@@ -599,7 +599,7 @@ class ImageDataset(Dataset):
             return x
     def __len__(self):
         return len(self.image)
-class MovieDataLoader():
+class ActionDataLoader():
     def __init__(self, image, label, batch_size, shuffle, max_len=10000 ):
         self.image = image
         self.label = label
@@ -638,6 +638,59 @@ class MovieDataLoader():
             return sort_x,sort_i,sort_index
     def __len__(self):
         return len(self.image)
+    def reverse(self, x, i):
+        sort_index= torch.cuda.LongTensor(sorted(range(len(i)), key=lambda k: i[k]))
+        sort_x= torch.index_select(x, 0, sort_index)
+        return sort_x
+class MovieDataLoader():
+    def __init__(self, image, label, step_n, batch_size, movie_len=3):
+        self.image = image
+        self.label = label
+        self.step  = 0
+        self.step_n  = step_n
+        self.batch_size = batch_size
+        self.movie_len = movie_len
+    def __iter__(self):
+        self.step = 0
+        return self
+    def __next__(self):
+        if self.step >= self.step_n:
+            raise StopIteration
+        index = [ random.sample(range(len(self.image)),self.movie_len) for i in range(self.batch_size)]
+        #print(index)
+        #input()
+        x,i,y=[], [], []
+        for movie in index:
+            movie_x = []
+            movie_i = 0
+            movie_y = []
+            for m in movie:
+                movie_x.append(torch.FloatTensor(self.image[m]).permute(0,3,1,2)/255)
+                movie_i += len(self.image[m])
+                if self.label is not None:
+                    movie_y.append(torch.LongTensor(self.label[m]))
+            x.append(torch.cat(movie_x,0))
+            i.append(movie_i)
+            if self.label is not None:
+                y.append(torch.cat(movie_y,0))
+        sort_index= torch.LongTensor(sorted(range(len(i)), key=lambda k: i[k], reverse=True))
+        sort_x=nn.utils.rnn.pad_sequence( [x[i] for i in sort_index],batch_first=True)
+        sort_i= torch.index_select(torch.LongTensor(i), 0, sort_index)
+        if self.label is not None:
+            sort_y=nn.utils.rnn.pad_sequence( [y[i] for i in sort_index],batch_first=True)
+
+        self.step += 1
+        
+        #print(sort_x.size())
+        #print(sort_i)
+        #print(sort_y)
+        #input()
+        if self.label is not None:
+            return sort_x,sort_i,sort_y, sort_index
+        elif self.label is None:
+            return sort_x,sort_i,sort_index
+    def __len__(self):
+        return self.batch_size * self.step_n
     def reverse(self, x, i):
         sort_index= torch.cuda.LongTensor(sorted(range(len(i)), key=lambda k: i[k]))
         sort_x= torch.index_select(x, 0, sort_index)

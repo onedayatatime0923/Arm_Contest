@@ -5,12 +5,13 @@ assert torch and Image_Classifier
 
 #PRINT_OUTPUT_PATH = './record.png'
 #WRITE_OUTPUT_PATH = './data/output.txt'
-EPOCH= 100
-BATCH_SIZE= 12 
+EPOCH= 20
+BATCH_SIZE= 8 
+STEP_N = 50
 IMAGE_SIZE = (224,224)
 LAYER_N = 2
-DROPOUT= 0
-LEARNING_RATE = 1E-3
+DROPOUT= 0.3
+LEARNING_RATE = 1E-4
 SAVE_TRAIN_PATH = ('./data/train_x.npy', 'data/train_y.npy')
 SAVE_TEST_PATH = './data/test_x.npy'
 VOLCABULARY_PATH = './vocab.txt'
@@ -20,8 +21,8 @@ OUTPUT_PATH= './model/model.pt'
 
 
 dm = Datamanager(vocabulary_file = VOLCABULARY_PATH, tensorboard_dir = TENSORBOARD_DIR)
-train_dataloader = dm.get_data_movie('./data/train/movie/','./data/train/tag.txt',batch_size=BATCH_SIZE, shuffle = True, image_size = IMAGE_SIZE, save_path = SAVE_TRAIN_PATH)
-test_dataloader = dm.get_test_data_movie('./data/test/movie/',batch_size=BATCH_SIZE, shuffle = True, image_size = IMAGE_SIZE, save_path = SAVE_TEST_PATH)
+train_dataloader = dm.get_data_movie('./data/train/movie/','./data/train/tag.txt',batch_size=BATCH_SIZE, step_n = STEP_N, image_size = IMAGE_SIZE, save_path = SAVE_TRAIN_PATH)
+test_dataloader = dm.get_test_data_movie('./data/test/movie/',batch_size=BATCH_SIZE, step_n = STEP_N, image_size = IMAGE_SIZE, save_path = SAVE_TEST_PATH)
 
 
 model= Movie_Classifier(IMAGE_SIZE, layer_n  = LAYER_N, label_dim = dm.voc.n_words, dropout = DROPOUT).cuda()
