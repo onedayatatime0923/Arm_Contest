@@ -1,7 +1,7 @@
-
 import numpy as np
 import matplotlib.pyplot as plt 
 import matplotlib.animation as animation 
+import threading as td
 
 class Painter():
     def __init__(self, name = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z'], memorySize= 10, frames = 1000):
@@ -20,7 +20,8 @@ class Painter():
 
     def plot(self):
         fig = plt.figure() 
-        self.animation = animation.FuncAnimation(fig=fig,
+        self.animation = animation.FuncAnimation(
+                fig=fig,
                 func=self._update,
                 frames=self.frames,
                 init_func=self._init,
@@ -35,7 +36,7 @@ class Painter():
         for i in range(self.n):
             self.line[i] = plt.plot(self.data[i][:-self.memorySize], label = self.name[i])[0]
 
-    def _update(self, index):
+    def _update(self, index): 
         for i in range(self.n):
             self.line[i].set_ydata(self.data[i][:-self.memorySize])
 

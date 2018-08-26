@@ -8,7 +8,9 @@ class Visualizer():
         pass
     def __call__(self, data):
         message = '\x1b[2K\r'
-        for n in range(data):
+        print(data)
+        input()
+        for n in data:
             print(n, data[n])
             message += '{} X: {} Y: {} Z:{} | '.format(
                 n, data[n][0], data[n][1], data[n][2])
