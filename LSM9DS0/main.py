@@ -14,7 +14,3 @@ while True:
     data = filter.update(sensor.read())
     visualizer(painter)
     painter(data)
-
-
-
-
