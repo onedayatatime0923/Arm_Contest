@@ -17,22 +17,21 @@ class Sensor:
         return np.array(self.data)
     def _read(self):
         data = self.device.readline()
-        if(len(data.split()) == 8):
+        data = data[2:].split()
+        print(len(data))
+        if(len(data) == 4):
             # todo: check data content
             print('check')
-            data = str(data)
             print(data)
             input()
-            data = data[2:-5]
-            data = data.split();
             if( data[0] == 'A'):
-                self.data[0]= float(data[1])
-                self.data[1]= float(data[2])
-                self.data[2]= float(data[3])
-            if( data[4] == 'G'):
-                self.data[3]= float(data[5])
-                self.data[4]= float(data[6])
-                self.data[5]= float(data[7])
+                self.data[1]= float(data[1][:-1])
+                self.data[2]= float(data[2][:-1])
+                self.data[3]= float(data[3][:-1])
+            if( data[0] == 'G'):
+                self.data[1]= float(data[5][:-1])
+                self.data[2]= float(data[6][:-1])
+                self.data[3]= float(data[7][:-1])
             return True
         else: 
             return False
