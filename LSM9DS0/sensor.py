@@ -1,4 +1,5 @@
 
+import numpy as np
 import serial
 import collections
 
@@ -17,14 +18,17 @@ class Sensor:
         self.flag['A'] = False
         self.flag['G'] = False
         self.flag['M'] = False
-        # represent accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ
     def read(self):
+        # return ( type : np.array, shape: (9,))
+        # meaning accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ
         while not all(value == True for value in self.flag.values()):
             self._read()
             pass
         for key in self.flag:
-                self.flag[key] = False
-        return self.data
+            self.flag[key] = False
+        data = self._convert(self.data)
+        return data
+
     def _read(self):
         data = self.device.readline()
         data = data.split()
@@ -35,6 +39,10 @@ class Sensor:
             self.flag[(data[0][:-1]).decode('ascii')]= True
         else: 
             return False
+
+    def _convert(self,data):
+        data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
+        return data
 
 if __name__ == '__main__':
     sensor = Sensor()

@@ -32,14 +32,10 @@ class Filter:
         self.filter.F = np.eye(self.dimState)
 
     def update(self, data):
-        data = self._convert(data)
         self.filter.predict()
         self.filter.update(data)
         return self.filter.x
 
-    def _convert(self,data):
-        data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
-        return data
     
         
 if __name__ == '__main__':

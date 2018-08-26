@@ -13,8 +13,7 @@ painter = Painter()
 
 def main():
     while True:
-        data = sensor.read()
-        #data = filter.update(sensor.read())
+        data = filter.update(sensor.read())
         visualizer(data)
         painter(data)
 
