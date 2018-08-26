@@ -9,7 +9,7 @@ class Visualizer():
     def __call__(self, data):
         message = '\x1b[2K\r'
         for n in data:
-            message += '{} X: {} Y: {} Z:{} | '.format(
+            message += '{} X: {:>8.4f} Y: {:>8.4f} Z:{:>8.4f} | '.format(
                 n, data[n][0], data[n][1], data[n][2])
         print(message, flush = True)
 
