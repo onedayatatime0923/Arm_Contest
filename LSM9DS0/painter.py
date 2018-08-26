@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation 
 
 class Painter():
-    def __init__(self, name = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'], verbose = None, memorySize= 10, frames = 1000000):
+    def __init__(self, name = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'], verbose = None, memorySize= 10):
         self.n = len(name)
         self.name = name
         if verbose is None:
@@ -12,7 +12,6 @@ class Painter():
             self.verbose = verbose
         self.memorySize = memorySize
         self.data = np.zeros((self.n, self.memorySize))
-        self.frames = frames
 
         self.animation = None
         self.line = [None for i in range(self.n)]
@@ -26,7 +25,6 @@ class Painter():
         self.animation = animation.FuncAnimation(
                 fig=fig,
                 func=self._update,
-                #frames=self.frames,
                 init_func=self._init,
                 interval=20,
                 blit=False)
