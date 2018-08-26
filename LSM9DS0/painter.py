@@ -17,7 +17,7 @@ class Painter():
         self.line = [None for i in range(self.n)]
 
     def __call__(self, data):
-        data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
+        data = self._convert(data)
         self.data = np.append(self.data, data, 1)
 
     def plot(self):
@@ -47,5 +47,9 @@ class Painter():
         for i in self.verbose:
             self.line[i].set_ydata(self.data[i][-self.memorySize:])
 
+    def _convert(self,data):
+        data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
+        return data
+    
 if __name__ == '__main__':
     p = Painter()
