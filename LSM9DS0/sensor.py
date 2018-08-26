@@ -21,9 +21,9 @@ class Sensor:
         data = self.device.readline()
         data = data.split()
         if(len(data) == 4):
-            self.data[str(data[0][:-1])][0]= float(data[1][:-1])
-            self.data[str(data[0][:-1])][1]= float(data[2][:-1])
-            self.data[str(data[0][:-1])][2]= float(data[3])
+            self.data[(data[0][:-1]).decode('ascii')][0]= float(data[1][:-1])
+            self.data[(data[0][:-1]).decode('ascii')][1]= float(data[2][:-1])
+            self.data[(data[0][:-1]).decode('ascii')][2]= float(data[3])
             print(self.data[str(data[0][:-1])])
             return True
         else: 
