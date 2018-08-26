@@ -14,6 +14,7 @@ class Painter():
         self.data = np.zeros((self.n, self.memorySize))
         self.frames = frames
 
+        self.animation = None
         self.line = [None for i in range(self.n)]
 
     def __call__(self, data):
@@ -22,7 +23,7 @@ class Painter():
 
     def plot(self):
         fig = plt.figure() 
-        animation.FuncAnimation(
+        self.animation = animation.FuncAnimation(
                 fig=fig,
                 func=self._update,
                 frames=self.frames,
@@ -32,9 +33,10 @@ class Painter():
         plt.show()
 
     def save(self, path):
-        self.ani.save(path, fps=30, extra_args=['-vcodec', 'libx264'])
+        self.animation.save(path, fps=30, extra_args=['-vcodec', 'libx264'])
 
     def _init(self):
+        print(self.verbose)
         for i in self.verbose:
             self.line[i] = plt.plot(self.data[i][-self.memorySize:], label = self.name[i])[0]
         plt.xlim((0, self.memorySize))
@@ -42,6 +44,7 @@ class Painter():
         #plt.legend(loc='upper right')
 
     def _update(self, index): 
+        print(self.verbose)
         for i in self.verbose:
             self.line[i].set_ydata(self.data[i][-self.memorySize:])
 
