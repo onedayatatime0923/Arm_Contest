@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt 
 import matplotlib.animation as animation 
-import threading as td
 
 class Painter():
     def __init__(self, name = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z'], memorySize= 10, frames = 1000):
