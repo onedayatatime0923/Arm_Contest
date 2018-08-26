@@ -1,5 +1,6 @@
 
 import serial
+import collections
 
 
 class Sensor:
@@ -8,12 +9,12 @@ class Sensor:
         self.device = serial.Serial( device, freq, timeout = timeout)
         print('device {} is on {} with frequency {} Hz.'.format(self.device.name, self.device.port, self.device.baudrate))
         print('------------------------------ device initialized -------------------------------')
-        self.data = {'A':[0 for i in range(3)],
+        self.data = collections.OrderedDict({'A':[0 for i in range(3)],
                      'G':[0 for i in range(3)],
-                     'M':[0 for i in range(3)]}
-        self.flag = {'A':False,
+                     'M':[0 for i in range(3)]})
+        self.flag = collections.OrderedDict({'A':False,
                      'G':False,
-                     'M':False}
+                     'M':False})
         # represent accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ
     def read(self):
         while not all(value == True for value in self.flag.values()):
