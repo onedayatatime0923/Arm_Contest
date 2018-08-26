@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation 
 
 class Painter():
-    def __init__(self, name = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic X'], memorySize= 10, frames = 1000):
+    def __init__(self, name = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'], memorySize= 10, frames = 1000):
         self.name = name
         self.n = len(name)
         self.memorySize = memorySize
@@ -37,7 +37,7 @@ class Painter():
             self.line[i] = plt.plot(self.data[i][-self.memorySize:], label = self.name[i])[0]
         plt.xlim((0, self.memorySize))
         plt.ylim((-10, 10))
-        plt.legend(loc='upper right')
+        #plt.legend(loc='upper right')
 
     def _update(self, index): 
         for i in range(self.n):
