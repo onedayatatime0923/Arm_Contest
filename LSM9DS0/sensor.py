@@ -17,6 +17,7 @@ class Sensor:
         # represent accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ
     def read(self):
         while not all(value == True for value in self.flag.values()):
+            print(self.flag)
             pass
         for key in self.flag:
                 self.flag[key] = False
@@ -29,6 +30,7 @@ class Sensor:
             self.data[(data[0][:-1]).decode('ascii')][1]= float(data[2][:-1])
             self.data[(data[0][:-1]).decode('ascii')][2]= float(data[3])
             self.flag[(data[0][:-1]).decode('ascii')]= True
+            print(self.flag[(data[0][:-1]).decode('ascii')])
         else: 
             return False
 
