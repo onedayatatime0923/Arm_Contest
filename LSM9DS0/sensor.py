@@ -11,10 +11,15 @@ class Sensor:
         self.data = {'A':[0 for i in range(3)],
                      'G':[0 for i in range(3)],
                      'M':[0 for i in range(3)]}
-        # represent accelX accelY accelZ gyroX gyroY gyroZ
+        self.flag = {'A':False,
+                     'G':False,
+                     'M':False}
+        # represent accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ
     def read(self):
-        while not self._read():
+        while not all(value == True for value in self.flag.values()):
             pass
+        for key in self.flag:
+                self.flag[key] = False
         return self.data
     def _read(self):
         data = self.device.readline()
@@ -23,7 +28,7 @@ class Sensor:
             self.data[(data[0][:-1]).decode('ascii')][0]= float(data[1][:-1])
             self.data[(data[0][:-1]).decode('ascii')][1]= float(data[2][:-1])
             self.data[(data[0][:-1]).decode('ascii')][2]= float(data[3])
-            return True
+            self.flag[(data[0][:-1]).decode('ascii')]= True
         else: 
             return False
 

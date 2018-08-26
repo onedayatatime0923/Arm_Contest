@@ -11,7 +11,6 @@ class Visualizer():
         for n in range(data):
             message += '{} X: {} Y: {} Z:{} | '.format(
                 n, data[n][0], data[n][1], data[n][2])
-
         print(message, flush = True)
 
 if __name__ == '__main__':
