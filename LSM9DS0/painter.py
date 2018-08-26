@@ -15,7 +15,9 @@ class Painter():
         self.line = [None for i in range(self.n)]
 
     def __call__(self, data):
-        data = np.concatenate(list(data.values()), 0)
+        data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
+        print(data.shape)
+        print(self.data.shape)
         self.data = np.append(self.data, data, 1)
         print(self.data)
         input()
