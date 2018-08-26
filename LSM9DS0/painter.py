@@ -37,7 +37,10 @@ class Painter():
         for i in self.verbose:
             self.line[i] = plt.plot(self.data[i][-self.memorySize:], label = self.name[i])[0]
         plt.xlim((0, self.memorySize))
-        plt.ylim((-2, 2))
+        if 3 in self.verbose and 4 in self.verbose and 5 in self.verbose:
+            plt.ylim((-300, 300))
+        else:
+            plt.ylim((-2, 2))
         plt.legend(loc='upper right')
 
     def _update(self, index): 
