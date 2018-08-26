@@ -1,5 +1,4 @@
 
-import numpy as np
 import serial
 
 
@@ -16,7 +15,7 @@ class Sensor:
     def read(self):
         while not self._read():
             pass
-        return np.array(self.data)
+        return self.data
     def _read(self):
         data = self.device.readline()
         data = data.split()
