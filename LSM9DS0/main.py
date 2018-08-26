@@ -12,6 +12,7 @@ painter = Painter()
 process = multiprocessing.Process(target=painter.plot,args=())
 process.start()
 
+'''
 def main():
     while True:
         data = sensor.read()
@@ -19,3 +20,4 @@ def main():
         visualizer(data)
         #painter(data)
 main()
+'''
