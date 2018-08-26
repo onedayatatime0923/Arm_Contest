@@ -1,8 +1,10 @@
 
+import threading as td
+import numpy as np
+
 from visualizer import Visualizer
 from painter import Painter
 from sensor import Sensor
-import threading as td
 #from filter import Filter
 
 sensor = Sensor("/dev/cu.usbmodem1413")
@@ -15,6 +17,7 @@ def main():
         data = sensor.read()
         #data = filter.update(sensor.read())
         visualizer(data)
+        data['G'] = np.array([0,0,0])
         painter(data)
 
 td.Thread(target=main).start()

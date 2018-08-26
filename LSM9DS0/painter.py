@@ -35,6 +35,9 @@ class Painter():
     def _init(self):
         for i in range(self.n):
             self.line[i] = plt.plot(self.data[i][-self.memorySize:], label = self.name[i])[0]
+        plt.xlim((-10, 10))
+        plt.ylim((-10, 10))
+        plt.legend(loc='upper right')
 
     def _update(self, index): 
         for i in range(self.n):
