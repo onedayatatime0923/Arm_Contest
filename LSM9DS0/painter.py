@@ -26,7 +26,7 @@ class Painter():
         self.animation = animation.FuncAnimation(
                 fig=fig,
                 func=self._update,
-                frames=self.frames,
+                #frames=self.frames,
                 init_func=self._init,
                 interval=20,
                 blit=False)
