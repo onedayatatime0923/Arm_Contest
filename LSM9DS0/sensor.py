@@ -24,14 +24,16 @@ class Sensor:
             print('check')
             print(data)
             input()
-            if( data[0] == '\rA:'):
-                self.data[1]= float(data[1][:-1])
-                self.data[2]= float(data[2][:-1])
-                self.data[3]= float(data[3])
-            if( data[0] == '\rG:'):
-                self.data[5]= float(data[1][:-1])
-                self.data[6]= float(data[2][:-1])
-                self.data[7]= float(data[3])
+            if( data[0] == 'A:'):
+                self.data[0]= float(data[1][:-1])
+                self.data[1]= float(data[2][:-1])
+                self.data[2]= float(data[3])
+                print(self.data[0:3])
+            if( data[0] == 'G:'):
+                self.data[3]= float(data[1][:-1])
+                self.data[4]= float(data[2][:-1])
+                self.data[5]= float(data[3])
+                print(self.data[3:6])
             return True
         else: 
             return False
