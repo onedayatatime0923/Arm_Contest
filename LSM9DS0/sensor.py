@@ -30,7 +30,6 @@ class Sensor:
             self.data[(data[0][:-1]).decode('ascii')][1]= float(data[2][:-1])
             self.data[(data[0][:-1]).decode('ascii')][2]= float(data[3])
             self.flag[(data[0][:-1]).decode('ascii')]= True
-            print(self.flag[(data[0][:-1]).decode('ascii')])
         else: 
             return False
 
