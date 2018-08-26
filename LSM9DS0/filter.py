@@ -33,7 +33,6 @@ class Filter:
 
     def update(self, data):
         data = self.convert(data)
-        print(data)
         self.filter.predict()
         self.filter.update(data)
         return self.filter.x
