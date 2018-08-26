@@ -4,7 +4,7 @@ from painter import Painter
 from sensor import Sensor
 #from filter import Filter
 
-sensor = Sensor()
+sensor = Sensor("/dev/cu.usbmodem1413")
 #filter = Filter(6,6)
 visualizer = Visualizer()
 painter = Painter()
