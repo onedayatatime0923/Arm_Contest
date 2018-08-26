@@ -16,7 +16,9 @@ class Painter():
 
     def __call__(self, data):
         data = np.concatenate(list(data.values()), 0)
-        self.data = np.append(self.data, data)
+        self.data = np.append(self.data, data, 1)
+        print(self.data)
+        input()
 
     def plot(self):
         fig = plt.figure() 
@@ -33,11 +35,15 @@ class Painter():
         self.ani.save(path, fps=30, extra_args=['-vcodec', 'libx264'])
 
     def _init(self):
+        print(self.data)
+        input()
         for i in range(self.n):
             self.line[i] = plt.plot(self.data[i][:-self.memorySize], label = self.name[i])[0]
 
     def _update(self, index): 
         for i in range(self.n):
+            print(self.data[i].shape)
+            print(self.line[i])
             self.line[i].set_ydata(self.data[i][:-self.memorySize])
 
 if __name__ == '__main__':
