@@ -4,6 +4,7 @@ import matplotlib.animation as animation
 
 class Painter():
     def __init__(self, name = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic X'], memorySize= 10, frames = 1000):
+        self.name = name
         self.n = len(name)
         self.memorySize = memorySize
         self.data = np.zeros((self.n, self.memorySize))
