@@ -40,13 +40,13 @@ class Painter():
         print(self.data)
         input()
         for i in range(self.n):
-            self.line[i] = plt.plot(self.data[i][:-self.memorySize], label = self.name[i])[0]
+            self.line[i] = plt.plot(self.data[i][-self.memorySize:], label = self.name[i])[0]
 
     def _update(self, index): 
         for i in range(self.n):
             print(self.data[i].shape)
             print(self.line[i])
-            self.line[i].set_ydata(self.data[i][:-self.memorySize])
+            self.line[i].set_ydata(self.data[i][-self.memorySize:])
 
 if __name__ == '__main__':
     p = Painter()
