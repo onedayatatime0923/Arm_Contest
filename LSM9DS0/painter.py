@@ -14,7 +14,7 @@ class Painter():
         self.line = [None for i in range(self.n)]
 
     def __call__(self, data):
-        data = np.concatenate(list(data.values(), 0))
+        data = np.concatenate(list(data.values()), 0)
         self.data = np.append(self.data, data)
 
     def plot(self):
