@@ -10,7 +10,7 @@ class Visualizer():
         message = '\x1b[2K\r'
         for n in range(len(self.name)):
             message += '{}: {:>8.4f} | '.format(
-                self.name[n], data[n])
+                self.name[n], float(data[n]))
         print(message, flush = True)
 
 if __name__ == '__main__':
