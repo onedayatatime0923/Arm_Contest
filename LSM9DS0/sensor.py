@@ -17,7 +17,7 @@ class Sensor:
         # represent accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ
     def read(self):
         while not all(value == True for value in self.flag.values()):
-            print(self.flag)
+            self._read()
             pass
         for key in self.flag:
                 self.flag[key] = False
