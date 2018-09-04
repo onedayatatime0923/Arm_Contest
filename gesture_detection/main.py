@@ -3,14 +3,14 @@ import multiprocessing as mp
 import torch
 from torch.nn import Variable
 
-from options import SensorOptions
+from options import MainOptions
 from visualizer import SensorVisualizer, Painter
 from sensor import Sensor
 from filter import Filter
 from models import createModel
 assert mp
 
-parser = SensorOptions()
+parser = MainOptions()
 opt = parser.parse()
 
 sensor = Sensor(opt.port)
