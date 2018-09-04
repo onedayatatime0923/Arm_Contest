@@ -15,8 +15,8 @@ opt = parser.parse()
 
 sensor = Sensor(opt.port)
 filter = Filter(opt.n, opt.n)
-visualizer = SensorVisualizer(name = opt.name)
-painter = Painter(name = opt.name, verbose = opt.verbose, memorySize = opt.memorySize, ylim = opt.ylim )
+visualizer = SensorVisualizer(name = opt.repr)
+painter = Painter(name = opt.repr, verbose = opt.display, memorySize = opt.memorySize, ylim = opt.ylim )
 
 # set model
 
