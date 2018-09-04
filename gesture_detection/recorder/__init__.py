@@ -34,3 +34,4 @@ class Recorder():
         self.X = []
         self.Y = []
         print('saved data to {}...'.format(path))
+        input()
