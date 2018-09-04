@@ -7,7 +7,7 @@ from options.base_options import BaseOptions
 
 class MainOptions(BaseOptions):
     def __init__(self):
-        BaseOptions.__init__()
+        BaseOptions.__init__(self)
     def initialize(self, parser):
         parser = BaseOptions.initialize(self, parser)
         # ---------- Define Network ---------- #
