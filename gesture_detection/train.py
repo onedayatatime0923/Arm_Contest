@@ -8,6 +8,7 @@ from options import TrainOptions
 from dataset import createDataset
 from models import createModel
 from visualizer import TrainVisualizer
+import errno
 
 assert Variable
 
@@ -53,7 +54,17 @@ for epoch in range(opt.epoch, opt.nEpochStart + opt.nEpochDecay + 1):
         if steps % opt.saveLatestInterval == 0:
             print('\nsaving the latest model (epoch %d, total_steps %d)' % (epoch, steps))
             model.save_networks('latest')
-    visualizer.end('Train', epoch, data = model.current_accus())
+
+    while True:
+        try:
+            visualizer.end('Train', epoch, data = model.current_accus())
+        except IOError, e:
+            if e.errno != errno.EINTR:
+                raise
+        else:
+            break
+    
+    
 
     # val
     for i, data in enumerate(valDataLoader):
@@ -64,7 +75,15 @@ for epoch in range(opt.epoch, opt.nEpochStart + opt.nEpochDecay + 1):
 
         visualizer('val', epoch, data = model.current_losses())
 
-    visualizer.end('Val', epoch, data = model.current_accus())
+    while True:
+        try:
+            visualizer.end('Val', epoch, data = model.current_accus())
+        except IOError, e:
+            if e.errno != errno.EINTR:
+                raise
+        else:
+            break
+
 
     if epoch % opt.saveEpochInterval == 0:
         print('\nsaving the model at the end of epoch %d, iters %d' % (epoch, steps))
