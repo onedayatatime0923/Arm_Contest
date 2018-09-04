@@ -9,12 +9,12 @@ class BinaryDataSet(BaseDataset):
     def __init__(self, opt):
         self.opt = opt
 
-        self.files = os.listdir(self.opt.dataDir)
+        self.files = os.listdir(os.path.join(opt.dataDir, opt.split))
 
         signal = []
         label = []
         for f in self.files:
-            s, l = (np.load(os.path.join(self.dataDir, f)))
+            s, l = (np.load(os.path.join(opt.dataDir, opt.split, f)))
             signal.append(s)
             label.append(l)
         self.signal = np.concatenate(signal,0)

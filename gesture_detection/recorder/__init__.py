@@ -26,9 +26,9 @@ class Recorder():
 
     def dump_data(self):
         index = 0
-        path = os.path.join(self.opt.dataDir, '{}.npy'.format(index))
+        path = os.path.join(self.opt.dataDir, self.opt.split, '{}.npy'.format(index))
         while os.path.exists(path):
-            path = os.path.join(self.opt.dataDir, '{}.npy'.format(index))
+            path = os.path.join(self.opt.dataDir, self.opt.split, '{}.npy'.format(index))
             index += 1
         np.save(path, np.array([self.X, self.Y]))
         self.X = []

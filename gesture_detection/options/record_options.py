@@ -12,6 +12,8 @@ class RecorderOptions(BaseOptions):
         # ---------- Define Recorder ---------- #
         parser.add_argument('--mode', type=str, choice = ['stop', 'move'],
                 default = 'stop')
+        parser.add_argument('--split', type=str, choice = ['train', 'val'],
+                default = 'val')
         parser.add_argument('--recordInterval', type=int,
                 default = 100)
         return parser
