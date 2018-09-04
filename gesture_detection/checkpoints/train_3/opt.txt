@@ -1,0 +1,38 @@
+-------------------- Options ------------------
+                 adjustLr: False                         
+                batchSize: 1                             
+                    beta1: 0.5                           
+          checkpoints_dir: ./checkpoints                 
+                 dataPath: ./data/data.npy               
+                  display: [0, 1, 2, 3, 4, 5, 6, 7, 8]   
+                    epoch: 1                             
+                  expPath: ./checkpoints/train_3         	[default: None]
+                   gpuIds: [0]                           
+                  logPath: ./checkpoints/train_3/log     	[default: None]
+                       lr: 0.001                         
+           lr_decay_iters: 50                            
+                lr_policy: lambda                        
+               memorySize: 10                            
+                     mode: train                         
+                    model: binary                        
+                modelPath: ./checkpoints/train_3/model   	[default: None]
+                 momentum: 0.9                           
+                        n: 9                             
+              nEpochDecay: 1                             
+              nEpochStart: 1                             
+                 nThreads: 4                             
+                     name: train                         
+                      ncf: 64                            
+                      opt: adam                          
+                     port: /dev/cu.usbmodem1413          
+               pretrained: False                         
+           pretrainedRoot: pretrained/                   
+                     repr: ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z']
+                   resume: False                         
+               resumeName: latest                        
+        saveEpochInterval: 5                             
+       saveLatestInterval: 5000                          
+                  verbose: False                         
+             weight_decay: 2e-05                         
+                     ylim: 2                             
+-------------------- End ----------------------
