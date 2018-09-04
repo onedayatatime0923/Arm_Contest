@@ -40,11 +40,6 @@ class TrainOptions(BaseOptions):
                             help='# of epoch at starting learning rate')
         parser.add_argument('--nEpochDecay', type=int, default=100,
                             help='# of epoch to linearly decay learning rate to zero')
-        # ---------- Whether to Resume ---------- #
-        parser.add_argument("--resume", action = 'store_true',
-                            help="whether to resume")
-        parser.add_argument("--resumeName", type=str, default='latest',
-                            help="model(pth) path, set to latest to use latest cached model")
         # ---------- Experiment Setting ---------- #
         parser.set_defaults(name= 'train')
         parser.add_argument('--verbose', action='store_true', 

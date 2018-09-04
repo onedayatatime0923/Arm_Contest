@@ -32,6 +32,11 @@ class BaseOptions():
                 default = list(range(9)))
         parser.add_argument('--memorySize', type=int, default = 10)
         parser.add_argument('--ylim', type=int, default = 2)
+        # ---------- Whether to Resume ---------- #
+        parser.add_argument("--resume", action = 'store_true',
+                            help="whether to resume")
+        parser.add_argument("--resumeName", type=str, default='latest',
+                            help="model(pth) path, set to latest to use latest cached model")
         # ---------- Experiment Setting ---------- #
         parser.add_argument('--name', type=str,default = 'Sensor',
                             help='name of the experiment. It decides where to store samples and models')
