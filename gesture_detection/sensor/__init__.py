@@ -42,6 +42,8 @@ class Sensor:
         return data
     def flush(self):
         self.device.flushInput()
+        self.device.flush()
+        self.device.flushOutput()
         
 
 if __name__ == '__main__':
