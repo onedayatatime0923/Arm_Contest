@@ -1,13 +1,13 @@
 
 import numpy as np
-from serial import Serial
+import serial
 import collections
 
 
 class Sensor:
     def __init__(self, device = '/dev/tty0', freq = 9600, timeout = 3):
         print('------------------------------ device initializing ------------------------------')
-        self.device = Serial( device, freq, timeout = timeout)
+        self.device = serial.Serial( device, freq, timeout = timeout)
         print('device {} is on {} with frequency {} Hz.'.format(self.device.name, self.device.port, self.device.baudrate))
         print('------------------------------ device initialized -------------------------------')
         self.data = collections.OrderedDict()

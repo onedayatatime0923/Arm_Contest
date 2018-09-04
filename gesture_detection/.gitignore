@@ -2,3 +2,14 @@
 .*
 !.gitignore
 __pycache__/*
+checkpoints/*
+dataset/.*
+dataset/__pycache__/*
+model/.*
+model/__pycache__/*
+options/.*
+options/__pycache__/*
+utils/.*
+utils/__pycache__/*
+visulizer/.*
+visulizer/__pycache__/*
