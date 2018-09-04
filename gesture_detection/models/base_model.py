@@ -91,7 +91,7 @@ class BaseModel():
             save_path = os.path.join(self.opt.modelPath, save_filename)
             net = getattr(self, name)
 
-            if len(self.opt.gpuIds) > 0:
+            if self.opt.gpuIds[0] != -1:
                 torch.save(net.module.cpu().state_dict(), save_path)
                 net.to(self.opt.device)
             else:
