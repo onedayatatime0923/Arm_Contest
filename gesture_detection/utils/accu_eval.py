@@ -34,5 +34,5 @@ if __name__ == '__main__':
         a = torch.LongTensor(n).random_(0, c)
         b = torch.LongTensor(n).random_(0, c)
         iouEval.update(a,b)
-        print('\r{}'.format(i), end = '')
+        print('\r{}'.format(i), )
     print('elapsed_time: {}'.format(time.time() - start_time))

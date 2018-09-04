@@ -34,7 +34,7 @@ class BaseVisualizer():
         self.nStep += 1
         message += '|Time: {}'.format(
                 self.timer(((self.nStep * self.stepSize)+ 1E-3) / self.totalSize))
-        print(message, end = '', flush = True)
+        print(message, )
     def end(self, name, epoch, data=[]): 
         message = '\x1b[2K\r'
         message += '{} Epoch:{}|[{}/{} ({:.0f}%)]|Time: {}\n'.format( 

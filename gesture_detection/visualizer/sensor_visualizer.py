@@ -10,7 +10,7 @@ class SensorVisualizer(BaseVisualizer):
         for n in range(len(self.name)):
             message += '{}: {:>8.4f} | '.format(
                 self.name[n], float(data[n]))
-        print(message, flush = True)
+        print(message)
 
 if __name__ == '__main__':
     v = SensorVisualizer()
