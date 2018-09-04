@@ -1,7 +1,5 @@
 
 import collections
-import torch
-import torchvision.utils
 from utils import Timer
 from tensorboardX import SummaryWriter
 
@@ -52,6 +50,7 @@ class BaseVisualizer():
     def displayScalor(self, data, step):
         for i in data:
             self.writer.add_scalar(i, data[i] ,step)
+'''
     def displayImage(self, data, step, name = 'Image'):
         image = []
         for name in data:
@@ -60,3 +59,4 @@ class BaseVisualizer():
         image= torchvision.utils.make_grid(torch.cat(
             image, 0), nrow = self.displayWidth, normalize = True, range=(0,1))
         self.writer.add_image(name , image, step)
+'''
