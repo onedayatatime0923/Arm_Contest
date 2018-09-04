@@ -10,7 +10,7 @@ class TrainOptions(BaseOptions):
     def initialize(self, parser):
         parser = BaseOptions.initialize(self, parser)
         # ---------- Define Mode ---------- #
-        parser.set_defaults(pretrained = 'train')
+        parser.set_defaults(mode = 'train')
         # ---------- Define Dataset ---------- #
         parser.add_argument('--split', type=str, choices = ['train', 'val'],
                 default = 'train')
