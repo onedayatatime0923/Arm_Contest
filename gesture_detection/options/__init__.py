@@ -1,4 +1,5 @@
 
 from options.train_options import TrainOptions
-assert TrainOptions
+from options.sensor_options import SensorOptions
+assert TrainOptions and SensorOptions
 

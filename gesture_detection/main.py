@@ -1,19 +1,18 @@
 
-import threading as td
+import multiprocessing as mp
 
-from options import TrainOptions
-from visualizer.visualizer import Visualizer
-from painter import Painter
+from options import SensorOptions
+from visualizer import SensorVisualizer, Painter
 from sensor import Sensor
 from filter import Filter
 
 
-parser = TrainOptions()
+parser = SensorOptions()
 opt = parser.parse()
 
 sensor = Sensor(opt.port)
 filter = Filter(opt.n, opt.n)
-visualizer = Visualizer( name = opt.name)
+visualizer = SensorVisualizer(name = opt.name)
 painter = Painter(name = opt.name, verbose = opt.verbose, memorySize = opt.memorySize, ylim = opt.ylim )
 
 def main():
@@ -22,5 +21,6 @@ def main():
         visualizer(data)
         painter(data)
 
-td.Thread(target=main).start()
+p1 = mp.Process(target=main)
+p1.start()
 painter.plot()

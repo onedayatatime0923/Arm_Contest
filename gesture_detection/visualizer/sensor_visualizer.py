@@ -1,9 +1,8 @@
 
-import numpy as np
-assert np
+from visualizer.base_visualizer import BaseVisualizer
 
 
-class Visualizer():
+class SensorVisualizer(BaseVisualizer):
     def __init__(self, name = ['A X', 'A Y', 'A Z', 'G X', 'G Y', 'G Z', 'M X', 'M Y', 'M Z']):
         self.name = name
     def __call__(self, data):
@@ -14,6 +13,6 @@ class Visualizer():
         print(message, flush = True)
 
 if __name__ == '__main__':
-    v = Visualizer()
+    v = SensorVisualizer()
 
 
