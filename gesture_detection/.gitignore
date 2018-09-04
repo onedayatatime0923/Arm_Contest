@@ -11,5 +11,5 @@ options/.*
 options/__pycache__/*
 utils/.*
 utils/__pycache__/*
-visulizer/.*
-visulizer/__pycache__/*
+visualizer/.*
+visualizer/__pycache__/*
