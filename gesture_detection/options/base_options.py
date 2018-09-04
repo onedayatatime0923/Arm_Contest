@@ -25,7 +25,9 @@ class BaseOptions():
         # ---------- Experiment Setting ---------- #
         parser.add_argument('--name', type=str,default = 'Sensor',
                             help='name of the experiment. It decides where to store samples and models')
-        parser.add_argument('--checkpoints_dir', type=str, default='./checkpoints', 
+        parser.add_argument('--checkpointsDir', type=str, default='./checkpoints', 
+                            help='models are saved here')
+        parser.add_argument('--dataDir', type=str, default='./data', 
                             help='models are saved here')
         return parser
 
@@ -38,12 +40,12 @@ class BaseOptions():
         self.parser = parser
         self.opt = parser.parse_args()
 
-    def construct_checkpoint(self,creatDir = True):
+    def construct_checkpoints(self,creatDir = True):
         if creatDir:
             index = 0
-            path = os.path.join(self.opt.checkpoints_dir, self.opt.name)
+            path = os.path.join(self.opt.checkpointsDir, self.opt.name)
             while os.path.exists(path):
-                path = os.path.join(self.opt.checkpoints_dir, '{}_{}'.format(self.opt.name,index))
+                path = os.path.join(self.opt.checkpointsDir, '{}_{}'.format(self.opt.name,index))
                 index += 1
             self.opt.expPath = path
             self.opt.logPath = os.path.join(self.opt.expPath, 'log')
@@ -52,7 +54,7 @@ class BaseOptions():
             os.makedirs(self.opt.logPath)
             os.makedirs(self.opt.modelPath)
         else:
-            self.opt.expPath = os.path.join(self.opt.checkpoints_dir, self.opt.name)
+            self.opt.expPath = os.path.join(self.opt.checkpointsDir, self.opt.name)
             self.opt.logPath = os.path.join(self.opt.expPath, 'log')
             self.opt.modelPath = os.path.join(self.opt.expPath, 'model')
             assert( os.path.exists(self.opt.expPath) and os.path.exists(self.opt.logPath) and os.path.exists(self.opt.modelPath) )
@@ -108,7 +110,7 @@ class BaseOptions():
     def parse(self):
         # gather options
         self.gather_options()
-        self.construct_checkpoint(creatDir = True)
+        self.construct_checkpoints(creatDir = True)
 
         # print options
         self.construct_message()
