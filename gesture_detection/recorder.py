@@ -22,7 +22,7 @@ def main():
         data = sensor.read()
         data = filter.update(data)
         recorder(data)
-        #visualizer(data)
+        visualizer(data)
     
 if(__name__ == '__main__'):
     main()
