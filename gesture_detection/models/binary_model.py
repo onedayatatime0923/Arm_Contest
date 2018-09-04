@@ -8,7 +8,7 @@ from models.base_model import BaseModel, getOptimizer
 
 class BinaryModel(BaseModel):
     def __init__(self, opt):
-        super(BinaryModel, self).__init__(opt)
+        BaseModel.__init__(self, opt)
         print('-------------- Networks initializing -------------')
 
         # specify the training losses you want to print out. The program will call base_model.get_current_losses
