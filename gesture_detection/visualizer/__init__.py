@@ -6,4 +6,5 @@ from visualizer.painter import Painter
 
 assert BaseVisualizer
 #assert TrainVisualizer
+assert SensorVisualizer
 assert Painter
