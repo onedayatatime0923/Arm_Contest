@@ -16,24 +16,11 @@ class MainOptions(BaseOptions):
     def parse(self):
         # gather options
         self.gather_options()
-        if self.opt.mode == 'train' and not self.opt.resume:
-            self.construct_checkpoints(creatDir = True)
-        elif self.opt.mode == 'train' and self.opt.resume:
-            self.construct_checkpoints(creatDir = False)
-        elif self.opt.mode == 'test':
-            self.construct_checkpoints(creatDir = False)
-            self.construct_outputPath()
-
-        # continue to train
-        if self.opt.mode == 'train' and self.opt.resume:
-            self.load_options('opt.txt')
+        self.construct_checkpoints(creatDir = True)
 
         # print options
         self.construct_message()
-        if self.opt.mode == 'train' and not self.opt.resume:
-            self.save_options('opt.txt')
-        if self.opt.mode == 'test':
-            self.save_options('test_opt.txt')
+        self.save_options('opt.txt')
         self.print_options()
 
         # set gpu ids
