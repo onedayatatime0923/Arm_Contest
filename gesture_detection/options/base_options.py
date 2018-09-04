@@ -12,8 +12,8 @@ class BaseOptions():
 
     def initialize(self, parser):
         # ---------- Define Mode ---------- #
-        parser.add_argument('--mode', type=str, choices = ['train','test'], default = 'test',
-                            help="Model Mode")
+        parser.add_argument('--mode', type=str, choices = ['train','test', 'use'],
+                default = 'use', help="Model Mode")
         # ---------- Define Device ---------- #
         parser.add_argument('--port', type=str, default = '/dev/cu.usbmodem1413')
         parser.add_argument('--n', type=int, default = 9)
@@ -21,7 +21,7 @@ class BaseOptions():
                 default = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 
                     'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'])
         # ---------- Define Network ---------- #
-        parser.add_argument('--gpuIds', type=int, nargs = '+', default=[0], help='gpu ids: e.g. 0, 0 1, 0 1 2,  use -1 for CPU')
+        parser.add_argument('--gpuIds', type=int, nargs = '+', default=[-1], help='gpu ids: e.g. 0, 0 1, 0 1 2,  use -1 for CPU')
         parser.add_argument('--model', type=str, default = 'binary',
                             help="Method Name")
         parser.add_argument('--ncf', type=int, default= 64, help= 'number of filters')
