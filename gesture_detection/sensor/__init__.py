@@ -5,9 +5,12 @@ import collections
 
 
 class Sensor:
-    def __init__(self, device = '/dev/tty0', freq = 9600, timeout = 3):
+    def __init__(self, port = '/dev/tty0', freq = 9600, timeout = 3):
+        self.port = port
+        self.freq = freq
+        self.timeout = timeout
         print('------------------------------ device initializing ------------------------------')
-        self.device = serial.Serial( device, freq, timeout = timeout)
+        self.device = serial.Serial( port, freq, timeout = timeout)
         print('device {} is on {} with frequency {} Hz.'.format(self.device.name, self.device.port, self.device.baudrate))
         print('------------------------------ device initialized -------------------------------')
         self.data = collections.OrderedDict()
@@ -41,9 +44,10 @@ class Sensor:
         data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
         return data
     def flush(self):
-        self.device.flushInput()
-        self.device.flush()
-        self.device.flushOutput()
+        self.device.close()
+        print('------------------------------ device initializing ------------------------------')
+        self.device = serial.Serial( self.port, self.freq, timeout = self.timeout)
+        print('device {} is on {} with frequency {} Hz.'.format(self.device.name, self.device.port, self.device.baudrate))
         
 
 if __name__ == '__main__':
