@@ -7,4 +7,3 @@ assert BinaryDataSet and ConcatDataset
 
 def createDataset(opt, split):
     return BinaryDataSet(opt.dataDir, split)
-
