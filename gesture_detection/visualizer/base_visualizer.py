@@ -1,7 +1,7 @@
 
 import collections
 from utils import Timer
-from tensorboardX import SummaryWriter
+#from tensorboardX import SummaryWriter
 
 class BaseVisualizer():
     def __init__(self, stepSize, totalSize, logPath = None, displayWidth=1):
@@ -13,7 +13,8 @@ class BaseVisualizer():
         self.data = None
         # set writer
         if logPath is not None:
-            self.writer = SummaryWriter(logPath)
+            #self.writer = SummaryWriter(logPath)
+            pass
         self.displayWidth = displayWidth
         # reset
         self.reset()
