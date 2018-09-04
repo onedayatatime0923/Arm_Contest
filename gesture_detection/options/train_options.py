@@ -1,5 +1,4 @@
 
-import torch
 import sys
 sys.path.append('./')
 from options.base_options import BaseOptions
@@ -85,9 +84,3 @@ class TrainOptions(BaseOptions):
         self.construct_device()
 
         return self.opt
-    def construct_device(self):
-        # set gpu ids
-        if self.opt.gpuIds[0] != -1:
-            self.opt.device = torch.device(self.opt.gpuIds[0])
-        else:
-            self.opt.device = torch.device('cpu')

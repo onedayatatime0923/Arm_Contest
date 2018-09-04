@@ -1,4 +1,5 @@
 
+import torch
 import argparse, os
 from ast import literal_eval
 
@@ -105,6 +106,13 @@ class BaseOptions():
         
     def print_options(self):
         print(self.message)
+
+    def construct_device(self):
+        # set gpu ids
+        if self.opt.gpuIds[0] != -1:
+            self.opt.device = torch.device(self.opt.gpuIds[0])
+        else:
+            self.opt.device = torch.device('cpu')
 
     def parse(self):
         # gather options

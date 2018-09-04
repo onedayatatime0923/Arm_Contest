@@ -149,7 +149,7 @@ class BaseModel():
                     param.requires_grad = requires_grad
 
     def initNet(self, net):
-        if len(self.opt.gpuIds) > 0:
+        if self.opt.gpuIds[0] != -1:
             assert(torch.cuda.is_available())
             net.to(self.opt.device)
             net = torch.nn.DataParallel(net, self.opt.gpuIds)
