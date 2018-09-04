@@ -43,6 +43,8 @@ class Sensor:
     def flush(self):
         self.device.reset_input_buffer()
         self.device.reset_output_buffer()
+        self.device.flush()
+        
 
 if __name__ == '__main__':
     sensor = Sensor()
