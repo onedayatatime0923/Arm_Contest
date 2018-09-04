@@ -76,7 +76,6 @@ class BaseOptions():
             self.opt.modelPath = os.path.join(self.opt.expPath, 'model')
             assert( os.path.exists(self.opt.expPath) and os.path.exists(self.opt.logPath) and os.path.exists(self.opt.modelPath) )
 
-
     def load_options(self, path):
         # load from the disk
         file_name = os.path.join(self.opt.expPath, path)

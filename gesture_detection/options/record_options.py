@@ -10,7 +10,7 @@ class RecorderOptions(BaseOptions):
     def initialize(self, parser):
         parser = BaseOptions.initialize(self, parser)
         # ---------- Define Recorder ---------- #
-        parser.add_argument('--mode', type=str, choices = ['stop', 'move'],
+        parser.add_argument('--action', type=str, choices = ['stop', 'move'],
                 default = 'stop')
         parser.add_argument('--split', type=str, choices = ['train', 'val'],
                 default = 'train')

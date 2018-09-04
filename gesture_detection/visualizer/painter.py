@@ -5,13 +5,13 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation 
 
 class Painter():
-    def __init__(self, name = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'], verbose = None, memorySize = 10, ylim = [2, -2]):
-        self.n = len(name)
-        self.name = name
-        if verbose is None:
-            self.verbose = list(range(self.n))
+    def __init__(self, repr = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'], display= None, memorySize = 10, ylim = [2, -2]):
+        self.n = len(repr)
+        self.repr = repr
+        if display is None:
+            self.display = list(range(self.n))
         else:
-            self.verbose = verbose
+            self.display = display
         self.memorySize = memorySize
         if isinstance(ylim, numbers.Number):
             self.ylim = (ylim, ylim)
@@ -39,14 +39,14 @@ class Painter():
         self.animation.save(path, fps=30, extra_args=['-vcodec', 'libx264'])
 
     def _init(self):
-        for i in self.verbose:
-            self.line[i] = plt.plot(self.data[i][-self.memorySize:], label = self.name[i])[0]
+        for i in self.display:
+            self.line[i] = plt.plot(self.data[i][-self.memorySize:], label = self.repr[i])[0]
         plt.xlim((0, self.memorySize))
         plt.ylim(self.ylim)
         plt.legend(loc='upper right')
 
     def _update(self, index): 
-        for i in self.verbose:
+        for i in self.display:
             self.line[i].set_ydata(self.data[i][-self.memorySize:])
 
     
