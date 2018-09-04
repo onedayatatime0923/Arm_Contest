@@ -12,8 +12,6 @@ class TrainOptions(BaseOptions):
         # ---------- Define Mode ---------- #
         parser.set_defaults(mode = 'train')
         # ---------- Define Dataset ---------- #
-        parser.add_argument('--split', type=str, choices = ['train', 'val'],
-                default = 'train')
         parser.add_argument('--nThreads', default=4, type=int, help='# threads for loading data')
         # ---------- Optimizers ---------- #
         parser.add_argument('--opt', type=str, choices=['sgd', 'adam'], default='adam',

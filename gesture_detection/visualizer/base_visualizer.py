@@ -1,4 +1,5 @@
 
+import errno
 import collections
 from utils import Timer
 from tensorboardX import SummaryWriter
@@ -14,6 +15,8 @@ class BaseVisualizer():
         # set writer
         if logPath is not None:
             self.writer = SummaryWriter(logPath)
+        else:
+            self.writer = None
         self.displayWidth = displayWidth
         # reset
         self.reset()
@@ -45,12 +48,19 @@ class BaseVisualizer():
         if len(data) > 0:
             for name in data:
                 message += '{:>20}: {:.4f}\n'.format(name, data[name])
-        print message
+
+        while True:
+            try:
+                print(message)
+            except IOError, e:
+                if e.errno != errno.EINTR:
+                    raise
+            else:
+                break
         self.reset()
     def displayScalor(self, data, step):
         for i in data:
             self.writer.add_scalar(i, data[i] ,step)
-'''
     def displayImage(self, data, step, name = 'Image'):
         image = []
         for name in data:
@@ -59,4 +69,3 @@ class BaseVisualizer():
         image= torchvision.utils.make_grid(torch.cat(
             image, 0), nrow = self.displayWidth, normalize = True, range=(0,1))
         self.writer.add_image(name , image, step)
-'''
