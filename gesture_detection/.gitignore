@@ -5,6 +5,8 @@ __pycache__/*
 checkpoints/*
 dataset/.*
 dataset/__pycache__/*
+filter/.*
+filter/__pycache__/*
 model/.*
 model/__pycache__/*
 options/.*
