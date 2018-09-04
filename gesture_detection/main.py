@@ -1,7 +1,7 @@
 
 import multiprocessing as mp
 import torch
-from torch.nn import Variable
+from torch.autograd import Variable
 
 from options import MainOptions
 from visualizer import SensorVisualizer, Painter
