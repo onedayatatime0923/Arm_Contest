@@ -15,6 +15,9 @@ class Recorder():
         self.counter +=1
         if self.counter % self.opt.recordInterval == 0:
             self.dump_data()
+            return True
+        else:
+            return False
 
     def labeling(self, data):
         if self.opt.mode == 'stop':

@@ -21,7 +21,8 @@ def main():
     while True:
         data = sensor.read()
         data = filter.update(data)
-        recorder(data)
+        if recorder(data):
+            sensor.flush()
         visualizer(data)
     
 if(__name__ == '__main__'):

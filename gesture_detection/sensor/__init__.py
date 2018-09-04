@@ -40,6 +40,9 @@ class Sensor:
     def _convert(self,data):
         data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
         return data
+    def flush(self):
+        self.device.reset_input_buffer()
+        self.device.reset_output_buffer()
 
 if __name__ == '__main__':
     sensor = Sensor()
