@@ -14,15 +14,10 @@ class AccuEval:
         self.intersection = 0
         return self
 
-    def compute_hist(self, pred, gnd):
-        hist = torch.bincount((((self.nClass + 1) * gnd) + pred),minlength = (self.nClass + 1)**2)
-        hist = hist.view(self.nClass + 1, self.nClass + 1)[:-1,:-1]
-        return hist
-
     def update(self, pred, gnd):
         assert( pred.size() == gnd.size())
         self.area += pred.numel()
-        self.intersection += torch.sum(pred.eq(gnd))
+        self.intersection += int(torch.sum(pred.eq(gnd)))
 
     def metric(self):
         accu = self.intersection / ( self.area + self.epsilon)

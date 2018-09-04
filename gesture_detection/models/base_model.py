@@ -79,6 +79,7 @@ class BaseModel():
         for name in self.accuNames:
             # float(...) works for both scalar tensor and float number
             errors_ret[name] = getattr(self, name).metric()
+            getattr(self, name).reset()
         return errors_ret
 
     # save models to the disk

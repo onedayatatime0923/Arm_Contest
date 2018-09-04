@@ -6,16 +6,16 @@ from dataset.base_dataset import BaseDataset
 
 
 class BinaryDataSet(BaseDataset):
-    def __init__(self, opt):
-        self.opt = opt
+    def __init__(self, dataDir, split):
+        self.dataDir = dataDir
 
-        self.files = os.listdir(os.path.join(opt.dataDir, opt.split))
+        self.files = os.listdir(os.path.join(dataDir, split))
         print('reading from {}...'.format(' '.join(self.files)))
 
         signal = []
         label = []
         for f in self.files:
-            s, l = (np.load(os.path.join(opt.dataDir, opt.split, f)))
+            s, l = (np.load(os.path.join(dataDir, split, f)))
             signal.append(s)
             label.append(l)
         self.signal = np.concatenate(signal,0)

@@ -1,5 +1,6 @@
-import torch
 import itertools
+import torch
+from torch.autograd import Variable
 from utils import AccuEval
 from models.network.network import Classifier
 from models.base_model import BaseModel, getOptimizer
@@ -51,11 +52,16 @@ class BinaryModel(BaseModel):
         self.signal = input['signal'].to(self.opt.device)
         self.label = input['label'].to(self.opt.device)
 
+    def forward(self, data):
+        data = Variable(data)
+        output = self.netClassifier(data)
+        return  float(output) > 0.5
+
     def backward_classifier(self, retain_graph = False):
         output = self.netClassifier(self.signal)
 
-        pred = output.argmax(1)
-        self.accuClassifier.update(pred, self.label.squeeze(1).long())
+        pred = output>0.5
+        self.accuClassifier.update(pred, self.label.byte())
 
         lossClassifier = self.criterion(output, self.label)
         lossClassifier.backward( retain_graph = retain_graph)

@@ -5,6 +5,6 @@ from dataset.concat_dataset import ConcatDataset
 
 assert BinaryDataSet and ConcatDataset
 
-def createDataset(opt):
-    return BinaryDataSet(opt)
+def createDataset(opt, split):
+    return BinaryDataSet(opt.dataDir, split)
 
