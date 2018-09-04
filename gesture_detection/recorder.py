@@ -4,7 +4,7 @@ from options import RecorderOptions
 from visualizer import SensorVisualizer, Painter
 from sensor import Sensor
 #from filter import Filter
-from recoder import Recorder
+from recorder import Recorder
 
 parser = RecorderOptions()
 opt = parser.parse()
