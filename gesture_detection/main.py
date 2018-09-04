@@ -32,6 +32,7 @@ def main():
         visualizer(data)
         painter(data)
 
+main()
 #p1 = mp.Process(target=main)
 #p1.start()
-painter.plot()
+#painter.plot()
