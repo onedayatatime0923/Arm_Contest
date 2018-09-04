@@ -4,9 +4,9 @@ sys.path.append('./')
 from options.base_options import BaseOptions
 
 
-class SensorOptions(BaseOptions):
+class RecorderOptions(BaseOptions):
     def __init__(self):
-        super(SensorOptions, self).__init__()
+        super(RecorderOptions, self).__init__()
     def initialize(self, parser):
         parser = BaseOptions.initialize(self, parser)
         # ---------- Define Recorder ---------- #

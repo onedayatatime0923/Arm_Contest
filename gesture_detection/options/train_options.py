@@ -20,8 +20,6 @@ class TrainOptions(BaseOptions):
         parser.add_argument('--pretrained', action = 'store_true', help='whether to use pretrained model')
         parser.add_argument('--pretrainedRoot', type = str, default = 'pretrained/', help='path to load pretrained model')
         # ---------- Define Dataset ---------- #
-        parser.add_argument('--dataPath', type=str, default = './data/data.npy',
-                            help="data path")
         parser.add_argument('--nThreads', default=4, type=int, help='# threads for loading data')
         # ---------- Optimizers ---------- #
         parser.add_argument('--opt', type=str, choices=['sgd', 'adam'], default='adam',

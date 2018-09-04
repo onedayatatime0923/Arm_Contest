@@ -1,12 +1,12 @@
 
 
-from options import SensorOptions
+from options import RecorderOptions
 from visualizer import SensorVisualizer, Painter
 from sensor import Sensor
 from filter import Filter
 from recoder import Recorder
 
-parser = SensorOptions()
+parser = RecorderOptions()
 opt = parser.parse()
 
 sensor = Sensor(opt.port)
@@ -15,7 +15,6 @@ visualizer = SensorVisualizer(name = opt.name)
 painter = Painter(name = opt.name, verbose = opt.verbose, memorySize = opt.memorySize, ylim = opt.ylim )
 recorder = Recorder()
 
-counter = 0
 
 def main():
     while True:
