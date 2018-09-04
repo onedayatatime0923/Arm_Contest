@@ -57,6 +57,15 @@ class BinaryModel(BaseModel):
         output = self.netClassifier(data)
         return  float(output) > 0.5
 
+    def predict(self):
+        output = self.netClassifier(self.signal)
+
+        pred = output>0.5
+        self.accuClassifier.update(pred, self.label.byte())
+
+        lossClassifier = self.criterion(output, self.label)
+        self.lossClassifier = float(lossClassifier)
+
     def backward_classifier(self, retain_graph = False):
         output = self.netClassifier(self.signal)
 

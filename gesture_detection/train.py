@@ -53,30 +53,24 @@ for epoch in range(opt.epoch, opt.nEpochStart + opt.nEpochDecay + 1):
         if steps % opt.saveLatestInterval == 0:
             print('\nsaving the latest model (epoch %d, total_steps %d)' % (epoch, steps))
             model.save_networks('latest')
-
     visualizer.end('Train', epoch, data = model.current_accus())
+
     # val
     for i, data in enumerate(valDataLoader):
         steps += 1
 
         model.set_input(data)
-        model.optimize_parameters()
+        model.predict()
 
         visualizer('val', epoch, data = model.current_losses())
 
-        if steps % opt.displayInterval == 0:
-            visualizer.displayScalor(model.current_losses(),steps)
-
-        if steps % opt.saveLatestInterval == 0:
-            print('\nsaving the latest model (epoch %d, total_steps %d)' % (epoch, steps))
-            model.save_networks('latest')
+    visualizer.end('Val', epoch, data = model.current_accus())
 
     if epoch % opt.saveEpochInterval == 0:
         print('\nsaving the model at the end of epoch %d, iters %d' % (epoch, steps))
         model.save_networks('latest')
         model.save_networks(epoch)
 
-    visualizer.end('Val', epoch, data = model.current_accus())
     print('='*80)
     if opt.adjustLr:
         model.update_learning_rate()

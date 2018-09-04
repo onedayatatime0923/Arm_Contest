@@ -16,6 +16,13 @@ class BaseOptions():
         parser.add_argument('--repr', type=str, nargs = 9, 
                 default = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 
                     'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'])
+        # ---------- Define Network ---------- #
+        parser.add_argument('--gpuIds', type=int, nargs = '+', default=[0], help='gpu ids: e.g. 0, 0 1, 0 1 2,  use -1 for CPU')
+        parser.add_argument('--model', type=str, default = 'binary',
+                            help="Method Name")
+        parser.add_argument('--ncf', type=int, default= 64, help= 'number of filters')
+        parser.add_argument('--pretrained', action = 'store_true', help='whether to use pretrained model')
+        parser.add_argument('--pretrainedRoot', type = str, default = 'pretrained/', help='path to load pretrained model')
         # ---------- Define Painter ---------- #
         parser.add_argument('--display', type=int, nargs = '+', 
                 default = list(range(9)))
