@@ -42,8 +42,6 @@ class TrainOptions(BaseOptions):
                             help='# of epoch to linearly decay learning rate to zero')
         # ---------- Experiment Setting ---------- #
         parser.set_defaults(name= 'train')
-        parser.add_argument('--verbose', action='store_true', 
-                            help='if specified, print more debugging information')
         parser.add_argument('--displayInterval', type=int, default=5,
                             help='frequency of showing training results on screen')
         parser.add_argument('--saveLatestInterval', type=int, default=5000,

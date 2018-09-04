@@ -44,6 +44,8 @@ class BaseOptions():
                             help='models are saved here')
         parser.add_argument('--dataDir', type=str, default='./data', 
                             help='models are saved here')
+        parser.add_argument('--verbose', action='store_true', 
+                            help='if specified, print more debugging information')
         return parser
 
     def gather_options(self):
