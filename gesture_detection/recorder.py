@@ -15,6 +15,7 @@ visualizer = SensorVisualizer(name = opt.repr)
 painter = Painter(name = opt.repr, display = opt.display, memorySize = opt.memorySize, ylim = opt.ylim )
 recorder = Recorder(opt)
 
+print("action: {}".format(opt.action))
 
 def main():
     while True:
