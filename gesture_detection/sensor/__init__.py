@@ -44,10 +44,9 @@ class Sensor:
         data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
         return data
     def flush(self):
-        self.device.close()
-        print('------------------------------ device initializing ------------------------------')
-        self.device = serial.Serial( self.port, self.freq, timeout = self.timeout)
-        print('device {} is on {} with frequency {} Hz.'.format(self.device.name, self.device.port, self.device.baudrate))
+        self.device.flush()
+        self.device.flushInput()
+        self.device.flushOutput()
         
 
 if __name__ == '__main__':
