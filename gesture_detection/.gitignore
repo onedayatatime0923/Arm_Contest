@@ -9,6 +9,8 @@ model/.*
 model/__pycache__/*
 options/.*
 options/__pycache__/*
+sensor/.*
+sensor/__pycache__/*
 utils/.*
 utils/__pycache__/*
 visualizer/.*
