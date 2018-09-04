@@ -20,10 +20,10 @@ class Recorder():
             return False
 
     def labeling(self, data):
-        if self.opt.mode == 'stop':
+        if self.opt.action == 'stop':
             self.X.append(data)
             self.Y.append(0)
-        elif self.opt.mode == 'move':
+        elif self.opt.action == 'move':
             self.X.append(data)
             self.Y.append(1)
 
