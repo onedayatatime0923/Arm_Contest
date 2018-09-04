@@ -1,6 +1,7 @@
 
 import multiprocessing as mp
 import torch
+import numpy as np
 from torch.autograd import Variable
 
 from options import MainOptions
@@ -22,15 +23,33 @@ painter = Painter(name = opt.repr, verbose = opt.display, memorySize = opt.memor
 
 model = createModel(opt)
 model.setup(opt)
+model.eval()
 
 def main():
+    counter = 0
+    th = 3.4
+    gesture = []
     while True:
         data = filter.update(sensor.read())
-        x = Variable(torch.FloatTensor(data))
-        print(model.forward(x))
+        #print(data)
+        #x = Variable(torch.FloatTensor(data)).squeeze(1).unsqueeze(0)
+        #print(model.forward(x))
+        threshold = data[0] 
+        print(data[0])
+        if(threshold >= th or threshold <= -th):
+            gesture.append(data)
+            pass
+            #print("Move")
+        else:
+            counter += 1
+            if(len(gesture) != 0):
+                print("Dump file {}...".format(counter))
+                #np.save("data/gesture/{}.npy".format(counter), np.array(gesture))
+            gesture = []
+            #print("Stop", counter)
 
-        visualizer(data)
-        painter(data)
+        #visualizer(data)
+        #painter(data)
 
 main()
 #p1 = mp.Process(target=main)
