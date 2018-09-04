@@ -19,6 +19,7 @@ recorder = Recorder(opt)
 def main():
     while True:
         data = sensor.read()
+        data = filter.update(data)
         recorder(data)
         visualizer(data)
     
