@@ -10,6 +10,7 @@ class BinaryDataSet(BaseDataset):
         self.opt = opt
 
         self.files = os.listdir(os.path.join(opt.dataDir, opt.split))
+        print('reading from {}...'.format(' '.join(self.files)))
 
         signal = []
         label = []
@@ -19,9 +20,10 @@ class BinaryDataSet(BaseDataset):
             label.append(l)
         self.signal = np.concatenate(signal,0)
         self.label = np.concatenate(label,0)
+        assert( len(self.signal) == len(self.label))
 
     def __len__(self):
-        return len(self.data)
+        return len(self.signal)
 
     def __getitem__(self, index):
         signal = torch.FloatTensor(self.signal[index]).squeeze(1)

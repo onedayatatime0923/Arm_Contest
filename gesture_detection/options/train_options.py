@@ -1,4 +1,5 @@
 
+import torch
 import sys
 sys.path.append('./')
 from options.base_options import BaseOptions
@@ -20,6 +21,8 @@ class TrainOptions(BaseOptions):
         parser.add_argument('--pretrained', action = 'store_true', help='whether to use pretrained model')
         parser.add_argument('--pretrainedRoot', type = str, default = 'pretrained/', help='path to load pretrained model')
         # ---------- Define Dataset ---------- #
+        parser.add_argument('--split', type=str, choices = ['train', 'val'],
+                default = 'train')
         parser.add_argument('--nThreads', default=4, type=int, help='# threads for loading data')
         # ---------- Optimizers ---------- #
         parser.add_argument('--opt', type=str, choices=['sgd', 'adam'], default='adam',
@@ -66,11 +69,11 @@ class TrainOptions(BaseOptions):
         # gather options
         self.gather_options()
         if self.opt.mode == 'train' and not self.opt.resume:
-            self.construct_checkpoint(creatDir = True)
+            self.construct_checkpoints(creatDir = True)
         elif self.opt.mode == 'train' and self.opt.resume:
-            self.construct_checkpoint(creatDir = False)
+            self.construct_checkpoints(creatDir = False)
         elif self.opt.mode == 'test':
-            self.construct_checkpoint(creatDir = False)
+            self.construct_checkpoints(creatDir = False)
             self.construct_outputPath()
 
         # continue to train
@@ -89,3 +92,9 @@ class TrainOptions(BaseOptions):
         self.construct_device()
 
         return self.opt
+    def construct_device(self):
+        # set gpu ids
+        if self.opt.gpuIds[0] != -1:
+            self.opt.device = torch.device(self.opt.gpuIds[0])
+        else:
+            self.opt.device = torch.device('cpu')
