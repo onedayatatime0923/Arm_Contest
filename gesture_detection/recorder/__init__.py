@@ -33,3 +33,4 @@ class Recorder():
         np.save(path, np.array([self.X, self.Y]))
         self.X = []
         self.Y = []
+        print('saved data to {}...'.fomat(path))
