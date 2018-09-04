@@ -11,6 +11,9 @@ class BaseOptions():
         self.message = None
 
     def initialize(self, parser):
+        # ---------- Define Mode ---------- #
+        parser.add_argument('--mode', type=str, choices = ['train','test'], default = 'test',
+                            help="Model Mode")
         # ---------- Define Device ---------- #
         parser.add_argument('--port', type=str, default = '/dev/cu.usbmodem1413')
         parser.add_argument('--n', type=int, default = 9)

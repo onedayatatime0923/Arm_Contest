@@ -33,15 +33,16 @@ class BinaryModel(BaseModel):
 
         self.set_requires_grad([self.netClassifier],True)
 
-        # define loss functions
-        self.criterion = torch.nn.BCELoss()
-        # initialize optimizers
-        self.optimizerC = getOptimizer(
-            itertools.chain(self.netClassifier.parameters()),
-            opt = opt.opt, lr=opt.lr, beta1 = opt.beta1,
-            momentum = opt.momentum, weight_decay = opt.weight_decay)
-        self.optimizers = []
-        self.optimizers.append(self.optimizerC)
+        if self.opt.mode == 'train':
+            # define loss functions
+            self.criterion = torch.nn.BCELoss()
+            # initialize optimizers
+            self.optimizerC = getOptimizer(
+                itertools.chain(self.netClassifier.parameters()),
+                opt = opt.opt, lr=opt.lr, beta1 = opt.beta1,
+                momentum = opt.momentum, weight_decay = opt.weight_decay)
+            self.optimizers = []
+            self.optimizers.append(self.optimizerC)
 
 
         print('--------------------------------------------------')

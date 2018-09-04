@@ -10,6 +10,8 @@ class MainOptions(BaseOptions):
         BaseOptions.__init__(self)
     def initialize(self, parser):
         parser = BaseOptions.initialize(self, parser)
+        # ---------- Define Mode ---------- #
+        parser.set_defaults(pretrained = 'test')
         # ---------- Define Network ---------- #
         parser.set_defaults(pretrained = True)
         return parser
