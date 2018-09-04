@@ -2,7 +2,7 @@ import itertools
 import torch
 from torch.autograd import Variable
 from utils import AccuEval
-from models.network.network import Classifier
+from models.network import Classifier
 from models.base_model import BaseModel, getOptimizer
 
 
