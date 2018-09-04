@@ -12,7 +12,7 @@ opt = parser.parse()
 sensor = Sensor(opt.port)
 #filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(name = opt.name)
-painter = Painter(name = opt.name, verbose = opt.verbose, memorySize = opt.memorySize, ylim = opt.ylim )
+painter = Painter(name = opt.name, verbose = opt.display, memorySize = opt.memorySize, ylim = opt.ylim )
 recorder = Recorder()
 
 
