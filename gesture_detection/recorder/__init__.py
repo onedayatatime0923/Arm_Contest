@@ -23,7 +23,7 @@ class Recorder():
 
     def labeling(self, data):
         print('check')
-        print(self.vocabulary.word2index['self.opt.action'])
+        print(self.vocabulary.word2index[self.opt.action])
         input()
         self.X.append(data)
         self.Y.append(self.vocabulary.word2index['self.opt.action'])
