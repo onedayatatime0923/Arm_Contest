@@ -39,7 +39,7 @@ def main():
         else:
             print('stop')
             if lastSignal == True:
-                recorder.dump()
+                recorder.dump_action()
         lastSignal = signal
         #visualizer(data)
     
