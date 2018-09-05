@@ -32,10 +32,10 @@ class Recorder():
             path = os.path.join(self.opt.actionDir, '{}.npy'.format(index))
             index += 1
         print('saved data to {}...'.format(path))
-        #raw_input()
         np.save(path, np.array([self.X, self.Y]))
         self.X = []
         self.Y = []
+        exit()
 
     def dump_split(self):
         index = 0
