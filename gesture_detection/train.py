@@ -40,6 +40,7 @@ valVisualizer = ProgressVisualizer(opt, valDataLoader.dataset).reset()
 steps = 0
 for epoch in range(opt.epoch, opt.nEpochStart + opt.nEpochDecay + 1):
     # train
+    model.train()
     for i, data in enumerate(trainDataLoader):
         steps += 1
 
@@ -47,8 +48,6 @@ for epoch in range(opt.epoch, opt.nEpochStart + opt.nEpochDecay + 1):
         model.optimize_parameters()
 
         trainVisualizer('Train', epoch, data = model.current_losses())
-
-
         if steps % opt.saveLatestInterval == 0:
             print('\nsaving the latest model (epoch %d, total_steps %d)' % (epoch, steps))
             model.save_networks('latest')
@@ -57,14 +56,13 @@ for epoch in range(opt.epoch, opt.nEpochStart + opt.nEpochDecay + 1):
     
 
     # val
+    model.eval()
     for i, data in enumerate(valDataLoader):
         steps += 1
 
         model.set_input(data)
-        model.predict()
-
+        model.test()
         valVisualizer('val', epoch, data = model.current_losses())
-
     valVisualizer.end('Val', epoch, data = model.current_accus())
 
     if epoch % opt.saveEpochInterval == 0:

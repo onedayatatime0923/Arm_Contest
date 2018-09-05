@@ -49,7 +49,7 @@ class BaseModel():
         lr = self.optimizers[0].param_groups[0]['lr']
         print('learning rate = %.7f' % lr)
 
-    # make models train mode during test time
+    # make models train mode during train time
     def train(self):
         for name in self.modelNames:
             net = getattr(self, name)
@@ -65,6 +65,11 @@ class BaseModel():
     def test(self):
         with torch.no_grad():
             self.forward()
+
+    # used in test time, using data direct from outside
+    # intermediate steps for backprop
+    def predict(self, data):
+        pass
 
     # return losses. train.py will display these images, and save the images to a html
     def current_losses(self):

@@ -30,7 +30,7 @@ class TrainOptions(BaseOptions):
         parser.add_argument('--lr_decay_iters', type=int, default=50,
                             help='multiply by a gamma every lr_decay_iters iterations')
         # ---------- Hyperparameters ---------- #
-        parser.add_argument('--batchSize', type=int, default=1,
+        parser.add_argument('--batchSize', type=int, default=2,
                             help="batch_size")
         parser.add_argument('--epoch', type=int, default=1,
                             help='the training epoch.')

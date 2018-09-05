@@ -53,12 +53,7 @@ class BinaryModel(BaseModel):
         self.signal = input['signal'].to(self.opt.device)
         self.label = input['label'].to(self.opt.device)
 
-    def forward(self, data):
-        data = Variable(data)
-        output = self.netClassifier(data)
-        return  float(output) > 0.5
-
-    def predict(self):
+    def forward(self):
         output = self.netClassifier(self.signal)
 
         pred = output>0.5
@@ -66,6 +61,11 @@ class BinaryModel(BaseModel):
 
         lossClassifier = self.criterion(output, self.label)
         self.lossClassifier = float(lossClassifier)
+        
+    def predict(self, data):
+        data = Variable(data)
+        output = self.netClassifier(data)
+        return  float(output) > 0.5
 
     def backward_classifier(self, retain_graph = False):
         output = self.netClassifier(self.signal)
