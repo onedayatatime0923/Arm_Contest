@@ -26,7 +26,7 @@ class Recorder():
         print(self.vocabulary.word2index[self.opt.action])
         input()
         self.X.append(data)
-        self.Y.append(self.vocabulary.word2index['self.opt.action'])
+        self.Y.append(self.vocabulary.word2index[self.opt.action])
 
     def dump_data(self):
         index = 0
