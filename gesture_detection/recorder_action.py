@@ -32,7 +32,9 @@ def main():
         data = filter.update(data)
         x = Variable(convert(torch.FloatTensor(data)))
         if model.predict(x):
-            recorder(data)
+            print('move')
+            #recorder(data)
+        print('stop')
         visualizer(data)
     
 if(__name__ == '__main__'):
