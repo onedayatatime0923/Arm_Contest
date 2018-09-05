@@ -64,8 +64,8 @@ class BaseVisualizer():
                     raise
             else:
                 break
-        self.reset()
         '''
+        self.reset()
     def displayScalor(self, data, step):
         if self.writer == None:
             raise NotImplementedError
