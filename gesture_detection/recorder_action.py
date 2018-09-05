@@ -27,14 +27,16 @@ model.setup(opt)
 model.eval()
 
 def main():
+    count = 0
     while True:
         data = sensor.read()
         data = filter.update(data)
         x = Variable(convert(torch.FloatTensor(data)))
         if model.predict(x):
-            print('move')
+            pass
         else:
-            print('stop')
+            count+=1
+            print('stop', count)
         #recorder(data)
         #visualizer(data)
     
