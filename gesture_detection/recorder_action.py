@@ -34,7 +34,8 @@ def main():
         if model.predict(x):
             print('move')
             #recorder(data)
-        print('stop')
+        else:
+            print('stop')
         visualizer(data)
     
 if(__name__ == '__main__'):
