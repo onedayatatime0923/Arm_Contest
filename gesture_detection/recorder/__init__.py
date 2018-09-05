@@ -9,7 +9,7 @@ class Recorder():
         self.Y = []
         self.opt = opt
         self.counter = 0
-        self.vocabulary = Vocabulary
+        self.vocabulary = Vocabulary()
 
     def __call__(self, data):
         self.labeling(data)
