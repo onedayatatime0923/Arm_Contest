@@ -33,9 +33,9 @@ def main():
         x = Variable(convert(torch.FloatTensor(data)))
         if model.predict(x):
             print('move')
-            #recorder(data)
         else:
             print('stop')
+        #recorder(data)
         #visualizer(data)
     
 if(__name__ == '__main__'):
