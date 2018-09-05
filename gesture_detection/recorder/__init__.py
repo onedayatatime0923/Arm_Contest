@@ -1,6 +1,7 @@
 
 import os.path
 import numpy as np
+from utils import Vocabulary
 
 class Recorder():
     def __init__(self, opt):
@@ -8,6 +9,7 @@ class Recorder():
         self.Y = []
         self.opt = opt
         self.counter = 0
+        self.vocabulary = Vocabulary
 
     def __call__(self, data):
         self.labeling(data)
@@ -20,12 +22,11 @@ class Recorder():
             return False
 
     def labeling(self, data):
-        if self.opt.action == 'stop':
-            self.X.append(data)
-            self.Y.append(0)
-        elif self.opt.action == 'move':
-            self.X.append(data)
-            self.Y.append(1)
+        print('check')
+        print(self.vocabulary.word2index['self.opt.action'])
+        input()
+        self.X.append(data)
+        self.Y.append(self.vocabulary.word2index['self.opt.action'])
 
     def dump_data(self):
         index = 0

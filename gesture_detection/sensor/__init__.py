@@ -21,6 +21,7 @@ class Sensor:
         self.flag['A'] = False
         self.flag['G'] = False
         self.flag['M'] = False
+        self.flush()
     def read(self):
         # return ( type : np.array, shape: (9,1))
         # meaning accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ define in opt
