@@ -1,10 +1,12 @@
 
 from visualizer.base_visualizer import BaseVisualizer
-from visualizer.train_visualizer import TrainVisualizer
+from visualizer.progress_visualizer import ProgressVisualizer
+from visualizer.model_visualizer import ModelVisualizer
 from visualizer.sensor_visualizer import SensorVisualizer
 from visualizer.painter import Painter
 
 assert BaseVisualizer
-assert TrainVisualizer
+assert ProgressVisualizer
+assert ModelVisualizer
 assert SensorVisualizer
 assert Painter

@@ -9,7 +9,7 @@ from visualizer import SensorVisualizer, Painter
 from sensor import Sensor
 from filter import Filter
 from models import createModel
-assert mp
+assert mp and np and torch and Variable
 
 parser = MainOptions()
 opt = parser.parse()

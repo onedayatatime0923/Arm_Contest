@@ -7,7 +7,7 @@ from torch.autograd import Variable
 from options import TrainOptions
 from dataset import createDataset
 from models import createModel
-from visualizer import TrainVisualizer
+from visualizer import ProgressVisualizer
 
 assert Variable
 
@@ -34,8 +34,8 @@ model = createModel(opt)
 model.setup(opt)
 # set visualizer
 
-trainVisualizer = TrainVisualizer(opt, trainDataLoader.dataset).reset()
-valVisualizer = TrainVisualizer(opt, valDataLoader.dataset).reset()
+trainVisualizer = ProgressVisualizer(opt, trainDataLoader.dataset).reset()
+valVisualizer = ProgressVisualizer(opt, valDataLoader.dataset).reset()
 
 steps = 0
 for epoch in range(opt.epoch, opt.nEpochStart + opt.nEpochDecay + 1):

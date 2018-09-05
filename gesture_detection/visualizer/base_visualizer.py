@@ -2,7 +2,12 @@
 import errno
 import collections
 from utils import Timer
+
+import torch
+import torchvision
 from tensorboardX import SummaryWriter
+
+assert errno
 
 class BaseVisualizer():
     def __init__(self, stepSize, totalSize, logPath = None, displayWidth=1):
@@ -49,19 +54,26 @@ class BaseVisualizer():
             for name in data:
                 message += '{:>20}: {:.4f}\n'.format(name, data[name])
 
+        print message
+        '''
         while True:
             try:
-                print(message)
+                print message
             except IOError, e:
                 if e.errno != errno.EINTR:
                     raise
             else:
                 break
         self.reset()
+        '''
     def displayScalor(self, data, step):
+        if self.writer == None:
+            raise NotImplementedError
         for i in data:
             self.writer.add_scalar(i, data[i] ,step)
     def displayImage(self, data, step, name = 'Image'):
+        if self.writer == None:
+            raise NotImplementedError
         image = []
         for name in data:
             im = data[name].cpu().unsqueeze(0)
