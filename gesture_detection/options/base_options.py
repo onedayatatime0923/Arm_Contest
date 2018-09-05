@@ -21,7 +21,7 @@ class BaseOptions():
                 default = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 
                     'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'])
         # ---------- Define Recorder ---------- #
-        parser.add_argument('--action', type=str, choices = ['stop', 'move'],
+        parser.add_argument('--action', type=str,
                 default = 'stop')
         parser.add_argument('--dataDir', type=str, default='./data', 
                             help='models are saved here')
