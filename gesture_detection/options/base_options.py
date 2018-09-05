@@ -159,6 +159,8 @@ class BaseOptions():
             self.construct_checkpoints(creatDir = True)
         elif self.opt.mode == 'train' and self.opt.resume or self.opt.mode == 'test':
             self.construct_checkpoints(creatDir = False)
+        self.construct_splitDir()
+        self.construct_actionDir()
 
         # continue to train
         if self.opt.mode == 'train' and self.opt.resume:

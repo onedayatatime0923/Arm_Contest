@@ -16,7 +16,7 @@ class Recorder():
         # handle dumping data
         self.counter +=1
         if self.counter % self.opt.recordInterval == 0:
-            self.dump()
+            self.dump_split()
             return True
         else:
             return False
@@ -25,11 +25,23 @@ class Recorder():
         self.X.append(data)
         self.Y.append(self.vocabulary.word2index[self.opt.action])
 
-    def dump(self):
+    def dump_action(self):
         index = 0
         path = os.path.join(self.opt.actionDir, '{}.npy'.format(index))
         while os.path.exists(path):
             path = os.path.join(self.opt.actionDir, '{}.npy'.format(index))
+            index += 1
+        print('saved data to {}...'.format(path))
+        raw_input()
+        np.save(path, np.array([self.X, self.Y]))
+        self.X = []
+        self.Y = []
+
+    def dump_split(self):
+        index = 0
+        path = os.path.join(self.opt.splitDir, '{}.npy'.format(index))
+        while os.path.exists(path):
+            path = os.path.join(self.opt.splitDir, '{}.npy'.format(index))
             index += 1
         print('saved data to {}...'.format(path))
         raw_input()
