@@ -54,8 +54,6 @@ class BaseVisualizer():
             for name in data:
                 message += '{:>20}: {:.4f}\n'.format(name, data[name])
 
-        print message
-        '''
         while True:
             try:
                 print message
@@ -64,7 +62,6 @@ class BaseVisualizer():
                     raise
             else:
                 break
-        '''
         self.reset()
     def displayScalor(self, data, step):
         if self.writer == None:
