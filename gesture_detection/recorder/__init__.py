@@ -27,9 +27,9 @@ class Recorder():
 
     def dump(self):
         index = 0
-        path = os.path.join(self.opt.splitDir, '{}.npy'.format(index))
+        path = os.path.join(self.opt.actionDir, '{}.npy'.format(index))
         while os.path.exists(path):
-            path = os.path.join(self.opt.splitDir, '{}.npy'.format(index))
+            path = os.path.join(self.opt.actionDir, '{}.npy'.format(index))
             index += 1
         print('saved data to {}...'.format(path))
         raw_input()

@@ -52,5 +52,6 @@ class MainOptions(BaseOptions):
         return parser
     def parse(self):
         BaseOptions.model_parse(self)
+        self.construct_actionDir()
 
         return self.opt
