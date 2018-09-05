@@ -11,6 +11,7 @@ class BinaryDataSet(BaseDataset):
 
         self.files = os.listdir(os.path.join(dataDir, split))
         print('reading from {}...'.format(' '.join(self.files)))
+        assert( len(self.files) > 0)
 
         signal = []
         label = []

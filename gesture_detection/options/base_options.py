@@ -152,9 +152,9 @@ class BaseOptions():
         # gather options
         self.gather_options()
         if self.opt.mode == 'train' and not self.opt.resume:
-            self.construct_checkpoint(creatDir = True)
+            self.construct_checkpoints(creatDir = True)
         elif self.opt.mode == 'train' and self.opt.resume or self.opt.mode == 'test':
-            self.construct_checkpoint(creatDir = False)
+            self.construct_checkpoints(creatDir = False)
 
         # continue to train
         if self.opt.mode == 'train' and self.opt.resume:
