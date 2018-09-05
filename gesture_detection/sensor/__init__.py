@@ -44,9 +44,7 @@ class Sensor:
         data = np.expand_dims(np.concatenate(list(data.values()), 0),1)
         return data
     def flush(self):
-        self.device.flush()
         self.device.flushInput()
-        self.device.flushOutput()
         
 
 if __name__ == '__main__':

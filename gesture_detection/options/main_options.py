@@ -10,21 +10,9 @@ class MainOptions(BaseOptions):
     def initialize(self, parser):
         parser = BaseOptions.initialize(self, parser)
         # ---------- Define Mode ---------- #
-        parser.set_defaults(mode = 'use')
-        # ---------- Define Network ---------- #
-        parser.set_defaults(pretrained = True)
+        parser.set_defaults(mode = 'test')
         return parser
     def parse(self):
-        # gather options
-        self.gather_options()
-        self.construct_checkpoints(creatDir = True)
-
-        # print options
-        self.construct_message()
-        self.save_options('opt.txt')
-        self.print_options()
-
-        # set gpu ids
-        self.construct_device()
+        BaseOptions.model_parse(self)
 
         return self.opt

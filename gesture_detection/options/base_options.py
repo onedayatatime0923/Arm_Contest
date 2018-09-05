@@ -12,14 +12,23 @@ class BaseOptions():
 
     def initialize(self, parser):
         # ---------- Define Mode ---------- #
-        parser.add_argument('--mode', type=str, choices = ['train','test', 'use'],
-                default = 'use', help="Model Mode")
+        parser.add_argument('--mode', type=str, choices = ['train','test'],
+                default = 'train', help="Model Mode")
         # ---------- Define Device ---------- #
-        parser.add_argument('--port', type=str, default = '/dev/cu.usbmodem1413')
         parser.add_argument('--n', type=int, default = 9)
+        parser.add_argument('--port', type=str, default = '/dev/cu.usbmodem1413')
         parser.add_argument('--repr', type=str, nargs = 9, 
                 default = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 
                     'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'])
+        # ---------- Define Recorder ---------- #
+        parser.add_argument('--action', type=str, choices = ['stop', 'move'],
+                default = 'stop')
+        parser.add_argument('--dataDir', type=str, default='./data', 
+                            help='models are saved here')
+        parser.add_argument('--split', type=str, choices = ['train', 'val'],
+                default = 'train')
+        parser.add_argument('--recordInterval', type=int,
+                default = 100)
         # ---------- Define Network ---------- #
         parser.add_argument('--gpuIds', type=int, nargs = '+', default=[-1], help='gpu ids: e.g. 0, 0 1, 0 1 2,  use -1 for CPU')
         parser.add_argument('--model', type=str, default = 'binary',
@@ -41,8 +50,6 @@ class BaseOptions():
         parser.add_argument('--name', type=str,default = 'Sensor',
                             help='name of the experiment. It decides where to store samples and models')
         parser.add_argument('--checkpointsDir', type=str, default='./checkpoints', 
-                            help='models are saved here')
-        parser.add_argument('--dataDir', type=str, default='./data', 
                             help='models are saved here')
         parser.add_argument('--verbose', action='store_true', 
                             help='if specified, print more debugging information')
@@ -75,6 +82,11 @@ class BaseOptions():
             self.opt.logPath = os.path.join(self.opt.expPath, 'log')
             self.opt.modelPath = os.path.join(self.opt.expPath, 'model')
             assert( os.path.exists(self.opt.expPath) and os.path.exists(self.opt.logPath) and os.path.exists(self.opt.modelPath) )
+
+    def construct_splitDir(self):
+        self.opt.splitDir = os.path.join(self.opt.dataDir, self.opt.split)
+        if not os.path.exists(self.opt.splitDir):
+            os.makedirs(self.opt.splitDir)
 
     def load_options(self, path):
         # load from the disk
@@ -127,6 +139,7 @@ class BaseOptions():
         # gather options
         self.gather_options()
         self.construct_checkpoints(creatDir = True)
+        self.construct_splitDir()
 
         # print options
         self.construct_message()
@@ -135,6 +148,31 @@ class BaseOptions():
 
         return self.opt
 
+    def model_parse(self):
+        # gather options
+        self.gather_options()
+        if self.opt.mode == 'train' and not self.opt.resume:
+            self.construct_checkpoint(creatDir = True)
+        elif self.opt.mode == 'train' and self.opt.resume or self.opt.mode == 'test':
+            self.construct_checkpoint(creatDir = False)
+
+        # continue to train
+        if self.opt.mode == 'train' and self.opt.resume:
+            self.load_options('opt.txt')
+
+        # print options
+        self.construct_message()
+        if self.opt.mode == 'train' and not self.opt.resume:
+            self.save_options('opt.txt')
+        if self.opt.mode == 'test':
+            self.save_options('test_opt.txt')
+        self.print_options()
+
+        # set gpu ids
+        self.construct_device()
+
+        return self.opt
+
     def update(self):
         self.construct_message()
-        self.save_options()
+        self.save_options('opt.txt')

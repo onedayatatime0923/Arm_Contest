@@ -39,8 +39,6 @@ class BaseModel():
 
         elif self.opt.mode == 'test':
             self.load_networks(self.opt.resumeName)
-        elif self.opt.mode == 'use':
-            self.load_pretrained()
         self.print_networks(self.opt.verbose)
         print('--------------------------------------------------')
 
