@@ -2,7 +2,6 @@
 import numpy as np
 import matplotlib.pyplot as plt 
 
-plt.figure
-line, = plt.plot(np.random.rand(10)) 
-line, = plt.plot(np.random.rand(10)) 
-plt.show()
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+print(dir_path)

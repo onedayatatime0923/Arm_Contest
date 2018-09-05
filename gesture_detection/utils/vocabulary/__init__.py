@@ -1,10 +1,9 @@
 
-import sys
 import os.path
 
 class Vocabulary:
     def __init__(self):
-        self.filePath = os.path.join(os.path.dirname(sys.argv[0]),'record.txt')
+        self.filePath = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'record.txt')
         self.word2index= {}
         self.index2word = {}
         self.n_words = 0
