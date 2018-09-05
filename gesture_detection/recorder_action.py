@@ -36,7 +36,7 @@ def main():
             #recorder(data)
         else:
             print('stop')
-        visualizer(data)
+        #visualizer(data)
     
 if(__name__ == '__main__'):
     main()
