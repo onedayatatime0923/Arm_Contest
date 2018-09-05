@@ -1,19 +1,9 @@
 
-.*
 !.gitignore
+*.pyc
+.*
 __pycache__/*
+*/*.pyc
+*/.*
+*/__pycache__/*
 checkpoints/*
-dataset/.*
-dataset/__pycache__/*
-filter/.*
-filter/__pycache__/*
-model/.*
-model/__pycache__/*
-options/.*
-options/__pycache__/*
-sensor/.*
-sensor/__pycache__/*
-utils/.*
-utils/__pycache__/*
-visualizer/.*
-visualizer/__pycache__/*
