@@ -27,17 +27,20 @@ model.setup(opt)
 model.eval()
 
 def main():
-    count = 0
+    lastSignal = False
     while True:
         data = sensor.read()
         data = filter.update(data)
         x = Variable(convert(torch.FloatTensor(data)))
-        if model.predict(x):
-            pass
+        signal = model.predict(x)
+        if signal:
+            print('move')
+            recorder.label(data)
         else:
-            count+=1
-            print('stop', count)
-        #recorder(data)
+            print('stop')
+            if lastSignal == True:
+                recorder.dump()
+        lastSignal = signal
         #visualizer(data)
     
 if(__name__ == '__main__'):

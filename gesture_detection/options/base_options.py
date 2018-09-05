@@ -139,7 +139,6 @@ class BaseOptions():
         # gather options
         self.gather_options()
         self.construct_checkpoints(creatDir = True)
-        self.construct_splitDir()
 
         # print options
         self.construct_message()
@@ -155,6 +154,7 @@ class BaseOptions():
             self.construct_checkpoints(creatDir = True)
         elif self.opt.mode == 'train' and self.opt.resume or self.opt.mode == 'test':
             self.construct_checkpoints(creatDir = False)
+        self.construct_splitDir()
 
         # continue to train
         if self.opt.mode == 'train' and self.opt.resume:
