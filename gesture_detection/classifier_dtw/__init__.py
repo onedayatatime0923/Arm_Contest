@@ -12,6 +12,7 @@ class Classifier:
         self.noOps = noOps
         self.action = None
         self.data = None
+        self.read()
     def read(self):
         action = []
         data = []
