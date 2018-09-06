@@ -6,10 +6,10 @@ from numpy import linalg as LA
 import torch
 import multiprocessing as mp
 from torch.autograd import Variable
-from options import RecorderOptions, MainOptions
+from options import MainOptions
 from sensor import Sensor
 from filter import Filter
-from visualizer import SensorVisualizer, Painter
+from visualizer import SensorVisualizer
 from models import createModel
 from utils import convert
 from speech import Speech
@@ -17,7 +17,6 @@ from speech import Speech
 parser = MainOptions()
 opt = parser.parse()
 sensor = Sensor(opt.port)
-sensor.flush()
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
 speech = Speech()
