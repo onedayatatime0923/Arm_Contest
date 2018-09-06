@@ -21,7 +21,7 @@ class Classifier:
                 fileList = os.listdir(path) if os.path.exists(path) else []
                 for f in fileList:
                     action.append(act)
-                    data.append(np.load(os.path.join(path,f))[0])
+                    data.append(np.array([i for i in np.load(os.path.join(path,f))[0]]))
         self.action = action
         self.data = data
     def predict(self, target):
