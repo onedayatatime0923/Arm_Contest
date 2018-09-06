@@ -33,6 +33,7 @@ def main():
         x = Variable(convert(torch.FloatTensor(data)))
         signal = model.predict(x)
         if signal:
+            target.append(data)
             operate = classifier.predict(target)
             print(operate)
             if operate != 'None':
