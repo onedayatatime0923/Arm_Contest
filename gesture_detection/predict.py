@@ -18,7 +18,7 @@ sensor = Sensor(opt.port)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
 speech = Speech()
-classifier = Classifier()
+classifier = Classifier(70.)
 
 model = createModel(opt)
 model.setup(opt)
