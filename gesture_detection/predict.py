@@ -25,7 +25,6 @@ model.setup(opt)
 model.eval()
 
 
-
 def main():
     target = []
     while True:
