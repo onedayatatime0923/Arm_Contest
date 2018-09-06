@@ -7,7 +7,8 @@ from numpy import linalg as LA
 assert dtw
 
 class Classifier:
-    def __init__(self, noOps = 'None'):
+    def __init__(self, threshold = 98, noOps = 'None'):
+        self.threshold = threshold
         self.noOps = noOps
         self.action = None
         self.data = None
@@ -31,7 +32,7 @@ class Classifier:
             score.append(dtw(d, target, dist=lambda x, y: LA.norm(x - y, ord=1))[0])
         score = np.array(score)
         print(min(np.array(score)))
-        if min(np.array(score)) < 98.:
-            return self.action[np.argmax(score)]
+        if min(np.array(score)) < self.threshold:
+            return self.action[np.argmin(score)]
         else:
             return self.noOps
