@@ -27,7 +27,6 @@ class Classifier:
         self.action = action
         self.data = data
     def predict(self, target):
-        target = np.array(target)
         score = []
         for d in self.data:
             score.append(dtw(d, target, dist=lambda x, y: LA.norm(x - y, ord=1))[0])
