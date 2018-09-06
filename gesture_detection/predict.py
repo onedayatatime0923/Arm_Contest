@@ -4,6 +4,7 @@ from dtw import dtw
 from numpy import linalg as LA
 
 import torch
+import multiprocessing as mp
 from torch.autograd import Variable
 from options import RecorderOptions, MainOptions
 from sensor import Sensor
@@ -67,7 +68,8 @@ def main():
             index = predict(target, ref_act)
             if index != -1.:
                 print(action_list[index])
-                speech(action_list[index])
+                p1 = mp.Process(target=speech, args=(action_list[index],))
+                p1.start()
                 target = []
             else:
                 #print("No act")
@@ -76,6 +78,7 @@ def main():
             print("Stop")
             target = []
             pass
+        #visualizer(data)
     
 if(__name__ == '__main__'):
     main()
