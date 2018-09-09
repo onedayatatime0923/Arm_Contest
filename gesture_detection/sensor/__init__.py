@@ -31,8 +31,12 @@ class Sensor:
             string = string.strip()
             for part in string.split('|'):
                 for value in part.split(' ')[1:]:
-                    value = float(value)
-                    self.data.append(float(value))
+                    try:
+                        value = float(value)
+                    except:
+                        ValueError
+                    else:
+                        self.data.append(float(value))
             return True
 
     def flush(self):
