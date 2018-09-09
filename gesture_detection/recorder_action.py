@@ -27,7 +27,7 @@ model.setup(opt)
 model.eval()
 
 def main(i):
-    #lastSignal = False
+    lastSignal = False
     moveCount = 0
     stopCount = 0
     while True:
@@ -35,6 +35,7 @@ def main(i):
         data = filter.update(data)
         x = Variable(convert(torch.FloatTensor(data), opt.n))
         signal = model.predict(x)
+        '''
         recorder.label(data)
         recorder.dump_action_id(i)
         '''
@@ -46,9 +47,9 @@ def main(i):
             stopCount += 1
             print('stop', stopCount)
             if lastSignal == True:
-                recorder.dump_action()
-        '''
-        #lastSignal = signal
+                pass
+                #recorder.dump_action()
+        lastSignal = signal
         #visualizer(data)
     
 if(__name__ == '__main__'):
