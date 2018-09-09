@@ -24,9 +24,6 @@ def main():
         painter(data)
     
 if(__name__ == '__main__'):
-    painter.plot()
-    main()
-    '''
     p1 = td.Thread(target=main)
     p1.start()
-    '''
+    painter.plot()
