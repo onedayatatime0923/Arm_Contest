@@ -26,7 +26,6 @@ class Painter():
         self.data = np.append(self.data, data, 1)
         print('call')
         print(self.data[:,self.memorySize:])
-        raw_input()
 
     def plot(self):
         fig = plt.figure() 
