@@ -28,6 +28,7 @@ def main():
         print(operate)
         if operate != 'None':
             speech(operate)
+            sensor.flush()
             target = []
         if len(target) > opt.maxLen:
             target = target[-opt.maxLen:]
