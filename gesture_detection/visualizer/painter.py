@@ -14,7 +14,7 @@ class Painter():
             self.display = display
         self.memorySize = memorySize
         if isinstance(ylim, numbers.Number):
-            self.ylim = (ylim, ylim)
+            self.ylim = (-ylim, ylim)
         else:
             self.ylim = ylim
         self.data = np.zeros((self.n, self.memorySize))
