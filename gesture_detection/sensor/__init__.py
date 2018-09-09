@@ -4,13 +4,12 @@ import numpy as np
 
 
 class Sensor:
-    def __init__(self, n = 13, port = '/dev/tty0', freq = 115200, timeout = 10):
+    def __init__(self, n = 16, port = '/dev/tty0', freq = 57600):
         self.n = n
         self.port = port
         self.freq = freq
-        self.timeout = timeout
         print('------------------------------ device initializing ------------------------------')
-        self.device = serial.Serial( port, freq, timeout = timeout)
+        self.device = serial.Serial( port, freq)
         print('device {} is on {} with frequency {} Hz.'.format(self.device.name, self.device.port, self.device.baudrate))
         print('------------------------------ device initialized -------------------------------')
         self.data = None
