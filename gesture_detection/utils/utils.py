@@ -12,5 +12,5 @@ class Queue:
         self.device = device
         self.data = torch.zeros(n, dim).to(device)
     def __call__(self, data):
-        self.data = torch.cat([self.data[1:,:],convert(data.to(self.device), self.dim)],0).view(1,-1)
-        return self.data
+        self.data = torch.cat([self.data[1:,:],convert(data.to(self.device), self.dim)],0)
+        return self.data.view(1,-1)
