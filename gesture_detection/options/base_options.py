@@ -96,6 +96,12 @@ class BaseOptions():
         if not os.path.exists(self.opt.actionDir):
             os.makedirs(self.opt.actionDir)
 
+    def construct_input(self):
+        input = self.opt.input[:]
+        for i in range(1, self.opt.nInput):
+            input.extend([ i * self.opt.n + j for j in self.opt.input])
+        self.opt.input = input
+
     def load_options(self, path):
         # load from the disk
         file_name = os.path.join(self.opt.expPath, path)
@@ -166,6 +172,7 @@ class BaseOptions():
             self.construct_checkpoints(creatDir = False)
         self.construct_splitDir()
         self.construct_actionDir()
+        self.construct_input()
 
         # continue to train
         if self.opt.mode == 'train' and self.opt.resume:
