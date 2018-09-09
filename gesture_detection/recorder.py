@@ -19,6 +19,7 @@ print("action: {}".format(opt.action))
 def main():
     while True:
         data = sensor.read()
+        print(data)
         data = filter.update(data)
         if recorder(data):
             exit()
