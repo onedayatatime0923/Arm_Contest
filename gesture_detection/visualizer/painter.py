@@ -29,7 +29,6 @@ class Painter():
     def __call__(self, data):
         self.data = np.append(self.data[:,1:], data, 1)
 
-
     def plot(self):
         self._plot()
 
