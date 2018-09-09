@@ -25,7 +25,7 @@ model = createModel(opt)
 model.setup(opt)
 model.eval()
 
-def main():
+def main(i):
     #lastSignal = False
     moveCount = 0
     stopCount = 0
@@ -34,6 +34,9 @@ def main():
         data = filter.update(data)
         x = Variable(convert(torch.FloatTensor(data), opt.n))
         signal = model.predict(x)
+        recorder.label(data)
+        recorder.dump_action_id(i)
+        '''
         if signal:
             moveCount += 1
             print('move', moveCount)
@@ -41,12 +44,12 @@ def main():
         else:
             stopCount += 1
             print('stop', stopCount)
-            '''
             if lastSignal == True:
                 recorder.dump_action()
-            '''
+        '''
         #lastSignal = signal
         #visualizer(data)
     
 if(__name__ == '__main__'):
-    main()
+    i = raw_input("Enter to start")
+    main(i)
