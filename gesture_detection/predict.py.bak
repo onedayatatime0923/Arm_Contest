@@ -28,6 +28,7 @@ queue = Queue(opt.nInput, opt.n, opt.device)
 
 def main():
     target = []
+    counter = 0
     while True:
         data = sensor.read()
         data = filter.update(data)
@@ -41,7 +42,7 @@ def main():
                 speech(operate)
                 target = []
         else:
-            print("Stop")
+            print("Stop", counter)
             target = []
         #visualizer(data)
     
