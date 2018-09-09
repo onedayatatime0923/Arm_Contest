@@ -34,6 +34,7 @@ class BaseOptions():
         parser.add_argument('--model', type=str, default = 'binary',
                             help="Method Name")
         parser.add_argument('--ncf', type=int, default= 64, help= 'number of filters')
+        parser.add_argument('--dropout', type=float, default= 0.5, help= 'dropout rate')
         parser.add_argument('--pretrained', action = 'store_true', help='whether to use pretrained model')
         parser.add_argument('--pretrainedRoot', type = str, default = 'pretrained/', help='path to load pretrained model')
         # ---------- Define Painter ---------- #
