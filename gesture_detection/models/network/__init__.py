@@ -9,7 +9,7 @@ class Classifier(nn.Module):
         super(Classifier, self).__init__()
         self.opt = opt
         self.feature = nn.Sequential(
-            nn.InstanceNorm1d(len(opt.input)),
+            nn.BatchNorm1d(len(opt.input)),
             nn.Linear(len(opt.input), opt.ncf),
             nn.BatchNorm1d(opt.ncf),
             nn.LeakyReLU(0.2, inplace=True),
