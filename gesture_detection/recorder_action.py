@@ -3,21 +3,20 @@ import torch
 from torch.autograd import Variable
 
 
-from options import MainOptions
-from visualizer import SensorVisualizer, Painter
+from options import TrainOptions
+from visualizer import SensorVisualizer
 from sensor import Sensor
 from filter import Filter
 from recorder import Recorder
 from utils import convert
 from models import createModel
 
-parser = MainOptions()
+parser = TrainOptions()
 opt = parser.parse()
 
-sensor = Sensor(opt.port)
+sensor = Sensor(opt.n, opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
-painter = Painter(repr = opt.repr, display = opt.display, memorySize = opt.memorySize, ylim = opt.ylim )
 recorder = Recorder(opt)
 
 print("action: {}".format(opt.action))
