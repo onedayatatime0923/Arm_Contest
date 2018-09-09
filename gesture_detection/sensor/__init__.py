@@ -24,7 +24,9 @@ class Sensor:
         string = self.device.readline()
         string = string.strip()
         data = []
+        print(string)
         for part in string.split('|'):
+            print(part)
             for value in part.split(' ')[1:]:
                 data.append(float(value))
         return data
