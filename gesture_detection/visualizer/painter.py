@@ -1,4 +1,6 @@
 
+import threading as td
+
 import numbers
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -24,12 +26,12 @@ class Painter():
 
     def __call__(self, data):
         self.data = np.append(self.data, data, 1)
-        '''
-        print('call')
-        print(self.data[:,self.memorySize:])
-        '''
+
 
     def plot(self):
+        p1 = td.Thread(target=self._plot)
+        p1.start()
+    def _plot(self):
         fig = plt.figure() 
         self.animation = animation.FuncAnimation(
                 fig=fig,
@@ -50,9 +52,6 @@ class Painter():
         plt.legend(loc='upper right')
 
     def _update(self, index): 
-        print('update')
-        print(self.data.shape)
-        raw_input()
         for i in self.display:
             self.line[i].set_ydata(self.data[i][-self.memorySize:])
 
