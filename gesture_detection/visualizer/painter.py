@@ -24,8 +24,10 @@ class Painter():
 
     def __call__(self, data):
         self.data = np.append(self.data, data, 1)
+        '''
         print('call')
         print(self.data[:,self.memorySize:])
+        '''
 
     def plot(self):
         fig = plt.figure() 
@@ -49,7 +51,7 @@ class Painter():
 
     def _update(self, index): 
         print('update')
-        print(self.data[:,self.memorySize:])
+        print(self.data)
         raw_input()
         for i in self.display:
             self.line[i].set_ydata(self.data[i][-self.memorySize:])
