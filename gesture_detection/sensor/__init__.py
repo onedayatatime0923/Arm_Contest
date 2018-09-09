@@ -4,7 +4,8 @@ import numpy as np
 
 
 class Sensor:
-    def __init__(self, port = '/dev/tty0', freq = 15200, timeout = 3):
+    def __init__(self, n = 13, port = '/dev/tty0', freq = 15200, timeout = 3):
+        self.n = n
         self.port = port
         self.freq = freq
         self.timeout = timeout
@@ -15,11 +16,11 @@ class Sensor:
         self.data = None
         self.flush()
     def read(self):
-        # return ( type : np.array, shape: (16,1))
+        # return ( type : np.array, shape: (self.n,1))
         # meaning A G M Q YPR define in opt
         while not self._read():
             pass
-        data = np.array(self.data).reshape(16,1)
+        data = np.array(self.data).reshape(self.n,1)
         return data
 
     def _read(self):
@@ -37,7 +38,7 @@ class Sensor:
                         ValueError
                     else:
                         self.data.append(float(value))
-            if len(self.data) != 16:
+            if len(self.data) != self.n:
                 return False
             else:
                 return True
