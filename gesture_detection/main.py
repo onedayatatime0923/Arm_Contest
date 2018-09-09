@@ -18,7 +18,7 @@ def main():
     while True:
         data = sensor.read()
         data = filter.update(data)
-        #visualizer(data)
+        visualizer(data)
         painter(data)
     
 if(__name__ == '__main__'):
