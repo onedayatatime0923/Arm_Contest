@@ -1,4 +1,6 @@
 
+import multiprocessing as mp
+
 from options import MainOptions
 from visualizer import SensorVisualizer, Painter
 from sensor import Sensor
@@ -21,4 +23,8 @@ def main():
     
 if(__name__ == '__main__'):
     raw_input('Waiting for start signal...')
+    painter.plot()
+    p1 = mp.Process(target=main)
+    p1.start()
+
     main()
