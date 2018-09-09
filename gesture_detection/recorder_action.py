@@ -27,18 +27,20 @@ model.eval()
 
 def main():
     #lastSignal = False
-    count = 0
+    moveCount = 0
+    stopCount = 0
     while True:
         data = sensor.read()
         data = filter.update(data)
         x = Variable(convert(torch.FloatTensor(data), opt.n))
         signal = model.predict(x)
         if signal:
-            print('move', count)
+            moveCount += 1
+            print('move', moveCount)
             #recorder.label(data)
         else:
-            count += 1
-            print('stop', count)
+            stopCount += 1
+            print('stop', stopCount)
             '''
             if lastSignal == True:
                 recorder.dump_action()
