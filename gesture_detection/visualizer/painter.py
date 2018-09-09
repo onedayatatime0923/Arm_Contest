@@ -1,5 +1,7 @@
 
 import threading as td
+import multiprocessing as mp
+assert mp and td
 
 import numbers
 import numpy as np
@@ -29,7 +31,7 @@ class Painter():
 
 
     def plot(self):
-        p1 = td.Thread(target=self._plot)
+        p1 = mp.Process(target=self._plot)
         p1.start()
     def _plot(self):
         fig = plt.figure() 
