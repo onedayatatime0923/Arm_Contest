@@ -31,7 +31,7 @@ class Painter():
 
 
     def plot(self):
-        p1 = mp.Process(target=self._plot)
+        p1 = td.Thread(target=self._plot)
         p1.start()
     def _plot(self):
         fig = plt.figure() 
