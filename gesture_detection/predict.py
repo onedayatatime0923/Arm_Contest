@@ -30,8 +30,10 @@ def main():
             speech(operate)
             target = []
         if len(target) > opt.maxLen:
+            print(len(target))
             target = target[-opt.maxLen:]
         #visualizer(data)
     
 if(__name__ == '__main__'):
+    raw_input("Enter to start")
     main()
