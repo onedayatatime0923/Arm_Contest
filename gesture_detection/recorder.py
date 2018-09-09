@@ -9,7 +9,7 @@ from recorder import Recorder
 parser = RecorderOptions()
 opt = parser.parse()
 
-sensor = Sensor(opt.port)
+sensor = Sensor(opt.port, opt.freq)
 sensor.flush()
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
