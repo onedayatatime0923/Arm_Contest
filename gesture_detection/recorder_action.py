@@ -26,7 +26,7 @@ model.setup(opt)
 model.eval()
 
 def main():
-    lastSignal = False
+    #lastSignal = False
     count = 0
     while True:
         data = sensor.read()
@@ -39,9 +39,11 @@ def main():
         else:
             count += 1
             print('stop', count)
+            '''
             if lastSignal == True:
                 recorder.dump_action()
-        lastSignal = signal
+            '''
+        #lastSignal = signal
         #visualizer(data)
     
 if(__name__ == '__main__'):
