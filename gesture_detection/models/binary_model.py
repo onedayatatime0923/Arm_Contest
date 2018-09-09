@@ -69,6 +69,7 @@ class BinaryModel(BaseModel):
 
     def backward_classifier(self, retain_graph = False):
         output = self.netClassifier(self.signal)
+        print(output)
 
         pred = output>0.5
         self.accuClassifier.update(pred, self.label.byte())
