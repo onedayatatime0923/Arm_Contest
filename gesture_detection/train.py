@@ -25,7 +25,7 @@ trainDataLoader= torch.utils.data.DataLoader(
     num_workers=opt.nThreads)
 
 valDataLoader= torch.utils.data.DataLoader(
-    trainDataset,
+    valDataset,
     batch_size= opt.batchSize, shuffle=True,
     num_workers=opt.nThreads)
 # set model
