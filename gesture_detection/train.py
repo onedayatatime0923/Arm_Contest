@@ -16,8 +16,8 @@ parser = TrainOptions()
 opt = parser.parse()
 
 # set dataloader
-trainDataset = createDataset(opt, split = 'train')
-valDataset = createDataset(opt, split = 'val')
+trainDataset = createDataset(opt, split = 'train', nInput = opt.nInput)
+valDataset = createDataset(opt, split = 'val', nInput = opt.nInput)
 
 trainDataLoader= torch.utils.data.DataLoader(
     trainDataset,
