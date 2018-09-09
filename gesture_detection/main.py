@@ -1,7 +1,5 @@
 
-import multiprocessing as mp
 import threading as td
-assert mp and td
 
 from options import MainOptions
 from visualizer import SensorVisualizer, Painter
