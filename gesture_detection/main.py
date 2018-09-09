@@ -18,11 +18,10 @@ def main():
     while True:
         data = sensor.read()
         data = filter.update(data)
-        visualizer(data)
+        #visualizer(data)
         painter(data)
     
 if(__name__ == '__main__'):
-    raw_input('Waiting for start signal...')
     p1 = mp.Process(target=main)
     p1.start()
     painter.plot()

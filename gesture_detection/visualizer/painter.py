@@ -46,6 +46,8 @@ class Painter():
         plt.legend(loc='upper right')
 
     def _update(self, index): 
+        print(self.data.shape)
+        #print(self.data[:,-self.memorySize:])
         for i in self.display:
             self.line[i].set_ydata(self.data[i][-self.memorySize:])
 
