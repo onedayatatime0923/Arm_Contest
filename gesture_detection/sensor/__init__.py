@@ -26,6 +26,7 @@ class Sensor:
         data = []
         for part in string.split('|'):
             for value in part.split(' ')[1:]:
+                print(value)
                 data.append(float(value))
         return data
 
@@ -34,4 +35,5 @@ class Sensor:
         
 
 if __name__ == '__main__':
-    sensor = Sensor()
+    sensor = Sensor("/dev/cu.usbmodem1413")
+    sensor.read()
