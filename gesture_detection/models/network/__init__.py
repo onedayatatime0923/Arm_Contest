@@ -34,6 +34,8 @@ class Classifier(nn.Module):
             nn.Linear(opt.ncf * 4, 1),
             nn.Sigmoid())
     def forward(self, x):
+        print(x.size())
+        print(self.index)
         x = torch.index_select(x, 1, self.index)
         x = self.feature(x)
         return x
