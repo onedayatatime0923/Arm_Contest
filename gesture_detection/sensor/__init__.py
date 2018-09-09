@@ -4,7 +4,7 @@ import numpy as np
 
 
 class Sensor:
-    def __init__(self, n = 13, port = '/dev/tty0', freq = 115200):
+    def __init__(self, n = 16, port = '/dev/tty0', freq = 57600):
         self.n = n
         self.port = port
         self.freq = freq
@@ -37,6 +37,7 @@ class Sensor:
                         ValueError
                     else:
                         self.data.append(float(value))
+            # in case of unknown error
             if len(self.data) != self.n:
                 return False
             else:

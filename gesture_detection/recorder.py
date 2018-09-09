@@ -1,5 +1,4 @@
 
-
 from options import RecorderOptions
 from visualizer import SensorVisualizer
 from sensor import Sensor
