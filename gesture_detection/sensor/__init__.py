@@ -24,7 +24,7 @@ class Sensor:
 
     def _read(self):
         string = self.device.readline()
-        if string[0] == 'A':
+        if string[0] != 'A':
             return False
         else:
             self.data = []
