@@ -7,7 +7,7 @@ from filter import Filter
 parser = MainOptions()
 opt = parser.parse()
 
-sensor = Sensor(opt.port)
+sensor = Sensor(opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
 painter = Painter(repr = opt.repr, display = opt.display, memorySize = opt.memorySize, ylim = opt.ylim)
