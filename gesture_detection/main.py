@@ -26,5 +26,3 @@ if(__name__ == '__main__'):
     p1 = mp.Process(target=main)
     p1.start()
     painter.plot()
-
-    main()
