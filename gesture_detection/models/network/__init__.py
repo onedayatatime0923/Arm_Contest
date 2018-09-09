@@ -7,7 +7,7 @@ assert torch
 class Classifier(nn.Module):
     def __init__(self, opt):
         super(Classifier, self).__init__()
-        self.opt = opt
+        self.index = torch.LongTensor(opt.input).to(opt.device)
         self.feature = nn.Sequential(
             GaussianNoise(device = opt.device),
             nn.Linear(len(opt.input), opt.ncf),
@@ -33,7 +33,7 @@ class Classifier(nn.Module):
             nn.Linear(opt.ncf * 4, 1),
             nn.Sigmoid())
     def forward(self, x):
-        x = torch.index_select(x, 1, torch.LongTensor(self.opt.input))
+        x = torch.index_select(x, 1, self.index)
         x = self.feature(x)
         return x
 
