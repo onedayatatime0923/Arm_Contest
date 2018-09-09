@@ -47,7 +47,8 @@ class Painter():
 
     def _update(self, index): 
         print(self.data.shape)
-        #print(self.data[:,-self.memorySize:])
+        print(self.data[:,-self.memorySize:])
+        input()
         for i in self.display:
             self.line[i].set_ydata(self.data[i][-self.memorySize:])
 
