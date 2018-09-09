@@ -31,7 +31,6 @@ def main():
     while True:
         data = sensor.read()
         data = filter.update(data)
-        print(data)
         x = Variable(convert(torch.FloatTensor(data), opt.n))
         signal = model.predict(x)
         if signal:
