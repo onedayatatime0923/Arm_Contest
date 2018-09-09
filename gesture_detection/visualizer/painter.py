@@ -49,9 +49,11 @@ class Painter():
         plt.legend(loc='upper right')
 
     def _update(self, index): 
+        '''
         print('update')
         print(self.data[:,self.memorySize:])
         raw_input()
+        '''
         for i in self.display:
             self.line[i].set_ydata(self.data[i][-self.memorySize:])
 
