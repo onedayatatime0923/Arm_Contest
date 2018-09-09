@@ -25,5 +25,4 @@ def main():
         visualizer(data)
     
 if(__name__ == '__main__'):
-    raw_input('Waiting for start signal...')
     main()
