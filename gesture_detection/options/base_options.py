@@ -19,7 +19,7 @@ class BaseOptions():
         parser.add_argument('--port', type=str, default = '/dev/cu.usbmodem1413')
         parser.add_argument('--freq', type=int, default = 921600)
         parser.add_argument('--repr', type=str, nargs = 13, 
-                default = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'])
+                default = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'])
         # ---------- Define Recorder ---------- #
         parser.add_argument('--action', type=str,
                 default = 'stop')
