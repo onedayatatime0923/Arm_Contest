@@ -12,7 +12,3 @@ class MainOptions(BaseOptions):
         # ---------- Experiment Setting ---------- #
         parser.set_defaults(name= 'main')
         return parser
-    def parse(self):
-        BaseOptions.parse(self)
-
-        return self.opt
