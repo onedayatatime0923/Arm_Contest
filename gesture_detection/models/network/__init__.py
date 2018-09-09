@@ -25,6 +25,11 @@ class Classifier(nn.Module):
             nn.LeakyReLU(0.2, inplace=True),
             GaussianNoise(device = opt.device),
             nn.Dropout(opt.dropout),
+            nn.Linear(opt.ncf * 4, opt.ncf * 4),
+            nn.BatchNorm1d(opt.ncf * 4),
+            nn.LeakyReLU(0.2, inplace=True),
+            GaussianNoise(device = opt.device),
+            nn.Dropout(opt.dropout),
             nn.Linear(opt.ncf * 4, 1),
             nn.Sigmoid())
     def forward(self, x):
