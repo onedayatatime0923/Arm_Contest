@@ -14,7 +14,7 @@ from classifier_dtw import Classifier
 
 parser = MainOptions()
 opt = parser.parse()
-sensor = Sensor(opt.port)
+sensor = Sensor(opt.n, opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
 speech = Speech()
