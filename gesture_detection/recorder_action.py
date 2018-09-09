@@ -14,6 +14,7 @@ from models import createModel
 parser = TrainOptions()
 opt = parser.parse()
 
+i = raw_input("Enter to start")
 sensor = Sensor(opt.n, opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
@@ -51,5 +52,4 @@ def main(i):
         #visualizer(data)
     
 if(__name__ == '__main__'):
-    i = raw_input("Enter to start")
     main(i)
