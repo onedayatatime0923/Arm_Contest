@@ -47,7 +47,7 @@ class Painter():
 
     def _init(self):
         for i in self.display:
-            self.line[i] = plt.plot(self.data[i][-self.memorySize:], label = self.repr[i])[0]
+            self.line[i] = plt.plot(self.data[i], label = self.repr[i])[0]
         plt.xlim((0, self.memorySize))
         plt.ylim(self.ylim)
         plt.legend(loc='upper right')
