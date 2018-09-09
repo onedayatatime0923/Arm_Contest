@@ -15,11 +15,10 @@ class BaseOptions():
         parser.add_argument('--mode', type=str, choices = ['train','test'],
                 default = 'train', help="Model Mode")
         # ---------- Define Device ---------- #
-        parser.add_argument('--n', type=int, default = 9)
+        parser.add_argument('--n', type=int, default = 16)
         parser.add_argument('--port', type=str, default = '/dev/cu.usbmodem1413')
-        parser.add_argument('--repr', type=str, nargs = 9, 
-                default = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 
-                    'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'])
+        parser.add_argument('--repr', type=str, nargs = 16, 
+                default = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'])
         # ---------- Define Recorder ---------- #
         parser.add_argument('--action', type=str,
                 default = 'stop')
@@ -144,7 +143,6 @@ class BaseOptions():
         # gather options
         self.gather_options()
         self.construct_checkpoints(creatDir = True)
-        self.construct_splitDir()
 
         # print options
         self.construct_message()
