@@ -31,7 +31,7 @@ class Recorder():
         np.save(path, np.array([self.X, self.Y]))
         self.X = []
         self.Y = []
-        exit()
+
     def dump_action(self):
         index = 0
         path = os.path.join(self.opt.actionDir, '{}.npy'.format(index))
