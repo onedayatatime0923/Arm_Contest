@@ -27,12 +27,12 @@ class Painter():
         self.line = [None for i in range(self.n)]
 
     def __call__(self, data):
-        self.data = np.append(self.data, data, 1)
+        self.data = np.append(self.data[:,1:], data, 1)
 
 
     def plot(self):
-        p1 = td.Thread(target=self._plot)
-        p1.start()
+        self._plot()
+
     def _plot(self):
         fig = plt.figure() 
         self.animation = animation.FuncAnimation(
@@ -55,7 +55,7 @@ class Painter():
 
     def _update(self, index): 
         for i in self.display:
-            self.line[i].set_ydata(self.data[i][-self.memorySize:])
+            self.line[i].set_ydata(self.data[i])
 
     
 if __name__ == '__main__':
