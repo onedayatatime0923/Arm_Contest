@@ -22,7 +22,7 @@ class Sensor:
 
     def _read(self):
         string = self.device.readline()
-        string = string.split()
+        string = string.strip()
         data = []
         for part in string.split('|'):
             for value in part.split(' ')[1:]:
