@@ -18,7 +18,7 @@ class Classifier(nn.Module):
             nn.BatchNorm1d(opt.ncf * 2),
             nn.LeakyReLU(0.2, inplace=True),
             nn.Dropout(opt.dropout),
-            nn.Linear(opt.ncf * 4, opt.ncf * 4),
+            nn.Linear(opt.ncf * 2, opt.ncf * 4),
             nn.BatchNorm1d(opt.ncf * 4),
             nn.LeakyReLU(0.2, inplace=True),
             nn.Dropout(opt.dropout),
