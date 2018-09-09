@@ -14,7 +14,7 @@ sensor = Sensor(opt.n, opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
 speech = Speech()
-classifier = Classifier(70.)
+classifier = Classifier(opt.threshold)
 
 
 
@@ -29,6 +29,8 @@ def main():
         if operate != 'None':
             speech(operate)
             target = []
+        if len(target) > opt.maxLen:
+            target = target[-opt.maxLen:]
         #visualizer(data)
     
 if(__name__ == '__main__'):
