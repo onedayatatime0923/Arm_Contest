@@ -33,6 +33,7 @@ class BaseOptions():
         parser.add_argument('--gpuIds', type=int, nargs = '+', default=[-1], help='gpu ids: e.g. 0, 0 1, 0 1 2,  use -1 for CPU')
         parser.add_argument('--model', type=str, default = 'binary',
                             help="Method Name")
+        parser.add_argument('--nInput', type=int, default= 9, help= 'number of input')
         parser.add_argument('--ncf', type=int, default= 64, help= 'number of filters')
         parser.add_argument('--dropout', type=float, default= 0.5, help= 'dropout rate')
         parser.add_argument('--pretrained', action = 'store_true', help='whether to use pretrained model')
