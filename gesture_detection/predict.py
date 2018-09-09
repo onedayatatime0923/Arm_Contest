@@ -10,6 +10,7 @@ from classifier_dtw import Classifier
 
 parser = MainOptions()
 opt = parser.parse()
+raw_input("Enter to start")
 sensor = Sensor(opt.n, opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
@@ -36,5 +37,4 @@ def main():
         #visualizer(data)
     
 if(__name__ == '__main__'):
-    raw_input("Enter to start")
     main()
