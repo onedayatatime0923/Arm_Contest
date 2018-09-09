@@ -8,7 +8,7 @@ from sensor import Sensor
 from filter import Filter
 from visualizer import SensorVisualizer
 from models import createModel
-from utils import convert
+from utils import Queue
 from speech import Speech
 from classifier_dtw import Classifier
 
@@ -24,13 +24,14 @@ model = createModel(opt)
 model.setup(opt)
 model.eval()
 
+queue = Queue(opt.nInput, opt.n, opt.device)
 
 def main():
     target = []
     while True:
         data = sensor.read()
         data = filter.update(data)
-        x = Variable(convert(torch.FloatTensor(data)))
+        x = Variable(queue(torch.FloatTensor(data)))
         signal = model.predict(x)
         if signal:
             target.append(data)
