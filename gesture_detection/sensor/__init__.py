@@ -37,7 +37,11 @@ class Sensor:
                         ValueError
                     else:
                         self.data.append(float(value))
-            return True
+            # in case of unknown error
+            if len(self.data) != self.n:
+                return False
+            else:
+                return True
 
     def flush(self):
         self.device.flushInput()
