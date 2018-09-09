@@ -47,10 +47,10 @@ class GaussianNoise(nn.Module):
     """
 
     def __init__(self, sigma=0.1, is_relative_detach=True, device = 0):
-        super().__init__()
+        nn.Module.__init__(self)
         self.sigma = sigma
         self.is_relative_detach = is_relative_detach
-        self.noise = torch.tensor(0).to(device)
+        self.noise = torch.FloatTensor([0]).to(device)
 
     def forward(self, x):
         if self.training and self.sigma != 0:
