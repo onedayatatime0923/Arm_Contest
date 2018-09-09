@@ -32,7 +32,6 @@ def main():
         data = sensor.read()
         data = filter.update(data)
         x = Variable(queue(torch.FloatTensor(data)))
-        print(x.size())
         signal = model.predict(x)
         if signal:
             target.append(data)
