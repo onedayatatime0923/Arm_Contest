@@ -37,6 +37,7 @@ class Sensor:
                         ValueError
                     else:
                         self.data.append(float(value))
+            # in case of unknown error
             if len(self.data) != self.n:
                 return False
             else:
