@@ -37,8 +37,10 @@ class Sensor:
                         ValueError
                     else:
                         self.data.append(float(value))
-            print(self.data)
-            return True
+            if len(self.data != 16):
+                return False
+            else:
+                return True
 
     def flush(self):
         self.device.flushInput()
