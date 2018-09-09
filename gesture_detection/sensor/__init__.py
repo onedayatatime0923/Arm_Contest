@@ -4,7 +4,7 @@ import numpy as np
 
 
 class Sensor:
-    def __init__(self, n = 13, port = '/dev/tty0', freq = 15200, timeout = 3):
+    def __init__(self, n = 13, port = '/dev/tty0', freq = 115200, timeout = 10):
         self.n = n
         self.port = port
         self.freq = freq
