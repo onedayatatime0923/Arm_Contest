@@ -25,8 +25,6 @@ class Classifier(nn.Module):
             nn.Linear(opt.ncf * 4, 1),
             nn.Sigmoid())
     def forward(self, x):
-        print(x.size())
         x = torch.index_select(x, 1, torch.LongTensor(self.opt.input))
-        print(x.size())
         x = self.feature(x)
         return x
