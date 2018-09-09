@@ -9,8 +9,9 @@ class Classifier(nn.Module):
         super(Classifier, self).__init__()
         self.index = torch.LongTensor(opt.input).to(opt.device)
         self.feature = nn.Sequential(
+            nn.BatchNorm1d(len(opt.input) * opt.nInput),
             GaussianNoise(device = opt.device),
-            nn.Linear(len(opt.input), opt.ncf),
+            nn.Linear(len(opt.input) * opt.nInput, opt.ncf),
             nn.BatchNorm1d(opt.ncf),
             nn.LeakyReLU(0.2, inplace=True),
             GaussianNoise(device = opt.device),
