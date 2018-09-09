@@ -23,8 +23,9 @@ class Painter():
         self.line = [None for i in range(self.n)]
 
     def __call__(self, data):
-        print(data)
         self.data = np.append(self.data, data, 1)
+        print(data)
+        print(self.data[:,self.memorySize:])
 
     def plot(self):
         fig = plt.figure() 
