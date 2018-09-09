@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation 
 
 class Painter():
-    def __init__(self, repr = ['Accel X', 'Accel Y', 'Accel Z', 'Gyro X', 'Gyro Y', 'Gyro Z', 'Magnetic X', 'Magnetic Y', 'Magnetic Z'], display= None, memorySize = 10, ylim = [2, -2]):
+    def __init__(self, repr = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'], display= None, memorySize = 10, ylim = [2, -2]):
         self.n = len(repr)
         self.repr = repr
         if display is None:

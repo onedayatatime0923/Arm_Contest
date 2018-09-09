@@ -144,6 +144,8 @@ class BaseOptions():
         # gather options
         self.gather_options()
         self.construct_checkpoints(creatDir = True)
+        self.construct_splitDir()
+        #self.construct_actionDir()
 
         # print options
         self.construct_message()
