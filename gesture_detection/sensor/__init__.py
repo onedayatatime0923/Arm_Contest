@@ -4,7 +4,7 @@ import numpy as np
 
 
 class Sensor:
-    def __init__(self, port = '/dev/tty0', freq = 9600, timeout = 3):
+    def __init__(self, port = '/dev/tty0', freq = 15200, timeout = 3):
         self.port = port
         self.freq = freq
         self.timeout = timeout
@@ -15,11 +15,11 @@ class Sensor:
         self.data = None
         self.flush()
     def read(self):
-        # return ( type : np.array, shape: (9,1))
-        # meaning accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ define in opt
+        # return ( type : np.array, shape: (16,1))
+        # meaning A G M Q YPR define in opt
         while not self._read():
             pass
-        data = np.array(self.data)
+        data = np.array(self.data).reshape(16,1)
         return data
 
     def _read(self):
