@@ -1,5 +1,4 @@
 
-def convert(data):
-    data = data.view(1,9)
+def convert(data, n):
+    data = data.view(1,n)
     return data
-
