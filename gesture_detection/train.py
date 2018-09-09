@@ -62,7 +62,7 @@ for epoch in range(opt.epoch, opt.nEpochStart + opt.nEpochDecay + 1):
 
         model.set_input(data)
         model.test()
-        valVisualizer('val', epoch, data = model.current_losses())
+        valVisualizer('Val', epoch, data = model.current_losses())
     valVisualizer.end('Val', epoch, data = model.current_accus())
 
     if epoch % opt.saveEpochInterval == 0:
