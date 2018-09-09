@@ -12,25 +12,29 @@ class Sensor:
         self.device = serial.Serial( port, freq, timeout = timeout)
         print('device {} is on {} with frequency {} Hz.'.format(self.device.name, self.device.port, self.device.baudrate))
         print('------------------------------ device initialized -------------------------------')
+        self.data = None
         self.flush()
     def read(self):
         # return ( type : np.array, shape: (9,1))
         # meaning accelX accelY accelZ gyroX gyroY gyroZ magneticX magneticY magneticZ define in opt
-        data = self._read()
-        data = np.array(data)
+        while not self._read():
+            pass
+        data = np.array(self.data)
         return data
 
     def _read(self):
         string = self.device.readline()
-        string = string.strip()
-        data = []
-        print(string)
-        for part in string.split('|'):
-            print(part)
-            for value in part.split(' ')[1:]:
-                print(value)
-                data.append(float(value))
-        return data
+        if string[0] == 'A':
+            return False
+        else:
+            self.data = []
+            string = string.strip()
+            print(string)
+            for part in string.split('|'):
+                print(part)
+                for value in part.split(' ')[1:]:
+                    self.data.append(float(value))
+            return True
 
     def flush(self):
         self.device.flushInput()
