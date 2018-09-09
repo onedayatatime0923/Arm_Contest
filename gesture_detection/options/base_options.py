@@ -38,9 +38,9 @@ class BaseOptions():
         parser.add_argument('--pretrainedRoot', type = str, default = 'pretrained/', help='path to load pretrained model')
         # ---------- Define Painter ---------- #
         parser.add_argument('--display', type=int, nargs = '+', 
-                default = list(range(9)))
+                default = list(range(16)))
         parser.add_argument('--memorySize', type=int, default = 10)
-        parser.add_argument('--ylim', type=int, default = 2)
+        parser.add_argument('--ylim', type=int, default = 200)
         # ---------- Whether to Resume ---------- #
         parser.add_argument("--resume", action = 'store_true',
                             help="whether to resume")

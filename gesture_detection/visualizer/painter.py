@@ -23,9 +23,7 @@ class Painter():
         self.line = [None for i in range(self.n)]
 
     def __call__(self, data):
-        print(data.shape)
         self.data = np.append(self.data, data, 1)
-        print(self.data.shape)
 
     def plot(self):
         fig = plt.figure() 
