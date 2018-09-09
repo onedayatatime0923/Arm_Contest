@@ -35,7 +35,8 @@ def main():
         x = Variable(convert(torch.FloatTensor(data), opt.n))
         signal = model.predict(x)
         if signal:
-            recorder.label(data)
+            pass
+            #recorder.label(data)
         else:
             count += 1
             print('stop', count)
