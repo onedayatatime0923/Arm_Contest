@@ -3,7 +3,7 @@
 import torch
 from torch.autograd import Variable
 
-from options import MainOptions
+from options import TrainOptions
 from sensor import Sensor
 from filter import Filter
 from visualizer import SensorVisualizer
@@ -12,7 +12,7 @@ from utils import Queue
 from speech import Speech
 from classifier_dtw import Classifier
 
-parser = MainOptions()
+parser = TrainOptions()
 opt = parser.parse()
 sensor = Sensor(opt.n, opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
