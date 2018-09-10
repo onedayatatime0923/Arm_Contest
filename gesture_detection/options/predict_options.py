@@ -20,7 +20,7 @@ class PredictOptions(BaseOptions):
         parser.add_argument('--actionThreshold', type=float, default = 98)
         parser.add_argument('--index', type=int, nargs = '*',
                 default = [3,4,5])
-        parser.add_argument('--nStep', type=int, default = 8)
+        parser.add_argument('--nStep', type=int, default = 2)
         # ---------- Experiment Setting ---------- #
         parser.set_defaults(name= 'predict')
         return parser

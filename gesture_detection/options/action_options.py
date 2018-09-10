@@ -31,7 +31,7 @@ class ActionOptions(BaseOptions):
         parser.add_argument('--threshold', type=float, default = 40)
         parser.add_argument('--index', type=int, nargs = '*',
                 default = [3,4,5])
-        parser.add_argument('--nStep', type=int, default = 8)
+        parser.add_argument('--nStep', type=int, default = 2)
         # ---------- Experiment Setting ---------- #
         parser.set_defaults(name= 'action')
         return parser
