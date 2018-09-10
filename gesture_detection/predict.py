@@ -30,6 +30,7 @@ def main():
             print(operate)
             if operate != 'None':
                 speech(operate)
+                sensor.flush()
                 target = []
         else:
             print("Stop", counter)
