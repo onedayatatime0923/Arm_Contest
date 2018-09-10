@@ -28,7 +28,7 @@ class ActionOptions(BaseOptions):
         parser.add_argument('--memorySize', type=int, default = 10)
         parser.add_argument('--ylim', type=int, default = 200)
         # ---------- Define Parameters ---------- #
-        parser.add_argument('--threshold', type=float, default = 20)
+        parser.add_argument('--threshold', type=float, default = 1500)
         parser.add_argument('--index', type=int, nargs = '*',
                 default = list(range(16)))
         parser.add_argument('--nStep', type=int, default = 10)
