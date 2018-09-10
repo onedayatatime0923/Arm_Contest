@@ -21,7 +21,7 @@ classifier = ClassifierBinary(opt.threshold, opt.index, opt.nStep)
 print("action: {}".format(opt.action))
 
 
-def main(i):
+def main():
     lastSignal = False
     moveCount = 0
     stopCount = 0
