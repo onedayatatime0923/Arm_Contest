@@ -28,6 +28,7 @@ def main():
         data = sensor.read()
         data = filter.update(data)
         data = data[np.array(opt.index)]
+        print(LA.norm(data))
         target = target[1:] + [data]
         if all([ LA.norm(i) < opt.threshold for i in target]):
             moveCount += 1
