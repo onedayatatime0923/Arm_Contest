@@ -1,12 +1,12 @@
 
-from options import RecorderOptions
+from options import PredictOptions
 from sensor import Sensor
 from filter import Filter
 from visualizer import SensorVisualizer
 from speech import Speech
 from classifier import ClassifierDtw, ClassifierBinary
 
-parser = RecorderOptions()
+parser = PredictOptions()
 opt = parser.parse()
 
 sensor = Sensor(opt.n, opt.port, opt.freq)
