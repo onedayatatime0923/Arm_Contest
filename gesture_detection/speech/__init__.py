@@ -19,7 +19,6 @@ class Speech:
                 'today': '今天',
                 'come': '來',
                 'participate': '參加',
-                'contest': '比賽',
                 'make': '做出',
                 'help': '幫助',
                 'deaf': '聾',
