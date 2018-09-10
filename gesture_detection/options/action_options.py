@@ -1,0 +1,64 @@
+
+import sys
+sys.path.append('./')
+from options.base_options import BaseOptions
+
+
+class ActionOptions(BaseOptions):
+    def __init__(self):
+        BaseOptions.__init__(self)
+    def initialize(self, parser):
+        parser = BaseOptions.initialize(self, parser)
+        # ---------- Define Device ---------- #
+        parser.add_argument('--n', type=int, default = 16)
+        parser.add_argument('--port', type=str, default = '/dev/cu.usbmodem1413')
+        parser.add_argument('--freq', type=int, default = 115200)
+        parser.add_argument('--repr', type=str, nargs = 16, 
+                default = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'])
+        # ---------- Define Recorder ---------- #
+        '''
+        parser.add_argument('--action', type=str,
+                default = 'stop')
+        '''
+        parser.add_argument('--dataDir', type=str, default='./data', 
+                            help='models are saved here')
+        # ---------- Define Painter ---------- #
+        parser.add_argument('--display', type=int, nargs = '+', 
+                default = list(range(16)))
+        parser.add_argument('--memorySize', type=int, default = 10)
+        parser.add_argument('--ylim', type=int, default = 200)
+        # ---------- Define Parameters ---------- #
+        parser.add_argument('--threshold', type=float, default = 20)
+        parser.add_argument('--index', type=int, nargs = '*',
+                default = list(range(16)))
+        parser.add_argument('--nStep', type=int, default = 10)
+        # ---------- Experiment Setting ---------- #
+        parser.set_defaults(name= 'action')
+        return parser
+    def parse(self):
+        # gather options
+        self.gather_options()
+        if self.opt.mode == 'train' and not self.opt.resume:
+            self.construct_checkpoints(creatDir = True)
+        elif self.opt.mode == 'train' and self.opt.resume or self.opt.mode == 'test':
+            self.construct_checkpoints(creatDir = False)
+        #self.construct_splitDir()
+        #self.construct_actionDir()
+        #self.construct_input()
+
+        # continue to train
+        if self.opt.mode == 'train' and self.opt.resume:
+            self.load_options('opt.txt')
+
+        # print options
+        self.construct_message()
+        if self.opt.mode == 'train' and not self.opt.resume:
+            self.save_options('opt.txt')
+        if self.opt.mode == 'test':
+            self.save_options('test_opt.txt')
+        self.print_options()
+
+        # set gpu ids
+        self.construct_device()
+
+        return self.opt
