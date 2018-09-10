@@ -29,14 +29,12 @@ def main():
         data = filter.update(data)
         data = data[np.array(opt.index)]
         target = target[1:] + [data]
-        print(LA.norm(data))
-        print([ LA.norm(i) < opt.threshold for i in target])
         if all([ LA.norm(i) < opt.threshold for i in target]):
-            moveCount += 1
-            print('move', moveCount)
-        else:
             stopCount += 1
             print('stop', stopCount)
+        else:
+            moveCount += 1
+            print('move', moveCount)
         #visualizer(data)
     
 if(__name__ == '__main__'):
