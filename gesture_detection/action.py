@@ -28,7 +28,7 @@ def main():
         data = sensor.read()
         data = filter.update(data)
         data = data[np.array(opt.index)]
-        print(LA.norm(data))
+        #print(LA.norm(data))
         target = target[1:] + [data]
         if all([ LA.norm(i) < opt.threshold for i in target]):
             stopCount += 1
@@ -36,7 +36,7 @@ def main():
         else:
             moveCount += 1
             print('move', moveCount)
-        visualizer(data)
+        #visualizer(data)
     
 if(__name__ == '__main__'):
     main()
