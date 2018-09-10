@@ -35,7 +35,7 @@ def main():
         else:
             moveCount += 1
             print('move', moveCount)
-        #visualizer(data)
+        visualizer(data)
     
 if(__name__ == '__main__'):
     main()
