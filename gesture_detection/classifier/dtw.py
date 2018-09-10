@@ -4,7 +4,6 @@ from dtw import dtw
 import numpy as np
 from numpy import linalg as LA
 
-assert dtw
 
 class Classifier:
     def __init__(self, threshold = 98, noOps = 'None'):

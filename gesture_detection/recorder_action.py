@@ -1,30 +1,25 @@
 
-import torch
-from torch.autograd import Variable
 
 
-from options import TrainOptions
+from options import RecorderOptions
 from visualizer import SensorVisualizer
 from sensor import Sensor
 from filter import Filter
 from recorder import Recorder
-from utils import convert
-from models import createModel
+from Classifier import ClassifierBinary
 
-parser = TrainOptions()
+parser = RecorderOptions()
 opt = parser.parse()
 
-i = raw_input("Enter to start")
+raw_input("Enter to start")
 sensor = Sensor(opt.n, opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
 recorder = Recorder(opt)
+classifier = ClassifierBinary(opt.threshold, opt.index, opt.nStep)
 
 print("action: {}".format(opt.action))
 
-model = createModel(opt)
-model.setup(opt)
-model.eval()
 
 def main(i):
     lastSignal = False
@@ -33,24 +28,19 @@ def main(i):
     while True:
         data = sensor.read()
         data = filter.update(data)
-        x = Variable(convert(torch.FloatTensor(data), opt.n))
-        signal = model.predict(x)
-        '''
-        recorder.label(data)
-        recorder.dump_action_id(i)
-        '''
+        signal = classifier(data)
         if signal:
             moveCount += 1
             print('move', moveCount)
-            #recorder.label(data)
+            recorder.label(data)
         else:
             stopCount += 1
             print('stop', stopCount)
             if lastSignal == True:
                 pass
-                #recorder.dump_action()
+                recorder.dump_action()
         lastSignal = signal
         #visualizer(data)
     
 if(__name__ == '__main__'):
-    main(i)
+    main()
