@@ -1,7 +1,6 @@
 
-import threading as td
 import multiprocessing as mp
-assert mp and td
+from multiprocessing import Manager
 
 import numbers
 import numpy as np
@@ -9,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation 
 
 class Painter():
-    def __init__(self, repr = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'], display= None, memorySize = 10, ylim = [2, -2]):
+    def __init__(self, repr = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'], display= None, memorySize = 10, ylim = [-200, 200]):
         self.n = len(repr)
         self.repr = repr
         if display is None:
@@ -21,16 +20,20 @@ class Painter():
             self.ylim = (-ylim, ylim)
         else:
             self.ylim = ylim
-        self.data = np.zeros((self.n, self.memorySize))
+        self.data = Manager().list([np.zeros(self.n) for i in range(self.memorySize)])
 
+
+        self.process = None
         self.animation = None
         self.line = [None for i in range(self.n)]
 
     def __call__(self, data):
-        self.data = np.append(self.data[:,1:], data, 1)
+        self.data.append(data)
+
 
     def plot(self):
-        self._plot()
+        self.process = mp.Process(target = self._plot)
+        self.process.start()
 
     def _plot(self):
         fig = plt.figure() 
@@ -46,16 +49,23 @@ class Painter():
         self.animation.save(path, fps=30, extra_args=['-vcodec', 'libx264'])
 
     def _init(self):
+        data = np.array(self.data)[-self.memorySize:]
         for i in self.display:
-            self.line[i] = plt.plot(self.data[i], label = self.repr[i])[0]
+            self.line[i] = plt.plot(data[:,i], label = self.repr[i])[0]
         plt.xlim((0, self.memorySize))
         plt.ylim(self.ylim)
         plt.legend(loc='upper right')
 
     def _update(self, index): 
+        data = np.array(self.data)[-self.memorySize:]
         for i in self.display:
-            self.line[i].set_ydata(self.data[i])
+            self.line[i].set_ydata(data[:,i])
 
     
 if __name__ == '__main__':
     p = Painter()
+    p.plot()
+
+    p(np.ones((16))*100)
+    p(np.ones((16))*50)
+    p(np.ones((16))*50)

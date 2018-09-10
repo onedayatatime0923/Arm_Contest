@@ -33,11 +33,11 @@ class Filter:
 
     def update(self, data):
         self.filter.predict()
-        self.filter.update(data)
-        return self.filter.x
+        self.filter.update(np.expand_dims(data, 1))
+        return self.filter.x[:,0]
 
     
         
 if __name__ == '__main__':
-    f = Filter( 9, 9)
+    f = Filter( 16, 16)
 

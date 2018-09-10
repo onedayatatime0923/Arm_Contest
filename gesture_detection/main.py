@@ -1,5 +1,4 @@
 
-import threading as td
 
 from options import MainOptions
 from visualizer import SensorVisualizer, Painter
@@ -17,12 +16,10 @@ painter = Painter(repr = opt.repr, display = opt.display, memorySize = opt.memor
 def main():
     while True:
         data = sensor.read()
-        #data = filter.update(data)
+        data = filter.update(data)
         visualizer(data)
         painter(data)
     
 if(__name__ == '__main__'):
-    #main()
-    p1 = td.Thread(target=main)
-    p1.start()
     painter.plot()
+    main()

@@ -9,8 +9,15 @@ class BaseOptions():
         self.parser = None
         self.opt = None
         self.message = None
-
     def initialize(self, parser):
+        # ---------- Experiment Setting ---------- #
+        parser.add_argument('--name', type=str,default = 'main',
+                            help='name of the experiment. It decides where to store samples and models')
+        parser.add_argument('--checkpointsDir', type=str, default='./checkpoints', 
+                            help='models are saved here')
+        return parser
+
+    def initialize_bak(self, parser):
         # ---------- Define Mode ---------- #
         parser.add_argument('--mode', type=str, choices = ['train','test'],
                 default = 'train', help="Model Mode")
@@ -150,10 +157,13 @@ class BaseOptions():
             self.opt.device = torch.device('cpu')
 
     def parse(self):
+        return self.parse_normal()
+
+    def parse_normal(self):
         # gather options
         self.gather_options()
         self.construct_checkpoints(creatDir = True)
-        self.construct_splitDir()
+        #self.construct_splitDir()
         #self.construct_actionDir()
 
         # print options
@@ -163,16 +173,16 @@ class BaseOptions():
 
         return self.opt
 
-    def model_parse(self):
+    def parse_model(self):
         # gather options
         self.gather_options()
         if self.opt.mode == 'train' and not self.opt.resume:
             self.construct_checkpoints(creatDir = True)
         elif self.opt.mode == 'train' and self.opt.resume or self.opt.mode == 'test':
             self.construct_checkpoints(creatDir = False)
-        self.construct_splitDir()
-        self.construct_actionDir()
-        self.construct_input()
+        #self.construct_splitDir()
+        #self.construct_actionDir()
+        #self.construct_input()
 
         # continue to train
         if self.opt.mode == 'train' and self.opt.resume:

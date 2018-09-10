@@ -15,11 +15,11 @@ class Sensor:
         self.data = None
         self.flush()
     def read(self):
-        # return ( type : np.array, shape: (self.n,1))
+        # return ( type : np.array, shape: (self.n))
         # meaning A G M Q YPR define in opt
         while not self._read():
             pass
-        data = np.array(self.data).reshape(self.n,1)
+        data = np.array(self.data)
         return data
 
     def _read(self):
