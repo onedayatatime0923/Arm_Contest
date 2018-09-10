@@ -1,39 +1,40 @@
 
-
-
-from options import MainOptions
+from options import RecorderOptions
 from sensor import Sensor
 from filter import Filter
 from visualizer import SensorVisualizer
 from speech import Speech
-from classifier_dtw import Classifier
+from classifier import ClassifierDtw, ClassifierBinary
 
-parser = MainOptions()
+parser = RecorderOptions()
 opt = parser.parse()
-raw_input("Enter to start")
+
 sensor = Sensor(opt.n, opt.port, opt.freq)
 filter = Filter(opt.n, opt.n)
 visualizer = SensorVisualizer(repr = opt.repr)
 speech = Speech()
-classifier = Classifier(opt.threshold)
-
+classifierBinary = ClassifierBinary(opt.binaryThreshold, opt.index, opt.nStep)
+classifierDtw = ClassifierDtw(opt.actionThreshold)
 
 
 def main():
     target = []
+    counter = 0
     while True:
         data = sensor.read()
         data = filter.update(data)
-        target.append(data)
-        operate = classifier.predict(target)
-        print(operate)
-        if operate != 'None':
-            speech(operate)
-            sensor.flush()
+        signal = classifierBinary(data)
+        if signal:
+            target.append(data)
+            operate = classifierDtw.predict(target)
+            print(operate)
+            if operate != 'None':
+                speech(operate)
+                target = []
+        else:
+            print("Stop", counter)
+            counter += 1
             target = []
-        if len(target) > opt.maxLen:
-            print(len(target))
-            target = target[-opt.maxLen:]
         #visualizer(data)
     
 if(__name__ == '__main__'):
