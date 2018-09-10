@@ -25,7 +25,8 @@ class Speech:
                 'dumb': '啞',
                 'human': '人士',
                 'of': '的',
-                'gloves': '手套'}
+                'gloves': '手套',
+                'rat': '老鼠'}
     def _speech(self, data):
         if data in self.translate:
             os.system("google_speech -l zh-TW {}".format(self.translate[data]))
