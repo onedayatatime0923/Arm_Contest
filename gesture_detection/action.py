@@ -27,6 +27,7 @@ def main():
     while True:
         data = sensor.read()
         data = filter.update(data)
+        #visualizer(data)
         data = data[np.array(opt.index)]
         #print(LA.norm(data))
         target = target[1:] + [data]
@@ -36,7 +37,6 @@ def main():
         else:
             moveCount += 1
             print('move', moveCount)
-        #visualizer(data)
     
 if(__name__ == '__main__'):
     main()
