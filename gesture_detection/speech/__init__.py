@@ -31,6 +31,6 @@ class Speech:
         if data in self.translate:
             os.system("google_speech -l zh-TW {}".format(self.translate[data]))
         else:
-            os.system("google_speech -l en-TW {}".format(data))
+            os.system("google_speech -l en {}".format(data))
     def __call__(self, data):
         self._speech(data)
