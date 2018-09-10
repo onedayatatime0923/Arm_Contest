@@ -35,30 +35,17 @@ class ActionOptions(BaseOptions):
         # ---------- Experiment Setting ---------- #
         parser.set_defaults(name= 'action')
         return parser
+
     def parse(self):
         # gather options
         self.gather_options()
-        if self.opt.mode == 'train' and not self.opt.resume:
-            self.construct_checkpoints(creatDir = True)
-        elif self.opt.mode == 'train' and self.opt.resume or self.opt.mode == 'test':
-            self.construct_checkpoints(creatDir = False)
+        self.construct_checkpoints(creatDir = True)
         #self.construct_splitDir()
         #self.construct_actionDir()
-        #self.construct_input()
-
-        # continue to train
-        if self.opt.mode == 'train' and self.opt.resume:
-            self.load_options('opt.txt')
 
         # print options
         self.construct_message()
-        if self.opt.mode == 'train' and not self.opt.resume:
-            self.save_options('opt.txt')
-        if self.opt.mode == 'test':
-            self.save_options('test_opt.txt')
+        self.save_options('opt.txt')
         self.print_options()
-
-        # set gpu ids
-        self.construct_device()
 
         return self.opt
