@@ -30,6 +30,7 @@ def main():
         data = data[np.array(opt.index)]
         target = target[1:] + [data]
         print(LA.norm(data))
+        print(len(target))
         print([ LA.norm(i) < opt.threshold for i in target])
         if all([ LA.norm(i) < opt.threshold for i in target]):
             moveCount += 1
