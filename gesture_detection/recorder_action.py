@@ -6,7 +6,7 @@ from visualizer import SensorVisualizer
 from sensor import Sensor
 from filter import Filter
 from recorder import Recorder
-from Classifier import ClassifierBinary
+from classifier import ClassifierBinary
 
 parser = RecorderOptions()
 opt = parser.parse()
