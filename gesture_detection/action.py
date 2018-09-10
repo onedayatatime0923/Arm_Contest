@@ -37,7 +37,7 @@ def main():
         else:
             stopCount += 1
             print('stop', stopCount)
-        visualizer(data)
+        #visualizer(data)
     
 if(__name__ == '__main__'):
     main()
