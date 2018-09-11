@@ -17,7 +17,7 @@ class PredictOptions(BaseOptions):
                 default = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'])
         # ---------- Define Parameters ---------- #
         parser.add_argument('--binaryThreshold', type=float, default = 40)
-        parser.add_argument('--actionThreshold', type=float, default = 98)
+        parser.add_argument('--actionThreshold', type=float, default = 900)
         parser.add_argument('--index', type=int, nargs = '*',
                 default = [3,4,5])
         parser.add_argument('--nStep', type=int, default = 2)
