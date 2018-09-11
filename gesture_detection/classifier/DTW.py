@@ -1,6 +1,6 @@
 
 import os
-from dtw import dtw
+from fastdtw import fastdtw
 import numpy as np
 from numpy import linalg as LA
 
@@ -28,7 +28,7 @@ class Classifier:
     def predict(self, target):
         score = []
         for d in self.data:
-            score.append(dtw(d, target, dist=lambda x, y: LA.norm(x - y, ord=1))[0])
+            score.append(fastdtw(d, target, dist=lambda x, y: LA.norm(x - y, ord=1))[0])
         score = np.array(score)
         print(min(np.array(score)))
         if min(np.array(score)) < self.threshold:
