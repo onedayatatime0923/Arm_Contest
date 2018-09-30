@@ -26,7 +26,7 @@ class Speech:
                 'human': '人士',
                 'of': '的',
                 'gloves': '手套',
-                'very': '很'}
+                'very': '很',
                 'thank': '謝謝'}
     def _speech(self, data):
         if data in self.translate:

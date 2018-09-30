@@ -1,8 +1,9 @@
 
 import os
-from dtw import dtw
+from fastdtw import fastdtw
 import numpy as np
 from numpy import linalg as LA
+from scipy.spatial.distance import euclidean
 
 
 class Classifier:
@@ -27,8 +28,12 @@ class Classifier:
         self.data = data
     def predict(self, target):
         score = []
-        for d in self.data:
-            score.append(dtw(d, target, dist=lambda x, y: LA.norm(x - y, ord=1))[0])
+        for d in range(len(self.data)):
+            #score.append(fastdtw(d, target, dist=lambda x, y: LA.norm(x - y, ord=1))[0])
+            s = (fastdtw(self.data[d], target)[0])
+            if self.action[d] == 'good':
+                s += 12000
+            score.append(s)
         score = np.array(score)
         print(min(np.array(score)))
         if min(np.array(score)) < self.threshold:

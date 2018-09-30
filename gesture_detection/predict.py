@@ -20,6 +20,7 @@ classifierDtw = ClassifierDtw(opt.actionThreshold)
 def main():
     target = []
     counter = 0
+    last_opertate = ''
     while True:
         data = sensor.read()
         data = filter.update(data)
@@ -29,11 +30,14 @@ def main():
             operate = classifierDtw.predict(target)
             print(operate)
             if operate != 'None':
-                speech(operate)
-                sensor.flush()
-                target = []
+                if(last_opertate != operate):
+                    speech(operate)
+                    sensor.flush()
+                    target = []
+                last_opertate = operate
         else:
             print("Stop", counter)
+            #last_opertate = ''
             counter += 1
             target = []
         #visualizer(data)
