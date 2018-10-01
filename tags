@@ -8,7 +8,7 @@ AccuEval	gesture_detection/utils/accu_eval.py	/^class AccuEval:$/;"	c
 ActionDataLoader	video_detection/util.py	/^class ActionDataLoader():$/;"	c
 ActionOptions	gesture_detection/options/action_options.py	/^class ActionOptions(BaseOptions):$/;"	c
 BATCH_SIZE	video_detection/main.py	/^BATCH_SIZE= 8 $/;"	v
-BUFFER_SIZE	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	11;"	d	file:
+BUFFER_SIZE	arm_gesture_detection/classifier/main.cpp	11;"	d	file:
 BalanceLoss2d	gesture_detection/utils/loss.py	/^class BalanceLoss2d(nn.Module):$/;"	c
 BaseDataset	gesture_detection/dataset/base_dataset.py	/^class BaseDataset(data.Dataset):$/;"	c
 BaseModel	gesture_detection/models/base_model.py	/^class BaseModel():$/;"	c
@@ -16,10 +16,13 @@ BaseOptions	gesture_detection/options/base_options.py	/^class BaseOptions():$/;"
 BaseVisualizer	gesture_detection/visualizer/base_visualizer.py	/^class BaseVisualizer():$/;"	c
 BinaryDataSet	gesture_detection/dataset/binary_dataset.py	/^class BinaryDataSet(BaseDataset):$/;"	c
 BinaryModel	gesture_detection/models/binary_model.py	/^class BinaryModel(BaseModel):$/;"	c
+Classifier	arm_gesture_detection/classifier/classifier.h	/^class Classifier{$/;"	c
+Classifier	arm_gesture_detection/classifier/classifier/DTW.py	/^class Classifier:$/;"	c
+Classifier	arm_gesture_detection/classifier/classifier/binary.py	/^class Classifier:$/;"	c
 Classifier	gesture_detection/classifier/DTW.py	/^class Classifier:$/;"	c
 Classifier	gesture_detection/classifier/binary.py	/^class Classifier:$/;"	c
 Classifier	gesture_detection/models/network/__init__.py	/^class Classifier(nn.Module):$/;"	c
-CompareBuffer	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	/^uint8_t CompareBuffer(uint32_t* pBuffer1, uint32_t* pBuffer2, uint16_t BufferLength)$/;"	f
+CompareBuffer	arm_gesture_detection/classifier/main.cpp	/^uint8_t CompareBuffer(uint32_t* pBuffer1, uint32_t* pBuffer2, uint16_t BufferLength)$/;"	f
 ConcatDataset	gesture_detection/dataset/concat_dataset.py	/^class ConcatDataset(BaseDataset):$/;"	c
 CrossEntropyLoss2d	gesture_detection/utils/loss.py	/^class CrossEntropyLoss2d(nn.Module):$/;"	c
 DROPOUT	video_detection/main.py	/^DROPOUT= 0.3$/;"	v
@@ -28,7 +31,7 @@ Diff2d	gesture_detection/utils/loss.py	/^class Diff2d(nn.Module):$/;"	c
 Distance	gesture_detection/utils/loss.py	/^class Distance(nn.Module):$/;"	c
 EPOCH	video_detection/main.py	/^EPOCH= 20$/;"	v
 Entropy	gesture_detection/utils/loss.py	/^class Entropy(nn.Module):$/;"	c
-FillBuffer	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	/^void FillBuffer(uint32_t *pBuffer, uint32_t BufferLength, uint32_t Value)$/;"	f
+FillBuffer	arm_gesture_detection/classifier/main.cpp	/^void FillBuffer(uint32_t *pBuffer, uint32_t BufferLength, uint32_t Value)$/;"	f
 Filter	gesture_detection/filter/__init__.py	/^class Filter:$/;"	c
 GANLoss	gesture_detection/utils/loss.py	/^class GANLoss(nn.Module):$/;"	c
 GaussianNoise	gesture_detection/models/network/__init__.py	/^class GaussianNoise(nn.Module):$/;"	c
@@ -63,7 +66,8 @@ TrainOptions	gesture_detection/options/train_options.py	/^class TrainOptions(Bas
 VOLCABULARY_PATH	video_detection/main.py	/^VOLCABULARY_PATH = '.\/vocab.txt'$/;"	v
 Vocabulary	gesture_detection/utils/vocabulary/__init__.py	/^class Vocabulary:$/;"	c
 Vocabulary	video_detection/util.py	/^class Vocabulary:$/;"	c
-WRITE_READ_ADDR	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	12;"	d	file:
+WRITE_READ_ADDR	arm_gesture_detection/classifier/main.cpp	12;"	d	file:
+__call__	arm_gesture_detection/classifier/classifier/binary.py	/^    def __call__(self, data):$/;"	m	class:Classifier	file:
 __call__	gesture_detection/classifier/binary.py	/^    def __call__(self, data):$/;"	m	class:Classifier	file:
 __call__	gesture_detection/recorder/__init__.py	/^    def __call__(self, data):$/;"	m	class:Recorder	file:
 __call__	gesture_detection/speech/__init__.py	/^    def __call__(self, data):$/;"	m	class:Speech	file:
@@ -76,6 +80,8 @@ __call__	gesture_detection/visualizer/sensor_visualizer.py	/^    def __call__(se
 __getitem__	gesture_detection/dataset/binary_dataset.py	/^    def __getitem__(self, index):$/;"	m	class:BinaryDataSet	file:
 __getitem__	gesture_detection/dataset/concat_dataset.py	/^    def __getitem__(self, i):$/;"	m	class:ConcatDataset	file:
 __getitem__	video_detection/util.py	/^    def __getitem__(self, i):$/;"	m	class:ImageDataset	file:
+__init__	arm_gesture_detection/classifier/classifier/DTW.py	/^    def __init__(self, threshold = 98, noOps = 'None'):$/;"	m	class:Classifier
+__init__	arm_gesture_detection/classifier/classifier/binary.py	/^    def __init__(self, threshold = 40, index = [3,4,5], nStep = 8):$/;"	m	class:Classifier
 __init__	gesture_detection/classifier/DTW.py	/^    def __init__(self, threshold = 98, noOps = 'None'):$/;"	m	class:Classifier
 __init__	gesture_detection/classifier/binary.py	/^    def __init__(self, threshold = 40, index = [3,4,5], nStep = 8):$/;"	m	class:Classifier
 __init__	gesture_detection/dataset/base_dataset.py	/^    def __init__(self, opt):$/;"	m	class:BaseDataset
@@ -135,6 +141,7 @@ _speech	gesture_detection/speech/__init__.py	/^    def _speech(self, data):$/;"	
 _update	gesture_detection/visualizer/painter.py	/^    def _update(self, index): $/;"	m	class:Painter
 accu_record	video_detection/main.py	/^        accu_record= record[1]$/;"	v
 accu_record	video_detection/main.py	/^accu_record=0$/;"	v
+action	arm_gesture_detection/classifier/classifier.h	/^    vector<const char*> action;$/;"	m	class:Classifier
 action	gesture_detection/dump.py	/^action = [line.strip() for line in open(".\/utils\/vocabulary\/record.txt", 'r')]$/;"	v
 add	gesture_detection/utils/vocabulary/__init__.py	/^    def add(self, word):$/;"	m	class:Vocabulary
 addWord	video_detection/util.py	/^    def addWord(self, word):$/;"	m	class:Vocabulary
@@ -144,6 +151,7 @@ backward_classifier	gesture_detection/models/binary_model.py	/^    def backward_
 buffer	arm_gesture_detection/main.cpp	/^char buffer[14];$/;"	v
 buffer	gesture_detection/mbed.cpp	/^char buffer[14];$/;"	v
 buffer	gesture_detection/mbed/mbed.cpp	/^char buffer[14];$/;"	v
+c	arm_gesture_detection/classifier/classifier/binary.py	/^    c = Classifier()$/;"	v	class:Classifier
 c	gesture_detection/classifier/binary.py	/^    c = Classifier()$/;"	v	class:Classifier
 c	gesture_detection/utils/accu_eval.py	/^    c = 20$/;"	v	class:AccuEval
 classifier	gesture_detection/recorder_action.py	/^classifier = ClassifierBinary(opt.threshold, opt.index, opt.nStep)$/;"	v
@@ -162,6 +170,7 @@ createModel	gesture_detection/models/__init__.py	/^def createModel(opt):$/;"	f
 createScheduler	gesture_detection/models/base_model.py	/^def createScheduler(optimizer, opt):$/;"	f
 current_accus	gesture_detection/models/base_model.py	/^    def current_accus(self):$/;"	m	class:BaseModel
 current_losses	gesture_detection/models/base_model.py	/^    def current_losses(self):$/;"	m	class:BaseModel
+data	arm_gesture_detection/classifier/classifier.h	/^    vector<float**> data;$/;"	m	class:Classifier
 dir_path	gesture_detection/test.py	/^dir_path = os.path.dirname(os.path.realpath(__file__))$/;"	v
 displayImage	gesture_detection/visualizer/base_visualizer.py	/^    def displayImage(self, data, step, name = 'Image'):$/;"	m	class:BaseVisualizer
 displayScalor	gesture_detection/visualizer/base_visualizer.py	/^    def displayScalor(self, data, step):$/;"	m	class:BaseVisualizer
@@ -217,7 +226,7 @@ load	video_detection/util.py	/^    def load(self, path):$/;"	m	class:Vocabulary
 load_networks	gesture_detection/models/base_model.py	/^    def load_networks(self, nEpoch):$/;"	m	class:BaseModel
 load_options	gesture_detection/options/base_options.py	/^    def load_options(self, path):$/;"	m	class:BaseOptions
 load_pretrained	gesture_detection/models/base_model.py	/^    def load_pretrained(self):$/;"	m	class:BaseModel
-main	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	/^int main()$/;"	f
+main	arm_gesture_detection/classifier/main.cpp	/^int main()$/;"	f
 main	arm_gesture_detection/main.cpp	/^int main() {$/;"	f
 main	gesture_detection/action.py	/^def main():$/;"	f
 main	gesture_detection/main.py	/^def main():$/;"	f
@@ -267,11 +276,14 @@ parser	gesture_detection/recorder_action.py	/^parser = RecorderOptions()$/;"	v
 parser	gesture_detection/train.py	/^parser = TrainOptions()$/;"	v
 plot	gesture_detection/visualizer/painter.py	/^    def plot(self):$/;"	m	class:Painter
 plot	video_detection/util.py	/^    def plot(self, record, path):$/;"	m	class:Datamanager
+predict	arm_gesture_detection/classifier/classifier/DTW.py	/^    def predict(self, target):$/;"	m	class:Classifier
 predict	gesture_detection/classifier/DTW.py	/^    def predict(self, target):$/;"	m	class:Classifier
 predict	gesture_detection/models/base_model.py	/^    def predict(self, data):$/;"	m	class:BaseModel
 predict	gesture_detection/models/binary_model.py	/^    def predict(self, data):$/;"	m	class:BinaryModel
 print_networks	gesture_detection/models/base_model.py	/^    def print_networks(self, verbose):$/;"	m	class:BaseModel
 print_options	gesture_detection/options/base_options.py	/^    def print_options(self):$/;"	m	class:BaseOptions
+read	arm_gesture_detection/classifier/classifier.cpp	/^void read(){$/;"	f
+read	arm_gesture_detection/classifier/classifier/DTW.py	/^    def read(self):$/;"	m	class:Classifier
 read	arm_gesture_detection/sensor.cpp	/^float* Sensor::read(){$/;"	f	class:Sensor
 read	gesture_detection/classifier/DTW.py	/^    def read(self):$/;"	m	class:Classifier
 read	gesture_detection/sensor/__init__.py	/^    def read(self):$/;"	m	class:Sensor
@@ -293,7 +305,7 @@ save	video_detection/util.py	/^    def save(self, path):$/;"	m	class:Movie_Class
 save	video_detection/util.py	/^    def save(self, path):$/;"	m	class:Vocabulary
 save_networks	gesture_detection/models/base_model.py	/^    def save_networks(self, nEpoch):$/;"	m	class:BaseModel
 save_options	gesture_detection/options/base_options.py	/^    def save_options(self, path):$/;"	m	class:BaseOptions
-sdram	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	/^SDRAM_DISCO_F469NI sdram;$/;"	v
+sdram	arm_gesture_detection/classifier/main.cpp	/^SDRAM_DISCO_F469NI sdram;$/;"	v
 sensor	gesture_detection/action.py	/^sensor = Sensor(opt.n, opt.port, opt.freq)$/;"	v
 sensor	gesture_detection/main.py	/^sensor = Sensor(opt.n, opt.port, opt.freq)$/;"	v
 sensor	gesture_detection/predict.py	/^sensor = Sensor(opt.n, opt.port, opt.freq)$/;"	v
