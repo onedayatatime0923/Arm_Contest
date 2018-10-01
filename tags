@@ -230,6 +230,7 @@ metric	gesture_detection/utils/accu_eval.py	/^    def metric(self):$/;"	m	class:
 model	gesture_detection/train.py	/^model = createModel(opt)$/;"	v
 model	video_detection/main.py	/^model= Movie_Classifier(IMAGE_SIZE, layer_n  = LAYER_N, label_dim = dm.voc.n_words, dropout = DROPOUT).cuda()$/;"	v
 mpu9250	arm_gesture_detection/main.cpp	/^MPU9250 mpu9250;$/;"	v
+mpu9250	arm_gesture_detection/sensor.h	/^    MPU9250 mpu9250;$/;"	m	class:Sensor
 mpu9250	gesture_detection/mbed.cpp	/^MPU9250 mpu9250;$/;"	v
 mpu9250	gesture_detection/mbed/mbed.cpp	/^MPU9250 mpu9250;$/;"	v
 n	gesture_detection/utils/accu_eval.py	/^    n = 1000000$/;"	v	class:AccuEval
@@ -307,12 +308,15 @@ speech	gesture_detection/predict.py	/^speech = Speech()$/;"	v
 start_time	gesture_detection/utils/accu_eval.py	/^    start_time = time.time()$/;"	v	class:AccuEval
 steps	gesture_detection/train.py	/^steps = 0$/;"	v
 sum	arm_gesture_detection/main.cpp	/^float sum = 0;$/;"	v
+sum	arm_gesture_detection/sensor.h	/^    float sum = 0;$/;"	m	class:Sensor
 sum	gesture_detection/mbed.cpp	/^float sum = 0;$/;"	v
 sum	gesture_detection/mbed/mbed.cpp	/^float sum = 0;$/;"	v
 sumCount	arm_gesture_detection/main.cpp	/^uint32_t sumCount = 0;$/;"	v
+sumCount	arm_gesture_detection/sensor.h	/^    uint32_t sumCount = 0;$/;"	m	class:Sensor
 sumCount	gesture_detection/mbed.cpp	/^uint32_t sumCount = 0;$/;"	v
 sumCount	gesture_detection/mbed/mbed.cpp	/^uint32_t sumCount = 0;$/;"	v
 t	arm_gesture_detection/main.cpp	/^Timer t;$/;"	v
+t	arm_gesture_detection/sensor.h	/^    Timer t;$/;"	m	class:Sensor
 t	gesture_detection/mbed.cpp	/^Timer t;$/;"	v
 t	gesture_detection/mbed/mbed.cpp	/^Timer t;$/;"	v
 tb_setting	video_detection/util.py	/^    def tb_setting(self, directory):$/;"	m	class:Datamanager

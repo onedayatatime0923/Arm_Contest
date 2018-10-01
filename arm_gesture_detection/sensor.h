@@ -33,6 +33,12 @@ class Sensor{
   public:
     Sensor();
     float* read();
+  private:
+    float sum = 0;
+    uint32_t sumCount = 0;
+    MPU9250 mpu9250;
+    Timer t;
+    Serial pc(USBTX, USBRX); // tx, rx
 }
 
 
