@@ -1,0 +1,347 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AccuEval	gesture_detection/utils/accu_eval.py	/^class AccuEval:$/;"	c
+ActionDataLoader	video_detection/util.py	/^class ActionDataLoader():$/;"	c
+ActionOptions	gesture_detection/options/action_options.py	/^class ActionOptions(BaseOptions):$/;"	c
+BATCH_SIZE	video_detection/main.py	/^BATCH_SIZE= 8 $/;"	v
+BUFFER_SIZE	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	11;"	d	file:
+BalanceLoss2d	gesture_detection/utils/loss.py	/^class BalanceLoss2d(nn.Module):$/;"	c
+BaseDataset	gesture_detection/dataset/base_dataset.py	/^class BaseDataset(data.Dataset):$/;"	c
+BaseModel	gesture_detection/models/base_model.py	/^class BaseModel():$/;"	c
+BaseOptions	gesture_detection/options/base_options.py	/^class BaseOptions():$/;"	c
+BaseVisualizer	gesture_detection/visualizer/base_visualizer.py	/^class BaseVisualizer():$/;"	c
+BinaryDataSet	gesture_detection/dataset/binary_dataset.py	/^class BinaryDataSet(BaseDataset):$/;"	c
+BinaryModel	gesture_detection/models/binary_model.py	/^class BinaryModel(BaseModel):$/;"	c
+Classifier	gesture_detection/classifier/DTW.py	/^class Classifier:$/;"	c
+Classifier	gesture_detection/classifier/binary.py	/^class Classifier:$/;"	c
+Classifier	gesture_detection/models/network/__init__.py	/^class Classifier(nn.Module):$/;"	c
+CompareBuffer	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	/^uint8_t CompareBuffer(uint32_t* pBuffer1, uint32_t* pBuffer2, uint16_t BufferLength)$/;"	f
+ConcatDataset	gesture_detection/dataset/concat_dataset.py	/^class ConcatDataset(BaseDataset):$/;"	c
+CrossEntropyLoss2d	gesture_detection/utils/loss.py	/^class CrossEntropyLoss2d(nn.Module):$/;"	c
+DROPOUT	video_detection/main.py	/^DROPOUT= 0.3$/;"	v
+Datamanager	video_detection/util.py	/^class Datamanager:$/;"	c
+Diff2d	gesture_detection/utils/loss.py	/^class Diff2d(nn.Module):$/;"	c
+Distance	gesture_detection/utils/loss.py	/^class Distance(nn.Module):$/;"	c
+EPOCH	video_detection/main.py	/^EPOCH= 20$/;"	v
+Entropy	gesture_detection/utils/loss.py	/^class Entropy(nn.Module):$/;"	c
+FillBuffer	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	/^void FillBuffer(uint32_t *pBuffer, uint32_t BufferLength, uint32_t Value)$/;"	f
+Filter	gesture_detection/filter/__init__.py	/^class Filter:$/;"	c
+GANLoss	gesture_detection/utils/loss.py	/^class GANLoss(nn.Module):$/;"	c
+GaussianNoise	gesture_detection/models/network/__init__.py	/^class GaussianNoise(nn.Module):$/;"	c
+IMAGE_SIZE	video_detection/main.py	/^IMAGE_SIZE = (224,224)$/;"	v
+ImageDataset	video_detection/util.py	/^class ImageDataset(Dataset):$/;"	c
+Image_Classifier	video_detection/util.py	/^class Image_Classifier(nn.Module):$/;"	c
+LAYER_N	video_detection/main.py	/^LAYER_N = 2$/;"	v
+LEARNING_RATE	video_detection/main.py	/^LEARNING_RATE = 1E-4$/;"	v
+MainOptions	gesture_detection/options/main_options.py	/^class MainOptions(BaseOptions):$/;"	c
+ModelVisualizer	gesture_detection/visualizer/model_visualizer.py	/^class ModelVisualizer(BaseVisualizer):$/;"	c
+MovieDataLoader	video_detection/util.py	/^class MovieDataLoader():$/;"	c
+Movie_Classifier	video_detection/util.py	/^class Movie_Classifier(nn.Module):$/;"	c
+OUTPUT_PATH	video_detection/main.py	/^OUTPUT_PATH= '.\/model\/model.pt'$/;"	v
+Painter	gesture_detection/visualizer/painter.py	/^class Painter():$/;"	c
+PredictOptions	gesture_detection/options/predict_options.py	/^class PredictOptions(BaseOptions):$/;"	c
+ProgressVisualizer	gesture_detection/visualizer/progress_visualizer.py	/^class ProgressVisualizer(BaseVisualizer):$/;"	c
+Queue	gesture_detection/utils/utils.py	/^class Queue:$/;"	c
+Recorder	gesture_detection/recorder/__init__.py	/^class Recorder():$/;"	c
+RecorderOptions	gesture_detection/options/record_options.py	/^class RecorderOptions(BaseOptions):$/;"	c
+SAVE_TEST_PATH	video_detection/main.py	/^SAVE_TEST_PATH = '.\/data\/test_x.npy'$/;"	v
+SAVE_TRAIN_PATH	video_detection/main.py	/^SAVE_TRAIN_PATH = ('.\/data\/train_x.npy', 'data\/train_y.npy')$/;"	v
+STEP_N	video_detection/main.py	/^STEP_N = 50$/;"	v
+Sensor	arm_gesture_detection/sensor.cpp	/^Sensor::Sensor(){$/;"	f	class:Sensor
+Sensor	arm_gesture_detection/sensor.h	/^class Sensor{$/;"	c
+Sensor	gesture_detection/sensor/__init__.py	/^class Sensor:$/;"	c
+SensorVisualizer	gesture_detection/visualizer/sensor_visualizer.py	/^class SensorVisualizer(BaseVisualizer):$/;"	c
+Speech	gesture_detection/speech/__init__.py	/^class Speech:$/;"	c
+Symkl2d	gesture_detection/utils/loss.py	/^class Symkl2d(nn.Module):$/;"	c
+TENSORBOARD_DIR	video_detection/main.py	/^TENSORBOARD_DIR = '.\/runs'$/;"	v
+Timer	gesture_detection/utils/timer.py	/^class Timer():$/;"	c
+TrainOptions	gesture_detection/options/train_options.py	/^class TrainOptions(BaseOptions):$/;"	c
+VOLCABULARY_PATH	video_detection/main.py	/^VOLCABULARY_PATH = '.\/vocab.txt'$/;"	v
+Vocabulary	gesture_detection/utils/vocabulary/__init__.py	/^class Vocabulary:$/;"	c
+Vocabulary	video_detection/util.py	/^class Vocabulary:$/;"	c
+WRITE_READ_ADDR	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	12;"	d	file:
+__call__	gesture_detection/classifier/binary.py	/^    def __call__(self, data):$/;"	m	class:Classifier	file:
+__call__	gesture_detection/recorder/__init__.py	/^    def __call__(self, data):$/;"	m	class:Recorder	file:
+__call__	gesture_detection/speech/__init__.py	/^    def __call__(self, data):$/;"	m	class:Speech	file:
+__call__	gesture_detection/utils/loss.py	/^    def __call__(self, input, target_is_real):$/;"	m	class:GANLoss	file:
+__call__	gesture_detection/utils/timer.py	/^    def __call__(self, percent):$/;"	m	class:Timer	file:
+__call__	gesture_detection/utils/utils.py	/^    def __call__(self, data):$/;"	m	class:Queue	file:
+__call__	gesture_detection/visualizer/base_visualizer.py	/^    def __call__(self, name, epoch, data= []):$/;"	m	class:BaseVisualizer	file:
+__call__	gesture_detection/visualizer/painter.py	/^    def __call__(self, data):$/;"	m	class:Painter	file:
+__call__	gesture_detection/visualizer/sensor_visualizer.py	/^    def __call__(self, data):$/;"	m	class:SensorVisualizer	file:
+__getitem__	gesture_detection/dataset/binary_dataset.py	/^    def __getitem__(self, index):$/;"	m	class:BinaryDataSet	file:
+__getitem__	gesture_detection/dataset/concat_dataset.py	/^    def __getitem__(self, i):$/;"	m	class:ConcatDataset	file:
+__getitem__	video_detection/util.py	/^    def __getitem__(self, i):$/;"	m	class:ImageDataset	file:
+__init__	gesture_detection/classifier/DTW.py	/^    def __init__(self, threshold = 98, noOps = 'None'):$/;"	m	class:Classifier
+__init__	gesture_detection/classifier/binary.py	/^    def __init__(self, threshold = 40, index = [3,4,5], nStep = 8):$/;"	m	class:Classifier
+__init__	gesture_detection/dataset/base_dataset.py	/^    def __init__(self, opt):$/;"	m	class:BaseDataset
+__init__	gesture_detection/dataset/binary_dataset.py	/^    def __init__(self, dataDir, split, nInput = 3):$/;"	m	class:BinaryDataSet
+__init__	gesture_detection/dataset/concat_dataset.py	/^    def __init__(self, dataset):$/;"	m	class:ConcatDataset
+__init__	gesture_detection/filter/__init__.py	/^    def __init__(self, dimState, dimObserve, covariance = 1, processNoise = 0.01, measureNoise = 0.01, dT = 0.1 ):$/;"	m	class:Filter
+__init__	gesture_detection/models/base_model.py	/^    def __init__(self, opt):$/;"	m	class:BaseModel
+__init__	gesture_detection/models/binary_model.py	/^    def __init__(self, opt):$/;"	m	class:BinaryModel
+__init__	gesture_detection/models/network/__init__.py	/^    def __init__(self, opt):$/;"	m	class:Classifier
+__init__	gesture_detection/models/network/__init__.py	/^    def __init__(self, sigma=0.1, is_relative_detach=True, device = 0):$/;"	m	class:GaussianNoise
+__init__	gesture_detection/options/action_options.py	/^    def __init__(self):$/;"	m	class:ActionOptions
+__init__	gesture_detection/options/base_options.py	/^    def __init__(self):$/;"	m	class:BaseOptions
+__init__	gesture_detection/options/main_options.py	/^    def __init__(self):$/;"	m	class:MainOptions
+__init__	gesture_detection/options/predict_options.py	/^    def __init__(self):$/;"	m	class:PredictOptions
+__init__	gesture_detection/options/record_options.py	/^    def __init__(self):$/;"	m	class:RecorderOptions
+__init__	gesture_detection/options/train_options.py	/^    def __init__(self):$/;"	m	class:TrainOptions
+__init__	gesture_detection/recorder/__init__.py	/^    def __init__(self, opt):$/;"	m	class:Recorder
+__init__	gesture_detection/sensor/__init__.py	/^    def __init__(self, n = 16, port = '\/dev\/tty0', freq = 57600):$/;"	m	class:Sensor
+__init__	gesture_detection/speech/__init__.py	/^    def __init__(self):$/;"	m	class:Speech
+__init__	gesture_detection/utils/accu_eval.py	/^    def __init__(self, epsilon = 1E-8):$/;"	m	class:AccuEval
+__init__	gesture_detection/utils/loss.py	/^    def __init__(self, opt, size_average=False):$/;"	m	class:Distance
+__init__	gesture_detection/utils/loss.py	/^    def __init__(self, opt, size_average=True):$/;"	m	class:CrossEntropyLoss2d
+__init__	gesture_detection/utils/loss.py	/^    def __init__(self, use_lsgan=True, target_real_label=1.0, target_fake_label=0.0):$/;"	m	class:GANLoss
+__init__	gesture_detection/utils/loss.py	/^    def __init__(self, weight=None, n_target_ch=21, size_average=True):$/;"	m	class:Symkl2d
+__init__	gesture_detection/utils/loss.py	/^    def __init__(self, weight=None, size_average=True):$/;"	m	class:BalanceLoss2d
+__init__	gesture_detection/utils/loss.py	/^    def __init__(self, weight=None, size_average=True):$/;"	m	class:Diff2d
+__init__	gesture_detection/utils/loss.py	/^    def __init__(self, weight=None, size_average=True):$/;"	m	class:Entropy
+__init__	gesture_detection/utils/timer.py	/^    def __init__(self):$/;"	m	class:Timer
+__init__	gesture_detection/utils/utils.py	/^    def __init__(self, n, dim, device):$/;"	m	class:Queue
+__init__	gesture_detection/utils/vocabulary/__init__.py	/^    def __init__(self):$/;"	m	class:Vocabulary
+__init__	gesture_detection/visualizer/base_visualizer.py	/^    def __init__(self, stepSize, totalSize, logPath = None, displayWidth=1):$/;"	m	class:BaseVisualizer
+__init__	gesture_detection/visualizer/model_visualizer.py	/^    def __init__(self, opt, dataset):$/;"	m	class:ModelVisualizer
+__init__	gesture_detection/visualizer/painter.py	/^    def __init__(self, repr = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R'], display= None, memorySize = 10, ylim = [-200, 200]):$/;"	m	class:Painter
+__init__	gesture_detection/visualizer/progress_visualizer.py	/^    def __init__(self, opt, dataset):$/;"	m	class:ProgressVisualizer
+__init__	gesture_detection/visualizer/sensor_visualizer.py	/^    def __init__(self, repr = ['Ax', 'Ay', 'Az', 'Gx', 'Gy', 'Gz', 'Mx', 'My', 'Mz', 'Q1', 'Q2', 'Q3', 'Q4', 'Y', 'P', 'R']):$/;"	m	class:SensorVisualizer
+__init__	video_detection/util.py	/^    def __init__(self, image, label, batch_size, shuffle, max_len=10000 ):$/;"	m	class:ActionDataLoader
+__init__	video_detection/util.py	/^    def __init__(self, image, label, step_n, batch_size, movie_len=3):$/;"	m	class:MovieDataLoader
+__init__	video_detection/util.py	/^    def __init__(self, image, label= None, rotate = False, angle = 10):$/;"	m	class:ImageDataset
+__init__	video_detection/util.py	/^    def __init__(self, input_dim, layer_n, label_dim, dropout = 0.5):$/;"	m	class:Movie_Classifier
+__init__	video_detection/util.py	/^    def __init__(self, vocabulary_file = None):$/;"	m	class:Vocabulary
+__init__	video_detection/util.py	/^    def __init__(self,input_dim, label_dim, dropout=0.5):$/;"	m	class:Image_Classifier
+__init__	video_detection/util.py	/^    def __init__(self,vocabulary_file=None, tensorboard_dir= None):$/;"	m	class:Datamanager
+__iter__	video_detection/util.py	/^    def __iter__(self):$/;"	m	class:ActionDataLoader	file:
+__iter__	video_detection/util.py	/^    def __iter__(self):$/;"	m	class:MovieDataLoader	file:
+__len__	gesture_detection/dataset/base_dataset.py	/^    def __len__(self):$/;"	m	class:BaseDataset	file:
+__len__	gesture_detection/dataset/binary_dataset.py	/^    def __len__(self):$/;"	m	class:BinaryDataSet	file:
+__len__	gesture_detection/dataset/concat_dataset.py	/^    def __len__(self):$/;"	m	class:ConcatDataset	file:
+__len__	video_detection/util.py	/^    def __len__(self):$/;"	m	class:ActionDataLoader	file:
+__len__	video_detection/util.py	/^    def __len__(self):$/;"	m	class:ImageDataset	file:
+__len__	video_detection/util.py	/^    def __len__(self):$/;"	m	class:MovieDataLoader	file:
+__next__	video_detection/util.py	/^    def __next__(self):$/;"	m	class:ActionDataLoader	file:
+__next__	video_detection/util.py	/^    def __next__(self):$/;"	m	class:MovieDataLoader	file:
+_init	gesture_detection/visualizer/painter.py	/^    def _init(self):$/;"	m	class:Painter
+_plot	gesture_detection/visualizer/painter.py	/^    def _plot(self):$/;"	m	class:Painter
+_read	gesture_detection/sensor/__init__.py	/^    def _read(self):$/;"	m	class:Sensor
+_speech	gesture_detection/speech/__init__.py	/^    def _speech(self, data):$/;"	m	class:Speech
+_update	gesture_detection/visualizer/painter.py	/^    def _update(self, index): $/;"	m	class:Painter
+accu_record	video_detection/main.py	/^        accu_record= record[1]$/;"	v
+accu_record	video_detection/main.py	/^accu_record=0$/;"	v
+action	gesture_detection/dump.py	/^action = [line.strip() for line in open(".\/utils\/vocabulary\/record.txt", 'r')]$/;"	v
+add	gesture_detection/utils/vocabulary/__init__.py	/^    def add(self, word):$/;"	m	class:Vocabulary
+addWord	video_detection/util.py	/^    def addWord(self, word):$/;"	m	class:Vocabulary
+asMinutes	gesture_detection/utils/timer.py	/^    def asMinutes(self, s):$/;"	m	class:Timer
+asMinutes	video_detection/util.py	/^    def asMinutes(self,s):$/;"	m	class:Datamanager
+backward_classifier	gesture_detection/models/binary_model.py	/^    def backward_classifier(self, retain_graph = False):$/;"	m	class:BinaryModel
+buffer	arm_gesture_detection/main.cpp	/^char buffer[14];$/;"	v
+buffer	gesture_detection/mbed.cpp	/^char buffer[14];$/;"	v
+buffer	gesture_detection/mbed/mbed.cpp	/^char buffer[14];$/;"	v
+c	gesture_detection/classifier/binary.py	/^    c = Classifier()$/;"	v	class:Classifier
+c	gesture_detection/utils/accu_eval.py	/^    c = 20$/;"	v	class:AccuEval
+classifier	gesture_detection/recorder_action.py	/^classifier = ClassifierBinary(opt.threshold, opt.index, opt.nStep)$/;"	v
+classifierBinary	gesture_detection/predict.py	/^classifierBinary = ClassifierBinary(opt.binaryThreshold, opt.index, opt.nStep)$/;"	v
+classifierDtw	gesture_detection/predict.py	/^classifierDtw = ClassifierDtw(opt.actionThreshold)$/;"	v
+construct_actionDir	gesture_detection/options/base_options.py	/^    def construct_actionDir(self):$/;"	m	class:BaseOptions
+construct_checkpoints	gesture_detection/options/base_options.py	/^    def construct_checkpoints(self,creatDir = True):$/;"	m	class:BaseOptions
+construct_device	gesture_detection/options/base_options.py	/^    def construct_device(self):$/;"	m	class:BaseOptions
+construct_input	gesture_detection/options/base_options.py	/^    def construct_input(self):$/;"	m	class:BaseOptions
+construct_message	gesture_detection/options/base_options.py	/^    def construct_message(self):$/;"	m	class:BaseOptions
+construct_splitDir	gesture_detection/options/base_options.py	/^    def construct_splitDir(self):$/;"	m	class:BaseOptions
+convert	gesture_detection/utils/utils.py	/^def convert(data, n):$/;"	f
+count_parameters	video_detection/util.py	/^    def count_parameters(self,model):$/;"	m	class:Datamanager
+createDataset	gesture_detection/dataset/__init__.py	/^def createDataset(opt, split, nInput):$/;"	f
+createModel	gesture_detection/models/__init__.py	/^def createModel(opt):$/;"	f
+createScheduler	gesture_detection/models/base_model.py	/^def createScheduler(optimizer, opt):$/;"	f
+current_accus	gesture_detection/models/base_model.py	/^    def current_accus(self):$/;"	m	class:BaseModel
+current_losses	gesture_detection/models/base_model.py	/^    def current_losses(self):$/;"	m	class:BaseModel
+dir_path	gesture_detection/test.py	/^dir_path = os.path.dirname(os.path.realpath(__file__))$/;"	v
+displayImage	gesture_detection/visualizer/base_visualizer.py	/^    def displayImage(self, data, step, name = 'Image'):$/;"	m	class:BaseVisualizer
+displayScalor	gesture_detection/visualizer/base_visualizer.py	/^    def displayScalor(self, data, step):$/;"	m	class:BaseVisualizer
+dm	video_detection/main.py	/^dm = Datamanager(vocabulary_file = VOLCABULARY_PATH, tensorboard_dir = TENSORBOARD_DIR)$/;"	v
+dump	gesture_detection/dump.py	/^def dump(act):$/;"	f
+dump_action	gesture_detection/recorder/__init__.py	/^    def dump_action(self):$/;"	m	class:Recorder
+dump_action_id	gesture_detection/recorder/__init__.py	/^    def dump_action_id(self, index):$/;"	m	class:Recorder
+dump_split	gesture_detection/recorder/__init__.py	/^    def dump_split(self):$/;"	m	class:Recorder
+end	gesture_detection/visualizer/base_visualizer.py	/^    def end(self, name, epoch, data=[]): $/;"	m	class:BaseVisualizer
+eval	gesture_detection/models/base_model.py	/^    def eval(self):$/;"	m	class:BaseModel
+f	gesture_detection/filter/__init__.py	/^    f = Filter( 16, 16)$/;"	v
+filter	gesture_detection/action.py	/^filter = Filter(opt.n, opt.n)$/;"	v
+filter	gesture_detection/main.py	/^filter = Filter(opt.n, opt.n)$/;"	v
+filter	gesture_detection/predict.py	/^filter = Filter(opt.n, opt.n)$/;"	v
+filter	gesture_detection/recorder.py	/^filter = Filter(opt.n, opt.n)$/;"	v
+filter	gesture_detection/recorder_action.py	/^filter = Filter(opt.n, opt.n)$/;"	v
+flush	gesture_detection/sensor/__init__.py	/^    def flush(self):$/;"	m	class:Sensor
+forward	gesture_detection/models/base_model.py	/^    def forward(self):$/;"	m	class:BaseModel
+forward	gesture_detection/models/binary_model.py	/^    def forward(self):$/;"	m	class:BinaryModel
+forward	gesture_detection/models/network/__init__.py	/^    def forward(self, x):$/;"	m	class:Classifier
+forward	gesture_detection/models/network/__init__.py	/^    def forward(self, x):$/;"	m	class:GaussianNoise
+forward	gesture_detection/utils/loss.py	/^    def forward(self, inputs, targets):$/;"	m	class:CrossEntropyLoss2d
+forward	gesture_detection/utils/loss.py	/^    def forward(self, inputs, targets):$/;"	m	class:Distance
+forward	gesture_detection/utils/loss.py	/^    def forward(self, inputs1):$/;"	m	class:Entropy
+forward	gesture_detection/utils/loss.py	/^    def forward(self, inputs1, inputs2):$/;"	m	class:BalanceLoss2d
+forward	gesture_detection/utils/loss.py	/^    def forward(self, inputs1, inputs2):$/;"	m	class:Diff2d
+forward	gesture_detection/utils/loss.py	/^    def forward(self, inputs1, inputs2):$/;"	m	class:Symkl2d
+forward	video_detection/util.py	/^    def forward(self, x):$/;"	m	class:Image_Classifier
+forward	video_detection/util.py	/^    def forward(self, x, i):$/;"	m	class:Movie_Classifier
+gather_options	gesture_detection/options/base_options.py	/^    def gather_options(self):$/;"	m	class:BaseOptions
+getOptimizer	gesture_detection/models/base_model.py	/^def getOptimizer(model_parameters, opt, lr, beta1= None, momentum= None, weight_decay= None):$/;"	f
+get_data_image	video_detection/util.py	/^    def get_data_image(self,file_path,tag_path,batch_size,shuffle=True, downsample_factor=12, image_size=(224,224),save_path=None):$/;"	m	class:Datamanager
+get_data_movie	video_detection/util.py	/^    def get_data_movie(self,file_path,tag_path,batch_size,step_n, downsample_factor=12, image_size=(224,224),save_path=None):$/;"	m	class:Datamanager
+get_target_tensor	gesture_detection/utils/loss.py	/^    def get_target_tensor(self, input, target_is_real):$/;"	m	class:GANLoss
+get_test_data_image	video_detection/util.py	/^    def get_test_data_image(self,file_path,batch_size,shuffle=True, downsample_factor=12, image_size=(224,224),save_path=None):$/;"	m	class:Datamanager
+get_test_data_movie	video_detection/util.py	/^    def get_test_data_movie(self,file_path,batch_size,step_n, downsample_factor=12, image_size=(224,224),save_path=None):$/;"	m	class:Datamanager
+hidden_layer	video_detection/util.py	/^    def hidden_layer(self,n):$/;"	m	class:Movie_Classifier
+import_class_by_name	gesture_detection/models/__init__.py	/^def import_class_by_name(modelName, className, classType = BaseModel):$/;"	f
+initHidden	video_detection/util.py	/^    def initHidden(self, hidden_size):$/;"	m	class:Movie_Classifier
+initNet	gesture_detection/models/base_model.py	/^    def initNet(self, net):$/;"	m	class:BaseModel
+initialize	gesture_detection/options/action_options.py	/^    def initialize(self, parser):$/;"	m	class:ActionOptions
+initialize	gesture_detection/options/base_options.py	/^    def initialize(self, parser):$/;"	m	class:BaseOptions
+initialize	gesture_detection/options/main_options.py	/^    def initialize(self, parser):$/;"	m	class:MainOptions
+initialize	gesture_detection/options/predict_options.py	/^    def initialize(self, parser):$/;"	m	class:PredictOptions
+initialize	gesture_detection/options/record_options.py	/^    def initialize(self, parser):$/;"	m	class:RecorderOptions
+initialize	gesture_detection/options/train_options.py	/^    def initialize(self, parser):$/;"	m	class:TrainOptions
+initialize_bak	gesture_detection/options/base_options.py	/^    def initialize_bak(self, parser):$/;"	m	class:BaseOptions
+label	gesture_detection/recorder/__init__.py	/^    def label(self, data):$/;"	m	class:Recorder
+lambda_rule	gesture_detection/models/base_model.py	/^        def lambda_rule(epoch):$/;"	f	function:createScheduler
+length	gesture_detection/utils/accu_eval.py	/^    length = 100$/;"	v	class:AccuEval
+load	gesture_detection/utils/vocabulary/__init__.py	/^    def load(self):$/;"	m	class:Vocabulary
+load	video_detection/util.py	/^    def load(self, path):$/;"	m	class:Vocabulary
+load_networks	gesture_detection/models/base_model.py	/^    def load_networks(self, nEpoch):$/;"	m	class:BaseModel
+load_options	gesture_detection/options/base_options.py	/^    def load_options(self, path):$/;"	m	class:BaseOptions
+load_pretrained	gesture_detection/models/base_model.py	/^    def load_pretrained(self):$/;"	m	class:BaseModel
+main	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	/^int main()$/;"	f
+main	arm_gesture_detection/main.cpp	/^int main() {$/;"	f
+main	gesture_detection/action.py	/^def main():$/;"	f
+main	gesture_detection/main.py	/^def main():$/;"	f
+main	gesture_detection/mbed.cpp	/^int main() {$/;"	f
+main	gesture_detection/mbed/mbed.cpp	/^int main() {$/;"	f
+main	gesture_detection/predict.py	/^def main():$/;"	f
+main	gesture_detection/recorder.py	/^def main():$/;"	f
+main	gesture_detection/recorder_action.py	/^def main():$/;"	f
+metric	gesture_detection/utils/accu_eval.py	/^    def metric(self):$/;"	m	class:AccuEval
+model	gesture_detection/train.py	/^model = createModel(opt)$/;"	v
+model	video_detection/main.py	/^model= Movie_Classifier(IMAGE_SIZE, layer_n  = LAYER_N, label_dim = dm.voc.n_words, dropout = DROPOUT).cuda()$/;"	v
+mpu9250	arm_gesture_detection/main.cpp	/^MPU9250 mpu9250;$/;"	v
+mpu9250	gesture_detection/mbed.cpp	/^MPU9250 mpu9250;$/;"	v
+mpu9250	gesture_detection/mbed/mbed.cpp	/^MPU9250 mpu9250;$/;"	v
+n	gesture_detection/utils/accu_eval.py	/^    n = 1000000$/;"	v	class:AccuEval
+name	gesture_detection/dataset/base_dataset.py	/^    def name(self):$/;"	m	class:BaseDataset
+name	gesture_detection/dataset/binary_dataset.py	/^    def name(self):$/;"	m	class:BinaryDataSet
+name	gesture_detection/dataset/concat_dataset.py	/^    def name(self):$/;"	m	class:ConcatDataset
+name	gesture_detection/models/base_model.py	/^    def name(self):$/;"	m	class:BaseModel
+name	gesture_detection/models/binary_model.py	/^    def name(self):$/;"	m	class:BinaryModel
+num_workers	gesture_detection/train.py	/^    num_workers=opt.nThreads)$/;"	v
+opt	gesture_detection/action.py	/^opt = parser.parse()$/;"	v
+opt	gesture_detection/main.py	/^opt = parser.parse()$/;"	v
+opt	gesture_detection/predict.py	/^opt = parser.parse()$/;"	v
+opt	gesture_detection/recorder.py	/^opt = parser.parse()$/;"	v
+opt	gesture_detection/recorder_action.py	/^opt = parser.parse()$/;"	v
+opt	gesture_detection/train.py	/^opt = parser.parse()$/;"	v
+optimize_parameters	gesture_detection/models/base_model.py	/^    def optimize_parameters(self):$/;"	m	class:BaseModel
+optimize_parameters	gesture_detection/models/binary_model.py	/^    def optimize_parameters(self):$/;"	m	class:BinaryModel
+optimizer	video_detection/main.py	/^optimizer = torch.optim.Adam(model.parameters(),lr=LEARNING_RATE)$/;"	v
+p	gesture_detection/visualizer/painter.py	/^    p = Painter()$/;"	v	class:Painter
+pack_CCE	video_detection/util.py	/^    def pack_CCE(self, x, y, i):$/;"	m	class:Datamanager
+pack_accu	video_detection/util.py	/^    def pack_accu(self, x, y, i):$/;"	m	class:Datamanager
+painter	gesture_detection/main.py	/^painter = Painter(repr = opt.repr, display = opt.display, memorySize = opt.memorySize, ylim = opt.ylim)$/;"	v
+parse	gesture_detection/options/action_options.py	/^    def parse(self):$/;"	m	class:ActionOptions
+parse	gesture_detection/options/base_options.py	/^    def parse(self):$/;"	m	class:BaseOptions
+parse	gesture_detection/options/record_options.py	/^    def parse(self):$/;"	m	class:RecorderOptions
+parse	gesture_detection/options/train_options.py	/^    def parse(self):$/;"	m	class:TrainOptions
+parse_model	gesture_detection/options/base_options.py	/^    def parse_model(self):$/;"	m	class:BaseOptions
+parse_normal	gesture_detection/options/base_options.py	/^    def parse_normal(self):$/;"	m	class:BaseOptions
+parser	gesture_detection/action.py	/^parser = ActionOptions()$/;"	v
+parser	gesture_detection/main.py	/^parser = MainOptions()$/;"	v
+parser	gesture_detection/predict.py	/^parser = PredictOptions()$/;"	v
+parser	gesture_detection/recorder.py	/^parser = RecorderOptions()$/;"	v
+parser	gesture_detection/recorder_action.py	/^parser = RecorderOptions()$/;"	v
+parser	gesture_detection/train.py	/^parser = TrainOptions()$/;"	v
+plot	gesture_detection/visualizer/painter.py	/^    def plot(self):$/;"	m	class:Painter
+plot	video_detection/util.py	/^    def plot(self, record, path):$/;"	m	class:Datamanager
+predict	gesture_detection/classifier/DTW.py	/^    def predict(self, target):$/;"	m	class:Classifier
+predict	gesture_detection/models/base_model.py	/^    def predict(self, data):$/;"	m	class:BaseModel
+predict	gesture_detection/models/binary_model.py	/^    def predict(self, data):$/;"	m	class:BinaryModel
+print_networks	gesture_detection/models/base_model.py	/^    def print_networks(self, verbose):$/;"	m	class:BaseModel
+print_options	gesture_detection/options/base_options.py	/^    def print_options(self):$/;"	m	class:BaseOptions
+read	arm_gesture_detection/sensor.cpp	/^float* Sensor::read(){$/;"	f	class:Sensor
+read	gesture_detection/classifier/DTW.py	/^    def read(self):$/;"	m	class:Classifier
+read	gesture_detection/sensor/__init__.py	/^    def read(self):$/;"	m	class:Sensor
+record	video_detection/main.py	/^    record=dm.val_movie( model, train_dataloader, epoch)$/;"	v
+recorder	gesture_detection/action.py	/^recorder = Recorder(opt)$/;"	v
+recorder	gesture_detection/recorder.py	/^recorder = Recorder(opt)$/;"	v
+recorder	gesture_detection/recorder_action.py	/^recorder = Recorder(opt)$/;"	v
+reset	gesture_detection/filter/__init__.py	/^    def reset(self):$/;"	m	class:Filter
+reset	gesture_detection/utils/accu_eval.py	/^    def reset(self):$/;"	m	class:AccuEval
+reset	gesture_detection/utils/timer.py	/^    def reset(self):$/;"	m	class:Timer
+reset	gesture_detection/visualizer/base_visualizer.py	/^    def reset(self):$/;"	m	class:BaseVisualizer
+result	video_detection/main.py	/^result = dm.test_movie( model, test_dataloader)$/;"	v
+reverse	video_detection/util.py	/^    def reverse(self, x, i):$/;"	m	class:ActionDataLoader
+reverse	video_detection/util.py	/^    def reverse(self, x, i):$/;"	m	class:MovieDataLoader
+s	gesture_detection/test_serial.py	/^s = serial.Serial("\/dev\/cu.usbmodem1413", sys.argv[1])$/;"	v
+save	gesture_detection/utils/vocabulary/__init__.py	/^    def save(self):$/;"	m	class:Vocabulary
+save	gesture_detection/visualizer/painter.py	/^    def save(self, path):$/;"	m	class:Painter
+save	video_detection/util.py	/^    def save(self, path):$/;"	m	class:Movie_Classifier
+save	video_detection/util.py	/^    def save(self, path):$/;"	m	class:Vocabulary
+save_networks	gesture_detection/models/base_model.py	/^    def save_networks(self, nEpoch):$/;"	m	class:BaseModel
+save_options	gesture_detection/options/base_options.py	/^    def save_options(self, path):$/;"	m	class:BaseOptions
+sdram	arm_gesture_detection/a98efd45bfe3/a98efd45bfe3/main.cpp	/^SDRAM_DISCO_F469NI sdram;$/;"	v
+sensor	gesture_detection/action.py	/^sensor = Sensor(opt.n, opt.port, opt.freq)$/;"	v
+sensor	gesture_detection/main.py	/^sensor = Sensor(opt.n, opt.port, opt.freq)$/;"	v
+sensor	gesture_detection/predict.py	/^sensor = Sensor(opt.n, opt.port, opt.freq)$/;"	v
+sensor	gesture_detection/recorder.py	/^sensor = Sensor(opt.n, opt.port, opt.freq)$/;"	v
+sensor	gesture_detection/recorder_action.py	/^sensor = Sensor(opt.n, opt.port, opt.freq)$/;"	v
+sensor	gesture_detection/sensor/__init__.py	/^    sensor = Sensor("\/dev\/cu.usbmodem1413", 921600)$/;"	v
+set_input	gesture_detection/models/base_model.py	/^    def set_input(self, input):$/;"	m	class:BaseModel
+set_input	gesture_detection/models/binary_model.py	/^    def set_input(self, input):$/;"	m	class:BinaryModel
+set_requires_grad	gesture_detection/models/base_model.py	/^    def set_requires_grad(self, nets, requires_grad=False):$/;"	m	class:BaseModel
+setup	gesture_detection/models/base_model.py	/^    def setup(self, parser=None):$/;"	m	class:BaseModel
+speech	gesture_detection/predict.py	/^speech = Speech()$/;"	v
+start_time	gesture_detection/utils/accu_eval.py	/^    start_time = time.time()$/;"	v	class:AccuEval
+steps	gesture_detection/train.py	/^steps = 0$/;"	v
+sum	arm_gesture_detection/main.cpp	/^float sum = 0;$/;"	v
+sum	gesture_detection/mbed.cpp	/^float sum = 0;$/;"	v
+sum	gesture_detection/mbed/mbed.cpp	/^float sum = 0;$/;"	v
+sumCount	arm_gesture_detection/main.cpp	/^uint32_t sumCount = 0;$/;"	v
+sumCount	gesture_detection/mbed.cpp	/^uint32_t sumCount = 0;$/;"	v
+sumCount	gesture_detection/mbed/mbed.cpp	/^uint32_t sumCount = 0;$/;"	v
+t	arm_gesture_detection/main.cpp	/^Timer t;$/;"	v
+t	gesture_detection/mbed.cpp	/^Timer t;$/;"	v
+t	gesture_detection/mbed/mbed.cpp	/^Timer t;$/;"	v
+tb_setting	video_detection/util.py	/^    def tb_setting(self, directory):$/;"	m	class:Datamanager
+test	gesture_detection/models/base_model.py	/^    def test(self):$/;"	m	class:BaseModel
+test_dataloader	video_detection/main.py	/^test_dataloader = dm.get_test_data_movie('.\/data\/test\/movie\/',batch_size=BATCH_SIZE, step_n = STEP_N, image_size = IMAGE_SIZE, save_path = SAVE_TEST_PATH)$/;"	v
+test_image	video_detection/util.py	/^    def test_image(self,model,dataloader, print_every= 2):$/;"	m	class:Datamanager
+test_movie	video_detection/util.py	/^    def test_movie(self,model,dataloader, print_every= 2):$/;"	m	class:Datamanager
+timeSince	video_detection/util.py	/^    def timeSince(self,since, percent):$/;"	m	class:Datamanager
+timer	gesture_detection/utils/timer.py	/^    timer = Timer()$/;"	v	class:Timer
+train	gesture_detection/models/base_model.py	/^    def train(self):$/;"	m	class:BaseModel
+trainDataLoader	gesture_detection/train.py	/^trainDataLoader= torch.utils.data.DataLoader($/;"	v
+trainDataset	gesture_detection/train.py	/^trainDataset = createDataset(opt, split = 'train', nInput = opt.nInput)$/;"	v
+trainVisualizer	gesture_detection/train.py	/^trainVisualizer = ProgressVisualizer(opt, trainDataLoader.dataset).reset()$/;"	v
+train_dataloader	video_detection/main.py	/^train_dataloader = dm.get_data_movie('.\/data\/train\/movie\/','.\/data\/train\/tag.txt',batch_size=BATCH_SIZE, step_n = STEP_N, image_size = IMAGE_SIZE, save_path = SAVE_TRAIN_PATH)$/;"	v
+train_image	video_detection/util.py	/^    def train_image(self, model, dataloader, epoch, optimizer, print_every= 2):$/;"	m	class:Datamanager
+train_movie	video_detection/util.py	/^    def train_movie(self, model, dataloader, epoch, optimizer, print_every= 2):$/;"	m	class:Datamanager
+update	gesture_detection/filter/__init__.py	/^    def update(self, data):$/;"	m	class:Filter
+update	gesture_detection/options/base_options.py	/^    def update(self):$/;"	m	class:BaseOptions
+update	gesture_detection/utils/accu_eval.py	/^    def update(self, pred, gnd):$/;"	m	class:AccuEval
+update_learning_rate	gesture_detection/models/base_model.py	/^    def update_learning_rate(self):$/;"	m	class:BaseModel
+v	gesture_detection/visualizer/sensor_visualizer.py	/^    v = SensorVisualizer()$/;"	v	class:SensorVisualizer
+valDataLoader	gesture_detection/train.py	/^valDataLoader= torch.utils.data.DataLoader($/;"	v
+valDataset	gesture_detection/train.py	/^valDataset = createDataset(opt, split = 'val', nInput = opt.nInput)$/;"	v
+valVisualizer	gesture_detection/train.py	/^valVisualizer = ProgressVisualizer(opt, valDataLoader.dataset).reset()$/;"	v
+val_image	video_detection/util.py	/^    def val_image(self,model,dataloader, epoch, print_every= 2):$/;"	m	class:Datamanager
+val_movie	video_detection/util.py	/^    def val_movie(self, model, dataloader, epoch, print_every= 2):$/;"	m	class:Datamanager
+visualizer	gesture_detection/action.py	/^visualizer = SensorVisualizer(repr = opt.repr)$/;"	v
+visualizer	gesture_detection/main.py	/^visualizer = SensorVisualizer(repr = opt.repr)$/;"	v
+visualizer	gesture_detection/predict.py	/^visualizer = SensorVisualizer(repr = opt.repr)$/;"	v
+visualizer	gesture_detection/recorder.py	/^visualizer = SensorVisualizer(repr = opt.repr)$/;"	v
+visualizer	gesture_detection/recorder_action.py	/^visualizer = SensorVisualizer(repr = opt.repr)$/;"	v
+write	video_detection/util.py	/^    def write(self,path,decoded_words,name,video):$/;"	m	class:Datamanager
