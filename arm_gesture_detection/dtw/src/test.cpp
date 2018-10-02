@@ -1,7 +1,7 @@
-#include "dtw.h"
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include "dtw.h"
 
 using namespace std;
 double euclidean_distance(vector<double> P1, vector<double> P2)
@@ -41,8 +41,10 @@ int main() {
         }
         test_vec_2.push_back(traj);
     }
-    DTW::SimpleDTW my_eval = DTW::SimpleDTW(traj_length, traj_length, euclidean_distance);
+    SimpleDTW my_eval = SimpleDTW(traj_length, traj_length, euclidean_distance);
+    /*
     double cost;
     cost = my_eval.EvaluateWarpingCost(test_vec_1, test_vec_2[0]);
     cout << cout << endl;
+    */
 }

@@ -1,19 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <vector>
-
-#ifndef DTW_H
-#define DTW_H
-
-namespace DTW
-{
+using namespace std;
 
 class SimpleDTW
 {
 private:
 
-    double (*distance_fn_)(std::vector<double> p1, std::vector<double> p2);
-    std::vector<double> data_;
+    double (*distance_fn_)(vector<double> p1, vector<double> p2);
+    vector<double> data_;
     size_t x_dim_;
     size_t y_dim_;
     bool initialized_;
@@ -37,18 +32,14 @@ private:
 
 public:
 
-    SimpleDTW(size_t x_dim, size_t y_dim, double (*distance_fn)(std::vector<double> p1, std::vector<double> p2));
+    SimpleDTW(size_t x_dim, size_t y_dim, double (*distance_fn)(vector<double> p1, vector<double> p2));
 
-    SimpleDTW(double (*distance_fn)(std::vector<double> p1, std::vector<double> p2));
+    SimpleDTW(double (*distance_fn)(vector<double> p1, vector<double> p2));
 
     SimpleDTW();
 
     ~SimpleDTW() {}
 
-    double EvaluateWarpingCost(std::vector<std::vector<double> > sequence_1, std::vector<std::vector<double> > sequence_2);
+    double EvaluateWarpingCost(vector<vector<double> > sequence_1, vector<vector<double> > sequence_2);
 
 };
-
-}
-
-#endif // DTW_H
