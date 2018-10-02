@@ -9,7 +9,7 @@ using namespace std;
 class Classifier{
   public:
     Classifier();
-    char* operator() (float** target);
+    char* operator()(vector<vector<float> > target);
   private:
     void read();
 

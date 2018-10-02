@@ -5,5 +5,5 @@ Classifier::Classifier(){
   this->read();
 }
 
-char* Classifier::operator()(float** target){
+char* Classifier::operator()(vector<vector<float> > target){
 }

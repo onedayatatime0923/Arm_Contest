@@ -3,15 +3,13 @@
 #define _DEFINE_GESTURE_
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
 class Gesture{
   public:
-    Gesture(const string& action, int step):
-      _action(action), _n(0), _step(step){
-        _data = new float*[step];
-    };
+    Gesture(const string& action): _action(action){};
 
     void operator() (const float& data1, const float& data2, 
         const float& data3, const float& data4, const float& data5, const float& data6,
@@ -19,12 +17,10 @@ class Gesture{
         const float& data11, const float& data12, const float& data13, const float& data14,
         const float& data15, const float& data16);
 
-    float** data();
+    vector<vector<float> > data();
 
   private:
-    int _n;
-    int _step;
     string _action;
-    float** _data;
+    vector<vector<float> > _data;
 };
 #endif

@@ -47,7 +47,6 @@ BinaryDataSet	gesture_detection/dataset/binary_dataset.py	/^class BinaryDataSet(
 BinaryModel	gesture_detection/models/binary_model.py	/^class BinaryModel(BaseModel):$/;"	c
 CONFIG	arm_gesture_detection/sensor/MPU9250.h	56;"	d
 Classifier	arm_gesture_detection/classifier/classifier/DTW.py	/^class Classifier:$/;"	c
-Classifier	arm_gesture_detection/classifier/include/classifier.h	/^class Classifier{$/;"	c
 Classifier	arm_gesture_detection/classifier/src/classifier/classifier.cpp	/^Classifier::Classifier(){$/;"	f	class:Classifier
 Classifier	arm_gesture_detection/classifier/src/classifier/classifier.h	/^class Classifier{$/;"	c
 Classifier	gesture_detection/classifier/DTW.py	/^class Classifier:$/;"	c
@@ -62,12 +61,10 @@ DMP_REG_1	arm_gesture_detection/sensor/MPU9250.h	143;"	d
 DMP_REG_2	arm_gesture_detection/sensor/MPU9250.h	144;"	d
 DMP_RW_PNT	arm_gesture_detection/sensor/MPU9250.h	141;"	d
 DROPOUT	video_detection/main.py	/^DROPOUT= 0.3$/;"	v
-DTW	arm_gesture_detection/classifier/include/dtw.h	/^namespace DTW$/;"	n
 DTW	arm_gesture_detection/classifier/src/dtw/dtw.h	/^namespace DTW$/;"	n
 DTW	arm_gesture_detection/dtw/dtw.h	/^namespace DTW$/;"	n
 DTW	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^namespace DTW$/;"	n
 DTW	arm_gesture_detection/dtw_org/src/dtw.h	/^namespace DTW$/;"	n
-DTW_H	arm_gesture_detection/classifier/include/dtw.h	6;"	d
 DTW_H	arm_gesture_detection/classifier/src/dtw/dtw.h	6;"	d
 DTW_H	arm_gesture_detection/dtw/dtw.h	6;"	d
 DTW_H	arm_gesture_detection/dtw_org/include/dtw/dtw.h	32;"	d
@@ -123,16 +120,12 @@ GYRO_YOUT_L	arm_gesture_detection/sensor/MPU9250.h	102;"	d
 GYRO_ZOUT_H	arm_gesture_detection/sensor/MPU9250.h	103;"	d
 GYRO_ZOUT_L	arm_gesture_detection/sensor/MPU9250.h	104;"	d
 GaussianNoise	gesture_detection/models/network/__init__.py	/^class GaussianNoise(nn.Module):$/;"	c
-Gesture	arm_gesture_detection/classifier/include/gesture.h	/^    Gesture(const string& action, int step):$/;"	f	class:Gesture
-Gesture	arm_gesture_detection/classifier/include/gesture.h	/^class Gesture{$/;"	c
-Gesture	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    Gesture(const string& action, int step):$/;"	f	class:Gesture
+Gesture	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    Gesture(const string& action): _action(action){};$/;"	f	class:Gesture
 Gesture	arm_gesture_detection/classifier/src/gesture/gesture.h	/^class Gesture{$/;"	c
-GetDataIndex	arm_gesture_detection/classifier/include/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm_gesture_detection/dtw/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm_gesture_detection/dtw_org/src/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
-GetFromDTWMatrix	arm_gesture_detection/classifier/include/dtw.h	/^    inline double GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetFromDTWMatrix	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    inline double GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetFromDTWMatrix	arm_gesture_detection/dtw/dtw.h	/^    inline double GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetFromDTWMatrix	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    inline double GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
@@ -230,12 +223,10 @@ SelfTest	arm_gesture_detection/sensor/MPU9250.h	/^float SelfTest[6];$/;"	v
 Sensor	arm_gesture_detection/binaryClassifier/binaryClassifier.cpp	/^Sensor::Sensor(){$/;"	f	class:Sensor
 Sensor	gesture_detection/sensor/__init__.py	/^class Sensor:$/;"	c
 SensorVisualizer	gesture_detection/visualizer/sensor_visualizer.py	/^class SensorVisualizer(BaseVisualizer):$/;"	c
-SetInDTWMatrix	arm_gesture_detection/classifier/include/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, double val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, double val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm_gesture_detection/dtw/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, double val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, double val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm_gesture_detection/dtw_org/src/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, double val)$/;"	f	class:DTW::SimpleDTW
-SimpleDTW	arm_gesture_detection/classifier/include/dtw.h	/^class SimpleDTW$/;"	c	namespace:DTW
 SimpleDTW	arm_gesture_detection/classifier/src/dtw/dtw.cpp	/^SimpleDTW::SimpleDTW()$/;"	f	class:SimpleDTW
 SimpleDTW	arm_gesture_detection/classifier/src/dtw/dtw.cpp	/^SimpleDTW::SimpleDTW(double (*distance_fn)(std::vector<double> p1, std::vector<double> p2))$/;"	f	class:SimpleDTW
 SimpleDTW	arm_gesture_detection/classifier/src/dtw/dtw.cpp	/^SimpleDTW::SimpleDTW(size_t x_size, size_t y_size, double (*distance_fn)(std::vector<double> p1, std::vector<double> p2))$/;"	f	class:SimpleDTW
@@ -277,9 +268,7 @@ ZG_OFFSET_H	arm_gesture_detection/sensor/MPU9250.h	53;"	d
 ZG_OFFSET_L	arm_gesture_detection/sensor/MPU9250.h	54;"	d
 ZMOT_THR	arm_gesture_detection/sensor/MPU9250.h	64;"	d
 ZRMOT_DUR	arm_gesture_detection/sensor/MPU9250.h	65;"	d
-_DEFINE_CLASSIFIER_	arm_gesture_detection/classifier/include/classifier.h	3;"	d
 _DEFINE_CLASSIFIER_	arm_gesture_detection/classifier/src/classifier/classifier.h	3;"	d
-_DEFINE_GESTURE_	arm_gesture_detection/classifier/include/gesture.h	3;"	d
 _DEFINE_GESTURE_	arm_gesture_detection/classifier/src/gesture/gesture.h	3;"	d
 __call__	gesture_detection/classifier/binary.py	/^    def __call__(self, data):$/;"	m	class:Classifier	file:
 __call__	gesture_detection/recorder/__init__.py	/^    def __call__(self, data):$/;"	m	class:Recorder	file:
@@ -346,23 +335,16 @@ __len__	video_detection/util.py	/^    def __len__(self):$/;"	m	class:ImageDatase
 __len__	video_detection/util.py	/^    def __len__(self):$/;"	m	class:MovieDataLoader	file:
 __next__	video_detection/util.py	/^    def __next__(self):$/;"	m	class:ActionDataLoader	file:
 __next__	video_detection/util.py	/^    def __next__(self):$/;"	m	class:MovieDataLoader	file:
-_action	arm_gesture_detection/classifier/include/gesture.h	/^    string _action;$/;"	m	class:Gesture
 _action	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    string _action;$/;"	m	class:Gesture
 _check_index	arm_gesture_detection/binaryClassifier/binaryClassifier.h	/^    vector<int>_check_index;$/;"	m	class:binaryClassifier
-_data	arm_gesture_detection/classifier/include/classifier.h	/^    vector<Gesture> _data;$/;"	m	class:Classifier
-_data	arm_gesture_detection/classifier/include/gesture.h	/^    float** _data;$/;"	m	class:Gesture
 _data	arm_gesture_detection/classifier/src/classifier/classifier.h	/^    vector<Gesture> _data;$/;"	m	class:Classifier
-_data	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    float** _data;$/;"	m	class:Gesture
+_data	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    vector<vector<float> > _data;$/;"	m	class:Gesture
 _grp_data	arm_gesture_detection/binaryClassifier/binaryClassifier.h	/^    vector<float*> _grp_data;$/;"	m	class:binaryClassifier
 _init	gesture_detection/visualizer/painter.py	/^    def _init(self):$/;"	m	class:Painter
-_n	arm_gesture_detection/classifier/include/gesture.h	/^    int _n;$/;"	m	class:Gesture
-_n	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    int _n;$/;"	m	class:Gesture
 _nStep	arm_gesture_detection/binaryClassifier/binaryClassifier.h	/^    uint32_t _nStep;$/;"	m	class:binaryClassifier
 _plot	gesture_detection/visualizer/painter.py	/^    def _plot(self):$/;"	m	class:Painter
 _read	gesture_detection/sensor/__init__.py	/^    def _read(self):$/;"	m	class:Sensor
 _speech	gesture_detection/speech/__init__.py	/^    def _speech(self, data):$/;"	m	class:Speech
-_step	arm_gesture_detection/classifier/include/gesture.h	/^    int _step;$/;"	m	class:Gesture
-_step	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    int _step;$/;"	m	class:Gesture
 _threshold	arm_gesture_detection/binaryClassifier/binaryClassifier.h	/^    float _threshold;$/;"	m	class:binaryClassifier
 _update	gesture_detection/visualizer/painter.py	/^    def _update(self, index): $/;"	m	class:Painter
 aRes	arm_gesture_detection/sensor/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
@@ -407,9 +389,9 @@ createModel	gesture_detection/models/__init__.py	/^def createModel(opt):$/;"	f
 createScheduler	gesture_detection/models/base_model.py	/^def createScheduler(optimizer, opt):$/;"	f
 current_accus	gesture_detection/models/base_model.py	/^    def current_accus(self):$/;"	m	class:BaseModel
 current_losses	gesture_detection/models/base_model.py	/^    def current_losses(self):$/;"	m	class:BaseModel
-data	arm_gesture_detection/classifier/src/gesture/gesture.cpp	/^float** Gesture::data(){$/;"	f	class:Gesture
+data	arm_gesture_detection/binaryMain/main.cpp	/^float data[16];$/;"	v
+data	arm_gesture_detection/classifier/src/gesture/gesture.cpp	/^vector<vector<float> > Gesture::data(){$/;"	f	class:Gesture
 data	arm_gesture_detection/main/main.cpp	/^float data[16];$/;"	v
-data_	arm_gesture_detection/classifier/include/dtw.h	/^    std::vector<double> data_;$/;"	m	class:DTW::SimpleDTW
 data_	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    std::vector<double> data_;$/;"	m	class:DTW::SimpleDTW
 data_	arm_gesture_detection/dtw/dtw.h	/^    std::vector<double> data_;$/;"	m	class:DTW::SimpleDTW
 data_	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    std::vector<double> data_;$/;"	m	class:DTW::SimpleDTW
@@ -419,7 +401,6 @@ deltat	arm_gesture_detection/sensor/MPU9250.h	/^float deltat = 0.0f;            
 dir_path	gesture_detection/test.py	/^dir_path = os.path.dirname(os.path.realpath(__file__))$/;"	v
 displayImage	gesture_detection/visualizer/base_visualizer.py	/^    def displayImage(self, data, step, name = 'Image'):$/;"	m	class:BaseVisualizer
 displayScalor	gesture_detection/visualizer/base_visualizer.py	/^    def displayScalor(self, data, step):$/;"	m	class:BaseVisualizer
-distance_fn_	arm_gesture_detection/classifier/include/dtw.h	/^    double (*distance_fn_)(std::vector<double> p1, std::vector<double> p2);$/;"	m	class:DTW::SimpleDTW
 distance_fn_	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    double (*distance_fn_)(std::vector<double> p1, std::vector<double> p2);$/;"	m	class:DTW::SimpleDTW
 distance_fn_	arm_gesture_detection/dtw/dtw.h	/^    double (*distance_fn_)(std::vector<double> p1, std::vector<double> p2);$/;"	m	class:DTW::SimpleDTW
 distance_fn_	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    double (*distance_fn_)(std::vector<double> p1, std::vector<double> p2);$/;"	m	class:DTW::SimpleDTW
@@ -488,7 +469,6 @@ initialize	gesture_detection/options/predict_options.py	/^    def initialize(sel
 initialize	gesture_detection/options/record_options.py	/^    def initialize(self, parser):$/;"	m	class:RecorderOptions
 initialize	gesture_detection/options/train_options.py	/^    def initialize(self, parser):$/;"	m	class:TrainOptions
 initialize_bak	gesture_detection/options/base_options.py	/^    def initialize_bak(self, parser):$/;"	m	class:BaseOptions
-initialized_	arm_gesture_detection/classifier/include/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
 initialized_	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
 initialized_	arm_gesture_detection/dtw/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
 initialized_	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
@@ -508,6 +488,7 @@ magCalibration	arm_gesture_detection/sensor/MPU9250.h	/^float magCalibration[3] 
 magCount	arm_gesture_detection/sensor/MPU9250.h	/^int16_t magCount[3];    \/\/ Stores the 16-bit signed magnetometer sensor output$/;"	v
 magbias	arm_gesture_detection/sensor/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 main	arm_gesture_detection/binaryClassifier/test.cpp	/^int main() {$/;"	f
+main	arm_gesture_detection/binaryMain/main.cpp	/^int main() {$/;"	f
 main	arm_gesture_detection/classifier/src/main/main.cpp	/^int main(int argc, char *argv[]){$/;"	f
 main	arm_gesture_detection/dtw_org/src/main.cpp	/^int main()$/;"	f
 main	arm_gesture_detection/main/main.cpp	/^int main() {$/;"	f
@@ -537,7 +518,7 @@ name	gesture_detection/models/binary_model.py	/^    def name(self):$/;"	m	class:
 norm	arm_gesture_detection/binaryClassifier/binaryClassifier.h	/^    float norm(float* data) {$/;"	f	class:binaryClassifier
 num_workers	gesture_detection/train.py	/^    num_workers=opt.nThreads)$/;"	v
 operator ()	arm_gesture_detection/binaryClassifier/binaryClassifier.h	/^    bool operator () (float* data) {$/;"	f	class:binaryClassifier
-operator ()	arm_gesture_detection/classifier/src/classifier/classifier.cpp	/^char* Classifier::operator()(float** target){$/;"	f	class:Classifier
+operator ()	arm_gesture_detection/classifier/src/classifier/classifier.cpp	/^char* Classifier::operator()(vector<vector<float> > target){$/;"	f	class:Classifier
 operator ()	arm_gesture_detection/classifier/src/gesture/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
 opt	gesture_detection/action.py	/^opt = parser.parse()$/;"	v
 opt	gesture_detection/main.py	/^opt = parser.parse()$/;"	v
@@ -661,19 +642,16 @@ visualizer	gesture_detection/recorder.py	/^visualizer = SensorVisualizer(repr = 
 visualizer	gesture_detection/recorder_action.py	/^visualizer = SensorVisualizer(repr = opt.repr)$/;"	v
 write	video_detection/util.py	/^    def write(self,path,decoded_words,name,video):$/;"	m	class:Datamanager
 writeByte	arm_gesture_detection/sensor/MPU9250.h	/^    void writeByte(uint8_t address, uint8_t subAddress, uint8_t data)$/;"	f	class:MPU9250
-x_dim_	arm_gesture_detection/classifier/include/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm_gesture_detection/dtw/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm_gesture_detection/dtw_org/src/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
-y_dim_	arm_gesture_detection/classifier/include/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm_gesture_detection/dtw/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm_gesture_detection/dtw_org/src/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 yaw	arm_gesture_detection/sensor/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 zeta	arm_gesture_detection/sensor/MPU9250.h	/^float zeta = sqrt(3.0f \/ 4.0f) * GyroMeasDrift;  \/\/ compute zeta, the other free parameter in the Madgwick scheme usually set to a small or zero value$/;"	v
-~SimpleDTW	arm_gesture_detection/classifier/include/dtw.h	/^    ~SimpleDTW() {}$/;"	f	class:DTW::SimpleDTW
 ~SimpleDTW	arm_gesture_detection/classifier/src/dtw/dtw.h	/^    ~SimpleDTW() {}$/;"	f	class:DTW::SimpleDTW
 ~SimpleDTW	arm_gesture_detection/dtw/dtw.h	/^    ~SimpleDTW() {}$/;"	f	class:DTW::SimpleDTW
 ~SimpleDTW	arm_gesture_detection/dtw_org/include/dtw/dtw.h	/^    ~SimpleDTW() {}$/;"	f	class:DTW::SimpleDTW
