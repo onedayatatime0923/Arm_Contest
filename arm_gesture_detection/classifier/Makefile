@@ -1,4 +1,4 @@
-LIBPKGS  = classifier gesture
+LIBPKGS  = classifier gesture dtw
 MAIN     = main
 
 LIBS     = $(addprefix -l, $(LIBPKGS))
