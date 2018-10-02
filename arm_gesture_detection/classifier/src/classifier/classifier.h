@@ -1,4 +1,6 @@
 
+#ifndef _DEFINE_CLASSIFIER_
+#define _DEFINE_CLASSIFIER_
 #include <vector>
 #include "../gesture/gesture.h"
 
@@ -13,3 +15,4 @@ class Classifier{
 
     vector<Gesture> _data;
 };
+#endif

@@ -49,6 +49,7 @@ BinaryModel	gesture_detection/models/binary_model.py	/^class BinaryModel(BaseMod
 CONFIG	arm_gesture_detection/MPU9250.h	56;"	d
 Classifier	arm_gesture_detection/classifier/classifier/DTW.py	/^class Classifier:$/;"	c
 Classifier	arm_gesture_detection/classifier/classifier/binary.py	/^class Classifier:$/;"	c
+Classifier	arm_gesture_detection/classifier/include/classifier.h	/^class Classifier{$/;"	c
 Classifier	arm_gesture_detection/classifier/src/classifier/classifier.cpp	/^Classifier::Classifier(){$/;"	f	class:Classifier
 Classifier	arm_gesture_detection/classifier/src/classifier/classifier.h	/^class Classifier{$/;"	c
 Classifier	gesture_detection/classifier/DTW.py	/^class Classifier:$/;"	c
@@ -113,6 +114,8 @@ GYRO_YOUT_L	arm_gesture_detection/MPU9250.h	102;"	d
 GYRO_ZOUT_H	arm_gesture_detection/MPU9250.h	103;"	d
 GYRO_ZOUT_L	arm_gesture_detection/MPU9250.h	104;"	d
 GaussianNoise	gesture_detection/models/network/__init__.py	/^class GaussianNoise(nn.Module):$/;"	c
+Gesture	arm_gesture_detection/classifier/include/gesture.h	/^    Gesture(const string& action, int step):$/;"	f	class:Gesture
+Gesture	arm_gesture_detection/classifier/include/gesture.h	/^class Gesture{$/;"	c
 Gesture	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    Gesture(const string& action, int step):$/;"	f	class:Gesture
 Gesture	arm_gesture_detection/classifier/src/gesture/gesture.h	/^class Gesture{$/;"	c
 Gscale	arm_gesture_detection/MPU9250.h	/^enum Gscale {$/;"	g
@@ -234,6 +237,9 @@ ZG_OFFSET_H	arm_gesture_detection/MPU9250.h	53;"	d
 ZG_OFFSET_L	arm_gesture_detection/MPU9250.h	54;"	d
 ZMOT_THR	arm_gesture_detection/MPU9250.h	64;"	d
 ZRMOT_DUR	arm_gesture_detection/MPU9250.h	65;"	d
+_DEFINE_CLASSIFIER_	arm_gesture_detection/classifier/include/classifier.h	3;"	d
+_DEFINE_CLASSIFIER_	arm_gesture_detection/classifier/src/classifier/classifier.h	3;"	d
+_DEFINE_GESTURE_	arm_gesture_detection/classifier/include/gesture.h	3;"	d
 _DEFINE_GESTURE_	arm_gesture_detection/classifier/src/gesture/gesture.h	3;"	d
 __call__	arm_gesture_detection/classifier/classifier/binary.py	/^    def __call__(self, data):$/;"	m	class:Classifier	file:
 __call__	gesture_detection/classifier/binary.py	/^    def __call__(self, data):$/;"	m	class:Classifier	file:
@@ -302,14 +308,19 @@ __len__	video_detection/util.py	/^    def __len__(self):$/;"	m	class:ImageDatase
 __len__	video_detection/util.py	/^    def __len__(self):$/;"	m	class:MovieDataLoader	file:
 __next__	video_detection/util.py	/^    def __next__(self):$/;"	m	class:ActionDataLoader	file:
 __next__	video_detection/util.py	/^    def __next__(self):$/;"	m	class:MovieDataLoader	file:
+_action	arm_gesture_detection/classifier/include/gesture.h	/^    string _action;$/;"	m	class:Gesture
 _action	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    string _action;$/;"	m	class:Gesture
+_data	arm_gesture_detection/classifier/include/classifier.h	/^    vector<Gesture> _data;$/;"	m	class:Classifier
+_data	arm_gesture_detection/classifier/include/gesture.h	/^    float** _data;$/;"	m	class:Gesture
 _data	arm_gesture_detection/classifier/src/classifier/classifier.h	/^    vector<Gesture> _data;$/;"	m	class:Classifier
 _data	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    float** _data;$/;"	m	class:Gesture
 _init	gesture_detection/visualizer/painter.py	/^    def _init(self):$/;"	m	class:Painter
+_n	arm_gesture_detection/classifier/include/gesture.h	/^    int _n;$/;"	m	class:Gesture
 _n	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    int _n;$/;"	m	class:Gesture
 _plot	gesture_detection/visualizer/painter.py	/^    def _plot(self):$/;"	m	class:Painter
 _read	gesture_detection/sensor/__init__.py	/^    def _read(self):$/;"	m	class:Sensor
 _speech	gesture_detection/speech/__init__.py	/^    def _speech(self, data):$/;"	m	class:Speech
+_step	arm_gesture_detection/classifier/include/gesture.h	/^    int _step;$/;"	m	class:Gesture
 _step	arm_gesture_detection/classifier/src/gesture/gesture.h	/^    int _step;$/;"	m	class:Gesture
 _update	gesture_detection/visualizer/painter.py	/^    def _update(self, index): $/;"	m	class:Painter
 aRes	arm_gesture_detection/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v

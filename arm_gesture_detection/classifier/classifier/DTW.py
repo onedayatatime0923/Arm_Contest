@@ -5,6 +5,7 @@ import numpy as np
 from numpy import linalg as LA
 from scipy.spatial.distance import euclidean
 
+assert LA and euclidean
 
 class Classifier:
     def __init__(self, threshold = 98, noOps = 'None'):
