@@ -18,13 +18,13 @@ SimpleDTW::SimpleDTW()
     initialized_ = false;
 }
 
-SimpleDTW::SimpleDTW(size_t x_size, size_t y_size, double (*distance_fn)(std::vector<double> p1, std::vector<double> p2))
+SimpleDTW::SimpleDTW(size_t x_size, size_t y_size, float (*distance_fn)(std::vector<float> p1, std::vector<float> p2))
 {
     distance_fn_ = distance_fn;
     SimpleDTW::Initialize(x_size, y_size);
 }
 
-SimpleDTW::SimpleDTW(double (*distance_fn)(std::vector<double> p1, std::vector<double> p2))
+SimpleDTW::SimpleDTW(float (*distance_fn)(std::vector<float> p1, std::vector<float> p2))
 {
     distance_fn_ = distance_fn;
     initialized_ = false;
@@ -49,7 +49,7 @@ void SimpleDTW::Initialize(size_t x_size, size_t y_size)
     initialized_ = true;
 }
 
-double SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<double> > sequence_1, std::vector< std::vector<double> > sequence_2)
+float SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<float> > sequence_1, std::vector< std::vector<float> > sequence_2)
 {
     // Sanity checks
     if (sequence_1.size() == 0 || sequence_2.size() == 0)
@@ -75,12 +75,12 @@ double SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<double> > sequenc
     {
         for (unsigned int j = 1; j <= sequence_2.size(); j++)
         {
-            double index_cost = distance_fn_(sequence_1[i - 1], sequence_2[j - 1]);
-            double prev_cost = 0.0;
+            float index_cost = distance_fn_(sequence_1[i - 1], sequence_2[j - 1]);
+            float prev_cost = 0.0;
             // Get the three neighboring values from the matrix to use for the update
-            double im1j = GetFromDTWMatrix(i - 1, j);
-            double im1jm1 = GetFromDTWMatrix(i - 1, j - 1);
-            double ijm1 = GetFromDTWMatrix(i, j - 1);
+            float im1j = GetFromDTWMatrix(i - 1, j);
+            float im1jm1 = GetFromDTWMatrix(i - 1, j - 1);
+            float ijm1 = GetFromDTWMatrix(i, j - 1);
             // Start the update step
             if (im1j < im1jm1 && im1j < ijm1)
             {
