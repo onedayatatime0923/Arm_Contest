@@ -1,5 +1,5 @@
 #include "mbed.h"
-#include "sensor_wu.h"
+#include "sensor/sensor.h"
 
 float data[16];
 Serial pc(USBTX, USBRX); // tx, rx
@@ -10,5 +10,6 @@ int main() {
    connect_MPU9250(pc);
    while(1) {
       read_data(pc, data, 0);
+      
    }
 }
