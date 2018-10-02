@@ -8,7 +8,7 @@
 #include <iostream>
 #include <algorithm>
 #include <stdexcept>
-#include "dtw.h"
+#include "../include/dtw/dtw.h"
 
 double euclidean_distance(std::vector<double> P1, std::vector<double> P2)
 {
@@ -71,7 +71,7 @@ int compare_performance(int traj_length, int iterations)
 int main()
 {
     std::cout << "Running performance tests..." << std::endl;
-    compare_performance(1000, 1000);
+    compare_performance(10, 100);
     std::cout << "...done performance testing" << std::endl;
     return 0;
 }

@@ -1,14 +1,42 @@
-#include <iostream>
-#include <cmath>
+/*
+Copyright (c) 2014, Calder Phillips-Grafflin (calder.pg@gmail.com)
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "math.h"
 #include <vector>
 #include <string>
 #include <sstream>
 #include "string.h"
 #include <iostream>
 #include <algorithm>
-//#include <stdexcept>
-#include "dtw.h"
-using namespace std;
+#include <stdexcept>
+#include "../include/dtw/dtw.h"
+
+using namespace DTW;
 
 SimpleDTW::SimpleDTW()
 {
@@ -16,13 +44,13 @@ SimpleDTW::SimpleDTW()
     initialized_ = false;
 }
 
-SimpleDTW::SimpleDTW(size_t x_size, size_t y_size, double (*distance_fn)(vector<double> p1, vector<double> p2))
+SimpleDTW::SimpleDTW(size_t x_size, size_t y_size, double (*distance_fn)(std::vector<double> p1, std::vector<double> p2))
 {
     distance_fn_ = distance_fn;
     SimpleDTW::Initialize(x_size, y_size);
 }
 
-SimpleDTW::SimpleDTW(double (*distance_fn)(vector<double> p1, vector<double> p2))
+SimpleDTW::SimpleDTW(double (*distance_fn)(std::vector<double> p1, std::vector<double> p2))
 {
     distance_fn_ = distance_fn;
     initialized_ = false;
@@ -47,7 +75,7 @@ void SimpleDTW::Initialize(size_t x_size, size_t y_size)
     initialized_ = true;
 }
 
-double SimpleDTW::EvaluateWarpingCost(vector< vector<double> > sequence_1, vector< vector<double> > sequence_2)
+double SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<double> > sequence_1, std::vector< std::vector<double> > sequence_2)
 {
     // Sanity checks
     if (sequence_1.size() == 0 || sequence_2.size() == 0)
@@ -56,16 +84,16 @@ double SimpleDTW::EvaluateWarpingCost(vector< vector<double> > sequence_1, vecto
     }
     if (sequence_1[0].size() != sequence_2[0].size())
     {
-        throw invalid_argument("Sequences for evaluation have different element sizes");
+        throw std::invalid_argument("Sequences for evaluation have different element sizes");
     }
     // Safety checks
     if (!distance_fn_)
     {
-        throw invalid_argument("DTW evaluator is not initialized with a cost function");
+        throw std::invalid_argument("DTW evaluator is not initialized with a cost function");
     }
     if (!initialized_ || sequence_1.size() >= x_dim_ || sequence_2.size() >= y_dim_)
     {
-        cout << "Automatically resizing DTW matrix to fit arguments" << endl;
+        std::cout << "Automatically resizing DTW matrix to fit arguments" << std::endl;
         SimpleDTW::Initialize(sequence_1.size(), sequence_2.size());
     }
     //Compute DTW cost for the two sequences
