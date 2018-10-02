@@ -1,6 +1,6 @@
 
 #include "classifier.h"
-#include <../gesture/gesture.h>
+#include "../gesture/gesture.h"
 
 void Classifier::read(){
   Gesture g("move", 3);

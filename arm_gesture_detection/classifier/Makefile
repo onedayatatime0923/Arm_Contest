@@ -4,9 +4,6 @@ MAIN     = main
 LIBS     = $(addprefix -l, $(LIBPKGS))
 LIBFILES = $(addsuffix .a, $(addprefix lib, $(LIBPKGS)))
 
-dummy:
-	@echo "Error: please use make <all | clean | cleanall>"
-
 EXEC     = Classifier
 
 all: libs main
