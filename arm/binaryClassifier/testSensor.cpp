@@ -2,7 +2,7 @@
 
 #include <vector>
 #include "mbed.h"
-#include "sensor/sensor.h"
+#include "sensor.h"
 
 Serial pc(USBTX, USBRX); // tx, rx
 
