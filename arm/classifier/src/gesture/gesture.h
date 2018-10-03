@@ -18,6 +18,7 @@ class Gesture{
         const float& data15, const float& data16);
 
     vector<vector<float> > data();
+    string action();
 
   private:
     string _action;

@@ -30,3 +30,7 @@ void Gesture::operator() (const float& data1, const float& data2,
 vector<vector<float> > Gesture::data(){
   return _data;
 }
+
+string Gesture::action(){
+  return _action;
+}
