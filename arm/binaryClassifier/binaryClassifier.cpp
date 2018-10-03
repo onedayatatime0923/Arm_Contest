@@ -3,7 +3,7 @@
 #include <vector>
 #include "binaryClassifier.h"
 
-BinaryClassifier::BinaryClassifier(float threshold, int nStep, vector<int> index):
+BinaryClassifier::BinaryClassifier(const float& threshold, const int& nStep, const vector<int>& index):
   _threshold(threshold), _nStep(nStep), _index(index), _data(nStep, vector<float>(16,0)){
     for(int i = 0; i < _nStep; ++i){
       for(int j = 0; j< 16; ++j){

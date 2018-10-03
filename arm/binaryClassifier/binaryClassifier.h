@@ -4,7 +4,7 @@ using namespace std;
 
 class BinaryClassifier{
   public:
-    BinaryClassifier(float threshold, int nStep, vector<int> index);
+    BinaryClassifier(const float& threshold, const int& nStep, const vector<int>& index);
 
     bool operator () (vector<float> data);
 
