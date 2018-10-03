@@ -14,11 +14,11 @@ int main() {
    while(1) {
       vector<float> data = read_data(pc);
       pc.printf("start");
-      pc.printf(data[0]);
-      pc.printf(data[1]);
-      pc.printf(data[2]);
-      pc.printf(data[3]);
-      pc.printf(data[4]);
-      pc.printf(data[5]);
+      pc.printf("%f ",data[0]);
+      pc.printf("%f ",data[1]);
+      pc.printf("%f ",data[2]);
+      pc.printf("%f ",data[3]);
+      pc.printf("%f ",data[4]);
+      pc.printf("%f ",data[5]);
    }
 }

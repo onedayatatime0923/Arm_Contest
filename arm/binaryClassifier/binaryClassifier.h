@@ -1,6 +1,5 @@
-//#include "mbed.h"
+#include "mbed.h"
 #include <cmath>
-using namespace std;
 
 class BinaryClassifier{
   public:

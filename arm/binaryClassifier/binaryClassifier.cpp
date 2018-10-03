@@ -1,17 +1,9 @@
 
-#include <iostream>
 #include <vector>
 #include "binaryClassifier.h"
 
 BinaryClassifier::BinaryClassifier(const float& threshold, const int& nStep, const vector<int>& index):
-  _threshold(threshold), _nStep(nStep), _index(index), _data(nStep, vector<float>(16,0)){
-    for(int i = 0; i < _nStep; ++i){
-      for(int j = 0; j< 16; ++j){
-        cout<< _data[i][j];
-      };
-      cout<< endl;
-    };
-};
+  _threshold(threshold), _nStep(nStep), _index(index), _data(nStep, vector<float>(16,0)){};
 bool BinaryClassifier::operator () (vector<float> data) {
    _data.erase(_data.begin());
    vector<float> tmp_data;

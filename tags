@@ -559,7 +559,7 @@ classifier	gesture_detection/recorder_action.py	/^classifier = ClassifierBinary(
 classifierBinary	gesture_detection/predict.py	/^classifierBinary = ClassifierBinary(opt.binaryThreshold, opt.index, opt.nStep)$/;"	v
 classifierDtw	gesture_detection/predict.py	/^classifierDtw = ClassifierDtw(opt.actionThreshold)$/;"	v
 compare_performance	arm/dtw_org/src/main.cpp	/^int compare_performance(int traj_length, int iterations)$/;"	f
-connect_MPU9250	arm/binaryClassifier/sensor.h	/^void connect_MPU9250(Serial pc) {$/;"	f
+connect_MPU9250	arm/binaryClassifier/sensor.h	/^void connect_MPU9250(Serial& pc) {$/;"	f
 connect_MPU9250	arm/sensor/sensor.h	/^void connect_MPU9250(Serial pc) {$/;"	f
 construct_actionDir	gesture_detection/options/base_options.py	/^    def construct_actionDir(self):$/;"	m	class:BaseOptions
 construct_checkpoints	gesture_detection/options/base_options.py	/^    def construct_checkpoints(self,creatDir = True):$/;"	m	class:BaseOptions
@@ -700,7 +700,7 @@ magCount	arm/sensor/MPU9250.h	/^int16_t magCount[3];    \/\/ Stores the 16-bit s
 magbias	arm/binaryClassifier/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 magbias	arm/sensor/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 main	arm/binaryClassifier/main.cpp	/^int main() {$/;"	f
-main	arm/binaryClassifier/test.cpp	/^int main() {$/;"	f
+main	arm/binaryClassifier/testClassifier.cpp	/^int main() {$/;"	f
 main	arm/binaryClassifier/testSensor.cpp	/^int main() {$/;"	f
 main	arm/classifier/src/main/main.cpp	/^int main(int argc, char *argv[]){$/;"	f
 main	arm/dtw_org/src/main.cpp	/^int main()$/;"	f

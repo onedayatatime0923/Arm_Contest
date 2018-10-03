@@ -9,7 +9,7 @@ char buffer[14];
 MPU9250 mpu9250;
 Timer t;
 
-void connect_MPU9250(Serial pc) {
+void connect_MPU9250(Serial& pc) {
    i2c.frequency(400000);  // use fast (400 kHz) I2C  
    t.start();        
    uint8_t whoami = mpu9250.readByte(MPU9250_ADDRESS, WHO_AM_I_MPU9250);  // Read WHO_AM_I register for MPU-9250
@@ -37,7 +37,7 @@ void connect_MPU9250(Serial pc) {
    magbias[0] = +470.;  // User environmental x-axis correction in milliGauss, should be automatically calculated
    magbias[1] = +120.;  // User environmental x-axis correction in milliGauss
    magbias[2] = +125.;  // User environmental x-axis correction in milliGauss
-}
+};
 
 vector<float> read_data(Serial& pc) {
   // If intPin goes high, all data registers have new data
@@ -94,7 +94,7 @@ vector<float> read_data(Serial& pc) {
   pc.printf("%f\n", roll);
   */
   vector<float> data;
-  data.reserve()
+  data.reserve(16);
   data.push_back(ax);
   data.push_back(ay);
   data.push_back(az);
@@ -122,5 +122,5 @@ vector<float> read_data(Serial& pc) {
   }
   sum = 0;
   sumCount = 0; 
-  return data
-}
+  return data;
+};
