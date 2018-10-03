@@ -701,6 +701,7 @@ magbias	arm/binaryClassifier/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, ma
 magbias	arm/sensor/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 main	arm/binaryClassifier/main.cpp	/^int main() {$/;"	f
 main	arm/binaryClassifier/test.cpp	/^int main() {$/;"	f
+main	arm/binaryClassifier/testSensor.cpp	/^int main() {$/;"	f
 main	arm/classifier/src/main/main.cpp	/^int main(int argc, char *argv[]){$/;"	f
 main	arm/dtw_org/src/main.cpp	/^int main()$/;"	f
 main	arm/main/main.cpp	/^int main() {$/;"	f
