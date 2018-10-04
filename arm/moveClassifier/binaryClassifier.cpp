@@ -1,0 +1,19 @@
+
+#include <vector>
+#include "binaryClassifier.h"
+
+BinaryClassifier::BinaryClassifier(const float& threshold, const int& nStep, const vector<int>& index):
+  _threshold(threshold), _nStep(nStep), _index(index), _data(nStep, vector<float>(16,0)){};
+bool BinaryClassifier::operator () (vector<float> data) {
+   _data.erase(_data.begin());
+   vector<float> tmp_data;
+   for(size_t i = 0; i < _index.size(); ++i) {
+      tmp_data.push_back(data[_index[i]]);
+   }
+   _data.push_back(tmp_data);
+   for(size_t i = 0; i < _nStep; ++i) {
+      if(norm(_data[i]) > _threshold)
+         return true;
+   }
+   return false;
+}

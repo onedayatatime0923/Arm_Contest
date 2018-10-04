@@ -1,17 +1,18 @@
 
+#include <iostream>
 #include <vector>
 #include <cmath>
-#include <float.h>
+#include "mbed.h"
 #include "classifier.h"
-#include "../dtw/dtw.h"
+#include "dtw.h"
 
 using namespace std;
 
-Classifier::Classifier(const float& threshold): _threshold(threshold), _dtwEval(this->euclidean_distance){
+MoveClassifier::MoveClassifier(const float& threshold): _threshold(threshold), _dtwEval(this->euclidean_distance){
   this->read();
 }
 
-string Classifier::operator()(const vector<vector<float> >& target){
+string MoveClassifier::operator() (vector<vector<float> >& target, Serial& pc){
   int result = 0;
   float loss = FLT_MAX;
   for(int i = 0;i < _data.size(); ++i){
@@ -23,6 +24,7 @@ string Classifier::operator()(const vector<vector<float> >& target){
   };
 
   if(loss != FLT_MAX){
+    pc.printf("%f\n", loss);
     return _data[result].action();
   }
   else{
@@ -30,7 +32,7 @@ string Classifier::operator()(const vector<vector<float> >& target){
   };
 };
 
-float Classifier::euclidean_distance(vector<float> P1, vector<float> P2) {
+float MoveClassifier::euclidean_distance(vector<float>& P1, vector<float>& P2) {
   float total = 0.0;
   for (unsigned int i = 0; i < P1.size(); i++) {
     total = total + pow((P1[i] - P2[i]), 2);
@@ -38,7 +40,7 @@ float Classifier::euclidean_distance(vector<float> P1, vector<float> P2) {
   return sqrt(total);
 }
 
-float Classifier::evaluateDtwCost(vector<vector<float> > s1, vector<vector<float> > s2) {
+float MoveClassifier::evaluateDtwCost(vector<vector<float> >& s1, vector<vector<float> >& s2) {
    _dtwEval.Initialize(s1.size(), s2.size());
    return _dtwEval.EvaluateWarpingCost(s1, s2);
 }

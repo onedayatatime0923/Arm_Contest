@@ -2,16 +2,17 @@
 #ifndef _DEFINE_CLASSIFIER_
 #define _DEFINE_CLASSIFIER_
 #include <vector>
-#include "../gesture/gesture.h"
-#include "../dtw/dtw.h"
+#include "mbed.h"
+#include "gesture.h"
+#include "dtw.h"
 
 using namespace std;
 using namespace DTW;
 
-class Classifier{
+class MoveClassifier{
   public:
-    Classifier(const float& threshold);
-    string operator()(const vector<vector<float> >& target);
+    MoveClassifier(const float& threshold);
+    string operator() (vector<vector<float> >& target, Serial& pc);
 
     static float euclidean_distance(vector<float> P1, vector<float> P2);
     float evaluateDtwCost(vector<vector<float> > s1, vector<vector<float> > s2);
