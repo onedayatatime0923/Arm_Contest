@@ -1,5 +1,0 @@
-PKGFLAG   =
-EXTHDRS   = gesture.h
-
-include ../Makefile.in
-include ../Makefile.lib

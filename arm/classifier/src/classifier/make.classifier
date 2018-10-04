@@ -1,5 +1,0 @@
-PKGFLAG   =
-EXTHDRS   = classifier.h
-
-include ../Makefile.in
-include ../Makefile.lib
