@@ -44,7 +44,7 @@ public:
 
     ~SimpleDTW() {}
 
-    float EvaluateWarpingCost(std::vector<std::vector<float> > sequence_1, std::vector<std::vector<float> > sequence_2);
+    float EvaluateWarpingCost(std::vector<std::vector<float> >& sequence_1, std::vector<std::vector<float> >& sequence_2);
     void Initialize(size_t x_size, size_t y_size);
 
 };

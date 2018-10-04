@@ -1,20 +1,17 @@
-#include "mbed.h"
 #include <cmath>
+#include <vector>
+#include "point.h"
+
+using namespace std;
 
 class BinaryClassifier{
   public:
     BinaryClassifier(const float& threshold, const int& nStep, const vector<int>& index);
 
-    bool operator () (vector<float> data);
+    bool operator() (Point& data);
 
   private:
-    float norm(vector<float> data) {
-       float sum = 0;
-       for(int i = 0; i <  _index.size(); ++i) {
-          sum += data[i] * data[i];
-       }
-       return sqrt(sum);
-    }
+    float norm(vector<float>& data);
 
     float _threshold;
     int _nStep;

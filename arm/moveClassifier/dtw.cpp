@@ -49,7 +49,7 @@ void SimpleDTW::Initialize(size_t x_size, size_t y_size)
     initialized_ = true;
 }
 
-float SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<float> > sequence_1, std::vector< std::vector<float> > sequence_2)
+float SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<float> >& sequence_1, std::vector< std::vector<float> >& sequence_2)
 {
     // Sanity checks
     if (sequence_1.size() == 0 || sequence_2.size() == 0)

@@ -10,15 +10,9 @@ int main() {
   // construct mpu9250
   connect_MPU9250(pc);
 
-  // construct binary classifier
-  vector<int> verboseIndex;
-  verboseIndex.push_back(3);
-  verboseIndex.push_back(4);
-  verboseIndex.push_back(5);
-  BinaryClassifier classifier(400, 2, verboseIndex);
           
   while(1) {
-    vector<float> data = read_data(pc);
+    vector<float> data = read_data(pc, 2);
     pc.printf("start");
     pc.printf("%f ",data[0]);
     pc.printf("%f ",data[1]);

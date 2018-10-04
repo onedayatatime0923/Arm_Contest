@@ -4,95 +4,65 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ACCEL_CONFIG	arm/binaryClassifier/MPU9250.h	58;"	d
 ACCEL_CONFIG	arm/moveClassifier/MPU9250.h	58;"	d
 ACCEL_CONFIG	arm/sensor/MPU9250.h	58;"	d
-ACCEL_CONFIG2	arm/binaryClassifier/MPU9250.h	59;"	d
 ACCEL_CONFIG2	arm/moveClassifier/MPU9250.h	59;"	d
 ACCEL_CONFIG2	arm/sensor/MPU9250.h	59;"	d
-ACCEL_XOUT_H	arm/binaryClassifier/MPU9250.h	91;"	d
 ACCEL_XOUT_H	arm/moveClassifier/MPU9250.h	91;"	d
 ACCEL_XOUT_H	arm/sensor/MPU9250.h	91;"	d
-ACCEL_XOUT_L	arm/binaryClassifier/MPU9250.h	92;"	d
 ACCEL_XOUT_L	arm/moveClassifier/MPU9250.h	92;"	d
 ACCEL_XOUT_L	arm/sensor/MPU9250.h	92;"	d
-ACCEL_YOUT_H	arm/binaryClassifier/MPU9250.h	93;"	d
 ACCEL_YOUT_H	arm/moveClassifier/MPU9250.h	93;"	d
 ACCEL_YOUT_H	arm/sensor/MPU9250.h	93;"	d
-ACCEL_YOUT_L	arm/binaryClassifier/MPU9250.h	94;"	d
 ACCEL_YOUT_L	arm/moveClassifier/MPU9250.h	94;"	d
 ACCEL_YOUT_L	arm/sensor/MPU9250.h	94;"	d
-ACCEL_ZOUT_H	arm/binaryClassifier/MPU9250.h	95;"	d
 ACCEL_ZOUT_H	arm/moveClassifier/MPU9250.h	95;"	d
 ACCEL_ZOUT_H	arm/sensor/MPU9250.h	95;"	d
-ACCEL_ZOUT_L	arm/binaryClassifier/MPU9250.h	96;"	d
 ACCEL_ZOUT_L	arm/moveClassifier/MPU9250.h	96;"	d
 ACCEL_ZOUT_L	arm/sensor/MPU9250.h	96;"	d
-ADO	arm/binaryClassifier/MPU9250.h	159;"	d
 ADO	arm/moveClassifier/MPU9250.h	159;"	d
 ADO	arm/sensor/MPU9250.h	159;"	d
-AFS_16G	arm/binaryClassifier/MPU9250.h	/^  AFS_16G$/;"	e	enum:Ascale
 AFS_16G	arm/moveClassifier/MPU9250.h	/^  AFS_16G$/;"	e	enum:Ascale
 AFS_16G	arm/sensor/MPU9250.h	/^  AFS_16G$/;"	e	enum:Ascale
-AFS_2G	arm/binaryClassifier/MPU9250.h	/^  AFS_2G = 0,$/;"	e	enum:Ascale
 AFS_2G	arm/moveClassifier/MPU9250.h	/^  AFS_2G = 0,$/;"	e	enum:Ascale
 AFS_2G	arm/sensor/MPU9250.h	/^  AFS_2G = 0,$/;"	e	enum:Ascale
-AFS_4G	arm/binaryClassifier/MPU9250.h	/^  AFS_4G,$/;"	e	enum:Ascale
 AFS_4G	arm/moveClassifier/MPU9250.h	/^  AFS_4G,$/;"	e	enum:Ascale
 AFS_4G	arm/sensor/MPU9250.h	/^  AFS_4G,$/;"	e	enum:Ascale
-AFS_8G	arm/binaryClassifier/MPU9250.h	/^  AFS_8G,$/;"	e	enum:Ascale
 AFS_8G	arm/moveClassifier/MPU9250.h	/^  AFS_8G,$/;"	e	enum:Ascale
 AFS_8G	arm/sensor/MPU9250.h	/^  AFS_8G,$/;"	e	enum:Ascale
-AK8963_ADDRESS	arm/binaryClassifier/MPU9250.h	11;"	d
 AK8963_ADDRESS	arm/moveClassifier/MPU9250.h	11;"	d
 AK8963_ADDRESS	arm/sensor/MPU9250.h	11;"	d
-AK8963_ASAX	arm/binaryClassifier/MPU9250.h	25;"	d
 AK8963_ASAX	arm/moveClassifier/MPU9250.h	25;"	d
 AK8963_ASAX	arm/sensor/MPU9250.h	25;"	d
-AK8963_ASAY	arm/binaryClassifier/MPU9250.h	26;"	d
 AK8963_ASAY	arm/moveClassifier/MPU9250.h	26;"	d
 AK8963_ASAY	arm/sensor/MPU9250.h	26;"	d
-AK8963_ASAZ	arm/binaryClassifier/MPU9250.h	27;"	d
 AK8963_ASAZ	arm/moveClassifier/MPU9250.h	27;"	d
 AK8963_ASAZ	arm/sensor/MPU9250.h	27;"	d
-AK8963_ASTC	arm/binaryClassifier/MPU9250.h	23;"	d
 AK8963_ASTC	arm/moveClassifier/MPU9250.h	23;"	d
 AK8963_ASTC	arm/sensor/MPU9250.h	23;"	d
-AK8963_CNTL	arm/binaryClassifier/MPU9250.h	22;"	d
 AK8963_CNTL	arm/moveClassifier/MPU9250.h	22;"	d
 AK8963_CNTL	arm/sensor/MPU9250.h	22;"	d
-AK8963_I2CDIS	arm/binaryClassifier/MPU9250.h	24;"	d
 AK8963_I2CDIS	arm/moveClassifier/MPU9250.h	24;"	d
 AK8963_I2CDIS	arm/sensor/MPU9250.h	24;"	d
-AK8963_ST1	arm/binaryClassifier/MPU9250.h	14;"	d
 AK8963_ST1	arm/moveClassifier/MPU9250.h	14;"	d
 AK8963_ST1	arm/sensor/MPU9250.h	14;"	d
-AK8963_ST2	arm/binaryClassifier/MPU9250.h	21;"	d
 AK8963_ST2	arm/moveClassifier/MPU9250.h	21;"	d
 AK8963_ST2	arm/sensor/MPU9250.h	21;"	d
-AK8963_XOUT_H	arm/binaryClassifier/MPU9250.h	16;"	d
 AK8963_XOUT_H	arm/moveClassifier/MPU9250.h	16;"	d
 AK8963_XOUT_H	arm/sensor/MPU9250.h	16;"	d
-AK8963_XOUT_L	arm/binaryClassifier/MPU9250.h	15;"	d
 AK8963_XOUT_L	arm/moveClassifier/MPU9250.h	15;"	d
 AK8963_XOUT_L	arm/sensor/MPU9250.h	15;"	d
-AK8963_YOUT_H	arm/binaryClassifier/MPU9250.h	18;"	d
 AK8963_YOUT_H	arm/moveClassifier/MPU9250.h	18;"	d
 AK8963_YOUT_H	arm/sensor/MPU9250.h	18;"	d
-AK8963_YOUT_L	arm/binaryClassifier/MPU9250.h	17;"	d
 AK8963_YOUT_L	arm/moveClassifier/MPU9250.h	17;"	d
 AK8963_YOUT_L	arm/sensor/MPU9250.h	17;"	d
-AK8963_ZOUT_H	arm/binaryClassifier/MPU9250.h	20;"	d
 AK8963_ZOUT_H	arm/moveClassifier/MPU9250.h	20;"	d
 AK8963_ZOUT_H	arm/sensor/MPU9250.h	20;"	d
-AK8963_ZOUT_L	arm/binaryClassifier/MPU9250.h	19;"	d
 AK8963_ZOUT_L	arm/moveClassifier/MPU9250.h	19;"	d
 AK8963_ZOUT_L	arm/sensor/MPU9250.h	19;"	d
 AccuEval	gesture_detection/utils/accu_eval.py	/^class AccuEval:$/;"	c
 ActionDataLoader	video_detection/util.py	/^class ActionDataLoader():$/;"	c
 ActionOptions	gesture_detection/options/action_options.py	/^class ActionOptions(BaseOptions):$/;"	c
-Ascale	arm/binaryClassifier/MPU9250.h	/^enum Ascale {$/;"	g
-Ascale	arm/binaryClassifier/MPU9250.h	/^uint8_t Ascale = AFS_2G;     \/\/ AFS_2G, AFS_4G, AFS_8G, AFS_16G$/;"	v
 Ascale	arm/moveClassifier/MPU9250.h	/^enum Ascale {$/;"	g
 Ascale	arm/moveClassifier/MPU9250.h	/^uint8_t Ascale = AFS_2G;     \/\/ AFS_2G, AFS_4G, AFS_8G, AFS_16G$/;"	v
 Ascale	arm/sensor/MPU9250.h	/^enum Ascale {$/;"	g
@@ -109,7 +79,6 @@ BinaryClassifier	arm/moveClassifier/binaryClassifier.cpp	/^BinaryClassifier::Bin
 BinaryClassifier	arm/moveClassifier/binaryClassifier.h	/^class BinaryClassifier{$/;"	c
 BinaryDataSet	gesture_detection/dataset/binary_dataset.py	/^class BinaryDataSet(BaseDataset):$/;"	c
 BinaryModel	gesture_detection/models/binary_model.py	/^class BinaryModel(BaseModel):$/;"	c
-CONFIG	arm/binaryClassifier/MPU9250.h	56;"	d
 CONFIG	arm/moveClassifier/MPU9250.h	56;"	d
 CONFIG	arm/sensor/MPU9250.h	56;"	d
 Classifier	arm/classifier/include/classifier.h	/^class Classifier{$/;"	c
@@ -120,32 +89,24 @@ Classifier	gesture_detection/classifier/binary.py	/^class Classifier:$/;"	c
 Classifier	gesture_detection/models/network/__init__.py	/^class Classifier(nn.Module):$/;"	c
 ConcatDataset	gesture_detection/dataset/concat_dataset.py	/^class ConcatDataset(BaseDataset):$/;"	c
 CrossEntropyLoss2d	gesture_detection/utils/loss.py	/^class CrossEntropyLoss2d(nn.Module):$/;"	c
-DMP_BANK	arm/binaryClassifier/MPU9250.h	140;"	d
 DMP_BANK	arm/moveClassifier/MPU9250.h	140;"	d
 DMP_BANK	arm/sensor/MPU9250.h	140;"	d
-DMP_INT_STATUS	arm/binaryClassifier/MPU9250.h	89;"	d
 DMP_INT_STATUS	arm/moveClassifier/MPU9250.h	89;"	d
 DMP_INT_STATUS	arm/sensor/MPU9250.h	89;"	d
-DMP_REG	arm/binaryClassifier/MPU9250.h	142;"	d
 DMP_REG	arm/moveClassifier/MPU9250.h	142;"	d
 DMP_REG	arm/sensor/MPU9250.h	142;"	d
-DMP_REG_1	arm/binaryClassifier/MPU9250.h	143;"	d
 DMP_REG_1	arm/moveClassifier/MPU9250.h	143;"	d
 DMP_REG_1	arm/sensor/MPU9250.h	143;"	d
-DMP_REG_2	arm/binaryClassifier/MPU9250.h	144;"	d
 DMP_REG_2	arm/moveClassifier/MPU9250.h	144;"	d
 DMP_REG_2	arm/sensor/MPU9250.h	144;"	d
-DMP_RW_PNT	arm/binaryClassifier/MPU9250.h	141;"	d
 DMP_RW_PNT	arm/moveClassifier/MPU9250.h	141;"	d
 DMP_RW_PNT	arm/sensor/MPU9250.h	141;"	d
 DROPOUT	video_detection/main.py	/^DROPOUT= 0.3$/;"	v
-DTW	arm/classifier/include/dtw.h	/^namespace DTW$/;"	n
 DTW	arm/classifier/src/dtw/dtw.h	/^namespace DTW$/;"	n
 DTW	arm/dtw/dtw.h	/^namespace DTW$/;"	n
 DTW	arm/dtw_org/include/dtw/dtw.h	/^namespace DTW$/;"	n
 DTW	arm/dtw_org/src/dtw.h	/^namespace DTW$/;"	n
 DTW	arm/moveClassifier/dtw.h	/^namespace DTW$/;"	n
-DTW_H	arm/classifier/include/dtw.h	6;"	d
 DTW_H	arm/classifier/src/dtw/dtw.h	6;"	d
 DTW_H	arm/dtw/dtw.h	6;"	d
 DTW_H	arm/dtw_org/include/dtw/dtw.h	32;"	d
@@ -156,128 +117,89 @@ Diff2d	gesture_detection/utils/loss.py	/^class Diff2d(nn.Module):$/;"	c
 Distance	gesture_detection/utils/loss.py	/^class Distance(nn.Module):$/;"	c
 EPOCH	video_detection/main.py	/^EPOCH= 20$/;"	v
 EXEC	arm/classifier/Makefile	/^EXEC     = Classifier$/;"	m
-EXT_SENS_DATA_00	arm/binaryClassifier/MPU9250.h	105;"	d
 EXT_SENS_DATA_00	arm/moveClassifier/MPU9250.h	105;"	d
 EXT_SENS_DATA_00	arm/sensor/MPU9250.h	105;"	d
-EXT_SENS_DATA_01	arm/binaryClassifier/MPU9250.h	106;"	d
 EXT_SENS_DATA_01	arm/moveClassifier/MPU9250.h	106;"	d
 EXT_SENS_DATA_01	arm/sensor/MPU9250.h	106;"	d
-EXT_SENS_DATA_02	arm/binaryClassifier/MPU9250.h	107;"	d
 EXT_SENS_DATA_02	arm/moveClassifier/MPU9250.h	107;"	d
 EXT_SENS_DATA_02	arm/sensor/MPU9250.h	107;"	d
-EXT_SENS_DATA_03	arm/binaryClassifier/MPU9250.h	108;"	d
 EXT_SENS_DATA_03	arm/moveClassifier/MPU9250.h	108;"	d
 EXT_SENS_DATA_03	arm/sensor/MPU9250.h	108;"	d
-EXT_SENS_DATA_04	arm/binaryClassifier/MPU9250.h	109;"	d
 EXT_SENS_DATA_04	arm/moveClassifier/MPU9250.h	109;"	d
 EXT_SENS_DATA_04	arm/sensor/MPU9250.h	109;"	d
-EXT_SENS_DATA_05	arm/binaryClassifier/MPU9250.h	110;"	d
 EXT_SENS_DATA_05	arm/moveClassifier/MPU9250.h	110;"	d
 EXT_SENS_DATA_05	arm/sensor/MPU9250.h	110;"	d
-EXT_SENS_DATA_06	arm/binaryClassifier/MPU9250.h	111;"	d
 EXT_SENS_DATA_06	arm/moveClassifier/MPU9250.h	111;"	d
 EXT_SENS_DATA_06	arm/sensor/MPU9250.h	111;"	d
-EXT_SENS_DATA_07	arm/binaryClassifier/MPU9250.h	112;"	d
 EXT_SENS_DATA_07	arm/moveClassifier/MPU9250.h	112;"	d
 EXT_SENS_DATA_07	arm/sensor/MPU9250.h	112;"	d
-EXT_SENS_DATA_08	arm/binaryClassifier/MPU9250.h	113;"	d
 EXT_SENS_DATA_08	arm/moveClassifier/MPU9250.h	113;"	d
 EXT_SENS_DATA_08	arm/sensor/MPU9250.h	113;"	d
-EXT_SENS_DATA_09	arm/binaryClassifier/MPU9250.h	114;"	d
 EXT_SENS_DATA_09	arm/moveClassifier/MPU9250.h	114;"	d
 EXT_SENS_DATA_09	arm/sensor/MPU9250.h	114;"	d
-EXT_SENS_DATA_10	arm/binaryClassifier/MPU9250.h	115;"	d
 EXT_SENS_DATA_10	arm/moveClassifier/MPU9250.h	115;"	d
 EXT_SENS_DATA_10	arm/sensor/MPU9250.h	115;"	d
-EXT_SENS_DATA_11	arm/binaryClassifier/MPU9250.h	116;"	d
 EXT_SENS_DATA_11	arm/moveClassifier/MPU9250.h	116;"	d
 EXT_SENS_DATA_11	arm/sensor/MPU9250.h	116;"	d
-EXT_SENS_DATA_12	arm/binaryClassifier/MPU9250.h	117;"	d
 EXT_SENS_DATA_12	arm/moveClassifier/MPU9250.h	117;"	d
 EXT_SENS_DATA_12	arm/sensor/MPU9250.h	117;"	d
-EXT_SENS_DATA_13	arm/binaryClassifier/MPU9250.h	118;"	d
 EXT_SENS_DATA_13	arm/moveClassifier/MPU9250.h	118;"	d
 EXT_SENS_DATA_13	arm/sensor/MPU9250.h	118;"	d
-EXT_SENS_DATA_14	arm/binaryClassifier/MPU9250.h	119;"	d
 EXT_SENS_DATA_14	arm/moveClassifier/MPU9250.h	119;"	d
 EXT_SENS_DATA_14	arm/sensor/MPU9250.h	119;"	d
-EXT_SENS_DATA_15	arm/binaryClassifier/MPU9250.h	120;"	d
 EXT_SENS_DATA_15	arm/moveClassifier/MPU9250.h	120;"	d
 EXT_SENS_DATA_15	arm/sensor/MPU9250.h	120;"	d
-EXT_SENS_DATA_16	arm/binaryClassifier/MPU9250.h	121;"	d
 EXT_SENS_DATA_16	arm/moveClassifier/MPU9250.h	121;"	d
 EXT_SENS_DATA_16	arm/sensor/MPU9250.h	121;"	d
-EXT_SENS_DATA_17	arm/binaryClassifier/MPU9250.h	122;"	d
 EXT_SENS_DATA_17	arm/moveClassifier/MPU9250.h	122;"	d
 EXT_SENS_DATA_17	arm/sensor/MPU9250.h	122;"	d
-EXT_SENS_DATA_18	arm/binaryClassifier/MPU9250.h	123;"	d
 EXT_SENS_DATA_18	arm/moveClassifier/MPU9250.h	123;"	d
 EXT_SENS_DATA_18	arm/sensor/MPU9250.h	123;"	d
-EXT_SENS_DATA_19	arm/binaryClassifier/MPU9250.h	124;"	d
 EXT_SENS_DATA_19	arm/moveClassifier/MPU9250.h	124;"	d
 EXT_SENS_DATA_19	arm/sensor/MPU9250.h	124;"	d
-EXT_SENS_DATA_20	arm/binaryClassifier/MPU9250.h	125;"	d
 EXT_SENS_DATA_20	arm/moveClassifier/MPU9250.h	125;"	d
 EXT_SENS_DATA_20	arm/sensor/MPU9250.h	125;"	d
-EXT_SENS_DATA_21	arm/binaryClassifier/MPU9250.h	126;"	d
 EXT_SENS_DATA_21	arm/moveClassifier/MPU9250.h	126;"	d
 EXT_SENS_DATA_21	arm/sensor/MPU9250.h	126;"	d
-EXT_SENS_DATA_22	arm/binaryClassifier/MPU9250.h	127;"	d
 EXT_SENS_DATA_22	arm/moveClassifier/MPU9250.h	127;"	d
 EXT_SENS_DATA_22	arm/sensor/MPU9250.h	127;"	d
-EXT_SENS_DATA_23	arm/binaryClassifier/MPU9250.h	128;"	d
 EXT_SENS_DATA_23	arm/moveClassifier/MPU9250.h	128;"	d
 EXT_SENS_DATA_23	arm/sensor/MPU9250.h	128;"	d
 Entropy	gesture_detection/utils/loss.py	/^class Entropy(nn.Module):$/;"	c
 EvaluateWarpingCost	arm/classifier/src/dtw/dtw.cpp	/^float SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<float> >& sequence_1, std::vector< std::vector<float> >& sequence_2)$/;"	f	class:SimpleDTW
 EvaluateWarpingCost	arm/dtw/dtw.cpp	/^double SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<double> > sequence_1, std::vector< std::vector<double> > sequence_2)$/;"	f	class:SimpleDTW
 EvaluateWarpingCost	arm/dtw_org/src/dtw.cpp	/^double SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<double> > sequence_1, std::vector< std::vector<double> > sequence_2)$/;"	f	class:SimpleDTW
-EvaluateWarpingCost	arm/moveClassifier/dtw.cpp	/^float SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<float> > sequence_1, std::vector< std::vector<float> > sequence_2)$/;"	f	class:SimpleDTW
-FIFO_COUNTH	arm/binaryClassifier/MPU9250.h	145;"	d
+EvaluateWarpingCost	arm/moveClassifier/dtw.cpp	/^float SimpleDTW::EvaluateWarpingCost(std::vector< std::vector<float> >& sequence_1, std::vector< std::vector<float> >& sequence_2)$/;"	f	class:SimpleDTW
 FIFO_COUNTH	arm/moveClassifier/MPU9250.h	145;"	d
 FIFO_COUNTH	arm/sensor/MPU9250.h	145;"	d
-FIFO_COUNTL	arm/binaryClassifier/MPU9250.h	146;"	d
 FIFO_COUNTL	arm/moveClassifier/MPU9250.h	146;"	d
 FIFO_COUNTL	arm/sensor/MPU9250.h	146;"	d
-FIFO_EN	arm/binaryClassifier/MPU9250.h	67;"	d
 FIFO_EN	arm/moveClassifier/MPU9250.h	67;"	d
 FIFO_EN	arm/sensor/MPU9250.h	67;"	d
-FIFO_R_W	arm/binaryClassifier/MPU9250.h	147;"	d
 FIFO_R_W	arm/moveClassifier/MPU9250.h	147;"	d
 FIFO_R_W	arm/sensor/MPU9250.h	147;"	d
 Filter	gesture_detection/filter/__init__.py	/^class Filter:$/;"	c
 GANLoss	gesture_detection/utils/loss.py	/^class GANLoss(nn.Module):$/;"	c
-GFS_1000DPS	arm/binaryClassifier/MPU9250.h	/^  GFS_1000DPS,$/;"	e	enum:Gscale
 GFS_1000DPS	arm/moveClassifier/MPU9250.h	/^  GFS_1000DPS,$/;"	e	enum:Gscale
 GFS_1000DPS	arm/sensor/MPU9250.h	/^  GFS_1000DPS,$/;"	e	enum:Gscale
-GFS_2000DPS	arm/binaryClassifier/MPU9250.h	/^  GFS_2000DPS$/;"	e	enum:Gscale
 GFS_2000DPS	arm/moveClassifier/MPU9250.h	/^  GFS_2000DPS$/;"	e	enum:Gscale
 GFS_2000DPS	arm/sensor/MPU9250.h	/^  GFS_2000DPS$/;"	e	enum:Gscale
-GFS_250DPS	arm/binaryClassifier/MPU9250.h	/^  GFS_250DPS = 0,$/;"	e	enum:Gscale
 GFS_250DPS	arm/moveClassifier/MPU9250.h	/^  GFS_250DPS = 0,$/;"	e	enum:Gscale
 GFS_250DPS	arm/sensor/MPU9250.h	/^  GFS_250DPS = 0,$/;"	e	enum:Gscale
-GFS_500DPS	arm/binaryClassifier/MPU9250.h	/^  GFS_500DPS,$/;"	e	enum:Gscale
 GFS_500DPS	arm/moveClassifier/MPU9250.h	/^  GFS_500DPS,$/;"	e	enum:Gscale
 GFS_500DPS	arm/sensor/MPU9250.h	/^  GFS_500DPS,$/;"	e	enum:Gscale
-GYRO_CONFIG	arm/binaryClassifier/MPU9250.h	57;"	d
 GYRO_CONFIG	arm/moveClassifier/MPU9250.h	57;"	d
 GYRO_CONFIG	arm/sensor/MPU9250.h	57;"	d
-GYRO_XOUT_H	arm/binaryClassifier/MPU9250.h	99;"	d
 GYRO_XOUT_H	arm/moveClassifier/MPU9250.h	99;"	d
 GYRO_XOUT_H	arm/sensor/MPU9250.h	99;"	d
-GYRO_XOUT_L	arm/binaryClassifier/MPU9250.h	100;"	d
 GYRO_XOUT_L	arm/moveClassifier/MPU9250.h	100;"	d
 GYRO_XOUT_L	arm/sensor/MPU9250.h	100;"	d
-GYRO_YOUT_H	arm/binaryClassifier/MPU9250.h	101;"	d
 GYRO_YOUT_H	arm/moveClassifier/MPU9250.h	101;"	d
 GYRO_YOUT_H	arm/sensor/MPU9250.h	101;"	d
-GYRO_YOUT_L	arm/binaryClassifier/MPU9250.h	102;"	d
 GYRO_YOUT_L	arm/moveClassifier/MPU9250.h	102;"	d
 GYRO_YOUT_L	arm/sensor/MPU9250.h	102;"	d
-GYRO_ZOUT_H	arm/binaryClassifier/MPU9250.h	103;"	d
 GYRO_ZOUT_H	arm/moveClassifier/MPU9250.h	103;"	d
 GYRO_ZOUT_H	arm/sensor/MPU9250.h	103;"	d
-GYRO_ZOUT_L	arm/binaryClassifier/MPU9250.h	104;"	d
 GYRO_ZOUT_L	arm/moveClassifier/MPU9250.h	104;"	d
 GYRO_ZOUT_L	arm/sensor/MPU9250.h	104;"	d
 GaussianNoise	gesture_detection/models/network/__init__.py	/^class GaussianNoise(nn.Module):$/;"	c
@@ -287,113 +209,81 @@ Gesture	arm/classifier/src/gesture/gesture.h	/^    Gesture(const string& action)
 Gesture	arm/classifier/src/gesture/gesture.h	/^class Gesture{$/;"	c
 Gesture	arm/moveClassifier/gesture.h	/^    Gesture(const string& action): _action(action){};$/;"	f	class:Gesture
 Gesture	arm/moveClassifier/gesture.h	/^class Gesture{$/;"	c
-GetDataIndex	arm/classifier/include/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm/classifier/src/dtw/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm/dtw/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm/dtw_org/include/dtw/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm/dtw_org/src/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetDataIndex	arm/moveClassifier/dtw.h	/^    inline size_t GetDataIndex(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
-GetFromDTWMatrix	arm/classifier/include/dtw.h	/^    inline float GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetFromDTWMatrix	arm/classifier/src/dtw/dtw.h	/^    inline float GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetFromDTWMatrix	arm/dtw/dtw.h	/^    inline double GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetFromDTWMatrix	arm/dtw_org/include/dtw/dtw.h	/^    inline double GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetFromDTWMatrix	arm/dtw_org/src/dtw.h	/^    inline double GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
 GetFromDTWMatrix	arm/moveClassifier/dtw.h	/^    inline float GetFromDTWMatrix(size_t x, size_t y)$/;"	f	class:DTW::SimpleDTW
-Gscale	arm/binaryClassifier/MPU9250.h	/^enum Gscale {$/;"	g
-Gscale	arm/binaryClassifier/MPU9250.h	/^uint8_t Gscale = GFS_250DPS; \/\/ GFS_250DPS, GFS_500DPS, GFS_1000DPS, GFS_2000DPS$/;"	v
 Gscale	arm/moveClassifier/MPU9250.h	/^enum Gscale {$/;"	g
 Gscale	arm/moveClassifier/MPU9250.h	/^uint8_t Gscale = GFS_250DPS; \/\/ GFS_250DPS, GFS_500DPS, GFS_1000DPS, GFS_2000DPS$/;"	v
 Gscale	arm/sensor/MPU9250.h	/^enum Gscale {$/;"	g
 Gscale	arm/sensor/MPU9250.h	/^uint8_t Gscale = GFS_250DPS; \/\/ GFS_250DPS, GFS_500DPS, GFS_1000DPS, GFS_2000DPS$/;"	v
-GyroMeasDrift	arm/binaryClassifier/MPU9250.h	/^float GyroMeasDrift = PI * (1.0f \/ 180.0f);      \/\/ gyroscope measurement drift in rad\/s\/s (start at 0.0 deg\/s\/s)$/;"	v
 GyroMeasDrift	arm/moveClassifier/MPU9250.h	/^float GyroMeasDrift = PI * (1.0f \/ 180.0f);      \/\/ gyroscope measurement drift in rad\/s\/s (start at 0.0 deg\/s\/s)$/;"	v
 GyroMeasDrift	arm/sensor/MPU9250.h	/^float GyroMeasDrift = PI * (1.0f \/ 180.0f);      \/\/ gyroscope measurement drift in rad\/s\/s (start at 0.0 deg\/s\/s)$/;"	v
-GyroMeasError	arm/binaryClassifier/MPU9250.h	/^float GyroMeasError = PI * (60.0f \/ 180.0f);     \/\/ gyroscope measurement error in rads\/s (start at 60 deg\/s), then reduce after ~10 s to 3$/;"	v
 GyroMeasError	arm/moveClassifier/MPU9250.h	/^float GyroMeasError = PI * (60.0f \/ 180.0f);     \/\/ gyroscope measurement error in rads\/s (start at 60 deg\/s), then reduce after ~10 s to 3$/;"	v
 GyroMeasError	arm/sensor/MPU9250.h	/^float GyroMeasError = PI * (60.0f \/ 180.0f);     \/\/ gyroscope measurement error in rads\/s (start at 60 deg\/s), then reduce after ~10 s to 3$/;"	v
-I2C_MST_CTRL	arm/binaryClassifier/MPU9250.h	68;"	d
 I2C_MST_CTRL	arm/moveClassifier/MPU9250.h	68;"	d
 I2C_MST_CTRL	arm/sensor/MPU9250.h	68;"	d
-I2C_MST_DELAY_CTRL	arm/binaryClassifier/MPU9250.h	134;"	d
 I2C_MST_DELAY_CTRL	arm/moveClassifier/MPU9250.h	134;"	d
 I2C_MST_DELAY_CTRL	arm/sensor/MPU9250.h	134;"	d
-I2C_MST_STATUS	arm/binaryClassifier/MPU9250.h	86;"	d
 I2C_MST_STATUS	arm/moveClassifier/MPU9250.h	86;"	d
 I2C_MST_STATUS	arm/sensor/MPU9250.h	86;"	d
-I2C_SLV0_ADDR	arm/binaryClassifier/MPU9250.h	69;"	d
 I2C_SLV0_ADDR	arm/moveClassifier/MPU9250.h	69;"	d
 I2C_SLV0_ADDR	arm/sensor/MPU9250.h	69;"	d
-I2C_SLV0_CTRL	arm/binaryClassifier/MPU9250.h	71;"	d
 I2C_SLV0_CTRL	arm/moveClassifier/MPU9250.h	71;"	d
 I2C_SLV0_CTRL	arm/sensor/MPU9250.h	71;"	d
-I2C_SLV0_DO	arm/binaryClassifier/MPU9250.h	130;"	d
 I2C_SLV0_DO	arm/moveClassifier/MPU9250.h	130;"	d
 I2C_SLV0_DO	arm/sensor/MPU9250.h	130;"	d
-I2C_SLV0_REG	arm/binaryClassifier/MPU9250.h	70;"	d
 I2C_SLV0_REG	arm/moveClassifier/MPU9250.h	70;"	d
 I2C_SLV0_REG	arm/sensor/MPU9250.h	70;"	d
-I2C_SLV1_ADDR	arm/binaryClassifier/MPU9250.h	72;"	d
 I2C_SLV1_ADDR	arm/moveClassifier/MPU9250.h	72;"	d
 I2C_SLV1_ADDR	arm/sensor/MPU9250.h	72;"	d
-I2C_SLV1_CTRL	arm/binaryClassifier/MPU9250.h	74;"	d
 I2C_SLV1_CTRL	arm/moveClassifier/MPU9250.h	74;"	d
 I2C_SLV1_CTRL	arm/sensor/MPU9250.h	74;"	d
-I2C_SLV1_DO	arm/binaryClassifier/MPU9250.h	131;"	d
 I2C_SLV1_DO	arm/moveClassifier/MPU9250.h	131;"	d
 I2C_SLV1_DO	arm/sensor/MPU9250.h	131;"	d
-I2C_SLV1_REG	arm/binaryClassifier/MPU9250.h	73;"	d
 I2C_SLV1_REG	arm/moveClassifier/MPU9250.h	73;"	d
 I2C_SLV1_REG	arm/sensor/MPU9250.h	73;"	d
-I2C_SLV2_ADDR	arm/binaryClassifier/MPU9250.h	75;"	d
 I2C_SLV2_ADDR	arm/moveClassifier/MPU9250.h	75;"	d
 I2C_SLV2_ADDR	arm/sensor/MPU9250.h	75;"	d
-I2C_SLV2_CTRL	arm/binaryClassifier/MPU9250.h	77;"	d
 I2C_SLV2_CTRL	arm/moveClassifier/MPU9250.h	77;"	d
 I2C_SLV2_CTRL	arm/sensor/MPU9250.h	77;"	d
-I2C_SLV2_DO	arm/binaryClassifier/MPU9250.h	132;"	d
 I2C_SLV2_DO	arm/moveClassifier/MPU9250.h	132;"	d
 I2C_SLV2_DO	arm/sensor/MPU9250.h	132;"	d
-I2C_SLV2_REG	arm/binaryClassifier/MPU9250.h	76;"	d
 I2C_SLV2_REG	arm/moveClassifier/MPU9250.h	76;"	d
 I2C_SLV2_REG	arm/sensor/MPU9250.h	76;"	d
-I2C_SLV3_ADDR	arm/binaryClassifier/MPU9250.h	78;"	d
 I2C_SLV3_ADDR	arm/moveClassifier/MPU9250.h	78;"	d
 I2C_SLV3_ADDR	arm/sensor/MPU9250.h	78;"	d
-I2C_SLV3_CTRL	arm/binaryClassifier/MPU9250.h	80;"	d
 I2C_SLV3_CTRL	arm/moveClassifier/MPU9250.h	80;"	d
 I2C_SLV3_CTRL	arm/sensor/MPU9250.h	80;"	d
-I2C_SLV3_DO	arm/binaryClassifier/MPU9250.h	133;"	d
 I2C_SLV3_DO	arm/moveClassifier/MPU9250.h	133;"	d
 I2C_SLV3_DO	arm/sensor/MPU9250.h	133;"	d
-I2C_SLV3_REG	arm/binaryClassifier/MPU9250.h	79;"	d
 I2C_SLV3_REG	arm/moveClassifier/MPU9250.h	79;"	d
 I2C_SLV3_REG	arm/sensor/MPU9250.h	79;"	d
-I2C_SLV4_ADDR	arm/binaryClassifier/MPU9250.h	81;"	d
 I2C_SLV4_ADDR	arm/moveClassifier/MPU9250.h	81;"	d
 I2C_SLV4_ADDR	arm/sensor/MPU9250.h	81;"	d
-I2C_SLV4_CTRL	arm/binaryClassifier/MPU9250.h	84;"	d
 I2C_SLV4_CTRL	arm/moveClassifier/MPU9250.h	84;"	d
 I2C_SLV4_CTRL	arm/sensor/MPU9250.h	84;"	d
-I2C_SLV4_DI	arm/binaryClassifier/MPU9250.h	85;"	d
 I2C_SLV4_DI	arm/moveClassifier/MPU9250.h	85;"	d
 I2C_SLV4_DI	arm/sensor/MPU9250.h	85;"	d
-I2C_SLV4_DO	arm/binaryClassifier/MPU9250.h	83;"	d
 I2C_SLV4_DO	arm/moveClassifier/MPU9250.h	83;"	d
 I2C_SLV4_DO	arm/sensor/MPU9250.h	83;"	d
-I2C_SLV4_REG	arm/binaryClassifier/MPU9250.h	82;"	d
 I2C_SLV4_REG	arm/moveClassifier/MPU9250.h	82;"	d
 I2C_SLV4_REG	arm/sensor/MPU9250.h	82;"	d
 IMAGE_SIZE	video_detection/main.py	/^IMAGE_SIZE = (224,224)$/;"	v
-INFO	arm/binaryClassifier/MPU9250.h	13;"	d
+INF	arm/fastdtw/vectordtw.h	/^	enum { INF = 100000000 }; \/\/some big number$/;"	e	enum:VectorDTW::__anon1
+INF	arm/moveClassifier/vectordtw.h	/^	enum { INF = 100000000 }; \/\/some big number$/;"	e	enum:VectorDTW::__anon2
 INFO	arm/moveClassifier/MPU9250.h	13;"	d
 INFO	arm/sensor/MPU9250.h	13;"	d
-INT_ENABLE	arm/binaryClassifier/MPU9250.h	88;"	d
 INT_ENABLE	arm/moveClassifier/MPU9250.h	88;"	d
 INT_ENABLE	arm/sensor/MPU9250.h	88;"	d
-INT_PIN_CFG	arm/binaryClassifier/MPU9250.h	87;"	d
 INT_PIN_CFG	arm/moveClassifier/MPU9250.h	87;"	d
 INT_PIN_CFG	arm/sensor/MPU9250.h	87;"	d
-INT_STATUS	arm/binaryClassifier/MPU9250.h	90;"	d
 INT_STATUS	arm/moveClassifier/MPU9250.h	90;"	d
 INT_STATUS	arm/sensor/MPU9250.h	90;"	d
 ImageDataset	video_detection/util.py	/^class ImageDataset(Dataset):$/;"	c
@@ -402,10 +292,8 @@ Initialize	arm/classifier/src/dtw/dtw.cpp	/^void SimpleDTW::Initialize(size_t x_
 Initialize	arm/dtw/dtw.cpp	/^void SimpleDTW::Initialize(size_t x_size, size_t y_size)$/;"	f	class:SimpleDTW
 Initialize	arm/dtw_org/src/dtw.cpp	/^void SimpleDTW::Initialize(size_t x_size, size_t y_size)$/;"	f	class:SimpleDTW
 Initialize	arm/moveClassifier/dtw.cpp	/^void SimpleDTW::Initialize(size_t x_size, size_t y_size)$/;"	f	class:SimpleDTW
-Ki	arm/binaryClassifier/MPU9250.h	220;"	d
 Ki	arm/moveClassifier/MPU9250.h	220;"	d
 Ki	arm/sensor/MPU9250.h	220;"	d
-Kp	arm/binaryClassifier/MPU9250.h	219;"	d
 Kp	arm/moveClassifier/MPU9250.h	219;"	d
 Kp	arm/sensor/MPU9250.h	219;"	d
 LAYER_N	video_detection/main.py	/^LAYER_N = 2$/;"	v
@@ -413,48 +301,34 @@ LEARNING_RATE	video_detection/main.py	/^LEARNING_RATE = 1E-4$/;"	v
 LIBFILES	arm/classifier/Makefile	/^LIBFILES = $(addsuffix .a, $(addprefix lib, $(LIBPKGS)))$/;"	m
 LIBPKGS	arm/classifier/Makefile	/^LIBPKGS  = classifier gesture dtw$/;"	m
 LIBS	arm/classifier/Makefile	/^LIBS     = $(addprefix -l, $(LIBPKGS))$/;"	m
-LP_ACCEL_ODR	arm/binaryClassifier/MPU9250.h	60;"	d
 LP_ACCEL_ODR	arm/moveClassifier/MPU9250.h	60;"	d
 LP_ACCEL_ODR	arm/sensor/MPU9250.h	60;"	d
 MAIN	arm/classifier/Makefile	/^MAIN     = main$/;"	m
-MFS_14BITS	arm/binaryClassifier/MPU9250.h	/^  MFS_14BITS = 0, \/\/ 0.6 mG per LSB$/;"	e	enum:Mscale
 MFS_14BITS	arm/moveClassifier/MPU9250.h	/^  MFS_14BITS = 0, \/\/ 0.6 mG per LSB$/;"	e	enum:Mscale
 MFS_14BITS	arm/sensor/MPU9250.h	/^  MFS_14BITS = 0, \/\/ 0.6 mG per LSB$/;"	e	enum:Mscale
-MFS_16BITS	arm/binaryClassifier/MPU9250.h	/^  MFS_16BITS      \/\/ 0.15 mG per LSB$/;"	e	enum:Mscale
 MFS_16BITS	arm/moveClassifier/MPU9250.h	/^  MFS_16BITS      \/\/ 0.15 mG per LSB$/;"	e	enum:Mscale
 MFS_16BITS	arm/sensor/MPU9250.h	/^  MFS_16BITS      \/\/ 0.15 mG per LSB$/;"	e	enum:Mscale
-MOT_DETECT_CTRL	arm/binaryClassifier/MPU9250.h	136;"	d
 MOT_DETECT_CTRL	arm/moveClassifier/MPU9250.h	136;"	d
 MOT_DETECT_CTRL	arm/sensor/MPU9250.h	136;"	d
-MOT_DETECT_STATUS	arm/binaryClassifier/MPU9250.h	129;"	d
 MOT_DETECT_STATUS	arm/moveClassifier/MPU9250.h	129;"	d
 MOT_DETECT_STATUS	arm/sensor/MPU9250.h	129;"	d
-MOT_DUR	arm/binaryClassifier/MPU9250.h	63;"	d
 MOT_DUR	arm/moveClassifier/MPU9250.h	63;"	d
 MOT_DUR	arm/sensor/MPU9250.h	63;"	d
-MPU9250	arm/binaryClassifier/MPU9250.h	/^class MPU9250 {$/;"	c
 MPU9250	arm/moveClassifier/MPU9250.h	/^class MPU9250 {$/;"	c
 MPU9250	arm/sensor/MPU9250.h	/^class MPU9250 {$/;"	c
-MPU9250SelfTest	arm/binaryClassifier/MPU9250.h	/^void MPU9250SelfTest(float * destination) \/\/ Should return percent deviation from factory trim values, +\/- 14 or less deviation is a pass$/;"	f	class:MPU9250
 MPU9250SelfTest	arm/moveClassifier/MPU9250.h	/^void MPU9250SelfTest(float * destination) \/\/ Should return percent deviation from factory trim values, +\/- 14 or less deviation is a pass$/;"	f	class:MPU9250
 MPU9250SelfTest	arm/sensor/MPU9250.h	/^void MPU9250SelfTest(float * destination) \/\/ Should return percent deviation from factory trim values, +\/- 14 or less deviation is a pass$/;"	f	class:MPU9250
-MPU9250_ADDRESS	arm/binaryClassifier/MPU9250.h	161;"	d
-MPU9250_ADDRESS	arm/binaryClassifier/MPU9250.h	163;"	d
 MPU9250_ADDRESS	arm/moveClassifier/MPU9250.h	161;"	d
 MPU9250_ADDRESS	arm/moveClassifier/MPU9250.h	163;"	d
 MPU9250_ADDRESS	arm/sensor/MPU9250.h	161;"	d
 MPU9250_ADDRESS	arm/sensor/MPU9250.h	163;"	d
-MPU9250_H	arm/binaryClassifier/MPU9250.h	2;"	d
 MPU9250_H	arm/moveClassifier/MPU9250.h	2;"	d
 MPU9250_H	arm/sensor/MPU9250.h	2;"	d
-MadgwickQuaternionUpdate	arm/binaryClassifier/MPU9250.h	/^        void MadgwickQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz)$/;"	f	class:MPU9250
 MadgwickQuaternionUpdate	arm/moveClassifier/MPU9250.h	/^        void MadgwickQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz)$/;"	f	class:MPU9250
 MadgwickQuaternionUpdate	arm/sensor/MPU9250.h	/^        void MadgwickQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz)$/;"	f	class:MPU9250
-MahonyQuaternionUpdate	arm/binaryClassifier/MPU9250.h	/^            void MahonyQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz)$/;"	f	class:MPU9250
 MahonyQuaternionUpdate	arm/moveClassifier/MPU9250.h	/^            void MahonyQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz)$/;"	f	class:MPU9250
 MahonyQuaternionUpdate	arm/sensor/MPU9250.h	/^            void MahonyQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz, float mx, float my, float mz)$/;"	f	class:MPU9250
 MainOptions	gesture_detection/options/main_options.py	/^class MainOptions(BaseOptions):$/;"	c
-Mmode	arm/binaryClassifier/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 Mmode	arm/moveClassifier/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 Mmode	arm/sensor/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 ModelVisualizer	gesture_detection/visualizer/model_visualizer.py	/^class ModelVisualizer(BaseVisualizer):$/;"	c
@@ -462,26 +336,30 @@ MoveClassifier	arm/moveClassifier/classifier.cpp	/^MoveClassifier::MoveClassifie
 MoveClassifier	arm/moveClassifier/classifier.h	/^class MoveClassifier{$/;"	c
 MovieDataLoader	video_detection/util.py	/^class MovieDataLoader():$/;"	c
 Movie_Classifier	video_detection/util.py	/^class Movie_Classifier(nn.Module):$/;"	c
-Mscale	arm/binaryClassifier/MPU9250.h	/^enum Mscale {$/;"	g
-Mscale	arm/binaryClassifier/MPU9250.h	/^uint8_t Mscale = MFS_16BITS; \/\/ MFS_14BITS or MFS_16BITS, 14-bit or 16-bit magnetometer resolution$/;"	v
 Mscale	arm/moveClassifier/MPU9250.h	/^enum Mscale {$/;"	g
 Mscale	arm/moveClassifier/MPU9250.h	/^uint8_t Mscale = MFS_16BITS; \/\/ MFS_14BITS or MFS_16BITS, 14-bit or 16-bit magnetometer resolution$/;"	v
 Mscale	arm/sensor/MPU9250.h	/^enum Mscale {$/;"	g
 Mscale	arm/sensor/MPU9250.h	/^uint8_t Mscale = MFS_16BITS; \/\/ MFS_14BITS or MFS_16BITS, 14-bit or 16-bit magnetometer resolution$/;"	v
-Now	arm/binaryClassifier/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 Now	arm/moveClassifier/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 Now	arm/sensor/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 OUTPUT_PATH	video_detection/main.py	/^OUTPUT_PATH= '.\/model\/model.pt'$/;"	v
-PI	arm/binaryClassifier/MPU9250.h	/^float PI = 3.14159265358979323846f;$/;"	v
 PI	arm/moveClassifier/MPU9250.h	/^float PI = 3.14159265358979323846f;$/;"	v
 PI	arm/sensor/MPU9250.h	/^float PI = 3.14159265358979323846f;$/;"	v
-PWR_MGMT_1	arm/binaryClassifier/MPU9250.h	138;"	d
 PWR_MGMT_1	arm/moveClassifier/MPU9250.h	138;"	d
 PWR_MGMT_1	arm/sensor/MPU9250.h	138;"	d
-PWR_MGMT_2	arm/binaryClassifier/MPU9250.h	139;"	d
 PWR_MGMT_2	arm/moveClassifier/MPU9250.h	139;"	d
 PWR_MGMT_2	arm/sensor/MPU9250.h	139;"	d
 Painter	gesture_detection/visualizer/painter.py	/^class Painter():$/;"	c
+Point	arm/binaryClassifier/point.h	/^	Point(): v0(0), v1(0), v2(0), v3(0), v4(0), v5(0), v6(0), v7(0), v8(0), v9(0), v10(0), v11(0), v12(0), v13(0), v14(0), v15(0){};$/;"	f	class:Point
+Point	arm/binaryClassifier/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12, const float& v13, const float& v14, const float& v15): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11), v12(v12), v13(v13), v14(v14), v15(v15){};$/;"	f	class:Point
+Point	arm/binaryClassifier/point.h	/^	Point(const int& i): v0(i), v1(i), v2(i), v3(i), v4(i), v5(i), v6(i), v7(i), v8(i), v9(i), v10(i), v11(i), v12(i), v13(i), v14(i), v15(i){};$/;"	f	class:Point
+Point	arm/binaryClassifier/point.h	/^class Point $/;"	c
+Point	arm/fastdtw/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12, const float& v13, const float& v14, const float& v15): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11), v12(v12), v13(v13), v14(v14), v15(v15){};$/;"	f	class:Point
+Point	arm/fastdtw/point.h	/^class Point $/;"	c
+Point	arm/moveClassifier/point.h	/^	Point(): v0(0), v1(0), v2(0), v3(0), v4(0), v5(0), v6(0), v7(0), v8(0), v9(0), v10(0), v11(0), v12(0), v13(0), v14(0), v15(0){};$/;"	f	class:Point
+Point	arm/moveClassifier/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12, const float& v13, const float& v14, const float& v15): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11), v12(v12), v13(v13), v14(v14), v15(v15){};$/;"	f	class:Point
+Point	arm/moveClassifier/point.h	/^	Point(const int& i): v0(i), v1(i), v2(i), v3(i), v4(i), v5(i), v6(i), v7(i), v8(i), v9(i), v10(i), v11(i), v12(i), v13(i), v14(i), v15(i){};$/;"	f	class:Point
+Point	arm/moveClassifier/point.h	/^class Point $/;"	c
 PredictOptions	gesture_detection/options/predict_options.py	/^class PredictOptions(BaseOptions):$/;"	c
 ProgressVisualizer	gesture_detection/visualizer/progress_visualizer.py	/^class ProgressVisualizer(BaseVisualizer):$/;"	c
 Queue	gesture_detection/utils/utils.py	/^class Queue:$/;"	c
@@ -489,46 +367,34 @@ Recorder	gesture_detection/recorder/__init__.py	/^class Recorder():$/;"	c
 RecorderOptions	gesture_detection/options/record_options.py	/^class RecorderOptions(BaseOptions):$/;"	c
 SAVE_TEST_PATH	video_detection/main.py	/^SAVE_TEST_PATH = '.\/data\/test_x.npy'$/;"	v
 SAVE_TRAIN_PATH	video_detection/main.py	/^SAVE_TRAIN_PATH = ('.\/data\/train_x.npy', 'data\/train_y.npy')$/;"	v
-SELF_TEST_A	arm/binaryClassifier/MPU9250.h	47;"	d
 SELF_TEST_A	arm/moveClassifier/MPU9250.h	47;"	d
 SELF_TEST_A	arm/sensor/MPU9250.h	47;"	d
-SELF_TEST_X_ACCEL	arm/binaryClassifier/MPU9250.h	43;"	d
 SELF_TEST_X_ACCEL	arm/moveClassifier/MPU9250.h	43;"	d
 SELF_TEST_X_ACCEL	arm/sensor/MPU9250.h	43;"	d
-SELF_TEST_X_GYRO	arm/binaryClassifier/MPU9250.h	29;"	d
 SELF_TEST_X_GYRO	arm/moveClassifier/MPU9250.h	29;"	d
 SELF_TEST_X_GYRO	arm/sensor/MPU9250.h	29;"	d
-SELF_TEST_Y_ACCEL	arm/binaryClassifier/MPU9250.h	44;"	d
 SELF_TEST_Y_ACCEL	arm/moveClassifier/MPU9250.h	44;"	d
 SELF_TEST_Y_ACCEL	arm/sensor/MPU9250.h	44;"	d
-SELF_TEST_Y_GYRO	arm/binaryClassifier/MPU9250.h	30;"	d
 SELF_TEST_Y_GYRO	arm/moveClassifier/MPU9250.h	30;"	d
 SELF_TEST_Y_GYRO	arm/sensor/MPU9250.h	30;"	d
-SELF_TEST_Z_ACCEL	arm/binaryClassifier/MPU9250.h	45;"	d
 SELF_TEST_Z_ACCEL	arm/moveClassifier/MPU9250.h	45;"	d
 SELF_TEST_Z_ACCEL	arm/sensor/MPU9250.h	45;"	d
-SELF_TEST_Z_GYRO	arm/binaryClassifier/MPU9250.h	31;"	d
 SELF_TEST_Z_GYRO	arm/moveClassifier/MPU9250.h	31;"	d
 SELF_TEST_Z_GYRO	arm/sensor/MPU9250.h	31;"	d
-SIGNAL_PATH_RESET	arm/binaryClassifier/MPU9250.h	135;"	d
 SIGNAL_PATH_RESET	arm/moveClassifier/MPU9250.h	135;"	d
 SIGNAL_PATH_RESET	arm/sensor/MPU9250.h	135;"	d
-SMPLRT_DIV	arm/binaryClassifier/MPU9250.h	55;"	d
 SMPLRT_DIV	arm/moveClassifier/MPU9250.h	55;"	d
 SMPLRT_DIV	arm/sensor/MPU9250.h	55;"	d
 STEP_N	video_detection/main.py	/^STEP_N = 50$/;"	v
-SelfTest	arm/binaryClassifier/MPU9250.h	/^float SelfTest[6];$/;"	v
 SelfTest	arm/moveClassifier/MPU9250.h	/^float SelfTest[6];$/;"	v
 SelfTest	arm/sensor/MPU9250.h	/^float SelfTest[6];$/;"	v
 Sensor	gesture_detection/sensor/__init__.py	/^class Sensor:$/;"	c
 SensorVisualizer	gesture_detection/visualizer/sensor_visualizer.py	/^class SensorVisualizer(BaseVisualizer):$/;"	c
-SetInDTWMatrix	arm/classifier/include/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, float val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm/classifier/src/dtw/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, float val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm/dtw/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, double val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm/dtw_org/include/dtw/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, double val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm/dtw_org/src/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, double val)$/;"	f	class:DTW::SimpleDTW
 SetInDTWMatrix	arm/moveClassifier/dtw.h	/^    inline void SetInDTWMatrix(size_t x, size_t y, float val)$/;"	f	class:DTW::SimpleDTW
-SimpleDTW	arm/classifier/include/dtw.h	/^class SimpleDTW$/;"	c	namespace:DTW
 SimpleDTW	arm/classifier/src/dtw/dtw.cpp	/^SimpleDTW::SimpleDTW()$/;"	f	class:SimpleDTW
 SimpleDTW	arm/classifier/src/dtw/dtw.cpp	/^SimpleDTW::SimpleDTW(float (*distance_fn)(std::vector<float> p1, std::vector<float> p2))$/;"	f	class:SimpleDTW
 SimpleDTW	arm/classifier/src/dtw/dtw.cpp	/^SimpleDTW::SimpleDTW(size_t x_size, size_t y_size, float (*distance_fn)(std::vector<float> p1, std::vector<float> p2))$/;"	f	class:SimpleDTW
@@ -548,70 +414,56 @@ SimpleDTW	arm/moveClassifier/dtw.cpp	/^SimpleDTW::SimpleDTW(size_t x_size, size_
 SimpleDTW	arm/moveClassifier/dtw.h	/^class SimpleDTW$/;"	c	namespace:DTW
 Speech	gesture_detection/speech/__init__.py	/^class Speech:$/;"	c
 Symkl2d	gesture_detection/utils/loss.py	/^class Symkl2d(nn.Module):$/;"	c
-TEMP_OUT_H	arm/binaryClassifier/MPU9250.h	97;"	d
 TEMP_OUT_H	arm/moveClassifier/MPU9250.h	97;"	d
 TEMP_OUT_H	arm/sensor/MPU9250.h	97;"	d
-TEMP_OUT_L	arm/binaryClassifier/MPU9250.h	98;"	d
 TEMP_OUT_L	arm/moveClassifier/MPU9250.h	98;"	d
 TEMP_OUT_L	arm/sensor/MPU9250.h	98;"	d
 TENSORBOARD_DIR	video_detection/main.py	/^TENSORBOARD_DIR = '.\/runs'$/;"	v
 Timer	gesture_detection/utils/timer.py	/^class Timer():$/;"	c
 TrainOptions	gesture_detection/options/train_options.py	/^class TrainOptions(BaseOptions):$/;"	c
-USER_CTRL	arm/binaryClassifier/MPU9250.h	137;"	d
 USER_CTRL	arm/moveClassifier/MPU9250.h	137;"	d
 USER_CTRL	arm/sensor/MPU9250.h	137;"	d
+VDTW	arm/fastdtw/vectordtw.h	15;"	d
+VDTW	arm/moveClassifier/vectordtw.h	15;"	d
 VOLCABULARY_PATH	video_detection/main.py	/^VOLCABULARY_PATH = '.\/vocab.txt'$/;"	v
+VectorDTW	arm/fastdtw/vectordtw.h	/^    	VectorDTW(uint n, uint constraint) : mGamma(n, vector<float>(n, INF)), mN(n), mConstraint(constraint) { }$/;"	f	class:VectorDTW
+VectorDTW	arm/fastdtw/vectordtw.h	/^class VectorDTW $/;"	c
+VectorDTW	arm/moveClassifier/vectordtw.h	/^    	VectorDTW(uint n, uint constraint) : mGamma(n, vector<float>(n, INF)), mN(n), mConstraint(constraint) { }$/;"	f	class:VectorDTW
+VectorDTW	arm/moveClassifier/vectordtw.h	/^class VectorDTW $/;"	c
 Vocabulary	gesture_detection/utils/vocabulary/__init__.py	/^class Vocabulary:$/;"	c
 Vocabulary	video_detection/util.py	/^class Vocabulary:$/;"	c
-WHO_AM_I_AK8963	arm/binaryClassifier/MPU9250.h	12;"	d
 WHO_AM_I_AK8963	arm/moveClassifier/MPU9250.h	12;"	d
 WHO_AM_I_AK8963	arm/sensor/MPU9250.h	12;"	d
-WHO_AM_I_MPU9250	arm/binaryClassifier/MPU9250.h	148;"	d
 WHO_AM_I_MPU9250	arm/moveClassifier/MPU9250.h	148;"	d
 WHO_AM_I_MPU9250	arm/sensor/MPU9250.h	148;"	d
-WOM_THR	arm/binaryClassifier/MPU9250.h	61;"	d
 WOM_THR	arm/moveClassifier/MPU9250.h	61;"	d
 WOM_THR	arm/sensor/MPU9250.h	61;"	d
-XA_OFFSET_H	arm/binaryClassifier/MPU9250.h	149;"	d
 XA_OFFSET_H	arm/moveClassifier/MPU9250.h	149;"	d
 XA_OFFSET_H	arm/sensor/MPU9250.h	149;"	d
-XA_OFFSET_L	arm/binaryClassifier/MPU9250.h	150;"	d
 XA_OFFSET_L	arm/moveClassifier/MPU9250.h	150;"	d
 XA_OFFSET_L	arm/sensor/MPU9250.h	150;"	d
-XG_OFFSET_H	arm/binaryClassifier/MPU9250.h	49;"	d
 XG_OFFSET_H	arm/moveClassifier/MPU9250.h	49;"	d
 XG_OFFSET_H	arm/sensor/MPU9250.h	49;"	d
-XG_OFFSET_L	arm/binaryClassifier/MPU9250.h	50;"	d
 XG_OFFSET_L	arm/moveClassifier/MPU9250.h	50;"	d
 XG_OFFSET_L	arm/sensor/MPU9250.h	50;"	d
-YA_OFFSET_H	arm/binaryClassifier/MPU9250.h	151;"	d
 YA_OFFSET_H	arm/moveClassifier/MPU9250.h	151;"	d
 YA_OFFSET_H	arm/sensor/MPU9250.h	151;"	d
-YA_OFFSET_L	arm/binaryClassifier/MPU9250.h	152;"	d
 YA_OFFSET_L	arm/moveClassifier/MPU9250.h	152;"	d
 YA_OFFSET_L	arm/sensor/MPU9250.h	152;"	d
-YG_OFFSET_H	arm/binaryClassifier/MPU9250.h	51;"	d
 YG_OFFSET_H	arm/moveClassifier/MPU9250.h	51;"	d
 YG_OFFSET_H	arm/sensor/MPU9250.h	51;"	d
-YG_OFFSET_L	arm/binaryClassifier/MPU9250.h	52;"	d
 YG_OFFSET_L	arm/moveClassifier/MPU9250.h	52;"	d
 YG_OFFSET_L	arm/sensor/MPU9250.h	52;"	d
-ZA_OFFSET_H	arm/binaryClassifier/MPU9250.h	153;"	d
 ZA_OFFSET_H	arm/moveClassifier/MPU9250.h	153;"	d
 ZA_OFFSET_H	arm/sensor/MPU9250.h	153;"	d
-ZA_OFFSET_L	arm/binaryClassifier/MPU9250.h	154;"	d
 ZA_OFFSET_L	arm/moveClassifier/MPU9250.h	154;"	d
 ZA_OFFSET_L	arm/sensor/MPU9250.h	154;"	d
-ZG_OFFSET_H	arm/binaryClassifier/MPU9250.h	53;"	d
 ZG_OFFSET_H	arm/moveClassifier/MPU9250.h	53;"	d
 ZG_OFFSET_H	arm/sensor/MPU9250.h	53;"	d
-ZG_OFFSET_L	arm/binaryClassifier/MPU9250.h	54;"	d
 ZG_OFFSET_L	arm/moveClassifier/MPU9250.h	54;"	d
 ZG_OFFSET_L	arm/sensor/MPU9250.h	54;"	d
-ZMOT_THR	arm/binaryClassifier/MPU9250.h	64;"	d
 ZMOT_THR	arm/moveClassifier/MPU9250.h	64;"	d
 ZMOT_THR	arm/sensor/MPU9250.h	64;"	d
-ZRMOT_DUR	arm/binaryClassifier/MPU9250.h	65;"	d
 ZRMOT_DUR	arm/moveClassifier/MPU9250.h	65;"	d
 ZRMOT_DUR	arm/sensor/MPU9250.h	65;"	d
 _DEFINE_CLASSIFIER_	arm/classifier/include/classifier.h	3;"	d
@@ -620,6 +472,8 @@ _DEFINE_CLASSIFIER_	arm/moveClassifier/classifier.h	3;"	d
 _DEFINE_GESTURE_	arm/classifier/include/gesture.h	3;"	d
 _DEFINE_GESTURE_	arm/classifier/src/gesture/gesture.h	3;"	d
 _DEFINE_GESTURE_	arm/moveClassifier/gesture.h	3;"	d
+_DEFINE_POINT_	arm/binaryClassifier/point.h	3;"	d
+_DEFINE_POINT_	arm/moveClassifier/point.h	3;"	d
 __call__	gesture_detection/classifier/binary.py	/^    def __call__(self, data):$/;"	m	class:Classifier	file:
 __call__	gesture_detection/recorder/__init__.py	/^    def __call__(self, data):$/;"	m	class:Recorder	file:
 __call__	gesture_detection/speech/__init__.py	/^    def __call__(self, data):$/;"	m	class:Speech	file:
@@ -712,13 +566,10 @@ _threshold	arm/classifier/src/classifier/classifier.h	/^    float _threshold;$/;
 _threshold	arm/moveClassifier/binaryClassifier.h	/^    float _threshold;$/;"	m	class:BinaryClassifier
 _threshold	arm/moveClassifier/classifier.h	/^    float _threshold;$/;"	m	class:MoveClassifier
 _update	gesture_detection/visualizer/painter.py	/^    def _update(self, index): $/;"	m	class:Painter
-aRes	arm/binaryClassifier/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
 aRes	arm/moveClassifier/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
 aRes	arm/sensor/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
-accelBias	arm/binaryClassifier/MPU9250.h	/^float gyroBias[3] = {0, 0, 0}, accelBias[3] = {0, 0, 0}; \/\/ Bias corrections for gyro and accelerometer$/;"	v
 accelBias	arm/moveClassifier/MPU9250.h	/^float gyroBias[3] = {0, 0, 0}, accelBias[3] = {0, 0, 0}; \/\/ Bias corrections for gyro and accelerometer$/;"	v
 accelBias	arm/sensor/MPU9250.h	/^float gyroBias[3] = {0, 0, 0}, accelBias[3] = {0, 0, 0}; \/\/ Bias corrections for gyro and accelerometer$/;"	v
-accelCount	arm/binaryClassifier/MPU9250.h	/^int16_t accelCount[3];  \/\/ Stores the 16-bit signed accelerometer sensor output$/;"	v
 accelCount	arm/moveClassifier/MPU9250.h	/^int16_t accelCount[3];  \/\/ Stores the 16-bit signed accelerometer sensor output$/;"	v
 accelCount	arm/sensor/MPU9250.h	/^int16_t accelCount[3];  \/\/ Stores the 16-bit signed accelerometer sensor output$/;"	v
 accu_record	video_detection/main.py	/^        accu_record= record[1]$/;"	v
@@ -730,34 +581,27 @@ add	gesture_detection/utils/vocabulary/__init__.py	/^    def add(self, word):$/;
 addWord	video_detection/util.py	/^    def addWord(self, word):$/;"	m	class:Vocabulary
 asMinutes	gesture_detection/utils/timer.py	/^    def asMinutes(self, s):$/;"	m	class:Timer
 asMinutes	video_detection/util.py	/^    def asMinutes(self,s):$/;"	m	class:Datamanager
-ax	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 ax	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 ax	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
-ay	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 ay	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 ay	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
-az	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 az	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 az	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 backward_classifier	gesture_detection/models/binary_model.py	/^    def backward_classifier(self, retain_graph = False):$/;"	m	class:BinaryModel
-beta	arm/binaryClassifier/MPU9250.h	/^float beta = sqrt(3.0f \/ 4.0f) * GyroMeasError;  \/\/ compute beta$/;"	v
 beta	arm/moveClassifier/MPU9250.h	/^float beta = sqrt(3.0f \/ 4.0f) * GyroMeasError;  \/\/ compute beta$/;"	v
 beta	arm/sensor/MPU9250.h	/^float beta = sqrt(3.0f \/ 4.0f) * GyroMeasError;  \/\/ compute beta$/;"	v
-buffer	arm/binaryClassifier/sensor.h	/^char buffer[14];$/;"	v
 buffer	arm/moveClassifier/sensor.h	/^char buffer[14];$/;"	v
 buffer	arm/sensor/sensor.h	/^char buffer[14];$/;"	v
 buffer	gesture_detection/mbed.cpp	/^char buffer[14];$/;"	v
 buffer	gesture_detection/mbed/main.cpp	/^char buffer[14];$/;"	v
 c	gesture_detection/classifier/binary.py	/^    c = Classifier()$/;"	v	class:Classifier
 c	gesture_detection/utils/accu_eval.py	/^    c = 20$/;"	v	class:AccuEval
-calibrateMPU9250	arm/binaryClassifier/MPU9250.h	/^void calibrateMPU9250(float * dest1, float * dest2)$/;"	f	class:MPU9250
 calibrateMPU9250	arm/moveClassifier/MPU9250.h	/^void calibrateMPU9250(float * dest1, float * dest2)$/;"	f	class:MPU9250
 calibrateMPU9250	arm/sensor/MPU9250.h	/^void calibrateMPU9250(float * dest1, float * dest2)$/;"	f	class:MPU9250
 classifier	gesture_detection/recorder_action.py	/^classifier = ClassifierBinary(opt.threshold, opt.index, opt.nStep)$/;"	v
 classifierBinary	gesture_detection/predict.py	/^classifierBinary = ClassifierBinary(opt.binaryThreshold, opt.index, opt.nStep)$/;"	v
 classifierDtw	gesture_detection/predict.py	/^classifierDtw = ClassifierDtw(opt.actionThreshold)$/;"	v
 compare_performance	arm/dtw_org/src/main.cpp	/^int compare_performance(int traj_length, int iterations)$/;"	f
-connect_MPU9250	arm/binaryClassifier/sensor.h	/^void connect_MPU9250(Serial& pc) {$/;"	f
 connect_MPU9250	arm/moveClassifier/sensor.h	/^void connect_MPU9250(Serial& pc) {$/;"	f
 connect_MPU9250	arm/sensor/sensor.h	/^void connect_MPU9250(Serial& pc) {$/;"	f
 construct_actionDir	gesture_detection/options/base_options.py	/^    def construct_actionDir(self):$/;"	m	class:BaseOptions
@@ -767,7 +611,6 @@ construct_input	gesture_detection/options/base_options.py	/^    def construct_in
 construct_message	gesture_detection/options/base_options.py	/^    def construct_message(self):$/;"	m	class:BaseOptions
 construct_splitDir	gesture_detection/options/base_options.py	/^    def construct_splitDir(self):$/;"	m	class:BaseOptions
 convert	gesture_detection/utils/utils.py	/^def convert(data, n):$/;"	f
-count	arm/binaryClassifier/MPU9250.h	/^int count = 0;  \/\/ used to control display output rate$/;"	v
 count	arm/moveClassifier/MPU9250.h	/^int count = 0;  \/\/ used to control display output rate$/;"	v
 count	arm/sensor/MPU9250.h	/^int count = 0;  \/\/ used to control display output rate$/;"	v
 count_parameters	video_detection/util.py	/^    def count_parameters(self,model):$/;"	m	class:Datamanager
@@ -778,22 +621,18 @@ current_accus	gesture_detection/models/base_model.py	/^    def current_accus(sel
 current_losses	gesture_detection/models/base_model.py	/^    def current_losses(self):$/;"	m	class:BaseModel
 data	arm/classifier/src/gesture/gesture.cpp	/^vector<vector<float> > Gesture::data(){$/;"	f	class:Gesture
 data	arm/moveClassifier/gesture.cpp	/^vector<vector<float> > Gesture::data(){$/;"	f	class:Gesture
-data_	arm/classifier/include/dtw.h	/^    std::vector<float> data_;$/;"	m	class:DTW::SimpleDTW
 data_	arm/classifier/src/dtw/dtw.h	/^    std::vector<float> data_;$/;"	m	class:DTW::SimpleDTW
 data_	arm/dtw/dtw.h	/^    std::vector<double> data_;$/;"	m	class:DTW::SimpleDTW
 data_	arm/dtw_org/include/dtw/dtw.h	/^    std::vector<double> data_;$/;"	m	class:DTW::SimpleDTW
 data_	arm/dtw_org/src/dtw.h	/^    std::vector<double> data_;$/;"	m	class:DTW::SimpleDTW
 data_	arm/moveClassifier/dtw.h	/^    std::vector<float> data_;$/;"	m	class:DTW::SimpleDTW
-delt_t	arm/binaryClassifier/MPU9250.h	/^int delt_t = 0; \/\/ used to control display output rate$/;"	v
 delt_t	arm/moveClassifier/MPU9250.h	/^int delt_t = 0; \/\/ used to control display output rate$/;"	v
 delt_t	arm/sensor/MPU9250.h	/^int delt_t = 0; \/\/ used to control display output rate$/;"	v
-deltat	arm/binaryClassifier/MPU9250.h	/^float deltat = 0.0f;                             \/\/ integration interval for both filter schemes$/;"	v
 deltat	arm/moveClassifier/MPU9250.h	/^float deltat = 0.0f;                             \/\/ integration interval for both filter schemes$/;"	v
 deltat	arm/sensor/MPU9250.h	/^float deltat = 0.0f;                             \/\/ integration interval for both filter schemes$/;"	v
 dir_path	gesture_detection/test.py	/^dir_path = os.path.dirname(os.path.realpath(__file__))$/;"	v
 displayImage	gesture_detection/visualizer/base_visualizer.py	/^    def displayImage(self, data, step, name = 'Image'):$/;"	m	class:BaseVisualizer
 displayScalor	gesture_detection/visualizer/base_visualizer.py	/^    def displayScalor(self, data, step):$/;"	m	class:BaseVisualizer
-distance_fn_	arm/classifier/include/dtw.h	/^    float (*distance_fn_)(std::vector<float> p1, std::vector<float> p2);$/;"	m	class:DTW::SimpleDTW
 distance_fn_	arm/classifier/src/dtw/dtw.h	/^    float (*distance_fn_)(std::vector<float> p1, std::vector<float> p2);$/;"	m	class:DTW::SimpleDTW
 distance_fn_	arm/dtw/dtw.h	/^    double (*distance_fn_)(std::vector<double> p1, std::vector<double> p2);$/;"	m	class:DTW::SimpleDTW
 distance_fn_	arm/dtw_org/include/dtw/dtw.h	/^    double (*distance_fn_)(std::vector<double> p1, std::vector<double> p2);$/;"	m	class:DTW::SimpleDTW
@@ -804,29 +643,32 @@ dump	gesture_detection/dump.py	/^def dump(act):$/;"	f
 dump_action	gesture_detection/recorder/__init__.py	/^    def dump_action(self):$/;"	m	class:Recorder
 dump_action_id	gesture_detection/recorder/__init__.py	/^    def dump_action_id(self, index):$/;"	m	class:Recorder
 dump_split	gesture_detection/recorder/__init__.py	/^    def dump_split(self):$/;"	m	class:Recorder
-eInt	arm/binaryClassifier/MPU9250.h	/^float eInt[3] = {0.0f, 0.0f, 0.0f};              \/\/ vector to hold integral error for Mahony method$/;"	v
 eInt	arm/moveClassifier/MPU9250.h	/^float eInt[3] = {0.0f, 0.0f, 0.0f};              \/\/ vector to hold integral error for Mahony method$/;"	v
 eInt	arm/sensor/MPU9250.h	/^float eInt[3] = {0.0f, 0.0f, 0.0f};              \/\/ vector to hold integral error for Mahony method$/;"	v
 end	gesture_detection/visualizer/base_visualizer.py	/^    def end(self, name, epoch, data=[]): $/;"	m	class:BaseVisualizer
+euclid_distance	arm/binaryClassifier/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
+euclid_distance	arm/fastdtw/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
+euclid_distance	arm/moveClassifier/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
 euclidean_distance	arm/classifier/src/classifier/classifier.cpp	/^float Classifier::euclidean_distance(vector<float> P1, vector<float> P2) {$/;"	f	class:Classifier
 euclidean_distance	arm/classifier/src/dtw/dtw_evl.cpp	/^float euclidean_distance(vector<float> P1, vector<float> P2) {$/;"	f
 euclidean_distance	arm/dtw/dtw_evl.cpp	/^double euclidean_distance(vector<double> P1, vector<double> P2) {$/;"	f
 euclidean_distance	arm/dtw_org/src/main.cpp	/^double euclidean_distance(std::vector<double> P1, std::vector<double> P2)$/;"	f
 euclidean_distance	arm/dtw_org/src/test.cpp	/^double euclidean_distance(vector<double> P1, vector<double> P2) {$/;"	f
-euclidean_distance	arm/moveClassifier/classifier.cpp	/^float MoveClassifier::euclidean_distance(vector<float>& P1, vector<float>& P2) {$/;"	f	class:MoveClassifier
+euclidean_distance	arm/moveClassifier/classifier.cpp	/^float MoveClassifier::euclidean_distance(vector<float> P1, vector<float> P2) {$/;"	f	class:MoveClassifier
 eval	gesture_detection/models/base_model.py	/^    def eval(self):$/;"	m	class:BaseModel
 evaluateDtwCost	arm/classifier/src/classifier/classifier.cpp	/^float Classifier::evaluateDtwCost(vector<vector<float> > s1, vector<vector<float> > s2) {$/;"	f	class:Classifier
 evaluateDtwCost	arm/classifier/src/dtw/dtw_evl.cpp	/^float evaluateDtwCost(DTW::SimpleDTW dtw, vector<vector<float> > s1, vector<vector<float> > s2) {$/;"	f
 evaluateDtwCost	arm/dtw/dtw_evl.cpp	/^double evaluateDtwCost(DTW::SimpleDTW dtw, vector<vector<double> > s1, vector<vector<double> > s2) {$/;"	f
 evaluateDtwCost	arm/dtw_org/src/test.cpp	/^double evaluateDtwCost(DTW::SimpleDTW dtw, vector<vector<double> > s1, vector<vector<double> > s2) {$/;"	f
-evaluateDtwCost	arm/moveClassifier/classifier.cpp	/^float MoveClassifier::evaluateDtwCost(vector<vector<float> >& s1, vector<vector<float> >& s2) {$/;"	f	class:MoveClassifier
+evaluateDtwCost	arm/moveClassifier/classifier.cpp	/^float MoveClassifier::evaluateDtwCost(vector<vector<float> > s1, vector<vector<float> > s2) {$/;"	f	class:MoveClassifier
 f	gesture_detection/filter/__init__.py	/^    f = Filter( 16, 16)$/;"	v
+fastdynamic	arm/fastdtw/vectordtw.h	/^	inline float fastdynamic(vector<Point> &v, vector<Point> &w) $/;"	f	class:VectorDTW
+fastdynamic	arm/moveClassifier/vectordtw.h	/^	inline float fastdynamic(vector<Point> &v, vector<Point> &w) $/;"	f	class:VectorDTW
 filter	gesture_detection/action.py	/^filter = Filter(opt.n, opt.n)$/;"	v
 filter	gesture_detection/main.py	/^filter = Filter(opt.n, opt.n)$/;"	v
 filter	gesture_detection/predict.py	/^filter = Filter(opt.n, opt.n)$/;"	v
 filter	gesture_detection/recorder.py	/^filter = Filter(opt.n, opt.n)$/;"	v
 filter	gesture_detection/recorder_action.py	/^filter = Filter(opt.n, opt.n)$/;"	v
-firstUpdate	arm/binaryClassifier/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 firstUpdate	arm/moveClassifier/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 firstUpdate	arm/sensor/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 flush	gesture_detection/sensor/__init__.py	/^    def flush(self):$/;"	m	class:Sensor
@@ -842,17 +684,13 @@ forward	gesture_detection/utils/loss.py	/^    def forward(self, inputs1, inputs2
 forward	gesture_detection/utils/loss.py	/^    def forward(self, inputs1, inputs2):$/;"	m	class:Symkl2d
 forward	video_detection/util.py	/^    def forward(self, x):$/;"	m	class:Image_Classifier
 forward	video_detection/util.py	/^    def forward(self, x, i):$/;"	m	class:Movie_Classifier
-gRes	arm/binaryClassifier/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
 gRes	arm/moveClassifier/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
 gRes	arm/sensor/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
 gather_options	gesture_detection/options/base_options.py	/^    def gather_options(self):$/;"	m	class:BaseOptions
-getAres	arm/binaryClassifier/MPU9250.h	/^void getAres() {$/;"	f	class:MPU9250
 getAres	arm/moveClassifier/MPU9250.h	/^void getAres() {$/;"	f	class:MPU9250
 getAres	arm/sensor/MPU9250.h	/^void getAres() {$/;"	f	class:MPU9250
-getGres	arm/binaryClassifier/MPU9250.h	/^void getGres() {$/;"	f	class:MPU9250
 getGres	arm/moveClassifier/MPU9250.h	/^void getGres() {$/;"	f	class:MPU9250
 getGres	arm/sensor/MPU9250.h	/^void getGres() {$/;"	f	class:MPU9250
-getMres	arm/binaryClassifier/MPU9250.h	/^void getMres() {$/;"	f	class:MPU9250
 getMres	arm/moveClassifier/MPU9250.h	/^void getMres() {$/;"	f	class:MPU9250
 getMres	arm/sensor/MPU9250.h	/^void getMres() {$/;"	f	class:MPU9250
 getOptimizer	gesture_detection/models/base_model.py	/^def getOptimizer(model_parameters, opt, lr, beta1= None, momentum= None, weight_decay= None):$/;"	f
@@ -861,28 +699,21 @@ get_data_movie	video_detection/util.py	/^    def get_data_movie(self,file_path,t
 get_target_tensor	gesture_detection/utils/loss.py	/^    def get_target_tensor(self, input, target_is_real):$/;"	m	class:GANLoss
 get_test_data_image	video_detection/util.py	/^    def get_test_data_image(self,file_path,batch_size,shuffle=True, downsample_factor=12, image_size=(224,224),save_path=None):$/;"	m	class:Datamanager
 get_test_data_movie	video_detection/util.py	/^    def get_test_data_movie(self,file_path,batch_size,step_n, downsample_factor=12, image_size=(224,224),save_path=None):$/;"	m	class:Datamanager
-gx	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 gx	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 gx	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
-gy	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 gy	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 gy	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
-gyroBias	arm/binaryClassifier/MPU9250.h	/^float gyroBias[3] = {0, 0, 0}, accelBias[3] = {0, 0, 0}; \/\/ Bias corrections for gyro and accelerometer$/;"	v
 gyroBias	arm/moveClassifier/MPU9250.h	/^float gyroBias[3] = {0, 0, 0}, accelBias[3] = {0, 0, 0}; \/\/ Bias corrections for gyro and accelerometer$/;"	v
 gyroBias	arm/sensor/MPU9250.h	/^float gyroBias[3] = {0, 0, 0}, accelBias[3] = {0, 0, 0}; \/\/ Bias corrections for gyro and accelerometer$/;"	v
-gyroCount	arm/binaryClassifier/MPU9250.h	/^int16_t gyroCount[3];   \/\/ Stores the 16-bit signed gyro sensor output$/;"	v
 gyroCount	arm/moveClassifier/MPU9250.h	/^int16_t gyroCount[3];   \/\/ Stores the 16-bit signed gyro sensor output$/;"	v
 gyroCount	arm/sensor/MPU9250.h	/^int16_t gyroCount[3];   \/\/ Stores the 16-bit signed gyro sensor output$/;"	v
-gz	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 gz	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 gz	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 hidden_layer	video_detection/util.py	/^    def hidden_layer(self,n):$/;"	m	class:Movie_Classifier
 import_class_by_name	gesture_detection/models/__init__.py	/^def import_class_by_name(modelName, className, classType = BaseModel):$/;"	f
-initAK8963	arm/binaryClassifier/MPU9250.h	/^  void initAK8963(float * destination)$/;"	f	class:MPU9250
 initAK8963	arm/moveClassifier/MPU9250.h	/^  void initAK8963(float * destination)$/;"	f	class:MPU9250
 initAK8963	arm/sensor/MPU9250.h	/^  void initAK8963(float * destination)$/;"	f	class:MPU9250
 initHidden	video_detection/util.py	/^    def initHidden(self, hidden_size):$/;"	m	class:Movie_Classifier
-initMPU9250	arm/binaryClassifier/MPU9250.h	/^void initMPU9250()$/;"	f	class:MPU9250
 initMPU9250	arm/moveClassifier/MPU9250.h	/^void initMPU9250()$/;"	f	class:MPU9250
 initMPU9250	arm/sensor/MPU9250.h	/^void initMPU9250()$/;"	f	class:MPU9250
 initNet	gesture_detection/models/base_model.py	/^    def initNet(self, net):$/;"	m	class:BaseModel
@@ -893,18 +724,18 @@ initialize	gesture_detection/options/predict_options.py	/^    def initialize(sel
 initialize	gesture_detection/options/record_options.py	/^    def initialize(self, parser):$/;"	m	class:RecorderOptions
 initialize	gesture_detection/options/train_options.py	/^    def initialize(self, parser):$/;"	m	class:TrainOptions
 initialize_bak	gesture_detection/options/base_options.py	/^    def initialize_bak(self, parser):$/;"	m	class:BaseOptions
-initialized_	arm/classifier/include/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
 initialized_	arm/classifier/src/dtw/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
 initialized_	arm/dtw/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
 initialized_	arm/dtw_org/include/dtw/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
 initialized_	arm/dtw_org/src/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
 initialized_	arm/moveClassifier/dtw.h	/^    bool initialized_;$/;"	m	class:DTW::SimpleDTW
-intPin	arm/binaryClassifier/MPU9250.h	/^int intPin = 12;  \/\/ These can be changed, 2 and 3 are the Arduinos ext int pins$/;"	v
 intPin	arm/moveClassifier/MPU9250.h	/^int intPin = 12;  \/\/ These can be changed, 2 and 3 are the Arduinos ext int pins$/;"	v
 intPin	arm/sensor/MPU9250.h	/^int intPin = 12;  \/\/ These can be changed, 2 and 3 are the Arduinos ext int pins$/;"	v
+l1_distance	arm/binaryClassifier/point.h	/^	float l1_distance(const Point &p) $/;"	f	class:Point
+l1_distance	arm/fastdtw/point.h	/^	float l1_distance(const Point &p) $/;"	f	class:Point
+l1_distance	arm/moveClassifier/point.h	/^	float l1_distance(const Point &p) $/;"	f	class:Point
 label	gesture_detection/recorder/__init__.py	/^    def label(self, data):$/;"	m	class:Recorder
 lambda_rule	gesture_detection/models/base_model.py	/^        def lambda_rule(epoch):$/;"	f	function:createScheduler
-lastUpdate	arm/binaryClassifier/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 lastUpdate	arm/moveClassifier/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 lastUpdate	arm/sensor/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/ used to calculate integration interval                               \/\/ used to calculate integration interval$/;"	v
 length	gesture_detection/utils/accu_eval.py	/^    length = 100$/;"	v	class:AccuEval
@@ -913,26 +744,26 @@ load	video_detection/util.py	/^    def load(self, path):$/;"	m	class:Vocabulary
 load_networks	gesture_detection/models/base_model.py	/^    def load_networks(self, nEpoch):$/;"	m	class:BaseModel
 load_options	gesture_detection/options/base_options.py	/^    def load_options(self, path):$/;"	m	class:BaseOptions
 load_pretrained	gesture_detection/models/base_model.py	/^    def load_pretrained(self):$/;"	m	class:BaseModel
-mRes	arm/binaryClassifier/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
+mConstraint	arm/fastdtw/vectordtw.h	/^	int mN, mConstraint;$/;"	m	class:VectorDTW
+mConstraint	arm/moveClassifier/vectordtw.h	/^	int mN, mConstraint;$/;"	m	class:VectorDTW
+mGamma	arm/fastdtw/vectordtw.h	/^	vector<vector<float> > mGamma;$/;"	m	class:VectorDTW
+mGamma	arm/moveClassifier/vectordtw.h	/^	vector<vector<float> > mGamma;$/;"	m	class:VectorDTW
+mN	arm/fastdtw/vectordtw.h	/^	int mN, mConstraint;$/;"	m	class:VectorDTW
+mN	arm/moveClassifier/vectordtw.h	/^	int mN, mConstraint;$/;"	m	class:VectorDTW
 mRes	arm/moveClassifier/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
 mRes	arm/sensor/MPU9250.h	/^float aRes, gRes, mRes;      \/\/ scale resolutions per LSB for the sensors$/;"	v
-magCalibration	arm/binaryClassifier/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 magCalibration	arm/moveClassifier/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 magCalibration	arm/sensor/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
-magCount	arm/binaryClassifier/MPU9250.h	/^int16_t magCount[3];    \/\/ Stores the 16-bit signed magnetometer sensor output$/;"	v
 magCount	arm/moveClassifier/MPU9250.h	/^int16_t magCount[3];    \/\/ Stores the 16-bit signed magnetometer sensor output$/;"	v
 magCount	arm/sensor/MPU9250.h	/^int16_t magCount[3];    \/\/ Stores the 16-bit signed magnetometer sensor output$/;"	v
-magbias	arm/binaryClassifier/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 magbias	arm/moveClassifier/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 magbias	arm/sensor/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 main	arm/binaryClassifier/main.cpp	/^int main() {$/;"	f
-main	arm/binaryClassifier/testClassifier.cpp	/^int main() {$/;"	f
-main	arm/binaryClassifier/testSensor.cpp	/^int main() {$/;"	f
 main	arm/classifier/src/main/main.cpp	/^int main(int argc, char *argv[]){$/;"	f
 main	arm/dtw_org/src/main.cpp	/^int main()$/;"	f
+main	arm/fastdtw/vector_test.cpp	/^int main()$/;"	f
 main	arm/moveClassifier/main.cpp	/^int main() {$/;"	f
 main	arm/sensor/main.cpp	/^int main() {$/;"	f
-main	arm/sensor/testSensor.cpp	/^int main() {$/;"	f
 main	gesture_detection/action.py	/^def main():$/;"	f
 main	gesture_detection/main.py	/^def main():$/;"	f
 main	gesture_detection/mbed.cpp	/^int main() {$/;"	f
@@ -941,20 +772,18 @@ main	gesture_detection/predict.py	/^def main():$/;"	f
 main	gesture_detection/recorder.py	/^def main():$/;"	f
 main	gesture_detection/recorder_action.py	/^def main():$/;"	f
 metric	gesture_detection/utils/accu_eval.py	/^    def metric(self):$/;"	m	class:AccuEval
+min	arm/fastdtw/vectordtw.h	/^   	static inline float min (float x, float y ) { return x < y ? x : y; }$/;"	f	class:VectorDTW
+min	arm/moveClassifier/vectordtw.h	/^   	static inline float min (float x, float y ) { return x < y ? x : y; }$/;"	f	class:VectorDTW
 model	gesture_detection/train.py	/^model = createModel(opt)$/;"	v
 model	video_detection/main.py	/^model= Movie_Classifier(IMAGE_SIZE, layer_n  = LAYER_N, label_dim = dm.voc.n_words, dropout = DROPOUT).cuda()$/;"	v
-mpu9250	arm/binaryClassifier/sensor.h	/^MPU9250 mpu9250;$/;"	v
 mpu9250	arm/moveClassifier/sensor.h	/^MPU9250 mpu9250;$/;"	v
 mpu9250	arm/sensor/sensor.h	/^MPU9250 mpu9250;$/;"	v
 mpu9250	gesture_detection/mbed.cpp	/^MPU9250 mpu9250;$/;"	v
 mpu9250	gesture_detection/mbed/main.cpp	/^MPU9250 mpu9250;$/;"	v
-mx	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 mx	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 mx	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
-my	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 my	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 my	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
-mz	arm/binaryClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 mz	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 mz	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 n	gesture_detection/utils/accu_eval.py	/^    n = 1000000$/;"	v	class:AccuEval
@@ -965,15 +794,19 @@ name	gesture_detection/dataset/binary_dataset.py	/^    def name(self):$/;"	m	cla
 name	gesture_detection/dataset/concat_dataset.py	/^    def name(self):$/;"	m	class:ConcatDataset
 name	gesture_detection/models/base_model.py	/^    def name(self):$/;"	m	class:BaseModel
 name	gesture_detection/models/binary_model.py	/^    def name(self):$/;"	m	class:BinaryModel
-norm	arm/binaryClassifier/binaryClassifier.h	/^    float norm(vector<float> data) {$/;"	f	class:BinaryClassifier
-norm	arm/moveClassifier/binaryClassifier.h	/^    float norm(vector<float> data) {$/;"	f	class:BinaryClassifier
+norm	arm/binaryClassifier/binaryClassifier.cpp	/^float BinaryClassifier::norm(vector<float>& data) {$/;"	f	class:BinaryClassifier
+norm	arm/binaryClassifier/point.h	/^	float norm()$/;"	f	class:Point
+norm	arm/moveClassifier/binaryClassifier.cpp	/^float BinaryClassifier::norm(vector<float>& data) {$/;"	f	class:BinaryClassifier
+norm	arm/moveClassifier/point.h	/^	float norm()$/;"	f	class:Point
 num_workers	gesture_detection/train.py	/^    num_workers=opt.nThreads)$/;"	v
-operator ()	arm/binaryClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::operator () (vector<float> data) {$/;"	f	class:BinaryClassifier
+operator ()	arm/binaryClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::operator() (Point& data) {$/;"	f	class:BinaryClassifier
 operator ()	arm/classifier/src/classifier/classifier.cpp	/^string Classifier::operator()(const vector<vector<float> >& target){$/;"	f	class:Classifier
 operator ()	arm/classifier/src/gesture/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
-operator ()	arm/moveClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::operator () (vector<float> data) {$/;"	f	class:BinaryClassifier
+operator ()	arm/moveClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::operator() (Point& data) {$/;"	f	class:BinaryClassifier
 operator ()	arm/moveClassifier/classifier.cpp	/^string MoveClassifier::operator() (vector<vector<float> >& target, Serial& pc){$/;"	f	class:MoveClassifier
 operator ()	arm/moveClassifier/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
+operator []	arm/binaryClassifier/point.h	/^  float& operator[] (int& x) {$/;"	f	class:Point
+operator []	arm/moveClassifier/point.h	/^  float& operator[] (int& x) {$/;"	f	class:Point
 opt	gesture_detection/action.py	/^opt = parser.parse()$/;"	v
 opt	gesture_detection/main.py	/^opt = parser.parse()$/;"	v
 opt	gesture_detection/predict.py	/^opt = parser.parse()$/;"	v
@@ -999,7 +832,6 @@ parser	gesture_detection/predict.py	/^parser = PredictOptions()$/;"	v
 parser	gesture_detection/recorder.py	/^parser = RecorderOptions()$/;"	v
 parser	gesture_detection/recorder_action.py	/^parser = RecorderOptions()$/;"	v
 parser	gesture_detection/train.py	/^parser = TrainOptions()$/;"	v
-pitch	arm/binaryClassifier/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 pitch	arm/moveClassifier/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 pitch	arm/sensor/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 plot	gesture_detection/visualizer/painter.py	/^    def plot(self):$/;"	m	class:Painter
@@ -1007,35 +839,29 @@ plot	video_detection/util.py	/^    def plot(self, record, path):$/;"	m	class:Dat
 predict	gesture_detection/classifier/DTW.py	/^    def predict(self, target):$/;"	m	class:Classifier
 predict	gesture_detection/models/base_model.py	/^    def predict(self, data):$/;"	m	class:BaseModel
 predict	gesture_detection/models/binary_model.py	/^    def predict(self, data):$/;"	m	class:BinaryModel
+print	arm/binaryClassifier/point.h	/^	void print(){$/;"	f	class:Point
+print	arm/moveClassifier/point.h	/^	void print(){$/;"	f	class:Point
 print_networks	gesture_detection/models/base_model.py	/^    def print_networks(self, verbose):$/;"	m	class:BaseModel
 print_options	gesture_detection/options/base_options.py	/^    def print_options(self):$/;"	m	class:BaseOptions
-q	arm/binaryClassifier/MPU9250.h	/^float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};           \/\/ vector to hold quaternion$/;"	v
 q	arm/moveClassifier/MPU9250.h	/^float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};           \/\/ vector to hold quaternion$/;"	v
 q	arm/sensor/MPU9250.h	/^float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};           \/\/ vector to hold quaternion$/;"	v
 read	arm/classifier/src/classifier/data.cpp	/^void Classifier::read(){$/;"	f	class:Classifier
 read	arm/moveClassifier/data.cpp	/^void MoveClassifier::read(){$/;"	f	class:MoveClassifier
 read	gesture_detection/classifier/DTW.py	/^    def read(self):$/;"	m	class:Classifier
 read	gesture_detection/sensor/__init__.py	/^    def read(self):$/;"	m	class:Sensor
-readAccelData	arm/binaryClassifier/MPU9250.h	/^void readAccelData(int16_t * destination)$/;"	f	class:MPU9250
 readAccelData	arm/moveClassifier/MPU9250.h	/^void readAccelData(int16_t * destination)$/;"	f	class:MPU9250
 readAccelData	arm/sensor/MPU9250.h	/^void readAccelData(int16_t * destination)$/;"	f	class:MPU9250
-readByte	arm/binaryClassifier/MPU9250.h	/^    char readByte(uint8_t address, uint8_t subAddress)$/;"	f	class:MPU9250
 readByte	arm/moveClassifier/MPU9250.h	/^    char readByte(uint8_t address, uint8_t subAddress)$/;"	f	class:MPU9250
 readByte	arm/sensor/MPU9250.h	/^    char readByte(uint8_t address, uint8_t subAddress)$/;"	f	class:MPU9250
-readBytes	arm/binaryClassifier/MPU9250.h	/^    void readBytes(uint8_t address, uint8_t subAddress, uint8_t count, uint8_t * dest)$/;"	f	class:MPU9250
 readBytes	arm/moveClassifier/MPU9250.h	/^    void readBytes(uint8_t address, uint8_t subAddress, uint8_t count, uint8_t * dest)$/;"	f	class:MPU9250
 readBytes	arm/sensor/MPU9250.h	/^    void readBytes(uint8_t address, uint8_t subAddress, uint8_t count, uint8_t * dest)$/;"	f	class:MPU9250
-readGyroData	arm/binaryClassifier/MPU9250.h	/^void readGyroData(int16_t * destination)$/;"	f	class:MPU9250
 readGyroData	arm/moveClassifier/MPU9250.h	/^void readGyroData(int16_t * destination)$/;"	f	class:MPU9250
 readGyroData	arm/sensor/MPU9250.h	/^void readGyroData(int16_t * destination)$/;"	f	class:MPU9250
-readMagData	arm/binaryClassifier/MPU9250.h	/^void readMagData(int16_t * destination)$/;"	f	class:MPU9250
 readMagData	arm/moveClassifier/MPU9250.h	/^void readMagData(int16_t * destination)$/;"	f	class:MPU9250
 readMagData	arm/sensor/MPU9250.h	/^void readMagData(int16_t * destination)$/;"	f	class:MPU9250
-readTempData	arm/binaryClassifier/MPU9250.h	/^int16_t readTempData()$/;"	f	class:MPU9250
 readTempData	arm/moveClassifier/MPU9250.h	/^int16_t readTempData()$/;"	f	class:MPU9250
 readTempData	arm/sensor/MPU9250.h	/^int16_t readTempData()$/;"	f	class:MPU9250
-read_data	arm/binaryClassifier/sensor.h	/^vector<float> read_data(Serial& pc) {$/;"	f
-read_data	arm/moveClassifier/sensor.h	/^vector<float> read_data(Serial& pc) {$/;"	f
+read_data	arm/moveClassifier/sensor.h	/^Point read_data(Serial& pc, const int& time_laspe) {$/;"	f
 read_data	arm/sensor/sensor.h	/^vector<float> read_data(Serial& pc, const float& time_laspe) {$/;"	f
 record	video_detection/main.py	/^    record=dm.val_movie( model, train_dataloader, epoch)$/;"	v
 recorder	gesture_detection/action.py	/^recorder = Recorder(opt)$/;"	v
@@ -1045,13 +871,11 @@ reset	gesture_detection/filter/__init__.py	/^    def reset(self):$/;"	m	class:Fi
 reset	gesture_detection/utils/accu_eval.py	/^    def reset(self):$/;"	m	class:AccuEval
 reset	gesture_detection/utils/timer.py	/^    def reset(self):$/;"	m	class:Timer
 reset	gesture_detection/visualizer/base_visualizer.py	/^    def reset(self):$/;"	m	class:BaseVisualizer
-resetMPU9250	arm/binaryClassifier/MPU9250.h	/^void resetMPU9250() {$/;"	f	class:MPU9250
 resetMPU9250	arm/moveClassifier/MPU9250.h	/^void resetMPU9250() {$/;"	f	class:MPU9250
 resetMPU9250	arm/sensor/MPU9250.h	/^void resetMPU9250() {$/;"	f	class:MPU9250
 result	video_detection/main.py	/^result = dm.test_movie( model, test_dataloader)$/;"	v
 reverse	video_detection/util.py	/^    def reverse(self, x, i):$/;"	m	class:ActionDataLoader
 reverse	video_detection/util.py	/^    def reverse(self, x, i):$/;"	m	class:MovieDataLoader
-roll	arm/binaryClassifier/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 roll	arm/moveClassifier/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 roll	arm/sensor/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 s	gesture_detection/test_serial.py	/^s = serial.Serial("\/dev\/cu.usbmodem1413", sys.argv[1])$/;"	v
@@ -1074,26 +898,21 @@ setup	gesture_detection/models/base_model.py	/^    def setup(self, parser=None):
 speech	gesture_detection/predict.py	/^speech = Speech()$/;"	v
 start_time	gesture_detection/utils/accu_eval.py	/^    start_time = time.time()$/;"	v	class:AccuEval
 steps	gesture_detection/train.py	/^steps = 0$/;"	v
-sum	arm/binaryClassifier/sensor.h	/^float sum = 0;$/;"	v
 sum	arm/moveClassifier/sensor.h	/^float sum = 0;$/;"	v
 sum	arm/sensor/sensor.h	/^float sum = 0;$/;"	v
 sum	gesture_detection/mbed.cpp	/^float sum = 0;$/;"	v
 sum	gesture_detection/mbed/main.cpp	/^float sum = 0;$/;"	v
-sumCount	arm/binaryClassifier/sensor.h	/^int sumCount = 0;$/;"	v
 sumCount	arm/moveClassifier/sensor.h	/^int sumCount = 0;$/;"	v
 sumCount	arm/sensor/sensor.h	/^int sumCount = 0;$/;"	v
 sumCount	gesture_detection/mbed.cpp	/^uint32_t sumCount = 0;$/;"	v
 sumCount	gesture_detection/mbed/main.cpp	/^uint32_t sumCount = 0;$/;"	v
-t	arm/binaryClassifier/sensor.h	/^Timer t;$/;"	v
 t	arm/moveClassifier/sensor.h	/^Timer t;$/;"	v
 t	arm/sensor/sensor.h	/^Timer t;$/;"	v
 t	gesture_detection/mbed.cpp	/^Timer t;$/;"	v
 t	gesture_detection/mbed/main.cpp	/^Timer t;$/;"	v
 tb_setting	video_detection/util.py	/^    def tb_setting(self, directory):$/;"	m	class:Datamanager
-tempCount	arm/binaryClassifier/MPU9250.h	/^int16_t tempCount;   \/\/ Stores the real internal chip temperature in degrees Celsius$/;"	v
 tempCount	arm/moveClassifier/MPU9250.h	/^int16_t tempCount;   \/\/ Stores the real internal chip temperature in degrees Celsius$/;"	v
 tempCount	arm/sensor/MPU9250.h	/^int16_t tempCount;   \/\/ Stores the real internal chip temperature in degrees Celsius$/;"	v
-temperature	arm/binaryClassifier/MPU9250.h	/^float temperature;$/;"	v
 temperature	arm/moveClassifier/MPU9250.h	/^float temperature;$/;"	v
 temperature	arm/sensor/MPU9250.h	/^float temperature;$/;"	v
 test	gesture_detection/models/base_model.py	/^    def test(self):$/;"	m	class:BaseModel
@@ -1109,11 +928,61 @@ trainVisualizer	gesture_detection/train.py	/^trainVisualizer = ProgressVisualize
 train_dataloader	video_detection/main.py	/^train_dataloader = dm.get_data_movie('.\/data\/train\/movie\/','.\/data\/train\/tag.txt',batch_size=BATCH_SIZE, step_n = STEP_N, image_size = IMAGE_SIZE, save_path = SAVE_TRAIN_PATH)$/;"	v
 train_image	video_detection/util.py	/^    def train_image(self, model, dataloader, epoch, optimizer, print_every= 2):$/;"	m	class:Datamanager
 train_movie	video_detection/util.py	/^    def train_movie(self, model, dataloader, epoch, optimizer, print_every= 2):$/;"	m	class:Datamanager
+uint	arm/fastdtw/vectordtw.h	/^typedef unsigned int uint;$/;"	t
+uint	arm/moveClassifier/vectordtw.h	/^typedef unsigned int uint;$/;"	t
 update	gesture_detection/filter/__init__.py	/^    def update(self, data):$/;"	m	class:Filter
 update	gesture_detection/options/base_options.py	/^    def update(self):$/;"	m	class:BaseOptions
 update	gesture_detection/utils/accu_eval.py	/^    def update(self, pred, gnd):$/;"	m	class:AccuEval
 update_learning_rate	gesture_detection/models/base_model.py	/^    def update_learning_rate(self):$/;"	m	class:BaseModel
 v	gesture_detection/visualizer/sensor_visualizer.py	/^    v = SensorVisualizer()$/;"	v	class:SensorVisualizer
+v0	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v0	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v0	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v1	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v1	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v1	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v10	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v10	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v10	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v11	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v11	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v11	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v12	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v12	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v12	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v13	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v13	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v13	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v14	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v14	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v14	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v15	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v15	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v15	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v2	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v2	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v2	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v3	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v3	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v3	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v4	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v4	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v4	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v5	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v5	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v5	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v6	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v6	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v6	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v7	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v7	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v7	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v8	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v8	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v8	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v9	arm/binaryClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v9	arm/fastdtw/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v9	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
 valDataLoader	gesture_detection/train.py	/^valDataLoader= torch.utils.data.DataLoader($/;"	v
 valDataset	gesture_detection/train.py	/^valDataset = createDataset(opt, split = 'val', nInput = opt.nInput)$/;"	v
 valVisualizer	gesture_detection/train.py	/^valVisualizer = ProgressVisualizer(opt, valDataLoader.dataset).reset()$/;"	v
@@ -1125,28 +994,22 @@ visualizer	gesture_detection/predict.py	/^visualizer = SensorVisualizer(repr = o
 visualizer	gesture_detection/recorder.py	/^visualizer = SensorVisualizer(repr = opt.repr)$/;"	v
 visualizer	gesture_detection/recorder_action.py	/^visualizer = SensorVisualizer(repr = opt.repr)$/;"	v
 write	video_detection/util.py	/^    def write(self,path,decoded_words,name,video):$/;"	m	class:Datamanager
-writeByte	arm/binaryClassifier/MPU9250.h	/^    void writeByte(uint8_t address, uint8_t subAddress, uint8_t data)$/;"	f	class:MPU9250
 writeByte	arm/moveClassifier/MPU9250.h	/^    void writeByte(uint8_t address, uint8_t subAddress, uint8_t data)$/;"	f	class:MPU9250
 writeByte	arm/sensor/MPU9250.h	/^    void writeByte(uint8_t address, uint8_t subAddress, uint8_t data)$/;"	f	class:MPU9250
-x_dim_	arm/classifier/include/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm/classifier/src/dtw/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm/dtw/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm/dtw_org/include/dtw/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm/dtw_org/src/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
 x_dim_	arm/moveClassifier/dtw.h	/^    size_t x_dim_;$/;"	m	class:DTW::SimpleDTW
-y_dim_	arm/classifier/include/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm/classifier/src/dtw/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm/dtw/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm/dtw_org/include/dtw/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm/dtw_org/src/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
 y_dim_	arm/moveClassifier/dtw.h	/^    size_t y_dim_;$/;"	m	class:DTW::SimpleDTW
-yaw	arm/binaryClassifier/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 yaw	arm/moveClassifier/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 yaw	arm/sensor/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
-zeta	arm/binaryClassifier/MPU9250.h	/^float zeta = sqrt(3.0f \/ 4.0f) * GyroMeasDrift;  \/\/ compute zeta, the other free parameter in the Madgwick scheme usually set to a small or zero value$/;"	v
 zeta	arm/moveClassifier/MPU9250.h	/^float zeta = sqrt(3.0f \/ 4.0f) * GyroMeasDrift;  \/\/ compute zeta, the other free parameter in the Madgwick scheme usually set to a small or zero value$/;"	v
 zeta	arm/sensor/MPU9250.h	/^float zeta = sqrt(3.0f \/ 4.0f) * GyroMeasDrift;  \/\/ compute zeta, the other free parameter in the Madgwick scheme usually set to a small or zero value$/;"	v
-~SimpleDTW	arm/classifier/include/dtw.h	/^    ~SimpleDTW() {}$/;"	f	class:DTW::SimpleDTW
 ~SimpleDTW	arm/classifier/src/dtw/dtw.h	/^    ~SimpleDTW() {}$/;"	f	class:DTW::SimpleDTW
 ~SimpleDTW	arm/dtw/dtw.h	/^    ~SimpleDTW() {}$/;"	f	class:DTW::SimpleDTW
 ~SimpleDTW	arm/dtw_org/include/dtw/dtw.h	/^    ~SimpleDTW() {}$/;"	f	class:DTW::SimpleDTW

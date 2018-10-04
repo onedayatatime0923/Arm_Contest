@@ -1,6 +1,7 @@
 
 #include <vector>
 #include "mbed.h"
+#include "point.h"
 #include "sensor.h"
 #include "binaryClassifier.h"
 #include "classifier.h"
@@ -23,9 +24,9 @@ int main() {
   connect_MPU9250(pc);
 
   // set up
-  vector<vector<float> > target;
+  vector<Point> > target;
   while(1) {
-    vector<float> data = read_data(pc);
+    vector<float> data = read_data(pc, 2);
     if( !binaryClassifier(data) ){
       pc.printf("stop\n");
     }
