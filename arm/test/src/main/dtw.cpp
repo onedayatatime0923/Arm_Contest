@@ -1,29 +1,35 @@
 
 #ifdef TEST_DTW
 #include <iostream>
-#include "vectordtw.h"
 #include <vector>
+#include "../util/dtw.h"
+#include "../util/gesture.h"
 
 using namespace std;
 
 int main()
 {
 	cout << "Vector DTW Test" << endl;
-	vector<Point> mainVec;
-	vector<Point> testVec;
-	Point p1(1, 2, 3, 4, 5, 6, 4, 5, 6, 4, 5, 6, 4, 5, 6, 8);
-	Point p2(1, 2, 3, 4, 5, 6, 4, 5, 6, 4, 5, 6, 4, 5, 6, 8);
-	Point p3(1, 2, 3, 4, 5, 6, 4, 5, 6, 4, 5, 6, 4, 5, 6, 8);
-	Point p4(1, 2, 3, 4, 5, 6, 4, 5, 6, 4, 5, 6, 4, 5, 6, 8);
+  Gesture target("target");
+  for(int i = 0; i< 50; ++i){
+    // target(1.0, 3.0, 5.0, 7.0, 7.0, 17.0, 1.0, 47.0, 1.0, 3.0, 5.0, 7.0, 7.0, 13.0, 17.0, 47.0);
+    target(9.0, 9.0, 2.0, 8.0, 7.2, -9.0, 2.0, 8.0, 37.2, 2.0, 3.0, 5.0, 7.0, 7.0, 17.0, 47.0);
+  }
 
-	mainVec.push_back(p1);
-	mainVec.push_back(p2);
-	testVec.push_back(p3);
-	testVec.push_back(p4);
+  Gesture ref("ref");
+  for(int i = 0; i< 50; ++i){
+    // ref(8.0, 8.0, 2.0, 8.0, 7.2, -9.0, 2.0, 8.0, 37.2, 2.0, 3.0, 5.0, 7.0, 7.0, 17.0, 47.0);
+    ref(1.0, 3.0, 5.0, 7.0, 7.0, 17.0, 1.0, 47.0, 1.0, 3.0, 5.0, 7.0, 7.0, 13.0, 17.0, 47.0);
+  };
+  cout<< ref.data().size()<< endl;
 
-	VectorDTW dtw1(mainVec.size(), 0.3);
 
-	double dist = dtw1.fastdynamic(mainVec, testVec);
+	DTW dtw(0.3);
+
+  double dist;
+  for(int i = 0; i<10000; ++i){
+    dist = dtw.fastdynamic(target.data(), ref.data());
+  };
 		
 	cout << "Distance: " << dist << endl;
 		

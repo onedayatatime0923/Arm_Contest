@@ -4,7 +4,7 @@
 #include "point.h"
 #include "sensor.h"
 #include "binaryClassifier.h"
-#include "moveClassifier.h"
+#include "classifier.h"
 
 int main() {
 
@@ -18,19 +18,17 @@ int main() {
   verboseIndex.push_back(4);
   verboseIndex.push_back(5);
   BinaryClassifier binaryClassifier(50, 20, verboseIndex);
-
   // construct movement classifier
   MoveClassifier moveClassifier(900);
   // construct mpu9250
   connect_MPU9250(pc);
 
   // set up
-  vector<Point> target;
+  vector<Point> > target;
   while(1) {
-    Point data = read_data(pc, 2);
+    vector<float> data = read_data(pc, 2);
     if( !binaryClassifier(data) ){
       pc.printf("stop\n");
-      target.clear();
     }
     else{
       target.push_back(data);

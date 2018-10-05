@@ -17,22 +17,23 @@
 #include <vector>
 #include <cmath>
 #include <assert.h>
+#include <limits.h>
 #include "point.h"
 
 typedef unsigned int uint;
 using namespace std;
 
-//Vector DTW code
+//DTW code
 
-class VectorDTW 
+class DTW 
 {
-private:
-	vector<vector<float> > mGamma;
-	int mN, mConstraint;
-public:
-	enum { INF = 100000000 }; //some big number
+  private:
+    vector<vector<float> > _gamma;
+    int _h, _w;
+    float _constraint;
+  public:
+    enum { INF = INT_MAX }; //some big number
         
-   	static inline float min (float x, float y ) { return x < y ? x : y; }
 
 	/**
 	* n is the length of the time series 
@@ -42,38 +43,12 @@ public:
 	* If you set constraint = n, things will be slower.
 	*
 	*/
-    	VectorDTW(uint n, uint constraint) : mGamma(n, vector<float>(n, INF)), mN(n), mConstraint(constraint) { }
+    DTW(float constraint) : _constraint(constraint) { }
     
 	/**
 	* This currently uses euclidean distance. You can change it to whatever is needed for your application
 	*/
-	inline float fastdynamic(vector<Point> &v, vector<Point> &w) 
-	{
-    		assert(static_cast<int>(v.size()) == mN);
-    		assert(static_cast<int>(w.size()) == mN);
-    		assert(static_cast<int>(mGamma.size()) == mN);
-    		float Best(INF);
-        	for (int i = 0; i < mN; ++i) 
-		{
-        		assert(static_cast<int>(mGamma[i].size()) == mN);
-            		for(int j = max(0, i - mConstraint); j < min(mN, i + mConstraint + 1); ++j) 
-			{
-                		Best = INF;
-                		if(i > 0) 
-					Best = mGamma[i - 1][j];
-                		if(j > 0) 
-					Best = min(Best, mGamma[i][j - 1]);
-                		if((i > 0) && (j > 0))
-                 			Best = min(Best, mGamma[i - 1][j - 1]);
-                		if((i == 0) && (j == 0))
-                  			mGamma[i][j] = v[i].euclid_distance(w[j]);
-                		else 
-                  			mGamma[i][j] = Best + v[i].euclid_distance(w[j]);                   
-            		}
-        	}
-
-         	return mGamma[mN-1][mN-1];
-    	}
+	float fastdynamic(vector<Point> &lhs, vector<Point> &rhs);
 };
 
 #endif

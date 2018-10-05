@@ -1,54 +1,56 @@
-#include <stdlib.h>
-#include <stdio.h>
+/**
+* (c) Daniel Lemire, 2008
+* (c) Earlence Fernandes, Vrije Universiteit Amsterdam 2011
+*
+* This C++ library implements dynamic time warping (DTW). 
+* This library includes the dynamic programming solution for vectored input signals represented
+* by the class Point. Currently, it has 3 dimensions - x, y, z. More can easily be added to this class.
+* No change would be required to the DTW class. Only keep in mind that the distance code has to be updated
+* to accomodate more dimensions.
+*  
+* Time series are represented using STL vectors.
+*/
+
+#ifndef VDTW
+#define VDTW
+
 #include <vector>
+#include <cmath>
+#include <assert.h>
+#include <limits.h>
+#include "point.h"
 
-#ifndef DTW_H
-#define DTW_H
+typedef unsigned int uint;
+using namespace std;
 
-namespace DTW
+//DTW code
+
+class DTW 
 {
+  private:
+    vector<vector<float> > _gamma;
+    int _h, _w;
+    float _constraint;
+  public:
+    enum { INF = INT_MAX }; //some big number
+        
 
-class SimpleDTW
-{
-private:
-
-    float (*distance_fn_)(std::vector<float> p1, std::vector<float> p2);
-    std::vector<float> data_;
-    size_t x_dim_;
-    size_t y_dim_;
-    bool initialized_;
-
-
-    inline size_t GetDataIndex(size_t x, size_t y)
-    {
-        return (x * y_dim_) + y;
-    }
-
-    inline float GetFromDTWMatrix(size_t x, size_t y)
-    {
-        return data_[GetDataIndex(x, y)];
-    }
-
-    inline void SetInDTWMatrix(size_t x, size_t y, float val)
-    {
-        data_[GetDataIndex(x, y)] = val;
-    }
-
-public:
-
-    SimpleDTW(size_t x_dim, size_t y_dim, float (*distance_fn)(std::vector<float> p1, std::vector<float> p2));
-
-    SimpleDTW(float (*distance_fn)(std::vector<float> p1, std::vector<float> p2));
-
-    SimpleDTW();
-
-    ~SimpleDTW() {}
-
-    float EvaluateWarpingCost(std::vector<std::vector<float> >& sequence_1, std::vector<std::vector<float> >& sequence_2);
-    void Initialize(size_t x_size, size_t y_size);
-
+	/**
+	* n is the length of the time series 
+	*
+	* constraint is the maximum warping distance.
+	* Typically: constraint = n/10.
+	* If you set constraint = n, things will be slower.
+	*
+	*/
+    DTW(float constraint) : _constraint(constraint) { }
+    
+	/**
+	* This currently uses euclidean distance. You can change it to whatever is needed for your application
+	*/
+	float fastdynamic(vector<Point> &lhs, vector<Point> &rhs);
 };
 
-}
+#endif
 
-#endif // DTW_H
+

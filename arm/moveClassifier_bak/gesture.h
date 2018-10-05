@@ -4,7 +4,6 @@
 
 #include <string>
 #include <vector>
-#include "point.h"
 
 using namespace std;
 
@@ -18,11 +17,11 @@ class Gesture{
         const float& data11, const float& data12, const float& data13, const float& data14,
         const float& data15, const float& data16);
 
-    vector<Point>& data();
-    string& action();
+    vector<vector<float> > data();
+    string action();
 
   private:
     string _action;
-    vector<Point> _data;
+    vector<vector<float> > _data;
 };
 #endif
