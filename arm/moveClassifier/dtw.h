@@ -11,8 +11,8 @@
 * Time series are represented using STL vectors.
 */
 
-#ifndef VDTW
-#define VDTW
+#ifndef _DEFINE_DTW_
+#define _DEFINE_DTW_
 
 #include <vector>
 #include <cmath>
@@ -20,7 +20,6 @@
 #include <limits.h>
 #include "point.h"
 
-typedef unsigned int uint;
 using namespace std;
 
 //DTW code
@@ -30,7 +29,6 @@ class DTW
   private:
     vector<vector<float> > _gamma;
     int _h, _w;
-    float _constraint;
   public:
     enum { INF = INT_MAX }; //some big number
         
@@ -43,14 +41,12 @@ class DTW
 	* If you set constraint = n, things will be slower.
 	*
 	*/
-    DTW(float constraint) : _constraint(constraint) { }
+    DTW(){};
     
 	/**
 	* This currently uses euclidean distance. You can change it to whatever is needed for your application
 	*/
-	float fastdynamic(vector<Point> &lhs, vector<Point> &rhs);
+	float operator() (vector<Point> &lhs, vector<Point> &rhs);
 };
 
 #endif
-
-

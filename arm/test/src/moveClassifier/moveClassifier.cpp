@@ -15,16 +15,15 @@ MoveClassifier::MoveClassifier(const float& threshold): _threshold(threshold){
 string MoveClassifier::operator()(vector<Point>& target){
   int result = 0;
   float loss = FLT_MAX;
-	DTW dtw(0.3);
   for(int i = 0;i < _data.size(); ++i){
-    float value = dtw.fastdynamic(target, _data[i].data());
+    float value = _dtw(target, _data[i].data());
     if( value < loss ){
       loss = value;
       result = i;
     };
   };
 
-  if(loss != FLT_MAX){
+  if(loss <= _threshold){
     return _data[result].action();
   }
   else{

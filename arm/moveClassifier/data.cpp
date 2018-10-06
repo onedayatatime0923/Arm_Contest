@@ -1,6 +1,6 @@
 
 #include "moveClassifier.h"
-#include "gesture.h"
+#include "../util/gesture.h"
 
 void MoveClassifier::read(){
   Gesture likeG("like");

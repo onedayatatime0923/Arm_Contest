@@ -15,6 +15,7 @@ class MoveClassifier{
   private:
     void read();
 
+    DTW _dtw;
     float _threshold;
     vector<Gesture> _data;
     

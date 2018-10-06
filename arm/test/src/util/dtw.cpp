@@ -1,14 +1,17 @@
 
 #include "dtw.h"
+#include <iostream>
 
-float DTW::fastdynamic(vector<Point> &lhs, vector<Point> &rhs){
+using namespace std;
+
+float DTW::operator() (vector<Point> &lhs, vector<Point> &rhs){
   _h = lhs.size();
   _w = rhs.size();
   _gamma = vector<vector<float> >(_h, vector<float>(_w, INF));
 
   float Best(INF);
   for (int i = 0; i < _h; ++i) {
-    for(int j = max(float(0), i - (_w * _constraint)); j < min(float(_w), i + (_w * _constraint) + 1); ++j){
+    for(int j = 0; j < _w; ++j){
       Best = INF;
       if(i > 0) 
         Best = _gamma[i - 1][j];
