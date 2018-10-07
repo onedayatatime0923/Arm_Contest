@@ -5,19 +5,21 @@ LIBS     = $(addprefix -l, $(LIBPKGS))
 LIBFILES = $(addsuffix .a, $(addprefix lib, $(LIBPKGS)))
 
 dummy:
-	@echo "Error: please use make <d | b | m | clean | cleanall>"
+	@echo "Error: please use make <d | b | m | data | clean | cleanall>"
 
-.PHONY : d b m
+.PHONY : d b m data
 
 d: CMD  = dtw
 b: CMD  = binaryClassifier
 m: CMD  = moveClassifier
+data: CMD  = data
 
 d: CMDFLAG = -DTEST_DTW
 b: CMDFLAG = -DTEST_BINARYCLASSIFIER
 m: CMDFLAG = -DTEST_MOVECLASSIFIER
+data: CMDFLAG = -DTEST_DATA
 
-d b m: all
+d b m data: all
 	
 EXEC     = Test.$(CMD)
 

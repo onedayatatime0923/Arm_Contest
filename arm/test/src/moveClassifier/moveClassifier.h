@@ -17,7 +17,7 @@ class MoveClassifier{
 
     DTW _dtw;
     float _threshold;
-    vector<Gesture> _data;
+    vector<Gesture>* _data;
     
 };
 #endif
