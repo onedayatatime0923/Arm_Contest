@@ -10,7 +10,7 @@ using namespace std;
 
 class MoveClassifier{
   public:
-    MoveClassifier(const float& threshold, Serial& pc);
+    MoveClassifier(Serial& pc, const float& threshold);
     string operator()(vector<Point>& target);
 
   private:

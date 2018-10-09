@@ -10,7 +10,7 @@
 
 using namespace std;
 
-MoveClassifier::MoveClassifier(const float& threshold, Serial& pc): _pc(&pc), _threshold(threshold){
+MoveClassifier::MoveClassifier(Serial& pc, const float& threshold): _pc(&pc), _threshold(threshold){
   this->read();
 }
 
@@ -34,7 +34,7 @@ string MoveClassifier::operator()(vector<Point>& target){
 };
 
 void MoveClassifier::read(){
-  Data data("./");
+  Data data(_pc, "./");
   data("text_1.txt");
   _data = data.data();
 }

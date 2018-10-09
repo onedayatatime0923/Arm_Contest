@@ -321,7 +321,7 @@ MainOptions	gesture_detection/options/main_options.py	/^class MainOptions(BaseOp
 Mmode	arm/moveClassifier/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 Mmode	arm/sensor/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 ModelVisualizer	gesture_detection/visualizer/model_visualizer.py	/^class ModelVisualizer(BaseVisualizer):$/;"	c
-MoveClassifier	arm/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold, Serial& pc): _pc(&pc), _threshold(threshold){$/;"	f	class:MoveClassifier
+MoveClassifier	arm/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(Serial& pc, const float& threshold): _pc(&pc), _threshold(threshold){$/;"	f	class:MoveClassifier
 MoveClassifier	arm/moveClassifier/moveClassifier.h	/^class MoveClassifier{$/;"	c
 MoveClassifier	arm/test/include/moveClassifier.h	/^class MoveClassifier{$/;"	c
 MoveClassifier	arm/test/src/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold): _threshold(threshold){$/;"	f	class:MoveClassifier

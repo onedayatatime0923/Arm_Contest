@@ -3,8 +3,9 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include "mbed.h"
 #include "data.h"
-#include "../util/gesture.h"
+#include "gesture.h"
 
 using namespace std;
 
