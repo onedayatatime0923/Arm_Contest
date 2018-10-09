@@ -10,12 +10,13 @@ using namespace std;
 
 class MoveClassifier{
   public:
-    MoveClassifier(const float& threshold);
-    string operator()(vector<Point>& target, Serial& pc);
+    MoveClassifier(const float& threshold, Serial& pc);
+    string operator()(vector<Point>& target);
 
   private:
     void read();
 
+    Serial* _pc;
     DTW _dtw;
     float _threshold;
     vector<Gesture>* _data;

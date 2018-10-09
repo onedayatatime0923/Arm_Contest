@@ -20,7 +20,7 @@ int main() {
   BinaryClassifier binaryClassifier(50, 20, verboseIndex);
 
   // construct movement classifier
-  MoveClassifier moveClassifier(900);
+  MoveClassifier moveClassifier(900, pc);
   // construct mpu9250
   connect_MPU9250(pc);
 

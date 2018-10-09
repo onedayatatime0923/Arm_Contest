@@ -114,7 +114,7 @@ DTW	arm/test/include/dtw.h	/^    DTW(){};$/;"	f	class:DTW
 DTW	arm/test/include/dtw.h	/^class DTW $/;"	c
 DTW	arm/test/src/util/dtw.h	/^    DTW(){};$/;"	f	class:DTW
 DTW	arm/test/src/util/dtw.h	/^class DTW $/;"	c
-Data	arm/moveClassifier/data.cpp	/^Data::Data(const string& dir): _dir(dir){$/;"	f	class:Data
+Data	arm/moveClassifier/data.cpp	/^Data::Data(Serial* pc, const string& dir): _pc(pc), _dir(dir){$/;"	f	class:Data
 Data	arm/moveClassifier/data.h	/^class Data{$/;"	c
 Data	arm/test/src/moveClassifier/data.cpp	/^Data::Data(const string& dir): _dir(dir){$/;"	f	class:Data
 Data	arm/test/src/moveClassifier/data.h	/^class Data{$/;"	c
@@ -321,7 +321,7 @@ MainOptions	gesture_detection/options/main_options.py	/^class MainOptions(BaseOp
 Mmode	arm/moveClassifier/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 Mmode	arm/sensor/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 ModelVisualizer	gesture_detection/visualizer/model_visualizer.py	/^class ModelVisualizer(BaseVisualizer):$/;"	c
-MoveClassifier	arm/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold): _threshold(threshold){$/;"	f	class:MoveClassifier
+MoveClassifier	arm/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold, Serial& pc): _pc(&pc), _threshold(threshold){$/;"	f	class:MoveClassifier
 MoveClassifier	arm/moveClassifier/moveClassifier.h	/^class MoveClassifier{$/;"	c
 MoveClassifier	arm/test/include/moveClassifier.h	/^class MoveClassifier{$/;"	c
 MoveClassifier	arm/test/src/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold): _threshold(threshold){$/;"	f	class:MoveClassifier
@@ -540,6 +540,8 @@ _init	gesture_detection/visualizer/painter.py	/^    def _init(self):$/;"	m	class
 _nStep	arm/moveClassifier/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
 _nStep	arm/test/include/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
 _nStep	arm/test/src/binaryClassifier/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
+_pc	arm/moveClassifier/data.h	/^    Serial* _pc;$/;"	m	class:Data
+_pc	arm/moveClassifier/moveClassifier.h	/^    Serial* _pc;$/;"	m	class:MoveClassifier
 _plot	gesture_detection/visualizer/painter.py	/^    def _plot(self):$/;"	m	class:Painter
 _read	gesture_detection/sensor/__init__.py	/^    def _read(self):$/;"	m	class:Sensor
 _speech	gesture_detection/speech/__init__.py	/^    def _speech(self, data):$/;"	m	class:Speech
@@ -756,7 +758,7 @@ operator ()	arm/moveClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::ope
 operator ()	arm/moveClassifier/data.cpp	/^void Data::operator() (const string& file){$/;"	f	class:Data
 operator ()	arm/moveClassifier/dtw.cpp	/^float DTW::operator() (vector<Point> &lhs, vector<Point> &rhs){$/;"	f	class:DTW
 operator ()	arm/moveClassifier/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
-operator ()	arm/moveClassifier/moveClassifier.cpp	/^string MoveClassifier::operator()(vector<Point>& target, Serial& pc){$/;"	f	class:MoveClassifier
+operator ()	arm/moveClassifier/moveClassifier.cpp	/^string MoveClassifier::operator()(vector<Point>& target){$/;"	f	class:MoveClassifier
 operator ()	arm/test/src/binaryClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::operator() (Point& data) {$/;"	f	class:BinaryClassifier
 operator ()	arm/test/src/moveClassifier/data.cpp	/^void Data::operator() (const string& file){$/;"	f	class:Data
 operator ()	arm/test/src/moveClassifier/moveClassifier.cpp	/^string MoveClassifier::operator()(vector<Point>& target){$/;"	f	class:MoveClassifier

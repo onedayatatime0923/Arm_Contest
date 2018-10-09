@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 #include <float.h>
+#include "mbed.h"
 #include "moveClassifier.h"
 #include "dtw.h"
 #include "point.h"
@@ -9,11 +10,11 @@
 
 using namespace std;
 
-MoveClassifier::MoveClassifier(const float& threshold): _threshold(threshold){
+MoveClassifier::MoveClassifier(const float& threshold, Serial& pc): _pc(&pc), _threshold(threshold){
   this->read();
 }
 
-string MoveClassifier::operator()(vector<Point>& target, Serial& pc){
+string MoveClassifier::operator()(vector<Point>& target){
   int result = 0;
   float loss = FLT_MAX;
   for(int i = 0;i < _data->size(); ++i){
@@ -25,7 +26,6 @@ string MoveClassifier::operator()(vector<Point>& target, Serial& pc){
   };
 
   if(loss <= _threshold){
-    pc.printf(loss);
     return (*_data)[result].action();
   }
   else{

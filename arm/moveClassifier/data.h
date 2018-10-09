@@ -6,7 +6,7 @@ using namespace std;
 
 class Data{
   public:
-    Data(const string& dir = "/fs/");
+    Data( Serial* pc, const string& dir = "/fs/");
 
     void operator() (const string& file);
     inline vector<Gesture>* data(){
@@ -15,6 +15,7 @@ class Data{
 
   private:
 
+    Serial* _pc;
     string _dir;
     vector<Gesture>* _data;
 };
