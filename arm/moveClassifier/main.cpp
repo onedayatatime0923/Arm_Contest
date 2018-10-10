@@ -1,5 +1,3 @@
-
-
 #include <vector>
 #include "mbed.h"
 #include "point.h"
@@ -14,7 +12,6 @@ FATFileSystem fs("fs");
 int main() {
 
   // construct pc serial
-  // Serial pc(USBTX, USBRX); // tx, rx
   pc.baud(57600); 
   
   // construct binary classifier
@@ -24,18 +21,18 @@ int main() {
   verboseIndex.push_back(5);
   BinaryClassifier binaryClassifier(30, 5, verboseIndex);
 
-  // construct movement classifier
   // construct mpu9250
   connect_MPU9250(pc);
   // construct speaker and SD card
   Speaker s(&DACout);
   bd.init();
   fs.mount(&bd);
+  // construct movement classifier
   MoveClassifier moveClassifier(pc, 350);
   // set up
   vector<Point> target;
   string act, last_act;
-  last_act = "123";
+  last_act = "noOps";
   unsigned short sizeThreshold = 0;
   while(1) {
     Point data = read_data(pc, 0);
