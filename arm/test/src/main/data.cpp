@@ -6,8 +6,6 @@
 using namespace std;
 
 int main(){
-  Data data("./");
-  Gesture g("move");
-  data("text_1.txt");
+  Data data("data/");
 }
 #endif

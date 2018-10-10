@@ -6,17 +6,23 @@ using namespace std;
 
 class Data{
   public:
-    Data(const string& dir = "/fs/");
+    Data(const string& dir = "/fs/references/");
 
-    void operator() (const string& file);
+    void read();
     inline vector<Gesture>* data(){
       return _data;
     }
 
   private:
+    void read(const string& file);
+    bool endswith(std::string const & value, std::string const & ending = ".txt");
 
     string _dir;
     vector<Gesture>* _data;
 };
 
-
+inline bool Data::endswith(std::string const & value, std::string const & ending)
+{
+  if (ending.size() > value.size()) return false;
+  return equal(ending.rbegin(), ending.rend(), value.rbegin());
+}

@@ -81,12 +81,12 @@ BinaryClassifier	arm/test/src/binaryClassifier/binaryClassifier.h	/^class Binary
 BinaryDataSet	gesture_detection/dataset/binary_dataset.py	/^class BinaryDataSet(BaseDataset):$/;"	c
 BinaryModel	gesture_detection/models/binary_model.py	/^class BinaryModel(BaseModel):$/;"	c
 CMD	arm/test/Makefile	/^b: CMD  = binaryClassifier$/;"	m
-CMD	arm/test/Makefile	/^d: CMD  = dtw$/;"	m
 CMD	arm/test/Makefile	/^data: CMD  = data$/;"	m
+CMD	arm/test/Makefile	/^dtw: CMD  = dtw$/;"	m
 CMD	arm/test/Makefile	/^m: CMD  = moveClassifier$/;"	m
 CMDFLAG	arm/test/Makefile	/^b: CMDFLAG = -DTEST_BINARYCLASSIFIER$/;"	m
-CMDFLAG	arm/test/Makefile	/^d: CMDFLAG = -DTEST_DTW$/;"	m
 CMDFLAG	arm/test/Makefile	/^data: CMDFLAG = -DTEST_DATA$/;"	m
+CMDFLAG	arm/test/Makefile	/^dtw: CMDFLAG = -DTEST_DTW$/;"	m
 CMDFLAG	arm/test/Makefile	/^m: CMDFLAG = -DTEST_MOVECLASSIFIER$/;"	m
 CONFIG	arm/moveClassifier/MPU9250.h	56;"	d
 CONFIG	arm/sensor/MPU9250.h	56;"	d
@@ -342,17 +342,17 @@ PWR_MGMT_1	arm/sensor/MPU9250.h	138;"	d
 PWR_MGMT_2	arm/moveClassifier/MPU9250.h	139;"	d
 PWR_MGMT_2	arm/sensor/MPU9250.h	139;"	d
 Painter	gesture_detection/visualizer/painter.py	/^class Painter():$/;"	c
-Point	arm/moveClassifier/point.h	/^	Point(): v0(0), v1(0), v2(0), v3(0), v4(0), v5(0), v6(0), v7(0), v8(0), v9(0), v10(0), v11(0), v12(0), v13(0), v14(0), v15(0){};$/;"	f	class:Point
-Point	arm/moveClassifier/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12, const float& v13, const float& v14, const float& v15): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11), v12(v12), v13(v13), v14(v14), v15(v15){};$/;"	f	class:Point
-Point	arm/moveClassifier/point.h	/^	Point(const int& i): v0(i), v1(i), v2(i), v3(i), v4(i), v5(i), v6(i), v7(i), v8(i), v9(i), v10(i), v11(i), v12(i), v13(i), v14(i), v15(i){};$/;"	f	class:Point
+Point	arm/moveClassifier/point.h	/^	Point(): v0(0), v1(0), v2(0), v3(0), v4(0), v5(0), v6(0), v7(0), v8(0), v9(0), v10(0), v11(0){};$/;"	f	class:Point
+Point	arm/moveClassifier/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11){};$/;"	f	class:Point
+Point	arm/moveClassifier/point.h	/^	Point(const int& i): v0(i), v1(i), v2(i), v3(i), v4(i), v5(i), v6(i), v7(i), v8(i), v9(i), v10(i), v11(i){};$/;"	f	class:Point
 Point	arm/moveClassifier/point.h	/^class Point $/;"	c
-Point	arm/test/include/point.h	/^	Point(): v0(0), v1(0), v2(0), v3(0), v4(0), v5(0), v6(0), v7(0), v8(0), v9(0), v10(0), v11(0), v12(0), v13(0), v14(0), v15(0){};$/;"	f	class:Point
-Point	arm/test/include/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12, const float& v13, const float& v14, const float& v15): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11), v12(v12), v13(v13), v14(v14), v15(v15){};$/;"	f	class:Point
-Point	arm/test/include/point.h	/^	Point(const int& i): v0(i), v1(i), v2(i), v3(i), v4(i), v5(i), v6(i), v7(i), v8(i), v9(i), v10(i), v11(i), v12(i), v13(i), v14(i), v15(i){};$/;"	f	class:Point
+Point	arm/test/include/point.h	/^	Point(): v0(0), v1(0), v2(0), v3(0), v4(0), v5(0), v6(0), v7(0), v8(0), v9(0), v10(0), v11(0){};$/;"	f	class:Point
+Point	arm/test/include/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11){};$/;"	f	class:Point
+Point	arm/test/include/point.h	/^	Point(const int& i): v0(i), v1(i), v2(i), v3(i), v4(i), v5(i), v6(i), v7(i), v8(i), v9(i), v10(i), v11(i){};$/;"	f	class:Point
 Point	arm/test/include/point.h	/^class Point $/;"	c
-Point	arm/test/src/util/point.h	/^	Point(): v0(0), v1(0), v2(0), v3(0), v4(0), v5(0), v6(0), v7(0), v8(0), v9(0), v10(0), v11(0), v12(0), v13(0), v14(0), v15(0){};$/;"	f	class:Point
-Point	arm/test/src/util/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12, const float& v13, const float& v14, const float& v15): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11), v12(v12), v13(v13), v14(v14), v15(v15){};$/;"	f	class:Point
-Point	arm/test/src/util/point.h	/^	Point(const int& i): v0(i), v1(i), v2(i), v3(i), v4(i), v5(i), v6(i), v7(i), v8(i), v9(i), v10(i), v11(i), v12(i), v13(i), v14(i), v15(i){};$/;"	f	class:Point
+Point	arm/test/src/util/point.h	/^	Point(): v0(0), v1(0), v2(0), v3(0), v4(0), v5(0), v6(0), v7(0), v8(0), v9(0), v10(0), v11(0){};$/;"	f	class:Point
+Point	arm/test/src/util/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11): v0(v0), v1(v1), v2(v2), v3(v3), v4(v4), v5(v5), v6(v6), v7(v7), v8(v8), v9(v9), v10(v10), v11(v11){};$/;"	f	class:Point
+Point	arm/test/src/util/point.h	/^	Point(const int& i): v0(i), v1(i), v2(i), v3(i), v4(i), v5(i), v6(i), v7(i), v8(i), v9(i), v10(i), v11(i){};$/;"	f	class:Point
 Point	arm/test/src/util/point.h	/^class Point $/;"	c
 PredictOptions	gesture_detection/options/predict_options.py	/^class PredictOptions(BaseOptions):$/;"	c
 ProgressVisualizer	gesture_detection/visualizer/progress_visualizer.py	/^class ProgressVisualizer(BaseVisualizer):$/;"	c
@@ -577,6 +577,7 @@ ay	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variabl
 az	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 az	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 backward_classifier	gesture_detection/models/binary_model.py	/^    def backward_classifier(self, retain_graph = False):$/;"	m	class:BinaryModel
+bd	arm/moveClassifier/main.cpp	/^SDBlockDeviceDISCOF469NI bd;$/;"	v
 beta	arm/moveClassifier/MPU9250.h	/^float beta = sqrt(3.0f \/ 4.0f) * GyroMeasError;  \/\/ compute beta$/;"	v
 beta	arm/sensor/MPU9250.h	/^float beta = sqrt(3.0f \/ 4.0f) * GyroMeasError;  \/\/ compute beta$/;"	v
 buffer	arm/moveClassifier/sensor.h	/^char buffer[14];$/;"	v
@@ -626,6 +627,8 @@ dump_split	gesture_detection/recorder/__init__.py	/^    def dump_split(self):$/;
 eInt	arm/moveClassifier/MPU9250.h	/^float eInt[3] = {0.0f, 0.0f, 0.0f};              \/\/ vector to hold integral error for Mahony method$/;"	v
 eInt	arm/sensor/MPU9250.h	/^float eInt[3] = {0.0f, 0.0f, 0.0f};              \/\/ vector to hold integral error for Mahony method$/;"	v
 end	gesture_detection/visualizer/base_visualizer.py	/^    def end(self, name, epoch, data=[]): $/;"	m	class:BaseVisualizer
+endswith	arm/moveClassifier/data.h	/^inline bool Data::endswith(std::string const & value, std::string const & ending)$/;"	f	class:Data
+endswith	arm/test/src/moveClassifier/data.h	/^inline bool Data::endswith(std::string const & value, std::string const & ending)$/;"	f	class:Data
 euclid_distance	arm/moveClassifier/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
 euclid_distance	arm/test/include/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
 euclid_distance	arm/test/src/util/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
@@ -755,12 +758,11 @@ norm	arm/test/src/binaryClassifier/binaryClassifier.cpp	/^float BinaryClassifier
 norm	arm/test/src/util/point.h	/^	float norm()$/;"	f	class:Point
 num_workers	gesture_detection/train.py	/^    num_workers=opt.nThreads)$/;"	v
 operator ()	arm/moveClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::operator() (Point& data) {$/;"	f	class:BinaryClassifier
-operator ()	arm/moveClassifier/data.cpp	/^void Data::operator() (const string& file){$/;"	f	class:Data
+operator ()	arm/moveClassifier/data.cpp	/^void Data::operator() (){$/;"	f	class:Data
 operator ()	arm/moveClassifier/dtw.cpp	/^float DTW::operator() (vector<Point> &lhs, vector<Point> &rhs){$/;"	f	class:DTW
 operator ()	arm/moveClassifier/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
 operator ()	arm/moveClassifier/moveClassifier.cpp	/^string MoveClassifier::operator()(vector<Point>& target){$/;"	f	class:MoveClassifier
 operator ()	arm/test/src/binaryClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::operator() (Point& data) {$/;"	f	class:BinaryClassifier
-operator ()	arm/test/src/moveClassifier/data.cpp	/^void Data::operator() (const string& file){$/;"	f	class:Data
 operator ()	arm/test/src/moveClassifier/moveClassifier.cpp	/^string MoveClassifier::operator()(vector<Point>& target){$/;"	f	class:MoveClassifier
 operator ()	arm/test/src/util/dtw.cpp	/^float DTW::operator() (vector<Point> &lhs, vector<Point> &rhs){$/;"	f	class:DTW
 operator ()	arm/test/src/util/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
@@ -806,7 +808,10 @@ print_networks	gesture_detection/models/base_model.py	/^    def print_networks(s
 print_options	gesture_detection/options/base_options.py	/^    def print_options(self):$/;"	m	class:BaseOptions
 q	arm/moveClassifier/MPU9250.h	/^float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};           \/\/ vector to hold quaternion$/;"	v
 q	arm/sensor/MPU9250.h	/^float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};           \/\/ vector to hold quaternion$/;"	v
+read	arm/moveClassifier/data.cpp	/^void Data::read(const string& file){$/;"	f	class:Data
 read	arm/moveClassifier/moveClassifier.cpp	/^void MoveClassifier::read(){$/;"	f	class:MoveClassifier
+read	arm/test/src/moveClassifier/data.cpp	/^void Data::read(){$/;"	f	class:Data
+read	arm/test/src/moveClassifier/data.cpp	/^void Data::read(const string& file){$/;"	f	class:Data
 read	arm/test/src/moveClassifier/moveClassifier.cpp	/^void MoveClassifier::read(){$/;"	f	class:MoveClassifier
 read	gesture_detection/classifier/DTW.py	/^    def read(self):$/;"	m	class:Classifier
 read	gesture_detection/sensor/__init__.py	/^    def read(self):$/;"	m	class:Sensor
@@ -894,54 +899,42 @@ update	gesture_detection/options/base_options.py	/^    def update(self):$/;"	m	c
 update	gesture_detection/utils/accu_eval.py	/^    def update(self, pred, gnd):$/;"	m	class:AccuEval
 update_learning_rate	gesture_detection/models/base_model.py	/^    def update_learning_rate(self):$/;"	m	class:BaseModel
 v	gesture_detection/visualizer/sensor_visualizer.py	/^    v = SensorVisualizer()$/;"	v	class:SensorVisualizer
-v0	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v0	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v0	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v1	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v1	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v1	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v10	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v10	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v10	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v11	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v11	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v11	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v12	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v12	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v12	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v13	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v13	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v13	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v14	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v14	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v14	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v15	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v15	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v15	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v2	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v2	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v2	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v3	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v3	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v3	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v4	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v4	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v4	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v5	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v5	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v5	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v6	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v6	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v6	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v7	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v7	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v7	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v8	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v8	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v8	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v9	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v9	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
-v9	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15;$/;"	m	class:Point
+v0	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v0	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v0	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v1	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v1	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v1	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v10	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v10	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v10	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v11	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v11	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v11	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v2	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v2	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v2	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v3	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v3	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v3	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v4	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v4	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v4	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v5	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v5	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v5	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v6	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v6	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v6	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v7	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v7	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v7	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v8	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v8	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v8	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v9	arm/moveClassifier/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v9	arm/test/include/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
+v9	arm/test/src/util/point.h	/^	float v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11;$/;"	m	class:Point
 valDataLoader	gesture_detection/train.py	/^valDataLoader= torch.utils.data.DataLoader($/;"	v
 valDataset	gesture_detection/train.py	/^valDataset = createDataset(opt, split = 'val', nInput = opt.nInput)$/;"	v
 valVisualizer	gesture_detection/train.py	/^valVisualizer = ProgressVisualizer(opt, valDataLoader.dataset).reset()$/;"	v

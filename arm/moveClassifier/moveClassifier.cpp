@@ -2,7 +2,6 @@
 #include <vector>
 #include <cmath>
 #include <float.h>
-#include "mbed.h"
 #include "moveClassifier.h"
 #include "dtw.h"
 #include "point.h"
@@ -34,7 +33,7 @@ string MoveClassifier::operator()(vector<Point>& target){
 };
 
 void MoveClassifier::read(){
-  Data data(_pc, "./");
-  data("text_1.txt");
+  Data data(_pc);
+  data();
   _data = data.data();
 }

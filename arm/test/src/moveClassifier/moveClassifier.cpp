@@ -33,7 +33,6 @@ string MoveClassifier::operator()(vector<Point>& target){
 };
 
 void MoveClassifier::read(){
-  Data data("./");
-  data("text_1.txt");
+  Data data("data/");
   _data = data.data();
 }
