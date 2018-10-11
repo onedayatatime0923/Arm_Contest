@@ -3,8 +3,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include "mbed.h"
-#include <dirent.h>
+#include <DirHandle.h>
 #include "data.h"
 #include "gesture.h"
 
@@ -18,20 +17,20 @@ Data::Data(const string& dir): _dir(dir){
 void Data::read(){
   DIR *dir;
   struct dirent *ent;
-  // printf("> reading from %s\n", _dir.c_str());
+  printf("> reading from %s\n", _dir.c_str());
   if ((dir = opendir(_dir.c_str())) != NULL){
     /* print all the files and directories within directory */
     while ((ent = readdir (dir)) != NULL) {
       if(this->endswith(ent->d_name)){
-        // printf("Reading %s\n", ent->d_name);
+        printf("Reading %s\n", ent->d_name);
         this->read(ent->d_name);
       }
     }
     closedir(dir);
-    // printf("> reading complete.\n");
+    printf("> reading complete.\n");
   } else {
     /* could not open directory */
-    // printf("> reading fail...\n");
+    printf("> reading fail...\n");
   }
 }
 

@@ -27,6 +27,8 @@ using namespace std;
 class DTW 
 {
   private:
+    int _start;
+    float _lambda;
     vector<vector<float> > _gamma;
     int _h, _w;
   public:
@@ -41,7 +43,7 @@ class DTW
 	* If you set constraint = n, things will be slower.
 	*
 	*/
-    DTW(){};
+    DTW(const int& start, const float& lambda = 1);
     
 	/**
 	* This currently uses euclidean distance. You can change it to whatever is needed for your application

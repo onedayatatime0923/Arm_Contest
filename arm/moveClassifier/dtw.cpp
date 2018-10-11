@@ -1,4 +1,5 @@
 
+
 #include "dtw.h"
 #include <iostream>
 
@@ -22,8 +23,10 @@ float DTW::operator() (vector<Point> &lhs, vector<Point> &rhs){
       if((i == 0) && (j == 0))
         _gamma[i][j] = lhs[i].euclid_distance(rhs[j]);
       else 
-        _gamma[i][j] = Best + lhs[i].euclid_distance(rhs[j]);                   
+        _gamma[i][j] =  Best * _lambda + lhs[i].euclid_distance(rhs[j]);                   
     }
   }
   return _gamma[_h-1][_w-1];
 }
+
+

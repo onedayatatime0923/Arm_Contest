@@ -9,7 +9,7 @@
 
 using namespace std;
 
-MoveClassifier::MoveClassifier(const float& threshold): _threshold(threshold){
+MoveClassifier::MoveClassifier(const float& threshold, const int& start, const float& lambda): _threshold(threshold), _dtw(start, lambda){
   this->read();
 }
 
@@ -17,7 +17,7 @@ string MoveClassifier::operator()(vector<Point>& target){
   int result = 0;
   float loss = FLT_MAX;
   for(int i = 0;i < _data->size(); ++i){
-    float value = _dtw(target, (*_data)[i].data());
+    float value = _dtw(target, (*_data)[i].data()) / ((*_data)[i].data().size());
     if( value < loss ){
       loss = value;
       result = i;

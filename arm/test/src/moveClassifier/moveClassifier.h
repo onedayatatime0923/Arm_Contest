@@ -9,7 +9,7 @@ using namespace std;
 
 class MoveClassifier{
   public:
-    MoveClassifier(const float& threshold);
+    MoveClassifier(const float& threshold, const int& start, const float& lambda = 1);
     string operator()(vector<Point>& target);
 
   private:
