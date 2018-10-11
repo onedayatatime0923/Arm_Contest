@@ -1,3 +1,4 @@
+
 #include <vector>
 #include "mbed.h"
 #include "point.h"
@@ -28,12 +29,12 @@ int main() {
   bd.init();
   fs.mount(&bd);
   // construct movement classifier
-  MoveClassifier moveClassifier(pc, 350);
+  MoveClassifier moveClassifier(380);
   // set up
   vector<Point> target;
   string act, last_act;
   last_act = "noOps";
-  unsigned short sizeThreshold = 0;
+  unsigned short sizeThreshold = 25;
   while(1) {
     Point data = read_data(pc, 0);
     if( !binaryClassifier(data) ){
@@ -60,6 +61,8 @@ int main() {
     };
   };
 }
+
+
 
 
 

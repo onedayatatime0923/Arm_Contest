@@ -108,7 +108,7 @@ DMP_REG_2	arm/sensor/MPU9250.h	144;"	d
 DMP_RW_PNT	arm/moveClassifier/MPU9250.h	141;"	d
 DMP_RW_PNT	arm/sensor/MPU9250.h	141;"	d
 DROPOUT	video_detection/main.py	/^DROPOUT= 0.3$/;"	v
-DTW	arm/moveClassifier/dtw.h	/^    DTW(){};$/;"	f	class:DTW
+DTW	arm/moveClassifier/dtw.cpp	/^DTW::DTW(const int& start, const float& lambda): _start(start), _lambda(lambda){};$/;"	f	class:DTW
 DTW	arm/moveClassifier/dtw.h	/^class DTW $/;"	c
 DTW	arm/test/include/dtw.h	/^class DTW $/;"	c
 DTW	arm/test/src/util/dtw.cpp	/^DTW::DTW(const int& start, const float& lambda): _start(start), _lambda(lambda){};$/;"	f	class:DTW
@@ -320,7 +320,7 @@ MainOptions	gesture_detection/options/main_options.py	/^class MainOptions(BaseOp
 Mmode	arm/moveClassifier/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 Mmode	arm/sensor/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02) or 100 Hz (0x06) magnetometer data ODR  $/;"	v
 ModelVisualizer	gesture_detection/visualizer/model_visualizer.py	/^class ModelVisualizer(BaseVisualizer):$/;"	c
-MoveClassifier	arm/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold): _threshold(threshold){$/;"	f	class:MoveClassifier
+MoveClassifier	arm/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold, const int& start, const float& lambda): _threshold(threshold), _dtw(start, lambda){$/;"	f	class:MoveClassifier
 MoveClassifier	arm/moveClassifier/moveClassifier.h	/^class MoveClassifier{$/;"	c
 MoveClassifier	arm/test/include/moveClassifier.h	/^class MoveClassifier{$/;"	c
 MoveClassifier	arm/test/src/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold, const int& start, const float& lambda): _threshold(threshold), _dtw(start, lambda){$/;"	f	class:MoveClassifier
@@ -536,6 +536,7 @@ _index	arm/moveClassifier/binaryClassifier.h	/^    vector<int>_index;$/;"	m	clas
 _index	arm/test/include/binaryClassifier.h	/^    vector<int>_index;$/;"	m	class:BinaryClassifier
 _index	arm/test/src/binaryClassifier/binaryClassifier.h	/^    vector<int>_index;$/;"	m	class:BinaryClassifier
 _init	gesture_detection/visualizer/painter.py	/^    def _init(self):$/;"	m	class:Painter
+_lambda	arm/moveClassifier/dtw.h	/^    float _lambda;$/;"	m	class:DTW
 _lambda	arm/test/include/dtw.h	/^    float _lambda;$/;"	m	class:DTW
 _lambda	arm/test/src/util/dtw.h	/^    float _lambda;$/;"	m	class:DTW
 _nStep	arm/moveClassifier/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
@@ -544,6 +545,7 @@ _nStep	arm/test/src/binaryClassifier/binaryClassifier.h	/^    int _nStep;$/;"	m	
 _plot	gesture_detection/visualizer/painter.py	/^    def _plot(self):$/;"	m	class:Painter
 _read	gesture_detection/sensor/__init__.py	/^    def _read(self):$/;"	m	class:Sensor
 _speech	gesture_detection/speech/__init__.py	/^    def _speech(self, data):$/;"	m	class:Speech
+_start	arm/moveClassifier/dtw.h	/^    int _start;$/;"	m	class:DTW
 _start	arm/test/include/dtw.h	/^    int _start;$/;"	m	class:DTW
 _start	arm/test/src/util/dtw.h	/^    int _start;$/;"	m	class:DTW
 _threshold	arm/moveClassifier/binaryClassifier.h	/^    float _threshold;$/;"	m	class:BinaryClassifier

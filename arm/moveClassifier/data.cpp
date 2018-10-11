@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <DirHandle.h>
+#include <dirent.h>
 #include "data.h"
 #include "gesture.h"
 
