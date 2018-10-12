@@ -721,6 +721,7 @@ magCount	arm/sensor/MPU9250.h	/^int16_t magCount[3];    \/\/ Stores the 16-bit s
 magbias	arm/moveClassifier/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 magbias	arm/sensor/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] = {0, 0, 0};  \/\/ Factory mag calibration and mag bias$/;"	v
 main	arm/moveClassifier/main.cpp	/^int main() {$/;"	f
+main	arm/parser/parser.cpp	/^int main(){$/;"	f
 main	arm/sensor/main.cpp	/^int main() {$/;"	f
 main	arm/test/src/main/binaryClassifier.cpp	/^int main()$/;"	f
 main	arm/test/src/main/data.cpp	/^int main(){$/;"	f
@@ -784,6 +785,7 @@ p	gesture_detection/visualizer/painter.py	/^    p = Painter()$/;"	v	class:Painte
 pack_CCE	video_detection/util.py	/^    def pack_CCE(self, x, y, i):$/;"	m	class:Datamanager
 pack_accu	video_detection/util.py	/^    def pack_accu(self, x, y, i):$/;"	m	class:Datamanager
 painter	gesture_detection/main.py	/^painter = Painter(repr = opt.repr, display = opt.display, memorySize = opt.memorySize, ylim = opt.ylim)$/;"	v
+parse	arm/parser/parser.cpp	/^float* parse(const char* data){$/;"	f
 parse	gesture_detection/options/action_options.py	/^    def parse(self):$/;"	m	class:ActionOptions
 parse	gesture_detection/options/base_options.py	/^    def parse(self):$/;"	m	class:BaseOptions
 parse	gesture_detection/options/record_options.py	/^    def parse(self):$/;"	m	class:RecorderOptions
