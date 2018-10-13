@@ -734,6 +734,7 @@ main	gesture_detection/mbed/main.cpp	/^int main() {$/;"	f
 main	gesture_detection/predict.py	/^def main():$/;"	f
 main	gesture_detection/recorder.py	/^def main():$/;"	f
 main	gesture_detection/recorder_action.py	/^def main():$/;"	f
+main	parser.cpp	/^int main(){$/;"	f
 metric	gesture_detection/utils/accu_eval.py	/^    def metric(self):$/;"	m	class:AccuEval
 model	gesture_detection/train.py	/^model = createModel(opt)$/;"	v
 model	video_detection/main.py	/^model= Movie_Classifier(IMAGE_SIZE, layer_n  = LAYER_N, label_dim = dm.voc.n_words, dropout = DROPOUT).cuda()$/;"	v
@@ -798,6 +799,7 @@ parser	gesture_detection/predict.py	/^parser = PredictOptions()$/;"	v
 parser	gesture_detection/recorder.py	/^parser = RecorderOptions()$/;"	v
 parser	gesture_detection/recorder_action.py	/^parser = RecorderOptions()$/;"	v
 parser	gesture_detection/train.py	/^parser = TrainOptions()$/;"	v
+parser	parser.cpp	/^float * parser(const char*& data){$/;"	f
 pitch	arm/moveClassifier/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 pitch	arm/sensor/MPU9250.h	/^float pitch, yaw, roll;$/;"	v
 plot	gesture_detection/visualizer/painter.py	/^    def plot(self):$/;"	m	class:Painter
