@@ -2,8 +2,8 @@
 #ifndef _DEFINE_CLASSIFIER_
 #define _DEFINE_CLASSIFIER_
 #include <vector>
-#include "gesture.h"
-#include "dtw.h"
+#include "../util/gesture.h"
+#include "../util/dtw.h"
 
 using namespace std;
 

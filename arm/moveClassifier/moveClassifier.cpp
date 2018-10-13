@@ -3,8 +3,8 @@
 #include <cmath>
 #include <float.h>
 #include "moveClassifier.h"
-#include "dtw.h"
-#include "point.h"
+#include "../util/dtw.h"
+#include "../util/point.h"
 #include "data.h"
 
 using namespace std;

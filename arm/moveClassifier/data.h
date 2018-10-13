@@ -1,6 +1,6 @@
 
 #include <string>
-#include "gesture.h"
+#include "../util/gesture.h"
 
 using namespace std;
 

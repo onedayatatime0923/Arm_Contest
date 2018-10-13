@@ -14,18 +14,22 @@ MoveClassifier::MoveClassifier(const float& threshold, const int& start, const f
 }
 
 string MoveClassifier::operator()(vector<Point>& target){
-  int result = 0;
-  float loss = FLT_MAX;
+  int resultIndex = 0;
+  float resultValue = 0;
+  float diff = 0;
   for(int i = 0;i < _data->size(); ++i){
+    float threshold = (*_data)[i].getThreshold() == 0;
+    threshold = (threshold == 0)? _threshold: threshold;
     float value = _dtw(target, (*_data)[i].data()) / ((*_data)[i].data().size());
-    if( value < loss ){
-      loss = value;
-      result = i;
+    if( (threshold - value) > diff ){
+      diff = threshold - value;
+      resultIndex = i;
+      resultValue = value;
     };
   };
 
-  if(loss <= _threshold){
-    return (*_data)[result].action();
+  if(diff > 0){
+    return (*_data)[resultIndex].action();
   }
   else{
     return "noOps";
