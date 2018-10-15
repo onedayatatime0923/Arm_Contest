@@ -1,5 +1,4 @@
 
-#ifdef TEST_MOVECLASSIFIER
 #include <iostream>
 #include <stdio.h>
 #include "../moveClassifier/moveClassifier.h"
@@ -17,4 +16,3 @@ int main(int argc, char *argv[]){
 
   return 0;
 }
-#endif

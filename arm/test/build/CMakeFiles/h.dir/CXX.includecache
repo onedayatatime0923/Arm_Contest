@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/hmm/hmm.h
+string
+-
+vector
+-
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/main/hmm.cpp
+iostream
+-
+../hmm/hmm.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/hmm/hmm.h
+

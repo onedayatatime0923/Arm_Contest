@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/binaryClassifier/binaryClassifier.h
+cmath
+-
+vector
+-
+../util/point.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/util/point.h
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/main/binaryClassifier.cpp
+iostream
+-
+vector
+-
+../util/point.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/util/point.h
+../binaryClassifier/binaryClassifier.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/binaryClassifier/binaryClassifier.h
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/util/point.h
+cmath
+-
+iostream
+-
+

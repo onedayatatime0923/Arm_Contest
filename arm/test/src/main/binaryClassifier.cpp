@@ -1,5 +1,4 @@
 
-#ifdef TEST_BINARYCLASSIFIER
 #include <iostream>
 #include <vector>
 #include "../util/point.h"
@@ -44,4 +43,3 @@ int main()
   cout<< classifier(move)<< endl;
 	return 0;
 }
-#endif

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -O3 -std=c++11   CMakeFiles/dtw.dir/src/main/dtw.cpp.o  -o ../Test.dtw -rdynamic ../lib/libINC.a 

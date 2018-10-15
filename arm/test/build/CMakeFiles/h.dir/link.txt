@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -O3 -std=c++11   CMakeFiles/h.dir/src/main/hmm.cpp.o  -o ../Test.hmm -rdynamic ../lib/libINC.a 

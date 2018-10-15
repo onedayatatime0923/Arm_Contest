@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libINC.a  CMakeFiles/INC.dir/src/binaryClassifier/binaryClassifier.cpp.o CMakeFiles/INC.dir/src/hmm/hmm.cpp.o CMakeFiles/INC.dir/src/moveClassifier/data.cpp.o CMakeFiles/INC.dir/src/moveClassifier/moveClassifier.cpp.o CMakeFiles/INC.dir/src/util/dtw.cpp.o CMakeFiles/INC.dir/src/util/gesture.cpp.o
+/usr/bin/ranlib ../lib/libINC.a

@@ -60,6 +60,32 @@ AK8963_ZOUT_H	arm/moveClassifier/MPU9250.h	20;"	d
 AK8963_ZOUT_H	arm/sensor/MPU9250.h	20;"	d
 AK8963_ZOUT_L	arm/moveClassifier/MPU9250.h	19;"	d
 AK8963_ZOUT_L	arm/sensor/MPU9250.h	19;"	d
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	396;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	399;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	402;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	406;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	408;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	410;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	414;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	417;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	420;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	425;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	428;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	431;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	435;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	391;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	394;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	397;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	401;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	403;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	405;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	409;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	412;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	415;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	420;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	423;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	426;"	d	file:
+ARCHITECTURE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	430;"	d	file:
 AccuEval	gesture_detection/utils/accu_eval.py	/^class AccuEval:$/;"	c
 ActionDataLoader	video_detection/util.py	/^class ActionDataLoader():$/;"	c
 ActionOptions	gesture_detection/options/action_options.py	/^class ActionOptions(BaseOptions):$/;"	c
@@ -75,7 +101,6 @@ BaseOptions	gesture_detection/options/base_options.py	/^class BaseOptions():$/;"
 BaseVisualizer	gesture_detection/visualizer/base_visualizer.py	/^class BaseVisualizer():$/;"	c
 BinaryClassifier	arm/moveClassifier/binaryClassifier.cpp	/^BinaryClassifier::BinaryClassifier(const float& threshold, const int& nStep, const vector<int>& index):$/;"	f	class:BinaryClassifier
 BinaryClassifier	arm/moveClassifier/binaryClassifier.h	/^class BinaryClassifier{$/;"	c
-BinaryClassifier	arm/test/include/binaryClassifier.h	/^class BinaryClassifier{$/;"	c
 BinaryClassifier	arm/test/src/binaryClassifier/binaryClassifier.cpp	/^BinaryClassifier::BinaryClassifier(const float& threshold, const int& nStep, const vector<int>& index):$/;"	f	class:BinaryClassifier
 BinaryClassifier	arm/test/src/binaryClassifier/binaryClassifier.h	/^class BinaryClassifier{$/;"	c
 BinaryClassifier	arm/test_bak/include/binaryClassifier.h	/^class BinaryClassifier{$/;"	c
@@ -83,6 +108,9 @@ BinaryClassifier	arm/test_bak/src/binaryClassifier/binaryClassifier.cpp	/^Binary
 BinaryClassifier	arm/test_bak/src/binaryClassifier/binaryClassifier.h	/^class BinaryClassifier{$/;"	c
 BinaryDataSet	gesture_detection/dataset/binary_dataset.py	/^class BinaryDataSet(BaseDataset):$/;"	c
 BinaryModel	gesture_detection/models/binary_model.py	/^class BinaryModel(BaseModel):$/;"	c
+CMAKE_BINARY_DIR	arm/test/build/Makefile	/^CMAKE_BINARY_DIR = \/home\/kevin\/Github\/Arm_Comtest\/arm\/test\/build$/;"	m
+CMAKE_COMMAND	arm/test/build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	arm/test/build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/kevin\/Github\/Arm_Comtest\/arm\/test$/;"	m
 CMD	arm/test_bak/Makefile	/^b: CMD  = binaryClassifier$/;"	m
 CMD	arm/test_bak/Makefile	/^data: CMD  = data$/;"	m
 CMD	arm/test_bak/Makefile	/^dtw: CMD  = dtw$/;"	m
@@ -91,6 +119,226 @@ CMDFLAG	arm/test_bak/Makefile	/^b: CMDFLAG = -DTEST_BINARYCLASSIFIER$/;"	m
 CMDFLAG	arm/test_bak/Makefile	/^data: CMDFLAG = -DTEST_DATA$/;"	m
 CMDFLAG	arm/test_bak/Makefile	/^dtw: CMDFLAG = -DTEST_DTW$/;"	m
 CMDFLAG	arm/test_bak/Makefile	/^m: CMDFLAG = -DTEST_MOVECLASSIFIER$/;"	m
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	103;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	117;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	124;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	132;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	144;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	147;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	14;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	150;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	153;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	168;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	192;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	210;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	219;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	222;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	237;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	244;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	262;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	265;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	268;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	45;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	51;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	57;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	66;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	75;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	96;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	108;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	115;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	129;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	13;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	142;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	19;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	212;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	221;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	224;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	239;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	257;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	260;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	263;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	50;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	62;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	94;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	105;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	112;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	133;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	139;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	157;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	172;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	183;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	194;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	213;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	225;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	230;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	239;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	247;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	252;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	38;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	53;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	68;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	78;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	83;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	91;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	103;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	117;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	124;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	130;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	138;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	144;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	159;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	174;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	185;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	196;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	215;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	227;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	232;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	242;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	247;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	43;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	58;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	64;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	73;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	88;"	d	file:
+COMPILER_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	96;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	106;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	120;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	126;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	185;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	195;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	20;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	214;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	226;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	231;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	240;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	248;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	253;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	39;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	47;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	54;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	60;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	69;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	79;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	84;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	92;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	99;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	111;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	118;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	139;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	145;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	160;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	16;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	175;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	197;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	216;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	228;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	233;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	243;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	248;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	25;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	52;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	84;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+COMPILER_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	97;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	100;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	114;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	121;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	141;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	159;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	174;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	188;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	199;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	215;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	227;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	232;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	241;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	249;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	24;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	254;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	41;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	48;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	85;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	93;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	105;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	112;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	126;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	133;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	176;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	201;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	204;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	217;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	229;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	234;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	244;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	249;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	29;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	46;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	53;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	67;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	76;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	85;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	90;"	d	file:
+COMPILER_VERSION_PATCH	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+COMPILER_VERSION_TWEAK	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	165;"	d	file:
+COMPILER_VERSION_TWEAK	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	206;"	d	file:
+COMPILER_VERSION_TWEAK	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	28;"	d	file:
+COMPILER_VERSION_TWEAK	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+COMPILER_VERSION_TWEAK	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	208;"	d	file:
+COMPILER_VERSION_TWEAK	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
 CONFIG	arm/moveClassifier/MPU9250.h	56;"	d
 CONFIG	arm/sensor/MPU9250.h	56;"	d
 Classifier	gesture_detection/classifier/DTW.py	/^class Classifier:$/;"	c
@@ -98,6 +346,8 @@ Classifier	gesture_detection/classifier/binary.py	/^class Classifier:$/;"	c
 Classifier	gesture_detection/models/network/__init__.py	/^class Classifier(nn.Module):$/;"	c
 ConcatDataset	gesture_detection/dataset/concat_dataset.py	/^class ConcatDataset(BaseDataset):$/;"	c
 CrossEntropyLoss2d	gesture_detection/utils/loss.py	/^class CrossEntropyLoss2d(nn.Module):$/;"	c
+DEC	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	439;"	d	file:
+DEC	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	434;"	d	file:
 DMP_BANK	arm/moveClassifier/MPU9250.h	140;"	d
 DMP_BANK	arm/sensor/MPU9250.h	140;"	d
 DMP_INT_STATUS	arm/moveClassifier/MPU9250.h	89;"	d
@@ -113,7 +363,6 @@ DMP_RW_PNT	arm/sensor/MPU9250.h	141;"	d
 DROPOUT	video_detection/main.py	/^DROPOUT= 0.3$/;"	v
 DTW	arm/moveClassifier/dtw.cpp	/^DTW::DTW(const int& start, const float& lambda): _start(start), _lambda(lambda){};$/;"	f	class:DTW
 DTW	arm/moveClassifier/dtw.h	/^class DTW $/;"	c
-DTW	arm/test/include/dtw.h	/^class DTW $/;"	c
 DTW	arm/test/src/util/dtw.cpp	/^DTW::DTW(const int& start, const float& lambda): _start(start), _lambda(lambda){};$/;"	f	class:DTW
 DTW	arm/test/src/util/dtw.h	/^class DTW $/;"	c
 DTW	arm/test_bak/include/dtw.h	/^class DTW $/;"	c
@@ -129,6 +378,7 @@ Datamanager	video_detection/util.py	/^class Datamanager:$/;"	c
 Diff2d	gesture_detection/utils/loss.py	/^class Diff2d(nn.Module):$/;"	c
 Distance	gesture_detection/utils/loss.py	/^class Distance(nn.Module):$/;"	c
 EPOCH	video_detection/main.py	/^EPOCH= 20$/;"	v
+EQUALS	arm/test/build/Makefile	/^EQUALS = =$/;"	m
 EXEC	arm/test_bak/Makefile	/^EXEC     = Test.$(CMD)$/;"	m
 EXT_SENS_DATA_00	arm/moveClassifier/MPU9250.h	105;"	d
 EXT_SENS_DATA_00	arm/sensor/MPU9250.h	105;"	d
@@ -178,6 +428,8 @@ EXT_SENS_DATA_22	arm/moveClassifier/MPU9250.h	127;"	d
 EXT_SENS_DATA_22	arm/sensor/MPU9250.h	127;"	d
 EXT_SENS_DATA_23	arm/moveClassifier/MPU9250.h	128;"	d
 EXT_SENS_DATA_23	arm/sensor/MPU9250.h	128;"	d
+Edge	arm/test/src/hmm/hmm.cpp	/^Edge::Edge(const string& one, const string& two, const float& value):$/;"	f	class:Edge
+Edge	arm/test/src/hmm/hmm.h	/^class Edge{$/;"	c
 Entropy	gesture_detection/utils/loss.py	/^class Entropy(nn.Module):$/;"	c
 FIFO_COUNTH	arm/moveClassifier/MPU9250.h	145;"	d
 FIFO_COUNTH	arm/sensor/MPU9250.h	145;"	d
@@ -214,7 +466,6 @@ GYRO_ZOUT_L	arm/sensor/MPU9250.h	104;"	d
 GaussianNoise	gesture_detection/models/network/__init__.py	/^class GaussianNoise(nn.Module):$/;"	c
 Gesture	arm/moveClassifier/gesture.cpp	/^Gesture::Gesture(const string& name): _name(name), _threshold(0){$/;"	f	class:Gesture
 Gesture	arm/moveClassifier/gesture.h	/^class Gesture{$/;"	c
-Gesture	arm/test/include/gesture.h	/^class Gesture{$/;"	c
 Gesture	arm/test/src/util/gesture.cpp	/^Gesture::Gesture(const string& name): _name(name), _threshold(0){$/;"	f	class:Gesture
 Gesture	arm/test/src/util/gesture.h	/^class Gesture{$/;"	c
 Gesture	arm/test_bak/include/gesture.h	/^class Gesture{$/;"	c
@@ -228,6 +479,10 @@ GyroMeasDrift	arm/moveClassifier/MPU9250.h	/^float GyroMeasDrift = PI * (1.0f \/
 GyroMeasDrift	arm/sensor/MPU9250.h	/^float GyroMeasDrift = PI * (1.0f \/ 180.0f);      \/\/ gyroscope measurement drift in rad\/s\/s (start at 0.0 deg\/s\/s)$/;"	v
 GyroMeasError	arm/moveClassifier/MPU9250.h	/^float GyroMeasError = PI * (60.0f \/ 180.0f);     \/\/ gyroscope measurement error in rads\/s (start at 60 deg\/s), then reduce after ~10 s to 3$/;"	v
 GyroMeasError	arm/sensor/MPU9250.h	/^float GyroMeasError = PI * (60.0f \/ 180.0f);     \/\/ gyroscope measurement error in rads\/s (start at 60 deg\/s), then reduce after ~10 s to 3$/;"	v
+HEX	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	450;"	d	file:
+HEX	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	445;"	d	file:
+Hmm	arm/test/src/hmm/hmm.cpp	/^Hmm::Hmm(const float& _default): _default(_default){$/;"	f	class:Hmm
+Hmm	arm/test/src/hmm/hmm.h	/^class Hmm{$/;"	c
 I2C_MST_CTRL	arm/moveClassifier/MPU9250.h	68;"	d
 I2C_MST_CTRL	arm/sensor/MPU9250.h	68;"	d
 I2C_MST_DELAY_CTRL	arm/moveClassifier/MPU9250.h	134;"	d
@@ -276,10 +531,10 @@ I2C_SLV4_DO	arm/moveClassifier/MPU9250.h	83;"	d
 I2C_SLV4_DO	arm/sensor/MPU9250.h	83;"	d
 I2C_SLV4_REG	arm/moveClassifier/MPU9250.h	82;"	d
 I2C_SLV4_REG	arm/sensor/MPU9250.h	82;"	d
+ID_VOID_MAIN	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 IMAGE_SIZE	video_detection/main.py	/^IMAGE_SIZE = (224,224)$/;"	v
 INF	arm/moveClassifier/dtw.h	/^    enum { INF = INT_MAX }; \/\/some big number$/;"	e	enum:DTW::__anon3
-INF	arm/test/include/dtw.h	/^    enum { INF = INT_MAX }; \/\/some big number$/;"	e	enum:DTW::__anon4
-INF	arm/test/src/util/dtw.h	/^    enum { INF = INT_MAX }; \/\/some big number$/;"	e	enum:DTW::__anon5
+INF	arm/test/src/util/dtw.h	/^    enum { INF = INT_MAX }; \/\/some big number$/;"	e	enum:DTW::__anon4
 INF	arm/test_bak/include/dtw.h	/^    enum { INF = INT_MAX }; \/\/some big number$/;"	e	enum:DTW::__anon1
 INF	arm/test_bak/src/util/dtw.h	/^    enum { INF = INT_MAX }; \/\/some big number$/;"	e	enum:DTW::__anon2
 INFO	arm/moveClassifier/MPU9250.h	13;"	d
@@ -334,7 +589,6 @@ Mmode	arm/sensor/MPU9250.h	/^uint8_t Mmode = 0x06;        \/\/ Either 8 Hz 0x02)
 ModelVisualizer	gesture_detection/visualizer/model_visualizer.py	/^class ModelVisualizer(BaseVisualizer):$/;"	c
 MoveClassifier	arm/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold, const int& start, const float& lambda): _threshold(threshold), _dtw(start, lambda){$/;"	f	class:MoveClassifier
 MoveClassifier	arm/moveClassifier/moveClassifier.h	/^class MoveClassifier{$/;"	c
-MoveClassifier	arm/test/include/moveClassifier.h	/^class MoveClassifier{$/;"	c
 MoveClassifier	arm/test/src/moveClassifier/moveClassifier.cpp	/^MoveClassifier::MoveClassifier(const float& threshold, const int& start, const float& lambda): _threshold(threshold), _dtw(start, lambda){$/;"	f	class:MoveClassifier
 MoveClassifier	arm/test/src/moveClassifier/moveClassifier.h	/^class MoveClassifier{$/;"	c
 MoveClassifier	arm/test_bak/include/moveClassifier.h	/^class MoveClassifier{$/;"	c
@@ -351,6 +605,68 @@ Now	arm/sensor/MPU9250.h	/^int lastUpdate = 0, firstUpdate = 0, Now = 0;    \/\/
 OUTPUT_PATH	video_detection/main.py	/^OUTPUT_PATH= '.\/model\/model.pt'$/;"	v
 PI	arm/moveClassifier/MPU9250.h	/^float PI = 3.14159265358979323846f;$/;"	v
 PI	arm/sensor/MPU9250.h	/^float PI = 3.14159265358979323846f;$/;"	v
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	293;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	296;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	299;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	302;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	305;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	308;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	311;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	314;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	317;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	320;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	323;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	326;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	329;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	332;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	335;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	338;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	341;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	344;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	347;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	350;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	353;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	356;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	359;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	362;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	365;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	369;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	372;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	375;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	378;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	381;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	385;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	288;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	291;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	294;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	297;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	300;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	303;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	306;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	309;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	312;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	315;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	318;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	321;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	324;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	327;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	330;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	333;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	336;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	339;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	342;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	345;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	348;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	351;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	354;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	357;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	360;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	364;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	367;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	370;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	373;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	376;"	d	file:
+PLATFORM_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	380;"	d	file:
 PWR_MGMT_1	arm/moveClassifier/MPU9250.h	138;"	d
 PWR_MGMT_1	arm/sensor/MPU9250.h	138;"	d
 PWR_MGMT_2	arm/moveClassifier/MPU9250.h	139;"	d
@@ -360,10 +676,6 @@ Point	arm/moveClassifier/point.h	/^	Point(): _v0(0), _v1(0), _v2(0), _v3(0), _v4
 Point	arm/moveClassifier/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12): _v0(v0), _v1(v1), _v2(v2), _v3(v3), _v4(v4), _v5(v5), _v6(v6), _v7(v7), _v8(v8), _v9(v9), _v10(v10), _v11(v11), _v12(v12){};$/;"	f	class:Point
 Point	arm/moveClassifier/point.h	/^	Point(const int& i): _v0(i), _v1(i), _v2(i), _v3(i), _v4(i), _v5(i), _v6(i), _v7(i), _v8(i), _v9(i), _v10(i), _v11(i), _v12(i){};$/;"	f	class:Point
 Point	arm/moveClassifier/point.h	/^class Point $/;"	c
-Point	arm/test/include/point.h	/^	Point(): _v0(0), _v1(0), _v2(0), _v3(0), _v4(0), _v5(0), _v6(0), _v7(0), _v8(0), _v9(0), _v10(0), _v11(0), _v12(0){};$/;"	f	class:Point
-Point	arm/test/include/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12): _v0(v0), _v1(v1), _v2(v2), _v3(v3), _v4(v4), _v5(v5), _v6(v6), _v7(v7), _v8(v8), _v9(v9), _v10(v10), _v11(v11), _v12(v12){};$/;"	f	class:Point
-Point	arm/test/include/point.h	/^	Point(const int& i): _v0(i), _v1(i), _v2(i), _v3(i), _v4(i), _v5(i), _v6(i), _v7(i), _v8(i), _v9(i), _v10(i), _v11(i), _v12(i){};$/;"	f	class:Point
-Point	arm/test/include/point.h	/^class Point $/;"	c
 Point	arm/test/src/util/point.h	/^	Point(): _v0(0), _v1(0), _v2(0), _v3(0), _v4(0), _v5(0), _v6(0), _v7(0), _v8(0), _v9(0), _v10(0), _v11(0), _v12(0){};$/;"	f	class:Point
 Point	arm/test/src/util/point.h	/^	Point(const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12): _v0(v0), _v1(v1), _v2(v2), _v3(v3), _v4(v4), _v5(v5), _v6(v6), _v7(v7), _v8(v8), _v9(v9), _v10(v10), _v11(v11), _v12(v12){};$/;"	f	class:Point
 Point	arm/test/src/util/point.h	/^	Point(const int& i): _v0(i), _v1(i), _v2(i), _v3(i), _v4(i), _v5(i), _v6(i), _v7(i), _v8(i), _v9(i), _v10(i), _v11(i), _v12(i){};$/;"	f	class:Point
@@ -379,6 +691,7 @@ Point	arm/test_bak/src/util/point.h	/^class Point $/;"	c
 PredictOptions	gesture_detection/options/predict_options.py	/^class PredictOptions(BaseOptions):$/;"	c
 ProgressVisualizer	gesture_detection/visualizer/progress_visualizer.py	/^class ProgressVisualizer(BaseVisualizer):$/;"	c
 Queue	gesture_detection/utils/utils.py	/^class Queue:$/;"	c
+RM	arm/test/build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 Recorder	gesture_detection/recorder/__init__.py	/^class Recorder():$/;"	c
 RecorderOptions	gesture_detection/options/record_options.py	/^class RecorderOptions(BaseOptions):$/;"	c
 SAVE_TEST_PATH	video_detection/main.py	/^SAVE_TEST_PATH = '.\/data\/test_x.npy'$/;"	v
@@ -397,11 +710,35 @@ SELF_TEST_Z_ACCEL	arm/moveClassifier/MPU9250.h	45;"	d
 SELF_TEST_Z_ACCEL	arm/sensor/MPU9250.h	45;"	d
 SELF_TEST_Z_GYRO	arm/moveClassifier/MPU9250.h	31;"	d
 SELF_TEST_Z_GYRO	arm/sensor/MPU9250.h	31;"	d
+SHELL	arm/test/build/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SIGNAL_PATH_RESET	arm/moveClassifier/MPU9250.h	135;"	d
 SIGNAL_PATH_RESET	arm/sensor/MPU9250.h	135;"	d
+SIMULATE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+SIMULATE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+SIMULATE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+SIMULATE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	157;"	d	file:
+SIMULATE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	172;"	d	file:
+SIMULATE_ID	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+SIMULATE_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	162;"	d	file:
+SIMULATE_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	177;"	d	file:
+SIMULATE_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	32;"	d	file:
+SIMULATE_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+SIMULATE_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	179;"	d	file:
+SIMULATE_VERSION_MAJOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	37;"	d	file:
+SIMULATE_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	163;"	d	file:
+SIMULATE_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	178;"	d	file:
+SIMULATE_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	33;"	d	file:
+SIMULATE_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	165;"	d	file:
+SIMULATE_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	180;"	d	file:
+SIMULATE_VERSION_MINOR	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
 SMPLRT_DIV	arm/moveClassifier/MPU9250.h	55;"	d
 SMPLRT_DIV	arm/sensor/MPU9250.h	55;"	d
 STEP_N	video_detection/main.py	/^STEP_N = 50$/;"	v
+STRINGIFY	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	289;"	d	file:
+STRINGIFY	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	284;"	d	file:
+STRINGIFY_HELPER	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	288;"	d	file:
+STRINGIFY_HELPER	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	283;"	d	file:
+SUFFIXES	arm/test/build/Makefile	/^SUFFIXES =$/;"	m
 SelfTest	arm/moveClassifier/MPU9250.h	/^float SelfTest[6];$/;"	v
 SelfTest	arm/sensor/MPU9250.h	/^float SelfTest[6];$/;"	v
 Sensor	gesture_detection/sensor/__init__.py	/^class Sensor:$/;"	c
@@ -455,22 +792,18 @@ ZMOT_THR	arm/sensor/MPU9250.h	64;"	d
 ZRMOT_DUR	arm/moveClassifier/MPU9250.h	65;"	d
 ZRMOT_DUR	arm/sensor/MPU9250.h	65;"	d
 _DEFINE_CLASSIFIER_	arm/moveClassifier/moveClassifier.h	3;"	d
-_DEFINE_CLASSIFIER_	arm/test/include/moveClassifier.h	3;"	d
 _DEFINE_CLASSIFIER_	arm/test/src/moveClassifier/moveClassifier.h	3;"	d
 _DEFINE_CLASSIFIER_	arm/test_bak/include/moveClassifier.h	3;"	d
 _DEFINE_CLASSIFIER_	arm/test_bak/src/moveClassifier/moveClassifier.h	3;"	d
 _DEFINE_DTW_	arm/moveClassifier/dtw.h	15;"	d
-_DEFINE_DTW_	arm/test/include/dtw.h	15;"	d
 _DEFINE_DTW_	arm/test/src/util/dtw.h	15;"	d
 _DEFINE_DTW_	arm/test_bak/include/dtw.h	15;"	d
 _DEFINE_DTW_	arm/test_bak/src/util/dtw.h	15;"	d
 _DEFINE_GESTURE_	arm/moveClassifier/gesture.h	3;"	d
-_DEFINE_GESTURE_	arm/test/include/gesture.h	3;"	d
 _DEFINE_GESTURE_	arm/test/src/util/gesture.h	3;"	d
 _DEFINE_GESTURE_	arm/test_bak/include/gesture.h	3;"	d
 _DEFINE_GESTURE_	arm/test_bak/src/util/gesture.h	3;"	d
 _DEFINE_POINT_	arm/moveClassifier/point.h	3;"	d
-_DEFINE_POINT_	arm/test/include/point.h	3;"	d
 _DEFINE_POINT_	arm/test/src/util/point.h	3;"	d
 _DEFINE_POINT_	arm/test_bak/include/point.h	3;"	d
 _DEFINE_POINT_	arm/test_bak/src/util/point.h	3;"	d
@@ -539,7 +872,6 @@ __len__	video_detection/util.py	/^    def __len__(self):$/;"	m	class:MovieDataLo
 __next__	video_detection/util.py	/^    def __next__(self):$/;"	m	class:ActionDataLoader	file:
 __next__	video_detection/util.py	/^    def __next__(self):$/;"	m	class:MovieDataLoader	file:
 _action	arm/moveClassifier/gesture.h	/^    string _action;$/;"	m	class:Gesture
-_action	arm/test/include/gesture.h	/^    string _action;$/;"	m	class:Gesture
 _action	arm/test/src/util/gesture.h	/^    string _action;$/;"	m	class:Gesture
 _action	arm/test_bak/include/gesture.h	/^    string _action;$/;"	m	class:Gesture
 _action	arm/test_bak/src/util/gesture.h	/^    string _action;$/;"	m	class:Gesture
@@ -547,9 +879,6 @@ _data	arm/moveClassifier/binaryClassifier.h	/^    vector<vector<float> > _data;$
 _data	arm/moveClassifier/data.h	/^    vector<Gesture>* _data;$/;"	m	class:Data
 _data	arm/moveClassifier/gesture.h	/^    vector<Point> _data;$/;"	m	class:Gesture
 _data	arm/moveClassifier/moveClassifier.h	/^    vector<Gesture>* _data;$/;"	m	class:MoveClassifier
-_data	arm/test/include/binaryClassifier.h	/^    vector<vector<float> > _data;$/;"	m	class:BinaryClassifier
-_data	arm/test/include/gesture.h	/^    vector<Point> _data;$/;"	m	class:Gesture
-_data	arm/test/include/moveClassifier.h	/^    vector<Gesture>* _data;$/;"	m	class:MoveClassifier
 _data	arm/test/src/binaryClassifier/binaryClassifier.h	/^    vector<vector<float> > _data;$/;"	m	class:BinaryClassifier
 _data	arm/test/src/moveClassifier/data.h	/^    vector<Gesture>* _data;$/;"	m	class:Data
 _data	arm/test/src/moveClassifier/moveClassifier.h	/^    vector<Gesture>* _data;$/;"	m	class:MoveClassifier
@@ -561,59 +890,51 @@ _data	arm/test_bak/src/binaryClassifier/binaryClassifier.h	/^    vector<vector<f
 _data	arm/test_bak/src/moveClassifier/data.h	/^    vector<Gesture>* _data;$/;"	m	class:Data
 _data	arm/test_bak/src/moveClassifier/moveClassifier.h	/^    vector<Gesture>* _data;$/;"	m	class:MoveClassifier
 _data	arm/test_bak/src/util/gesture.h	/^    vector<Point> _data;$/;"	m	class:Gesture
+_default	arm/test/src/hmm/hmm.h	/^    float _default;$/;"	m	class:Hmm
 _dir	arm/moveClassifier/data.h	/^    string _dir;$/;"	m	class:Data
 _dir	arm/test/src/moveClassifier/data.h	/^    string _dir;$/;"	m	class:Data
 _dir	arm/test_bak/src/moveClassifier/data.h	/^    string _dir;$/;"	m	class:Data
 _dtw	arm/moveClassifier/moveClassifier.h	/^    DTW _dtw;$/;"	m	class:MoveClassifier
-_dtw	arm/test/include/moveClassifier.h	/^    DTW _dtw;$/;"	m	class:MoveClassifier
 _dtw	arm/test/src/moveClassifier/moveClassifier.h	/^    DTW _dtw;$/;"	m	class:MoveClassifier
 _dtw	arm/test_bak/include/moveClassifier.h	/^    DTW _dtw;$/;"	m	class:MoveClassifier
 _dtw	arm/test_bak/src/moveClassifier/moveClassifier.h	/^    DTW _dtw;$/;"	m	class:MoveClassifier
+_edge	arm/test/src/hmm/hmm.h	/^    vector<Edge> _edge;$/;"	m	class:Hmm
 _gamma	arm/moveClassifier/dtw.h	/^    vector<vector<float> > _gamma;$/;"	m	class:DTW
-_gamma	arm/test/include/dtw.h	/^    vector<vector<float> > _gamma;$/;"	m	class:DTW
 _gamma	arm/test/src/util/dtw.h	/^    vector<vector<float> > _gamma;$/;"	m	class:DTW
 _gamma	arm/test_bak/include/dtw.h	/^    vector<vector<float> > _gamma;$/;"	m	class:DTW
 _gamma	arm/test_bak/src/util/dtw.h	/^    vector<vector<float> > _gamma;$/;"	m	class:DTW
 _h	arm/moveClassifier/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
-_h	arm/test/include/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
 _h	arm/test/src/util/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
 _h	arm/test_bak/include/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
 _h	arm/test_bak/src/util/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
 _index	arm/moveClassifier/binaryClassifier.h	/^    vector<int>_index;$/;"	m	class:BinaryClassifier
-_index	arm/test/include/binaryClassifier.h	/^    vector<int>_index;$/;"	m	class:BinaryClassifier
 _index	arm/test/src/binaryClassifier/binaryClassifier.h	/^    vector<int>_index;$/;"	m	class:BinaryClassifier
 _index	arm/test_bak/include/binaryClassifier.h	/^    vector<int>_index;$/;"	m	class:BinaryClassifier
 _index	arm/test_bak/src/binaryClassifier/binaryClassifier.h	/^    vector<int>_index;$/;"	m	class:BinaryClassifier
 _init	gesture_detection/visualizer/painter.py	/^    def _init(self):$/;"	m	class:Painter
 _lambda	arm/moveClassifier/dtw.h	/^    float _lambda;$/;"	m	class:DTW
-_lambda	arm/test/include/dtw.h	/^    float _lambda;$/;"	m	class:DTW
 _lambda	arm/test/src/util/dtw.h	/^    float _lambda;$/;"	m	class:DTW
 _lambda	arm/test_bak/include/dtw.h	/^    float _lambda;$/;"	m	class:DTW
 _lambda	arm/test_bak/src/util/dtw.h	/^    float _lambda;$/;"	m	class:DTW
 _nStep	arm/moveClassifier/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
-_nStep	arm/test/include/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
 _nStep	arm/test/src/binaryClassifier/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
 _nStep	arm/test_bak/include/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
 _nStep	arm/test_bak/src/binaryClassifier/binaryClassifier.h	/^    int _nStep;$/;"	m	class:BinaryClassifier
 _name	arm/moveClassifier/gesture.h	/^    string _name;$/;"	m	class:Gesture
-_name	arm/test/include/gesture.h	/^    string _name;$/;"	m	class:Gesture
 _name	arm/test/src/util/gesture.h	/^    string _name;$/;"	m	class:Gesture
 _name	arm/test_bak/include/gesture.h	/^    string _name;$/;"	m	class:Gesture
 _name	arm/test_bak/src/util/gesture.h	/^    string _name;$/;"	m	class:Gesture
+_one	arm/test/src/hmm/hmm.h	/^    string _one;$/;"	m	class:Edge
 _plot	gesture_detection/visualizer/painter.py	/^    def _plot(self):$/;"	m	class:Painter
 _read	gesture_detection/sensor/__init__.py	/^    def _read(self):$/;"	m	class:Sensor
 _speech	gesture_detection/speech/__init__.py	/^    def _speech(self, data):$/;"	m	class:Speech
 _start	arm/moveClassifier/dtw.h	/^    int _start;$/;"	m	class:DTW
-_start	arm/test/include/dtw.h	/^    int _start;$/;"	m	class:DTW
 _start	arm/test/src/util/dtw.h	/^    int _start;$/;"	m	class:DTW
 _start	arm/test_bak/include/dtw.h	/^    int _start;$/;"	m	class:DTW
 _start	arm/test_bak/src/util/dtw.h	/^    int _start;$/;"	m	class:DTW
 _threshold	arm/moveClassifier/binaryClassifier.h	/^    float _threshold;$/;"	m	class:BinaryClassifier
 _threshold	arm/moveClassifier/gesture.h	/^    float _threshold;$/;"	m	class:Gesture
 _threshold	arm/moveClassifier/moveClassifier.h	/^    float _threshold;$/;"	m	class:MoveClassifier
-_threshold	arm/test/include/binaryClassifier.h	/^    float _threshold;$/;"	m	class:BinaryClassifier
-_threshold	arm/test/include/gesture.h	/^    float _threshold;$/;"	m	class:Gesture
-_threshold	arm/test/include/moveClassifier.h	/^    float _threshold;$/;"	m	class:MoveClassifier
 _threshold	arm/test/src/binaryClassifier/binaryClassifier.h	/^    float _threshold;$/;"	m	class:BinaryClassifier
 _threshold	arm/test/src/moveClassifier/moveClassifier.h	/^    float _threshold;$/;"	m	class:MoveClassifier
 _threshold	arm/test/src/util/gesture.h	/^    float _threshold;$/;"	m	class:Gesture
@@ -623,74 +944,62 @@ _threshold	arm/test_bak/include/moveClassifier.h	/^    float _threshold;$/;"	m	c
 _threshold	arm/test_bak/src/binaryClassifier/binaryClassifier.h	/^    float _threshold;$/;"	m	class:BinaryClassifier
 _threshold	arm/test_bak/src/moveClassifier/moveClassifier.h	/^    float _threshold;$/;"	m	class:MoveClassifier
 _threshold	arm/test_bak/src/util/gesture.h	/^    float _threshold;$/;"	m	class:Gesture
+_two	arm/test/src/hmm/hmm.h	/^    string _two;$/;"	m	class:Edge
 _update	gesture_detection/visualizer/painter.py	/^    def _update(self, index): $/;"	m	class:Painter
 _v0	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v0	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v0	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v0	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v0	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v1	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v1	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v1	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v1	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v1	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v10	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v10	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v10	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v10	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v10	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v11	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v11	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v11	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v11	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v11	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v12	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v12	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v12	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v12	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v12	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v2	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v2	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v2	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v2	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v2	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v3	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v3	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v3	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v3	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v3	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v4	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v4	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v4	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v4	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v4	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v5	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v5	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v5	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v5	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v5	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v6	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v6	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v6	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v6	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v6	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v7	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v7	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v7	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v7	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v7	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v8	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v8	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v8	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v8	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v8	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v9	arm/moveClassifier/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
-_v9	arm/test/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v9	arm/test/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v9	arm/test_bak/include/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
 _v9	arm/test_bak/src/util/point.h	/^	float _v0, _v1, _v2, _v3, _v4, _v5, _v6, _v7, _v8, _v9, _v10, _v11, _v12;$/;"	m	class:Point
+_value	arm/test/src/hmm/hmm.h	/^    float  _value;$/;"	m	class:Edge
 _w	arm/moveClassifier/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
-_w	arm/test/include/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
 _w	arm/test/src/util/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
 _w	arm/test_bak/include/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
 _w	arm/test_bak/src/util/dtw.h	/^    int _h, _w;$/;"	m	class:DTW
@@ -773,12 +1082,13 @@ endswith	arm/moveClassifier/data.h	/^inline bool Data::endswith(std::string cons
 endswith	arm/test/src/moveClassifier/data.h	/^inline bool Data::endswith(std::string const & value, std::string const & ending)$/;"	f	class:Data
 endswith	arm/test_bak/src/moveClassifier/data.h	/^inline bool Data::endswith(std::string const & value, std::string const & ending)$/;"	f	class:Data
 euclid_distance	arm/moveClassifier/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
-euclid_distance	arm/test/include/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
 euclid_distance	arm/test/src/util/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
 euclid_distance	arm/test_bak/include/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
 euclid_distance	arm/test_bak/src/util/point.h	/^	float euclid_distance(const Point &p) $/;"	f	class:Point
 eval	gesture_detection/models/base_model.py	/^    def eval(self):$/;"	m	class:BaseModel
 f	gesture_detection/filter/__init__.py	/^    f = Filter( 16, 16)$/;"	v
+features	arm/test/build/CMakeFiles/feature_tests.c	/^  const char features[] = {"\\n"$/;"	v
+features	arm/test/build/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	v
 filter	gesture_detection/action.py	/^filter = Filter(opt.n, opt.n)$/;"	v
 filter	gesture_detection/main.py	/^filter = Filter(opt.n, opt.n)$/;"	v
 filter	gesture_detection/predict.py	/^filter = Filter(opt.n, opt.n)$/;"	v
@@ -812,6 +1122,7 @@ getOptimizer	gesture_detection/models/base_model.py	/^def getOptimizer(model_par
 getThreshold	arm/moveClassifier/gesture.cpp	/^float Gesture::getThreshold(){$/;"	f	class:Gesture
 getThreshold	arm/test/src/util/gesture.cpp	/^float Gesture::getThreshold(){$/;"	f	class:Gesture
 getThreshold	arm/test_bak/src/util/gesture.cpp	/^float Gesture::getThreshold(){$/;"	f	class:Gesture
+getValue	arm/test/src/hmm/hmm.cpp	/^const float& Edge::getValue() const{$/;"	f	class:Edge
 get_data_image	video_detection/util.py	/^    def get_data_image(self,file_path,tag_path,batch_size,shuffle=True, downsample_factor=12, image_size=(224,224),save_path=None):$/;"	m	class:Datamanager
 get_data_movie	video_detection/util.py	/^    def get_data_movie(self,file_path,tag_path,batch_size,step_n, downsample_factor=12, image_size=(224,224),save_path=None):$/;"	m	class:Datamanager
 get_target_tensor	gesture_detection/utils/loss.py	/^    def get_target_tensor(self, input, target_is_real):$/;"	m	class:GANLoss
@@ -829,6 +1140,22 @@ gz	arm/moveClassifier/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/
 gz	arm/sensor/MPU9250.h	/^float ax, ay, az, gx, gy, gz, mx, my, mz; \/\/ variables to hold latest sensor data values $/;"	v
 hidden_layer	video_detection/util.py	/^    def hidden_layer(self,n):$/;"	m	class:Movie_Classifier
 import_class_by_name	gesture_detection/models/__init__.py	/^def import_class_by_name(modelName, className, classType = BaseModel):$/;"	f
+info_arch	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_cray	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_cray	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_language_dialect_default	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v
+info_language_dialect_default	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v
+info_platform	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_simulate	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate_version	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
+info_simulate_version	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
+info_version	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
+info_version	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
 initAK8963	arm/moveClassifier/MPU9250.h	/^  void initAK8963(float * destination)$/;"	f	class:MPU9250
 initAK8963	arm/sensor/MPU9250.h	/^  void initAK8963(float * destination)$/;"	f	class:MPU9250
 initHidden	video_detection/util.py	/^    def initHidden(self, hidden_size):$/;"	m	class:Movie_Classifier
@@ -845,7 +1172,6 @@ initialize_bak	gesture_detection/options/base_options.py	/^    def initialize_ba
 intPin	arm/moveClassifier/MPU9250.h	/^int intPin = 12;  \/\/ These can be changed, 2 and 3 are the Arduinos ext int pins$/;"	v
 intPin	arm/sensor/MPU9250.h	/^int intPin = 12;  \/\/ These can be changed, 2 and 3 are the Arduinos ext int pins$/;"	v
 l1_distance	arm/moveClassifier/point.h	/^	float l1_distance(const Point &p) $/;"	f	class:Point
-l1_distance	arm/test/include/point.h	/^	float l1_distance(const Point &p) $/;"	f	class:Point
 l1_distance	arm/test/src/util/point.h	/^	float l1_distance(const Point &p) $/;"	f	class:Point
 l1_distance	arm/test_bak/include/point.h	/^	float l1_distance(const Point &p) $/;"	f	class:Point
 l1_distance	arm/test_bak/src/util/point.h	/^	float l1_distance(const Point &p) $/;"	f	class:Point
@@ -870,9 +1196,15 @@ magbias	arm/sensor/MPU9250.h	/^float magCalibration[3] = {0, 0, 0}, magbias[3] =
 main	arm/moveClassifier/main.cpp	/^int main() {$/;"	f
 main	arm/parser/parser.cpp	/^int main(){$/;"	f
 main	arm/sensor/main.cpp	/^int main() {$/;"	f
+main	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
+main	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	arm/test/build/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
+main	arm/test/build/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
 main	arm/test/src/main/binaryClassifier.cpp	/^int main()$/;"	f
 main	arm/test/src/main/data.cpp	/^int main(){$/;"	f
 main	arm/test/src/main/dtw.cpp	/^int main()$/;"	f
+main	arm/test/src/main/hmm.cpp	/^int main()$/;"	f
 main	arm/test/src/main/moveClassifier.cpp	/^int main(int argc, char *argv[]){$/;"	f
 main	arm/test_bak/src/main/binaryClassifier.cpp	/^int main()$/;"	f
 main	arm/test_bak/src/main/data.cpp	/^int main(){$/;"	f
@@ -913,7 +1245,6 @@ name	gesture_detection/models/base_model.py	/^    def name(self):$/;"	m	class:Ba
 name	gesture_detection/models/binary_model.py	/^    def name(self):$/;"	m	class:BinaryModel
 norm	arm/moveClassifier/binaryClassifier.cpp	/^float BinaryClassifier::norm(vector<float>& data) {$/;"	f	class:BinaryClassifier
 norm	arm/moveClassifier/point.h	/^	float norm()$/;"	f	class:Point
-norm	arm/test/include/point.h	/^	float norm()$/;"	f	class:Point
 norm	arm/test/src/binaryClassifier/binaryClassifier.cpp	/^float BinaryClassifier::norm(vector<float>& data) {$/;"	f	class:BinaryClassifier
 norm	arm/test/src/util/point.h	/^	float norm()$/;"	f	class:Point
 norm	arm/test_bak/include/point.h	/^	float norm()$/;"	f	class:Point
@@ -925,8 +1256,8 @@ operator ()	arm/moveClassifier/dtw.cpp	/^float DTW::operator() (vector<Point> &l
 operator ()	arm/moveClassifier/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
 operator ()	arm/moveClassifier/moveClassifier.cpp	/^string MoveClassifier::operator()(vector<Point>& target){$/;"	f	class:MoveClassifier
 operator ()	arm/moveClassifier/point.h	/^	void operator() (const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12){$/;"	f	class:Point
-operator ()	arm/test/include/point.h	/^	void operator() (const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12){$/;"	f	class:Point
 operator ()	arm/test/src/binaryClassifier/binaryClassifier.cpp	/^bool BinaryClassifier::operator() (Point& data) {$/;"	f	class:BinaryClassifier
+operator ()	arm/test/src/hmm/hmm.h	/^inline bool Edge::operator() (const string& one, const string& two) const{$/;"	f	class:Edge
 operator ()	arm/test/src/moveClassifier/moveClassifier.cpp	/^string MoveClassifier::operator()(vector<Point>& target){$/;"	f	class:MoveClassifier
 operator ()	arm/test/src/util/dtw.cpp	/^float DTW::operator() (vector<Point> &lhs, vector<Point> &rhs){$/;"	f	class:DTW
 operator ()	arm/test/src/util/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
@@ -938,7 +1269,6 @@ operator ()	arm/test_bak/src/util/dtw.cpp	/^float DTW::operator() (vector<Point>
 operator ()	arm/test_bak/src/util/gesture.cpp	/^void Gesture::operator() (const float& data1, const float& data2, $/;"	f	class:Gesture
 operator ()	arm/test_bak/src/util/point.h	/^	void operator() (const float& v0, const float& v1, const float& v2, const float& v3, const float& v4, const float& v5, const float& v6, const float& v7, const float& v8, const float& v9, const float& v10, const float& v11, const float& v12){$/;"	f	class:Point
 operator []	arm/moveClassifier/point.h	/^  float& operator[] (int& x) {$/;"	f	class:Point
-operator []	arm/test/include/point.h	/^  float& operator[] (int& x) {$/;"	f	class:Point
 operator []	arm/test/src/util/point.h	/^  float& operator[] (int& x) {$/;"	f	class:Point
 operator []	arm/test_bak/include/point.h	/^  float& operator[] (int& x) {$/;"	f	class:Point
 operator []	arm/test_bak/src/util/point.h	/^  float& operator[] (int& x) {$/;"	f	class:Point
@@ -977,7 +1307,6 @@ predict	gesture_detection/classifier/DTW.py	/^    def predict(self, target):$/;"
 predict	gesture_detection/models/base_model.py	/^    def predict(self, data):$/;"	m	class:BaseModel
 predict	gesture_detection/models/binary_model.py	/^    def predict(self, data):$/;"	m	class:BinaryModel
 print	arm/moveClassifier/point.h	/^	void print(){$/;"	f	class:Point
-print	arm/test/include/point.h	/^	void print(){$/;"	f	class:Point
 print	arm/test/src/util/point.h	/^	void print(){$/;"	f	class:Point
 print	arm/test_bak/include/point.h	/^	void print(){$/;"	f	class:Point
 print	arm/test_bak/src/util/point.h	/^	void print(){$/;"	f	class:Point
@@ -985,6 +1314,9 @@ print_networks	gesture_detection/models/base_model.py	/^    def print_networks(s
 print_options	gesture_detection/options/base_options.py	/^    def print_options(self):$/;"	m	class:BaseOptions
 q	arm/moveClassifier/MPU9250.h	/^float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};           \/\/ vector to hold quaternion$/;"	v
 q	arm/sensor/MPU9250.h	/^float q[4] = {1.0f, 0.0f, 0.0f, 0.0f};           \/\/ vector to hold quaternion$/;"	v
+qnxnto	arm/test/build/CMakeFiles/3.5.2/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+qnxnto	arm/test/build/CMakeFiles/3.5.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+query	arm/test/src/hmm/hmm.cpp	/^const float& Hmm::query(const string& one, const string& two) const{$/;"	f	class:Hmm
 read	arm/moveClassifier/data.cpp	/^void Data::read(){$/;"	f	class:Data
 read	arm/moveClassifier/data.cpp	/^void Data::read(const string& file){$/;"	f	class:Data
 read	arm/moveClassifier/moveClassifier.cpp	/^void MoveClassifier::read(){$/;"	f	class:MoveClassifier

@@ -1,5 +1,4 @@
 
-#ifdef TEST_DATA
 #include <iostream>
 #include "../util/gesture.h"
 #include "../moveClassifier/data.h"
@@ -17,4 +16,3 @@ int main(){
     }
   }
 }
-#endif

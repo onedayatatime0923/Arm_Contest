@@ -1,5 +1,4 @@
 
-#ifdef TEST_DTW
 #include <iostream>
 #include <vector>
 #include "../util/dtw.h"
@@ -36,4 +35,3 @@ int main()
 		
 	return 0;
 }
-#endif

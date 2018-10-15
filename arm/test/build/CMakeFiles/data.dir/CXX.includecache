@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/main/data.cpp
+iostream
+-
+../util/gesture.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/util/gesture.h
+../moveClassifier/data.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/moveClassifier/data.h
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/moveClassifier/data.h
+string
+-
+../util/gesture.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/util/gesture.h
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/util/gesture.h
+string
+-
+vector
+-
+point.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/util/point.h
+
+/home/kevin/Github/Arm_Comtest/arm/test/src/util/point.h
+cmath
+-
+iostream
+-
+
