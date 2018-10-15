@@ -1,6 +1,6 @@
 
 #include <string>
-#include "../util/gesture.h"
+#include "gesture.h"
 
 using namespace std;
 
@@ -9,6 +9,7 @@ class Data{
     Data(const string& dir = "/fs/references/");
 
     void read();
+    void setThreshold(const string& name, const float& threshold);
     inline vector<Gesture>* data(){
       return _data;
     }
