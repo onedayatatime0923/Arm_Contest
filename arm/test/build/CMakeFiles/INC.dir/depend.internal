@@ -14,6 +14,7 @@ CMakeFiles/INC.dir/src/moveClassifier/data.cpp.o
  /home/kevin/Github/Arm_Comtest/arm/test/src/util/gesture.h
  /home/kevin/Github/Arm_Comtest/arm/test/src/util/point.h
 CMakeFiles/INC.dir/src/moveClassifier/moveClassifier.cpp.o
+ /home/kevin/Github/Arm_Comtest/arm/test/src/hmm/hmm.h
  /home/kevin/Github/Arm_Comtest/arm/test/src/moveClassifier/data.h
  /home/kevin/Github/Arm_Comtest/arm/test/src/moveClassifier/moveClassifier.cpp
  /home/kevin/Github/Arm_Comtest/arm/test/src/moveClassifier/moveClassifier.h

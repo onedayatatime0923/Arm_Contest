@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/kevin/Github/Arm_Comtest/arm/test/src/hmm/hmm.h
+string
+-
+vector
+-
+
 /home/kevin/Github/Arm_Comtest/arm/test/src/main/moveClassifier.cpp
 iostream
 -
@@ -17,6 +23,8 @@ stdio.h
 /home/kevin/Github/Arm_Comtest/arm/test/src/moveClassifier/moveClassifier.h
 vector
 -
+../hmm/hmm.h
+/home/kevin/Github/Arm_Comtest/arm/test/src/hmm/hmm.h
 ../util/gesture.h
 /home/kevin/Github/Arm_Comtest/arm/test/src/util/gesture.h
 ../util/dtw.h

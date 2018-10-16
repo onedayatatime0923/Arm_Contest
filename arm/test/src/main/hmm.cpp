@@ -8,8 +8,8 @@ int main()
 {
   Hmm hmm;
 
-	cout << hmm.query("good", "judge");
-	cout << hmm.query("system", "sign");
+	cout << hmm.query("good", "judge")<< endl;
+	cout << hmm.query("system", "sign")<< endl;
 		
 	return 0;
 }

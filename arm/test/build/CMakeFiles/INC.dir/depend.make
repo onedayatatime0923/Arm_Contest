@@ -13,6 +13,7 @@ CMakeFiles/INC.dir/src/moveClassifier/data.cpp.o: ../src/moveClassifier/data.h
 CMakeFiles/INC.dir/src/moveClassifier/data.cpp.o: ../src/util/gesture.h
 CMakeFiles/INC.dir/src/moveClassifier/data.cpp.o: ../src/util/point.h
 
+CMakeFiles/INC.dir/src/moveClassifier/moveClassifier.cpp.o: ../src/hmm/hmm.h
 CMakeFiles/INC.dir/src/moveClassifier/moveClassifier.cpp.o: ../src/moveClassifier/data.h
 CMakeFiles/INC.dir/src/moveClassifier/moveClassifier.cpp.o: ../src/moveClassifier/moveClassifier.cpp
 CMakeFiles/INC.dir/src/moveClassifier/moveClassifier.cpp.o: ../src/moveClassifier/moveClassifier.h

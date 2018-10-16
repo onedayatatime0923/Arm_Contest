@@ -18,14 +18,12 @@ class Edge{
     float  _value;
 };
 inline bool Edge::operator() (const string& one, const string& two) const{
-  return (this->_one == one && this->_two == two);
+  return ((this->_one == one && this->_two == two) || (this->_one == two && this->_two == one));
 }
 
 class Hmm{
   public:
     Hmm(const float& _default = 0);
-
-    void construct(vector<string>& data);
 
     const float& query(const string& one, const string& two) const;
     
