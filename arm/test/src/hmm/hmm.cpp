@@ -13,9 +13,35 @@ const float& Edge::getValue() const{
 
 Hmm::Hmm(const float& _default): _default(_default){
   vector<string> data;
-  data.push_back("judge");
-  data.push_back("good");
-  data.push_back("we");
+  data.push_back("you1");
+  data.push_back("ing");
+  data.push_back("do");
+  data.push_back("what");
+  data.push_back("I");
+  data.push_back("say");
+  data.push_back("one");
+  data.push_back("if");
+  data.push_back("you2");
+  data.push_back("feel1");
+  data.push_back("alone");
+  data.push_back("can");
+  data.push_back("watch");
+  data.push_back("ghost");
+  data.push_back("movie");
+  data.push_back("you3");
+  data.push_back("will");
+  data.push_back("feel2");
+  data.push_back("restroom");
+  data.push_back("have1");
+  data.push_back("people1");
+  data.push_back("bed");
+  data.push_back("down");
+  data.push_back("have2");
+  data.push_back("people2");
+  data.push_back("kitchen");
+  data.push_back("have3");
+  data.push_back("people3");
+  this->construct(data);
 }
 
 void Hmm::construct(vector<string>& data){
